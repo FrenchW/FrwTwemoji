@@ -1,0 +1,2664 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F74B85FE-364D-43B8-B36B-BDE78F5C662B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FrwTwemoji</RootNamespace>
+    <AssemblyName>FrwTwemoji</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Build\FrwTwemojiSvg\</OutputPath>
+    <DefineConstants>IconsSvg</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f004.svg">
+      <Link>Svg\1f004.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f0cf.svg">
+      <Link>Svg\1f0cf.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f170.svg">
+      <Link>Svg\1f170.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f171.svg">
+      <Link>Svg\1f171.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f17e.svg">
+      <Link>Svg\1f17e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f17f.svg">
+      <Link>Svg\1f17f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f18e.svg">
+      <Link>Svg\1f18e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f191.svg">
+      <Link>Svg\1f191.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f192.svg">
+      <Link>Svg\1f192.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f193.svg">
+      <Link>Svg\1f193.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f194.svg">
+      <Link>Svg\1f194.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f195.svg">
+      <Link>Svg\1f195.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f196.svg">
+      <Link>Svg\1f196.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f197.svg">
+      <Link>Svg\1f197.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f198.svg">
+      <Link>Svg\1f198.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f199.svg">
+      <Link>Svg\1f199.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f19a.svg">
+      <Link>Svg\1f19a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1e6.svg">
+      <Link>Svg\1f1e6.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1e7.svg">
+      <Link>Svg\1f1e7.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1e8-1f1f3.svg">
+      <Link>Svg\1f1e8-1f1f3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1e8.svg">
+      <Link>Svg\1f1e8.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1e9-1f1ea.svg">
+      <Link>Svg\1f1e9-1f1ea.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1e9.svg">
+      <Link>Svg\1f1e9.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1ea-1f1f8.svg">
+      <Link>Svg\1f1ea-1f1f8.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1ea.svg">
+      <Link>Svg\1f1ea.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1eb-1f1f7.svg">
+      <Link>Svg\1f1eb-1f1f7.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1eb.svg">
+      <Link>Svg\1f1eb.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1ec-1f1e7.svg">
+      <Link>Svg\1f1ec-1f1e7.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1ec.svg">
+      <Link>Svg\1f1ec.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1ed.svg">
+      <Link>Svg\1f1ed.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1ee-1f1f9.svg">
+      <Link>Svg\1f1ee-1f1f9.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1ee.svg">
+      <Link>Svg\1f1ee.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1ef-1f1f5.svg">
+      <Link>Svg\1f1ef-1f1f5.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1ef.svg">
+      <Link>Svg\1f1ef.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1f0-1f1f7.svg">
+      <Link>Svg\1f1f0-1f1f7.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1f0.svg">
+      <Link>Svg\1f1f0.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1f1.svg">
+      <Link>Svg\1f1f1.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1f2.svg">
+      <Link>Svg\1f1f2.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1f3.svg">
+      <Link>Svg\1f1f3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1f4.svg">
+      <Link>Svg\1f1f4.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1f5.svg">
+      <Link>Svg\1f1f5.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1f6.svg">
+      <Link>Svg\1f1f6.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1f7-1f1fa.svg">
+      <Link>Svg\1f1f7-1f1fa.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1f7.svg">
+      <Link>Svg\1f1f7.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1f8.svg">
+      <Link>Svg\1f1f8.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1f9.svg">
+      <Link>Svg\1f1f9.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1fa-1f1f8.svg">
+      <Link>Svg\1f1fa-1f1f8.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1fa.svg">
+      <Link>Svg\1f1fa.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1fb.svg">
+      <Link>Svg\1f1fb.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1fc.svg">
+      <Link>Svg\1f1fc.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1fd.svg">
+      <Link>Svg\1f1fd.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1fe.svg">
+      <Link>Svg\1f1fe.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f1ff.svg">
+      <Link>Svg\1f1ff.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f201.svg">
+      <Link>Svg\1f201.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f202.svg">
+      <Link>Svg\1f202.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f21a.svg">
+      <Link>Svg\1f21a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f22f.svg">
+      <Link>Svg\1f22f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f232.svg">
+      <Link>Svg\1f232.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f233.svg">
+      <Link>Svg\1f233.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f234.svg">
+      <Link>Svg\1f234.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f235.svg">
+      <Link>Svg\1f235.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f236.svg">
+      <Link>Svg\1f236.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f237.svg">
+      <Link>Svg\1f237.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f238.svg">
+      <Link>Svg\1f238.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f239.svg">
+      <Link>Svg\1f239.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f23a.svg">
+      <Link>Svg\1f23a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f250.svg">
+      <Link>Svg\1f250.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f251.svg">
+      <Link>Svg\1f251.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f300.svg">
+      <Link>Svg\1f300.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f301.svg">
+      <Link>Svg\1f301.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f302.svg">
+      <Link>Svg\1f302.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f303.svg">
+      <Link>Svg\1f303.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f304.svg">
+      <Link>Svg\1f304.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f305.svg">
+      <Link>Svg\1f305.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f306.svg">
+      <Link>Svg\1f306.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f307.svg">
+      <Link>Svg\1f307.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f308.svg">
+      <Link>Svg\1f308.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f309.svg">
+      <Link>Svg\1f309.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f30a.svg">
+      <Link>Svg\1f30a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f30b.svg">
+      <Link>Svg\1f30b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f30c.svg">
+      <Link>Svg\1f30c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f30d.svg">
+      <Link>Svg\1f30d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f30e.svg">
+      <Link>Svg\1f30e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f30f.svg">
+      <Link>Svg\1f30f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f310.svg">
+      <Link>Svg\1f310.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f311.svg">
+      <Link>Svg\1f311.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f312.svg">
+      <Link>Svg\1f312.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f313.svg">
+      <Link>Svg\1f313.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f314.svg">
+      <Link>Svg\1f314.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f315.svg">
+      <Link>Svg\1f315.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f316.svg">
+      <Link>Svg\1f316.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f317.svg">
+      <Link>Svg\1f317.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f318.svg">
+      <Link>Svg\1f318.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f319.svg">
+      <Link>Svg\1f319.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f31a.svg">
+      <Link>Svg\1f31a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f31b.svg">
+      <Link>Svg\1f31b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f31c.svg">
+      <Link>Svg\1f31c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f31d.svg">
+      <Link>Svg\1f31d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f31e.svg">
+      <Link>Svg\1f31e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f31f.svg">
+      <Link>Svg\1f31f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f320.svg">
+      <Link>Svg\1f320.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f330.svg">
+      <Link>Svg\1f330.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f331.svg">
+      <Link>Svg\1f331.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f332.svg">
+      <Link>Svg\1f332.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f333.svg">
+      <Link>Svg\1f333.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f334.svg">
+      <Link>Svg\1f334.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f335.svg">
+      <Link>Svg\1f335.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f337.svg">
+      <Link>Svg\1f337.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f338.svg">
+      <Link>Svg\1f338.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f339.svg">
+      <Link>Svg\1f339.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f33a.svg">
+      <Link>Svg\1f33a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f33b.svg">
+      <Link>Svg\1f33b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f33c.svg">
+      <Link>Svg\1f33c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f33d.svg">
+      <Link>Svg\1f33d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f33e.svg">
+      <Link>Svg\1f33e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f33f.svg">
+      <Link>Svg\1f33f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f340.svg">
+      <Link>Svg\1f340.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f341.svg">
+      <Link>Svg\1f341.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f342.svg">
+      <Link>Svg\1f342.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f343.svg">
+      <Link>Svg\1f343.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f344.svg">
+      <Link>Svg\1f344.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f345.svg">
+      <Link>Svg\1f345.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f346.svg">
+      <Link>Svg\1f346.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f347.svg">
+      <Link>Svg\1f347.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f348.svg">
+      <Link>Svg\1f348.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f349.svg">
+      <Link>Svg\1f349.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f34a.svg">
+      <Link>Svg\1f34a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f34b.svg">
+      <Link>Svg\1f34b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f34c.svg">
+      <Link>Svg\1f34c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f34d.svg">
+      <Link>Svg\1f34d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f34e.svg">
+      <Link>Svg\1f34e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f34f.svg">
+      <Link>Svg\1f34f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f350.svg">
+      <Link>Svg\1f350.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f351.svg">
+      <Link>Svg\1f351.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f352.svg">
+      <Link>Svg\1f352.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f353.svg">
+      <Link>Svg\1f353.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f354.svg">
+      <Link>Svg\1f354.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f355.svg">
+      <Link>Svg\1f355.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f356.svg">
+      <Link>Svg\1f356.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f357.svg">
+      <Link>Svg\1f357.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f358.svg">
+      <Link>Svg\1f358.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f359.svg">
+      <Link>Svg\1f359.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f35a.svg">
+      <Link>Svg\1f35a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f35b.svg">
+      <Link>Svg\1f35b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f35c.svg">
+      <Link>Svg\1f35c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f35d.svg">
+      <Link>Svg\1f35d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f35e.svg">
+      <Link>Svg\1f35e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f35f.svg">
+      <Link>Svg\1f35f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f360.svg">
+      <Link>Svg\1f360.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f361.svg">
+      <Link>Svg\1f361.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f362.svg">
+      <Link>Svg\1f362.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f363.svg">
+      <Link>Svg\1f363.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f364.svg">
+      <Link>Svg\1f364.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f365.svg">
+      <Link>Svg\1f365.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f366.svg">
+      <Link>Svg\1f366.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f367.svg">
+      <Link>Svg\1f367.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f368.svg">
+      <Link>Svg\1f368.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f369.svg">
+      <Link>Svg\1f369.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f36a.svg">
+      <Link>Svg\1f36a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f36b.svg">
+      <Link>Svg\1f36b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f36c.svg">
+      <Link>Svg\1f36c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f36d.svg">
+      <Link>Svg\1f36d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f36e.svg">
+      <Link>Svg\1f36e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f36f.svg">
+      <Link>Svg\1f36f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f370.svg">
+      <Link>Svg\1f370.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f371.svg">
+      <Link>Svg\1f371.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f372.svg">
+      <Link>Svg\1f372.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f373.svg">
+      <Link>Svg\1f373.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f374.svg">
+      <Link>Svg\1f374.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f375.svg">
+      <Link>Svg\1f375.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f376.svg">
+      <Link>Svg\1f376.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f377.svg">
+      <Link>Svg\1f377.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f378.svg">
+      <Link>Svg\1f378.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f379.svg">
+      <Link>Svg\1f379.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f37a.svg">
+      <Link>Svg\1f37a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f37b.svg">
+      <Link>Svg\1f37b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f37c.svg">
+      <Link>Svg\1f37c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f380.svg">
+      <Link>Svg\1f380.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f381.svg">
+      <Link>Svg\1f381.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f382.svg">
+      <Link>Svg\1f382.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f383.svg">
+      <Link>Svg\1f383.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f384.svg">
+      <Link>Svg\1f384.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f385.svg">
+      <Link>Svg\1f385.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f386.svg">
+      <Link>Svg\1f386.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f387.svg">
+      <Link>Svg\1f387.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f388.svg">
+      <Link>Svg\1f388.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f389.svg">
+      <Link>Svg\1f389.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f38a.svg">
+      <Link>Svg\1f38a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f38b.svg">
+      <Link>Svg\1f38b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f38c.svg">
+      <Link>Svg\1f38c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f38d.svg">
+      <Link>Svg\1f38d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f38e.svg">
+      <Link>Svg\1f38e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f38f.svg">
+      <Link>Svg\1f38f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f390.svg">
+      <Link>Svg\1f390.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f391.svg">
+      <Link>Svg\1f391.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f392.svg">
+      <Link>Svg\1f392.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f393.svg">
+      <Link>Svg\1f393.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3a0.svg">
+      <Link>Svg\1f3a0.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3a1.svg">
+      <Link>Svg\1f3a1.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3a2.svg">
+      <Link>Svg\1f3a2.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3a3.svg">
+      <Link>Svg\1f3a3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3a4.svg">
+      <Link>Svg\1f3a4.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3a5.svg">
+      <Link>Svg\1f3a5.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3a6.svg">
+      <Link>Svg\1f3a6.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3a7.svg">
+      <Link>Svg\1f3a7.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3a8.svg">
+      <Link>Svg\1f3a8.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3a9.svg">
+      <Link>Svg\1f3a9.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3aa.svg">
+      <Link>Svg\1f3aa.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3ab.svg">
+      <Link>Svg\1f3ab.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3ac.svg">
+      <Link>Svg\1f3ac.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3ad.svg">
+      <Link>Svg\1f3ad.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3ae.svg">
+      <Link>Svg\1f3ae.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3af.svg">
+      <Link>Svg\1f3af.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3b0.svg">
+      <Link>Svg\1f3b0.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3b1.svg">
+      <Link>Svg\1f3b1.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3b2.svg">
+      <Link>Svg\1f3b2.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3b3.svg">
+      <Link>Svg\1f3b3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3b4.svg">
+      <Link>Svg\1f3b4.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3b5.svg">
+      <Link>Svg\1f3b5.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3b6.svg">
+      <Link>Svg\1f3b6.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3b7.svg">
+      <Link>Svg\1f3b7.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3b8.svg">
+      <Link>Svg\1f3b8.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3b9.svg">
+      <Link>Svg\1f3b9.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3ba.svg">
+      <Link>Svg\1f3ba.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3bb.svg">
+      <Link>Svg\1f3bb.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3bc.svg">
+      <Link>Svg\1f3bc.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3bd.svg">
+      <Link>Svg\1f3bd.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3be.svg">
+      <Link>Svg\1f3be.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3bf.svg">
+      <Link>Svg\1f3bf.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3c0.svg">
+      <Link>Svg\1f3c0.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3c1.svg">
+      <Link>Svg\1f3c1.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3c2.svg">
+      <Link>Svg\1f3c2.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3c3.svg">
+      <Link>Svg\1f3c3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3c4.svg">
+      <Link>Svg\1f3c4.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3c6.svg">
+      <Link>Svg\1f3c6.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3c7.svg">
+      <Link>Svg\1f3c7.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3c8.svg">
+      <Link>Svg\1f3c8.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3c9.svg">
+      <Link>Svg\1f3c9.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3ca.svg">
+      <Link>Svg\1f3ca.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3e0.svg">
+      <Link>Svg\1f3e0.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3e1.svg">
+      <Link>Svg\1f3e1.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3e2.svg">
+      <Link>Svg\1f3e2.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3e3.svg">
+      <Link>Svg\1f3e3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3e4.svg">
+      <Link>Svg\1f3e4.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3e5.svg">
+      <Link>Svg\1f3e5.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3e6.svg">
+      <Link>Svg\1f3e6.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3e7.svg">
+      <Link>Svg\1f3e7.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3e8.svg">
+      <Link>Svg\1f3e8.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3e9.svg">
+      <Link>Svg\1f3e9.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3ea.svg">
+      <Link>Svg\1f3ea.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3eb.svg">
+      <Link>Svg\1f3eb.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3ec.svg">
+      <Link>Svg\1f3ec.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3ed.svg">
+      <Link>Svg\1f3ed.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3ee.svg">
+      <Link>Svg\1f3ee.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3ef.svg">
+      <Link>Svg\1f3ef.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f3f0.svg">
+      <Link>Svg\1f3f0.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f400.svg">
+      <Link>Svg\1f400.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f401.svg">
+      <Link>Svg\1f401.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f402.svg">
+      <Link>Svg\1f402.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f403.svg">
+      <Link>Svg\1f403.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f404.svg">
+      <Link>Svg\1f404.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f405.svg">
+      <Link>Svg\1f405.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f406.svg">
+      <Link>Svg\1f406.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f407.svg">
+      <Link>Svg\1f407.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f408.svg">
+      <Link>Svg\1f408.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f409.svg">
+      <Link>Svg\1f409.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f40a.svg">
+      <Link>Svg\1f40a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f40b.svg">
+      <Link>Svg\1f40b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f40c.svg">
+      <Link>Svg\1f40c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f40d.svg">
+      <Link>Svg\1f40d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f40e.svg">
+      <Link>Svg\1f40e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f40f.svg">
+      <Link>Svg\1f40f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f410.svg">
+      <Link>Svg\1f410.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f411.svg">
+      <Link>Svg\1f411.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f412.svg">
+      <Link>Svg\1f412.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f413.svg">
+      <Link>Svg\1f413.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f414.svg">
+      <Link>Svg\1f414.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f415.svg">
+      <Link>Svg\1f415.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f416.svg">
+      <Link>Svg\1f416.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f417.svg">
+      <Link>Svg\1f417.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f418.svg">
+      <Link>Svg\1f418.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f419.svg">
+      <Link>Svg\1f419.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f41a.svg">
+      <Link>Svg\1f41a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f41b.svg">
+      <Link>Svg\1f41b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f41c.svg">
+      <Link>Svg\1f41c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f41d.svg">
+      <Link>Svg\1f41d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f41e.svg">
+      <Link>Svg\1f41e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f41f.svg">
+      <Link>Svg\1f41f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f420.svg">
+      <Link>Svg\1f420.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f421.svg">
+      <Link>Svg\1f421.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f422.svg">
+      <Link>Svg\1f422.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f423.svg">
+      <Link>Svg\1f423.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f424.svg">
+      <Link>Svg\1f424.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f425.svg">
+      <Link>Svg\1f425.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f426.svg">
+      <Link>Svg\1f426.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f427.svg">
+      <Link>Svg\1f427.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f428.svg">
+      <Link>Svg\1f428.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f429.svg">
+      <Link>Svg\1f429.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f42a.svg">
+      <Link>Svg\1f42a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f42b.svg">
+      <Link>Svg\1f42b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f42c.svg">
+      <Link>Svg\1f42c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f42d.svg">
+      <Link>Svg\1f42d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f42e.svg">
+      <Link>Svg\1f42e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f42f.svg">
+      <Link>Svg\1f42f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f430.svg">
+      <Link>Svg\1f430.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f431.svg">
+      <Link>Svg\1f431.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f432.svg">
+      <Link>Svg\1f432.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f433.svg">
+      <Link>Svg\1f433.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f434.svg">
+      <Link>Svg\1f434.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f435.svg">
+      <Link>Svg\1f435.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f436.svg">
+      <Link>Svg\1f436.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f437.svg">
+      <Link>Svg\1f437.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f438.svg">
+      <Link>Svg\1f438.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f439.svg">
+      <Link>Svg\1f439.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f43a.svg">
+      <Link>Svg\1f43a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f43b.svg">
+      <Link>Svg\1f43b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f43c.svg">
+      <Link>Svg\1f43c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f43d.svg">
+      <Link>Svg\1f43d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f43e.svg">
+      <Link>Svg\1f43e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f440.svg">
+      <Link>Svg\1f440.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f442.svg">
+      <Link>Svg\1f442.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f443.svg">
+      <Link>Svg\1f443.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f444.svg">
+      <Link>Svg\1f444.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f445.svg">
+      <Link>Svg\1f445.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f446.svg">
+      <Link>Svg\1f446.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f447.svg">
+      <Link>Svg\1f447.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f448.svg">
+      <Link>Svg\1f448.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f449.svg">
+      <Link>Svg\1f449.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f44a.svg">
+      <Link>Svg\1f44a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f44b.svg">
+      <Link>Svg\1f44b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f44c.svg">
+      <Link>Svg\1f44c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f44d.svg">
+      <Link>Svg\1f44d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f44e.svg">
+      <Link>Svg\1f44e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f44f.svg">
+      <Link>Svg\1f44f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f450.svg">
+      <Link>Svg\1f450.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f451.svg">
+      <Link>Svg\1f451.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f452.svg">
+      <Link>Svg\1f452.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f453.svg">
+      <Link>Svg\1f453.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f454.svg">
+      <Link>Svg\1f454.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f455.svg">
+      <Link>Svg\1f455.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f456.svg">
+      <Link>Svg\1f456.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f457.svg">
+      <Link>Svg\1f457.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f458.svg">
+      <Link>Svg\1f458.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f459.svg">
+      <Link>Svg\1f459.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f45a.svg">
+      <Link>Svg\1f45a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f45b.svg">
+      <Link>Svg\1f45b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f45c.svg">
+      <Link>Svg\1f45c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f45d.svg">
+      <Link>Svg\1f45d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f45e.svg">
+      <Link>Svg\1f45e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f45f.svg">
+      <Link>Svg\1f45f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f460.svg">
+      <Link>Svg\1f460.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f461.svg">
+      <Link>Svg\1f461.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f462.svg">
+      <Link>Svg\1f462.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f463.svg">
+      <Link>Svg\1f463.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f464.svg">
+      <Link>Svg\1f464.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f465.svg">
+      <Link>Svg\1f465.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f466.svg">
+      <Link>Svg\1f466.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f467.svg">
+      <Link>Svg\1f467.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f468.svg">
+      <Link>Svg\1f468.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f469.svg">
+      <Link>Svg\1f469.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f46a.svg">
+      <Link>Svg\1f46a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f46b.svg">
+      <Link>Svg\1f46b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f46c.svg">
+      <Link>Svg\1f46c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f46d.svg">
+      <Link>Svg\1f46d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f46e.svg">
+      <Link>Svg\1f46e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f46f.svg">
+      <Link>Svg\1f46f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f470.svg">
+      <Link>Svg\1f470.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f471.svg">
+      <Link>Svg\1f471.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f472.svg">
+      <Link>Svg\1f472.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f473.svg">
+      <Link>Svg\1f473.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f474.svg">
+      <Link>Svg\1f474.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f475.svg">
+      <Link>Svg\1f475.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f476.svg">
+      <Link>Svg\1f476.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f477.svg">
+      <Link>Svg\1f477.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f478.svg">
+      <Link>Svg\1f478.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f479.svg">
+      <Link>Svg\1f479.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f47a.svg">
+      <Link>Svg\1f47a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f47b.svg">
+      <Link>Svg\1f47b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f47c.svg">
+      <Link>Svg\1f47c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f47d.svg">
+      <Link>Svg\1f47d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f47e.svg">
+      <Link>Svg\1f47e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f47f.svg">
+      <Link>Svg\1f47f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f480.svg">
+      <Link>Svg\1f480.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f481.svg">
+      <Link>Svg\1f481.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f482.svg">
+      <Link>Svg\1f482.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f483.svg">
+      <Link>Svg\1f483.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f484.svg">
+      <Link>Svg\1f484.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f485.svg">
+      <Link>Svg\1f485.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f486.svg">
+      <Link>Svg\1f486.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f487.svg">
+      <Link>Svg\1f487.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f488.svg">
+      <Link>Svg\1f488.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f489.svg">
+      <Link>Svg\1f489.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f48a.svg">
+      <Link>Svg\1f48a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f48b.svg">
+      <Link>Svg\1f48b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f48c.svg">
+      <Link>Svg\1f48c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f48d.svg">
+      <Link>Svg\1f48d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f48e.svg">
+      <Link>Svg\1f48e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f48f.svg">
+      <Link>Svg\1f48f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f490.svg">
+      <Link>Svg\1f490.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f491.svg">
+      <Link>Svg\1f491.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f492.svg">
+      <Link>Svg\1f492.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f493.svg">
+      <Link>Svg\1f493.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f494.svg">
+      <Link>Svg\1f494.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f495.svg">
+      <Link>Svg\1f495.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f496.svg">
+      <Link>Svg\1f496.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f497.svg">
+      <Link>Svg\1f497.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f498.svg">
+      <Link>Svg\1f498.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f499.svg">
+      <Link>Svg\1f499.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f49a.svg">
+      <Link>Svg\1f49a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f49b.svg">
+      <Link>Svg\1f49b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f49c.svg">
+      <Link>Svg\1f49c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f49d.svg">
+      <Link>Svg\1f49d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f49e.svg">
+      <Link>Svg\1f49e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f49f.svg">
+      <Link>Svg\1f49f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4a0.svg">
+      <Link>Svg\1f4a0.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4a1.svg">
+      <Link>Svg\1f4a1.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4a2.svg">
+      <Link>Svg\1f4a2.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4a3.svg">
+      <Link>Svg\1f4a3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4a4.svg">
+      <Link>Svg\1f4a4.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4a5.svg">
+      <Link>Svg\1f4a5.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4a6.svg">
+      <Link>Svg\1f4a6.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4a7.svg">
+      <Link>Svg\1f4a7.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4a8.svg">
+      <Link>Svg\1f4a8.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4a9.svg">
+      <Link>Svg\1f4a9.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4aa.svg">
+      <Link>Svg\1f4aa.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4ab.svg">
+      <Link>Svg\1f4ab.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4ac.svg">
+      <Link>Svg\1f4ac.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4ad.svg">
+      <Link>Svg\1f4ad.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4ae.svg">
+      <Link>Svg\1f4ae.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4af.svg">
+      <Link>Svg\1f4af.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4b0.svg">
+      <Link>Svg\1f4b0.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4b1.svg">
+      <Link>Svg\1f4b1.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4b2.svg">
+      <Link>Svg\1f4b2.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4b3.svg">
+      <Link>Svg\1f4b3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4b4.svg">
+      <Link>Svg\1f4b4.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4b5.svg">
+      <Link>Svg\1f4b5.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4b6.svg">
+      <Link>Svg\1f4b6.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4b7.svg">
+      <Link>Svg\1f4b7.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4b8.svg">
+      <Link>Svg\1f4b8.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4b9.svg">
+      <Link>Svg\1f4b9.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4ba.svg">
+      <Link>Svg\1f4ba.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4bb.svg">
+      <Link>Svg\1f4bb.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4bc.svg">
+      <Link>Svg\1f4bc.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4bd.svg">
+      <Link>Svg\1f4bd.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4be.svg">
+      <Link>Svg\1f4be.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4bf.svg">
+      <Link>Svg\1f4bf.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4c0.svg">
+      <Link>Svg\1f4c0.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4c1.svg">
+      <Link>Svg\1f4c1.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4c2.svg">
+      <Link>Svg\1f4c2.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4c3.svg">
+      <Link>Svg\1f4c3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4c4.svg">
+      <Link>Svg\1f4c4.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4c5.svg">
+      <Link>Svg\1f4c5.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4c6.svg">
+      <Link>Svg\1f4c6.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4c7.svg">
+      <Link>Svg\1f4c7.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4c8.svg">
+      <Link>Svg\1f4c8.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4c9.svg">
+      <Link>Svg\1f4c9.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4ca.svg">
+      <Link>Svg\1f4ca.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4cb.svg">
+      <Link>Svg\1f4cb.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4cc.svg">
+      <Link>Svg\1f4cc.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4cd.svg">
+      <Link>Svg\1f4cd.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4ce.svg">
+      <Link>Svg\1f4ce.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4cf.svg">
+      <Link>Svg\1f4cf.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4d0.svg">
+      <Link>Svg\1f4d0.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4d1.svg">
+      <Link>Svg\1f4d1.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4d2.svg">
+      <Link>Svg\1f4d2.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4d3.svg">
+      <Link>Svg\1f4d3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4d4.svg">
+      <Link>Svg\1f4d4.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4d5.svg">
+      <Link>Svg\1f4d5.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4d6.svg">
+      <Link>Svg\1f4d6.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4d7.svg">
+      <Link>Svg\1f4d7.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4d8.svg">
+      <Link>Svg\1f4d8.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4d9.svg">
+      <Link>Svg\1f4d9.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4da.svg">
+      <Link>Svg\1f4da.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4db.svg">
+      <Link>Svg\1f4db.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4dc.svg">
+      <Link>Svg\1f4dc.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4dd.svg">
+      <Link>Svg\1f4dd.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4de.svg">
+      <Link>Svg\1f4de.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4df.svg">
+      <Link>Svg\1f4df.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4e0.svg">
+      <Link>Svg\1f4e0.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4e1.svg">
+      <Link>Svg\1f4e1.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4e2.svg">
+      <Link>Svg\1f4e2.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4e3.svg">
+      <Link>Svg\1f4e3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4e4.svg">
+      <Link>Svg\1f4e4.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4e5.svg">
+      <Link>Svg\1f4e5.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4e6.svg">
+      <Link>Svg\1f4e6.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4e7.svg">
+      <Link>Svg\1f4e7.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4e8.svg">
+      <Link>Svg\1f4e8.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4e9.svg">
+      <Link>Svg\1f4e9.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4ea.svg">
+      <Link>Svg\1f4ea.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4eb.svg">
+      <Link>Svg\1f4eb.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4ec.svg">
+      <Link>Svg\1f4ec.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4ed.svg">
+      <Link>Svg\1f4ed.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4ee.svg">
+      <Link>Svg\1f4ee.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4ef.svg">
+      <Link>Svg\1f4ef.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4f0.svg">
+      <Link>Svg\1f4f0.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4f1.svg">
+      <Link>Svg\1f4f1.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4f2.svg">
+      <Link>Svg\1f4f2.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4f3.svg">
+      <Link>Svg\1f4f3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4f4.svg">
+      <Link>Svg\1f4f4.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4f5.svg">
+      <Link>Svg\1f4f5.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4f6.svg">
+      <Link>Svg\1f4f6.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4f7.svg">
+      <Link>Svg\1f4f7.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4f9.svg">
+      <Link>Svg\1f4f9.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4fa.svg">
+      <Link>Svg\1f4fa.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4fb.svg">
+      <Link>Svg\1f4fb.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f4fc.svg">
+      <Link>Svg\1f4fc.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f500.svg">
+      <Link>Svg\1f500.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f501.svg">
+      <Link>Svg\1f501.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f502.svg">
+      <Link>Svg\1f502.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f503.svg">
+      <Link>Svg\1f503.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f504.svg">
+      <Link>Svg\1f504.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f505.svg">
+      <Link>Svg\1f505.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f506.svg">
+      <Link>Svg\1f506.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f507.svg">
+      <Link>Svg\1f507.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f508.svg">
+      <Link>Svg\1f508.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f509.svg">
+      <Link>Svg\1f509.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f50a.svg">
+      <Link>Svg\1f50a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f50b.svg">
+      <Link>Svg\1f50b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f50c.svg">
+      <Link>Svg\1f50c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f50d.svg">
+      <Link>Svg\1f50d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f50e.svg">
+      <Link>Svg\1f50e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f50f.svg">
+      <Link>Svg\1f50f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f510.svg">
+      <Link>Svg\1f510.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f511.svg">
+      <Link>Svg\1f511.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f512.svg">
+      <Link>Svg\1f512.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f513.svg">
+      <Link>Svg\1f513.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f514.svg">
+      <Link>Svg\1f514.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f515.svg">
+      <Link>Svg\1f515.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f516.svg">
+      <Link>Svg\1f516.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f517.svg">
+      <Link>Svg\1f517.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f518.svg">
+      <Link>Svg\1f518.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f519.svg">
+      <Link>Svg\1f519.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f51a.svg">
+      <Link>Svg\1f51a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f51b.svg">
+      <Link>Svg\1f51b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f51c.svg">
+      <Link>Svg\1f51c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f51d.svg">
+      <Link>Svg\1f51d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f51e.svg">
+      <Link>Svg\1f51e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f51f.svg">
+      <Link>Svg\1f51f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f520.svg">
+      <Link>Svg\1f520.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f521.svg">
+      <Link>Svg\1f521.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f522.svg">
+      <Link>Svg\1f522.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f523.svg">
+      <Link>Svg\1f523.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f524.svg">
+      <Link>Svg\1f524.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f525.svg">
+      <Link>Svg\1f525.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f526.svg">
+      <Link>Svg\1f526.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f527.svg">
+      <Link>Svg\1f527.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f528.svg">
+      <Link>Svg\1f528.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f529.svg">
+      <Link>Svg\1f529.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f52a.svg">
+      <Link>Svg\1f52a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f52b.svg">
+      <Link>Svg\1f52b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f52c.svg">
+      <Link>Svg\1f52c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f52d.svg">
+      <Link>Svg\1f52d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f52e.svg">
+      <Link>Svg\1f52e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f52f.svg">
+      <Link>Svg\1f52f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f530.svg">
+      <Link>Svg\1f530.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f531.svg">
+      <Link>Svg\1f531.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f532.svg">
+      <Link>Svg\1f532.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f533.svg">
+      <Link>Svg\1f533.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f534.svg">
+      <Link>Svg\1f534.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f535.svg">
+      <Link>Svg\1f535.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f536.svg">
+      <Link>Svg\1f536.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f537.svg">
+      <Link>Svg\1f537.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f538.svg">
+      <Link>Svg\1f538.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f539.svg">
+      <Link>Svg\1f539.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f53a.svg">
+      <Link>Svg\1f53a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f53b.svg">
+      <Link>Svg\1f53b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f53c.svg">
+      <Link>Svg\1f53c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f53d.svg">
+      <Link>Svg\1f53d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f550.svg">
+      <Link>Svg\1f550.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f551.svg">
+      <Link>Svg\1f551.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f552.svg">
+      <Link>Svg\1f552.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f553.svg">
+      <Link>Svg\1f553.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f554.svg">
+      <Link>Svg\1f554.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f555.svg">
+      <Link>Svg\1f555.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f556.svg">
+      <Link>Svg\1f556.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f557.svg">
+      <Link>Svg\1f557.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f558.svg">
+      <Link>Svg\1f558.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f559.svg">
+      <Link>Svg\1f559.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f55a.svg">
+      <Link>Svg\1f55a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f55b.svg">
+      <Link>Svg\1f55b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f55c.svg">
+      <Link>Svg\1f55c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f55d.svg">
+      <Link>Svg\1f55d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f55e.svg">
+      <Link>Svg\1f55e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f55f.svg">
+      <Link>Svg\1f55f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f560.svg">
+      <Link>Svg\1f560.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f561.svg">
+      <Link>Svg\1f561.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f562.svg">
+      <Link>Svg\1f562.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f563.svg">
+      <Link>Svg\1f563.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f564.svg">
+      <Link>Svg\1f564.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f565.svg">
+      <Link>Svg\1f565.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f566.svg">
+      <Link>Svg\1f566.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f567.svg">
+      <Link>Svg\1f567.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f5fb.svg">
+      <Link>Svg\1f5fb.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f5fc.svg">
+      <Link>Svg\1f5fc.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f5fd.svg">
+      <Link>Svg\1f5fd.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f5fe.svg">
+      <Link>Svg\1f5fe.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f5ff.svg">
+      <Link>Svg\1f5ff.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f600.svg">
+      <Link>Svg\1f600.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f601.svg">
+      <Link>Svg\1f601.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f602.svg">
+      <Link>Svg\1f602.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f603.svg">
+      <Link>Svg\1f603.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f604.svg">
+      <Link>Svg\1f604.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f605.svg">
+      <Link>Svg\1f605.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f606.svg">
+      <Link>Svg\1f606.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f607.svg">
+      <Link>Svg\1f607.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f608.svg">
+      <Link>Svg\1f608.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f609.svg">
+      <Link>Svg\1f609.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f60a.svg">
+      <Link>Svg\1f60a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f60b.svg">
+      <Link>Svg\1f60b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f60c.svg">
+      <Link>Svg\1f60c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f60d.svg">
+      <Link>Svg\1f60d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f60e.svg">
+      <Link>Svg\1f60e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f60f.svg">
+      <Link>Svg\1f60f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f610.svg">
+      <Link>Svg\1f610.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f611.svg">
+      <Link>Svg\1f611.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f612.svg">
+      <Link>Svg\1f612.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f613.svg">
+      <Link>Svg\1f613.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f614.svg">
+      <Link>Svg\1f614.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f615.svg">
+      <Link>Svg\1f615.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f616.svg">
+      <Link>Svg\1f616.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f617.svg">
+      <Link>Svg\1f617.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f618.svg">
+      <Link>Svg\1f618.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f619.svg">
+      <Link>Svg\1f619.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f61a.svg">
+      <Link>Svg\1f61a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f61b.svg">
+      <Link>Svg\1f61b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f61c.svg">
+      <Link>Svg\1f61c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f61d.svg">
+      <Link>Svg\1f61d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f61e.svg">
+      <Link>Svg\1f61e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f61f.svg">
+      <Link>Svg\1f61f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f620.svg">
+      <Link>Svg\1f620.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f621.svg">
+      <Link>Svg\1f621.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f622.svg">
+      <Link>Svg\1f622.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f623.svg">
+      <Link>Svg\1f623.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f624.svg">
+      <Link>Svg\1f624.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f625.svg">
+      <Link>Svg\1f625.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f626.svg">
+      <Link>Svg\1f626.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f627.svg">
+      <Link>Svg\1f627.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f628.svg">
+      <Link>Svg\1f628.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f629.svg">
+      <Link>Svg\1f629.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f62a.svg">
+      <Link>Svg\1f62a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f62b.svg">
+      <Link>Svg\1f62b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f62c.svg">
+      <Link>Svg\1f62c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f62d.svg">
+      <Link>Svg\1f62d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f62e.svg">
+      <Link>Svg\1f62e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f62f.svg">
+      <Link>Svg\1f62f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f630.svg">
+      <Link>Svg\1f630.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f631.svg">
+      <Link>Svg\1f631.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f632.svg">
+      <Link>Svg\1f632.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f633.svg">
+      <Link>Svg\1f633.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f634.svg">
+      <Link>Svg\1f634.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f635.svg">
+      <Link>Svg\1f635.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f636.svg">
+      <Link>Svg\1f636.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f637.svg">
+      <Link>Svg\1f637.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f638.svg">
+      <Link>Svg\1f638.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f639.svg">
+      <Link>Svg\1f639.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f63a.svg">
+      <Link>Svg\1f63a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f63b.svg">
+      <Link>Svg\1f63b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f63c.svg">
+      <Link>Svg\1f63c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f63d.svg">
+      <Link>Svg\1f63d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f63e.svg">
+      <Link>Svg\1f63e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f63f.svg">
+      <Link>Svg\1f63f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f640.svg">
+      <Link>Svg\1f640.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f645.svg">
+      <Link>Svg\1f645.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f646.svg">
+      <Link>Svg\1f646.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f647.svg">
+      <Link>Svg\1f647.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f648.svg">
+      <Link>Svg\1f648.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f649.svg">
+      <Link>Svg\1f649.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f64a.svg">
+      <Link>Svg\1f64a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f64b.svg">
+      <Link>Svg\1f64b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f64c.svg">
+      <Link>Svg\1f64c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f64d.svg">
+      <Link>Svg\1f64d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f64e.svg">
+      <Link>Svg\1f64e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f64f.svg">
+      <Link>Svg\1f64f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f680.svg">
+      <Link>Svg\1f680.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f681.svg">
+      <Link>Svg\1f681.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f682.svg">
+      <Link>Svg\1f682.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f683.svg">
+      <Link>Svg\1f683.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f684.svg">
+      <Link>Svg\1f684.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f685.svg">
+      <Link>Svg\1f685.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f686.svg">
+      <Link>Svg\1f686.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f687.svg">
+      <Link>Svg\1f687.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f688.svg">
+      <Link>Svg\1f688.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f689.svg">
+      <Link>Svg\1f689.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f68a.svg">
+      <Link>Svg\1f68a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f68b.svg">
+      <Link>Svg\1f68b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f68c.svg">
+      <Link>Svg\1f68c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f68d.svg">
+      <Link>Svg\1f68d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f68e.svg">
+      <Link>Svg\1f68e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f68f.svg">
+      <Link>Svg\1f68f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f690.svg">
+      <Link>Svg\1f690.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f691.svg">
+      <Link>Svg\1f691.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f692.svg">
+      <Link>Svg\1f692.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f693.svg">
+      <Link>Svg\1f693.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f694.svg">
+      <Link>Svg\1f694.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f695.svg">
+      <Link>Svg\1f695.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f696.svg">
+      <Link>Svg\1f696.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f697.svg">
+      <Link>Svg\1f697.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f698.svg">
+      <Link>Svg\1f698.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f699.svg">
+      <Link>Svg\1f699.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f69a.svg">
+      <Link>Svg\1f69a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f69b.svg">
+      <Link>Svg\1f69b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f69c.svg">
+      <Link>Svg\1f69c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f69d.svg">
+      <Link>Svg\1f69d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f69e.svg">
+      <Link>Svg\1f69e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f69f.svg">
+      <Link>Svg\1f69f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6a0.svg">
+      <Link>Svg\1f6a0.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6a1.svg">
+      <Link>Svg\1f6a1.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6a2.svg">
+      <Link>Svg\1f6a2.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6a3.svg">
+      <Link>Svg\1f6a3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6a4.svg">
+      <Link>Svg\1f6a4.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6a5.svg">
+      <Link>Svg\1f6a5.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6a6.svg">
+      <Link>Svg\1f6a6.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6a7.svg">
+      <Link>Svg\1f6a7.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6a8.svg">
+      <Link>Svg\1f6a8.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6a9.svg">
+      <Link>Svg\1f6a9.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6aa.svg">
+      <Link>Svg\1f6aa.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6ab.svg">
+      <Link>Svg\1f6ab.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6ac.svg">
+      <Link>Svg\1f6ac.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6ad.svg">
+      <Link>Svg\1f6ad.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6ae.svg">
+      <Link>Svg\1f6ae.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6af.svg">
+      <Link>Svg\1f6af.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6b0.svg">
+      <Link>Svg\1f6b0.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6b1.svg">
+      <Link>Svg\1f6b1.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6b2.svg">
+      <Link>Svg\1f6b2.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6b3.svg">
+      <Link>Svg\1f6b3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6b4.svg">
+      <Link>Svg\1f6b4.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6b5.svg">
+      <Link>Svg\1f6b5.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6b6.svg">
+      <Link>Svg\1f6b6.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6b7.svg">
+      <Link>Svg\1f6b7.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6b8.svg">
+      <Link>Svg\1f6b8.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6b9.svg">
+      <Link>Svg\1f6b9.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6ba.svg">
+      <Link>Svg\1f6ba.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6bb.svg">
+      <Link>Svg\1f6bb.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6bc.svg">
+      <Link>Svg\1f6bc.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6bd.svg">
+      <Link>Svg\1f6bd.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6be.svg">
+      <Link>Svg\1f6be.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6bf.svg">
+      <Link>Svg\1f6bf.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6c0.svg">
+      <Link>Svg\1f6c0.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6c1.svg">
+      <Link>Svg\1f6c1.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6c2.svg">
+      <Link>Svg\1f6c2.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6c3.svg">
+      <Link>Svg\1f6c3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6c4.svg">
+      <Link>Svg\1f6c4.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\1f6c5.svg">
+      <Link>Svg\1f6c5.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\203c.svg">
+      <Link>Svg\203c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2049.svg">
+      <Link>Svg\2049.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2122.svg">
+      <Link>Svg\2122.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2139.svg">
+      <Link>Svg\2139.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2194.svg">
+      <Link>Svg\2194.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2195.svg">
+      <Link>Svg\2195.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2196.svg">
+      <Link>Svg\2196.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2197.svg">
+      <Link>Svg\2197.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2198.svg">
+      <Link>Svg\2198.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2199.svg">
+      <Link>Svg\2199.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\21a9.svg">
+      <Link>Svg\21a9.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\21aa.svg">
+      <Link>Svg\21aa.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\23-20e3.svg">
+      <Link>Svg\23-20e3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\231a.svg">
+      <Link>Svg\231a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\231b.svg">
+      <Link>Svg\231b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\23e9.svg">
+      <Link>Svg\23e9.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\23ea.svg">
+      <Link>Svg\23ea.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\23eb.svg">
+      <Link>Svg\23eb.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\23ec.svg">
+      <Link>Svg\23ec.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\23f0.svg">
+      <Link>Svg\23f0.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\23f3.svg">
+      <Link>Svg\23f3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\24c2.svg">
+      <Link>Svg\24c2.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\25aa.svg">
+      <Link>Svg\25aa.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\25ab.svg">
+      <Link>Svg\25ab.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\25b6.svg">
+      <Link>Svg\25b6.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\25c0.svg">
+      <Link>Svg\25c0.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\25fb.svg">
+      <Link>Svg\25fb.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\25fc.svg">
+      <Link>Svg\25fc.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\25fd.svg">
+      <Link>Svg\25fd.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\25fe.svg">
+      <Link>Svg\25fe.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2600.svg">
+      <Link>Svg\2600.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2601.svg">
+      <Link>Svg\2601.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\260e.svg">
+      <Link>Svg\260e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2611.svg">
+      <Link>Svg\2611.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2614.svg">
+      <Link>Svg\2614.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2615.svg">
+      <Link>Svg\2615.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\261d.svg">
+      <Link>Svg\261d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\263a.svg">
+      <Link>Svg\263a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2648.svg">
+      <Link>Svg\2648.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2649.svg">
+      <Link>Svg\2649.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\264a.svg">
+      <Link>Svg\264a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\264b.svg">
+      <Link>Svg\264b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\264c.svg">
+      <Link>Svg\264c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\264d.svg">
+      <Link>Svg\264d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\264e.svg">
+      <Link>Svg\264e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\264f.svg">
+      <Link>Svg\264f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2650.svg">
+      <Link>Svg\2650.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2651.svg">
+      <Link>Svg\2651.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2652.svg">
+      <Link>Svg\2652.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2653.svg">
+      <Link>Svg\2653.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2660.svg">
+      <Link>Svg\2660.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2663.svg">
+      <Link>Svg\2663.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2665.svg">
+      <Link>Svg\2665.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2666.svg">
+      <Link>Svg\2666.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2668.svg">
+      <Link>Svg\2668.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\267b.svg">
+      <Link>Svg\267b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\267f.svg">
+      <Link>Svg\267f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2693.svg">
+      <Link>Svg\2693.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\26a0.svg">
+      <Link>Svg\26a0.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\26a1.svg">
+      <Link>Svg\26a1.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\26aa.svg">
+      <Link>Svg\26aa.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\26ab.svg">
+      <Link>Svg\26ab.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\26bd.svg">
+      <Link>Svg\26bd.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\26be.svg">
+      <Link>Svg\26be.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\26c4.svg">
+      <Link>Svg\26c4.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\26c5.svg">
+      <Link>Svg\26c5.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\26ce.svg">
+      <Link>Svg\26ce.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\26d4.svg">
+      <Link>Svg\26d4.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\26ea.svg">
+      <Link>Svg\26ea.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\26f2.svg">
+      <Link>Svg\26f2.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\26f3.svg">
+      <Link>Svg\26f3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\26f5.svg">
+      <Link>Svg\26f5.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\26fa.svg">
+      <Link>Svg\26fa.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\26fd.svg">
+      <Link>Svg\26fd.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2702.svg">
+      <Link>Svg\2702.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2705.svg">
+      <Link>Svg\2705.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2708.svg">
+      <Link>Svg\2708.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2709.svg">
+      <Link>Svg\2709.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\270a.svg">
+      <Link>Svg\270a.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\270b.svg">
+      <Link>Svg\270b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\270c.svg">
+      <Link>Svg\270c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\270f.svg">
+      <Link>Svg\270f.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2712.svg">
+      <Link>Svg\2712.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2714.svg">
+      <Link>Svg\2714.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2716.svg">
+      <Link>Svg\2716.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2728.svg">
+      <Link>Svg\2728.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2733.svg">
+      <Link>Svg\2733.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2734.svg">
+      <Link>Svg\2734.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2744.svg">
+      <Link>Svg\2744.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2747.svg">
+      <Link>Svg\2747.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\274c.svg">
+      <Link>Svg\274c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\274e.svg">
+      <Link>Svg\274e.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2753.svg">
+      <Link>Svg\2753.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2754.svg">
+      <Link>Svg\2754.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2755.svg">
+      <Link>Svg\2755.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2757.svg">
+      <Link>Svg\2757.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2764.svg">
+      <Link>Svg\2764.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2795.svg">
+      <Link>Svg\2795.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2796.svg">
+      <Link>Svg\2796.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2797.svg">
+      <Link>Svg\2797.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\27a1.svg">
+      <Link>Svg\27a1.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\27b0.svg">
+      <Link>Svg\27b0.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\27bf.svg">
+      <Link>Svg\27bf.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2934.svg">
+      <Link>Svg\2934.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2935.svg">
+      <Link>Svg\2935.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2b05.svg">
+      <Link>Svg\2b05.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2b06.svg">
+      <Link>Svg\2b06.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2b07.svg">
+      <Link>Svg\2b07.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2b1b.svg">
+      <Link>Svg\2b1b.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2b1c.svg">
+      <Link>Svg\2b1c.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2b50.svg">
+      <Link>Svg\2b50.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\2b55.svg">
+      <Link>Svg\2b55.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\30-20e3.svg">
+      <Link>Svg\30-20e3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\3030.svg">
+      <Link>Svg\3030.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\303d.svg">
+      <Link>Svg\303d.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\31-20e3.svg">
+      <Link>Svg\31-20e3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\32-20e3.svg">
+      <Link>Svg\32-20e3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\3297.svg">
+      <Link>Svg\3297.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\3299.svg">
+      <Link>Svg\3299.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\33-20e3.svg">
+      <Link>Svg\33-20e3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\34-20e3.svg">
+      <Link>Svg\34-20e3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\35-20e3.svg">
+      <Link>Svg\35-20e3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\36-20e3.svg">
+      <Link>Svg\36-20e3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\37-20e3.svg">
+      <Link>Svg\37-20e3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\38-20e3.svg">
+      <Link>Svg\38-20e3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\39-20e3.svg">
+      <Link>Svg\39-20e3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\a9.svg">
+      <Link>Svg\a9.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\ae.svg">
+      <Link>Svg\ae.svg</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\FrwTwemoji\Parser.cs">
+      <Link>Parser.cs</Link>
+    </Compile>
+    <Compile Include="..\FrwTwemoji\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\svg\e50a.svg">
+      <Link>Svg\e50a.svg</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
