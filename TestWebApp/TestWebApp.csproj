@@ -84,6 +84,12 @@
       <LastGenOutput>TestStrings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Projects\FrwTwemoji\FrwTwemoji.csproj">
+      <Project>{8a11ec45-b298-4412-afcb-ff209e18b092}</Project>
+      <Name>FrwTwemoji</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -8,9 +8,13 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    
-    </div>
+        <div>
+            <h1>FrwTwemoji Test Page</h1>
+            <h2>Testing String 1</h2>
+            <p>
+                <span id="SpnTestString1" runat="server"></span>
+            </p>
+        </div>
     </form>
 </body>
 </html>

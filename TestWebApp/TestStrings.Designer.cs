@@ -59,5 +59,14 @@ namespace TestWebApp {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à today we are open sourcing our emoji to share with everyone &lt;a href=&quot;https://twitter.com/hashtag/twemojiparty?src=hash&quot;&gt;#twemojiparty&lt;/a&gt; 🎉 😜 👯 🍻 🎈 🎤 🎮 🚀 🌉 ✨ &lt;a href=&quot;https://t.co/zkXqMXEkOT&quot;&gt;https://t.co/zkXqMXEkOT&lt;/a&gt;.
+        /// </summary>
+        internal static string String1 {
+            get {
+                return ResourceManager.GetString("String1", resourceCulture);
+            }
+        }
     }
 }

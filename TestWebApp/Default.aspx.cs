@@ -10,7 +10,7 @@ namespace TestWebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            SpnTestString1.InnerText = FrwTwemoji.Parser.ParseEmoji(TestStrings.String1);
         }
     }
 }
