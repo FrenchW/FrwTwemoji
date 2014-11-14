@@ -61,12 +61,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Projects\FrwTwemoji\FrwTwemoji.csproj">
-      <Project>{8a11ec45-b298-4412-afcb-ff209e18b092}</Project>
-      <Name>FrwTwemoji</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
