@@ -120,6 +120,7 @@
   <data name="Twemoji_assembly_nfo_start" xml:space="preserve">
     <value>using System.Reflection;
 using System.Web.UI;
+using System.Resources;
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("FrwTwemoji")]
@@ -127,9 +128,10 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("FrenchW.net from @FrenchW")]
 [assembly: AssemblyProduct("FrwTwemoji")]
-[assembly: AssemblyCopyright("Copyright FrenchW © 2014")]
+[assembly: AssemblyCopyright("Copyright FrenchW @ 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
+[assembly: NeutralResourcesLanguageAttribute("en")]
 [assembly: ComVisible(true)]
 [assembly: AssemblyVersion("{0}")]
 [assembly: AssemblyFileVersion("{0}")]
@@ -152,6 +154,18 @@ using System.Runtime.InteropServices;
     &lt;WarningLevel&gt;4&lt;/WarningLevel&gt;
     &lt;CodeAnalysisIgnoreGeneratedCode&gt;false&lt;/CodeAnalysisIgnoreGeneratedCode&gt;
     &lt;CodeAnalysisRuleSet&gt;AllRules.ruleset&lt;/CodeAnalysisRuleSet&gt;
+    &lt;DocumentationFile&gt;..\..\BuildOutput\FrwTwemoji\FrwTwemoji.XML&lt;/DocumentationFile&gt;
+  &lt;/PropertyGroup&gt;
+  &lt;PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "&gt;
+    &lt;DebugType&gt;Full&lt;/DebugType&gt;
+    &lt;Optimize&gt;False&lt;/Optimize&gt;
+    &lt;OutputPath&gt;..\..\BuildOutput\FrwTwemoji\Debug\&lt;/OutputPath&gt;
+    &lt;DefineConstants&gt;DEBUG;Icons16x;Icons36x;Icons72x;IconsSvg&lt;/DefineConstants&gt;
+    &lt;ErrorReport&gt;prompt&lt;/ErrorReport&gt;
+    &lt;WarningLevel&gt;4&lt;/WarningLevel&gt;
+    &lt;CodeAnalysisIgnoreGeneratedCode&gt;false&lt;/CodeAnalysisIgnoreGeneratedCode&gt;
+    &lt;CodeAnalysisRuleSet&gt;AllRules.ruleset&lt;/CodeAnalysisRuleSet&gt;
+    &lt;DocumentationFile&gt;..\..\BuildOutput\FrwTwemoji\Debug\FrwTwemoji.XML&lt;/DocumentationFile&gt;
   &lt;/PropertyGroup&gt;
   &lt;PropertyGroup&gt;
     &lt;OutputType&gt;Library&lt;/OutputType&gt;

@@ -1,5 +1,6 @@
 using System.Reflection;
 using System.Web.UI;
+using System.Resources;
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("FrwTwemoji")]
@@ -7,12 +8,13 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("FrenchW.net from @FrenchW")]
 [assembly: AssemblyProduct("FrwTwemoji")]
-[assembly: AssemblyCopyright("Copyright FrenchW © 2014")]
+[assembly: AssemblyCopyright("Copyright FrenchW @ 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
+[assembly: NeutralResourcesLanguageAttribute("en")]
 [assembly: ComVisible(true)]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.1.1.0")]
+[assembly: AssemblyFileVersion("1.1.1.0")]
 [assembly: Guid("3c9cd130-f328-4117-8429-c1b0631b3543")]
 [assembly: WebResource("FrwTwemoji.16X16.1f004.png", "image/png")]
 [assembly: WebResource("FrwTwemoji.16X16.1f0cf.png", "image/png")]

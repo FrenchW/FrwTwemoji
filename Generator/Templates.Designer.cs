@@ -63,6 +63,7 @@ namespace Generator {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à using System.Reflection;
         ///using System.Web.UI;
+        ///using System.Resources;
         ///using System.Runtime.InteropServices;
         ///
         ///[assembly: AssemblyTitle(&quot;FrwTwemoji&quot;)]
@@ -70,10 +71,9 @@ namespace Generator {
         ///[assembly: AssemblyConfiguration(&quot;&quot;)]
         ///[assembly: AssemblyCompany(&quot;FrenchW.net from @FrenchW&quot;)]
         ///[assembly: AssemblyProduct(&quot;FrwTwemoji&quot;)]
-        ///[assembly: AssemblyCopyright(&quot;Copyright FrenchW © 2014&quot;)]
+        ///[assembly: AssemblyCopyright(&quot;Copyright FrenchW @ 2014&quot;)]
         ///[assembly: AssemblyTrademark(&quot;&quot;)]
-        ///[assembly: AssemblyCulture(&quot;&quot;)]
-        ///[assembly:  [le reste de la chaîne a été tronqué]&quot;;.
+        ///[assembly: Assembly [le reste de la chaîne a été tronqué]&quot;;.
         /// </summary>
         internal static string Twemoji_assembly_nfo_start {
             get {
