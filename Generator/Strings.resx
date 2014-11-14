@@ -147,4 +147,7 @@
     <data name="Program_DoRebuild_INFO_parsed_X_variant_sensitive_emoji" xml:space="preserve">
     <value>[INFO] parsed {0} variant sensitive emoji.</value>
   </data>
+    <data name="Program_Main_Nothing_changed_quitting" xml:space="preserve">
+    <value>Nothing changed - quitting</value>
+  </data>
 </root>

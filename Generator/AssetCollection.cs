@@ -1,50 +1,88 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Generator
+﻿namespace Generator
 {
-    using System.Collections.Specialized;
+    using System;
+    using System.Collections.Generic;
     using System.IO;
+    using System.Linq;
+    using System.Xml.Serialization;
 
-    using Newtonsoft.Json;
-
-    class AssetCollection : Dictionary<string, Asset>, IEquatable<AssetCollection>
+    /// <summary>Collection of Assets
+    /// </summary>
+    public class AssetCollection : List<Asset>, IEquatable<AssetCollection>
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AssetCollection"/> class.
+        /// </summary>
         public AssetCollection()
         {
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AssetCollection" /> class.
+        /// </summary>
+        /// <param name="assetNames">Name of each asset to create when initializing.</param>
         public AssetCollection(string[] assetNames)
         {
             for (int i = 0; i <= assetNames.GetUpperBound(0); i++)
             {
-                this.Add(assetNames[i], new Asset());
+                this.Add(new Asset(assetNames[i]));
             }
         }
 
-        public AssetCollection(string backupFilename)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AssetCollection"/> class.
+        /// </summary>
+        /// <param name="backupFilePath">The path of the backup file to use as data intializer.</param>
+        public AssetCollection(string backupFilePath)
         {
-            AssetCollection retval;
-            if (!File.Exists(backupFilename))
+            if (!File.Exists(backupFilePath))
             {
                 return;
             }
 
             try
             {
-                retval = JsonConvert.DeserializeObject<AssetCollection>(
-                    File.ReadAllText(backupFilename));
+                TextReader reader = new StreamReader(backupFilePath);
+                try
+                {
+                    var obj = serializer.Deserialize(reader);
+
+                    if (obj.GetType().IsAssignableFrom(typeof(AssetCollection)))
+                    {
+                        this.AddRange((AssetCollection)obj);
+                    }
+
+                    reader.Close();
+                    reader.Dispose();
+                }
+                catch (Exception)
+                {
+                    // Wrong file, deleting it
+                    reader.Close();
+                    reader.Dispose();
+                    File.Delete(backupFilePath);
+                }
             }
             catch (Exception)
             {
                 return;
             }
+        }
 
-            foreach (KeyValuePair<string, Asset> keyValuePair in retval)
+        private XmlSerializer serializer
+        {
+            get
             {
-                this.Add(keyValuePair.Key, keyValuePair.Value);
+                XmlSerializer retval = new XmlSerializer(typeof(AssetCollection));
+                return retval;
+            }
+        }
+
+        public Asset this[string Name]
+        {
+            get
+            {
+                return (from a in this where a.Name.Equals("Name") select a).FirstOrDefault();
             }
         }
 
@@ -56,7 +94,7 @@ namespace Generator
             foreach (var asset in this)
             {
                 // get folder path
-                string assetFolder = Helpers.GetRootPath() + Paths.FolderTwitterTwemoji + asset.Key + "\\";
+                string assetFolder = Helpers.GetRootPath() + Paths.FolderTwitterTwemoji + asset.Name + "\\";
 
                 // foreach file in path
                 foreach (var file in Directory.GetFiles(assetFolder))
@@ -68,19 +106,27 @@ namespace Generator
                     filename = filename.Substring(0, filename.LastIndexOf(".", StringComparison.InvariantCulture));
 
                     // finally, populate array
-                    asset.Value.Add(filename);
+                    asset.Emoji.Add(filename);
                 }
 
-                Console.WriteLine(Strings.AssetCollection_AnalizeAllAsset_INFO_asset_X_contains_X_emoji, asset.Key, asset.Value.Count);
+                Console.WriteLine(Strings.AssetCollection_AnalizeAllAsset_INFO_asset_X_contains_X_emoji, asset.Name, asset.Emoji.Count);
             }
         }
 
         public void Backup(string filePath)
         {
-            var json = JsonConvert.SerializeObject(this);
-            File.WriteAllText(filePath, json);
+            TextWriter writer = new StringWriter();
+            serializer.Serialize(writer, this);
+            File.WriteAllText(filePath, writer.ToString());
         }
 
+        /// <summary>
+        /// Indique si l'objet actuel est égal à un autre objet du même type.
+        /// </summary>
+        /// <param name="other">Objet à comparer avec cet objet.</param>
+        /// <returns>
+        /// true si l'objet en cours est égal au paramètre <paramref name="other" /> ; sinon, false.
+        /// </returns>
         public bool Equals(AssetCollection other)
         {
             if (this.Count != other.Count)
@@ -88,26 +134,40 @@ namespace Generator
                 return false;
             }
 
-            if (!this.OrderBy(pair => pair.Key).SequenceEqual(other.OrderByDescending(pair => pair.Key)))
+            var thisSorted = this.OrderBy(a => a.Name);
+            var otherSorted = this.OrderBy(a => a.Name);
+
+            if (!thisSorted.SequenceEqual(otherSorted))
             {
                 return false;
             }
 
-            foreach (KeyValuePair<string, Asset> pair in this)
+            foreach (Asset asset in thisSorted)
             {
-                if (pair.Value.Count != other[pair.Key].Count)
+                Asset otherAsset = (from a in otherSorted where a.Name.Equals(asset.Name) select a).First();
+                if (otherAsset == default(Asset))
                 {
                     return false;
                 }
 
-                pair.Value.Sort();
-                other[pair.Key].Sort();
-
-                if (!pair.Value.SequenceEqual(other[pair.Key]))
+                if (asset.Emoji.Count != otherAsset.Emoji.Count)
                 {
                     return false;
+                }
+
+                asset.Emoji.Sort();
+                otherAsset.Emoji.Sort();
+
+                for (int i = 0; i < asset.Emoji.Count; i++)
+                {
+                    if (asset.Emoji[i] != otherAsset.Emoji[i])
+                    {
+
+                        return false;
+                    }
                 }
             }
+
             return true;
         }
     }

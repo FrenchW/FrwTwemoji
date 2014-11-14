@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Collections.Specialized;
     using System.IO;
     using System.Linq;
     using System.Net;
@@ -10,12 +11,14 @@
 
     class Program
     {
+        private static readonly string[] BaseKnownAssetNames = new[] { "16x16", "36x36", "72x72", "svg", };
+
         static void Main(string[] args)
         {
             bool forceRebuild = args.Contains("-ForceRebuild");
 
             // Load and save assets to disk
-            AssetCollection assets = new AssetCollection(new[] { "16x16", "36x36", "72x72", "svg", });
+            AssetCollection assets = new AssetCollection(BaseKnownAssetNames);
 
             assets.LoadLocalAssets();
 
@@ -28,6 +31,10 @@
                 RebuildSolutions(assets);
                 assets.Backup(Helpers.GetRootPath() + Paths.FilePreviousAssetsBackup);
             }
+            else
+            {
+                Console.WriteLine(Strings.Program_Main_Nothing_changed_quitting);
+            }
 
             Console.WriteLine(Strings.Program_Main_Press_a_key_to_end);
             Console.ReadKey();
@@ -38,7 +45,7 @@
         {
             // Load unicode site info and compare
 
-            AssetCollection assetsMissing = new AssetCollection(new[] { "16x16", "36x36", "72x72", "svg", });
+            AssetCollection assetsMissing = new AssetCollection(BaseKnownAssetNames);
 
 
             List<string> missingGrouped = new List<string>();
@@ -97,9 +104,13 @@
                 {
                     foreach (var asset in localAssets)
                     {
-                        if (!asset.Value.Contains(entry))
+                        if (!asset.Emoji.Contains(entry))
                         {
-                            assetsMissing[asset.Key].Add(entry);
+                            if (assetsMissing[asset.Name] != null)
+                            {
+                                assetsMissing[asset.Name].Emoji.Add(entry);
+                            }
+
                             if (!missingGrouped.Contains(entry))
                             {
                                 missingGrouped.Add(entry);
@@ -111,11 +122,11 @@
 
             foreach (var missingItem in assetsMissing)
             {
-                if (missingItem.Value.Count > 0)
+                if (missingItem.Emoji.Count > 0)
                 {
                     Console.WriteLine(Strings.Program_DoRebuild_WARNING_missing_emoji_for_assets_X_X,
-                        missingItem.Key,
-                        string.Join(", ", missingItem.Value));
+                        missingItem.Name,
+                        string.Join(", ", missingItem.Emoji));
                 }
             }
 
@@ -176,27 +187,27 @@
                 Templates.Twemoji_assembly_nfo_start,
                 System.Reflection.Assembly.GetExecutingAssembly().GetName().Version));
 
-            foreach (KeyValuePair<string, Asset> asset in localAssets)
+            foreach (Asset asset in localAssets)
             {
-                string extension = asset.Key.Equals("svg") ? "svg" : "png";
-                string mimeType = asset.Key.Equals("svg") ? "image/svg+xml" : "image/png";
+
+
                 sbFrwTwemojiCsproj.AppendLine("  <ItemGroup>");
-                foreach (string emoji in asset.Value)
+                foreach (string emoji in asset.Emoji)
                 {
                     sbFrwTwemojiCsproj.AppendFormat(
                         "    <EmbeddedResource Include=\"..\\..\\Twitter-twemoji\\{0}\\{1}.{2}\">\r\n      <Link>{3}\\{4}.{2}</Link>\r\n    </EmbeddedResource>\r\n",
-                        asset.Key,
+                        asset.Name,
                         emoji.ToLowerInvariant(),
-                        extension.ToLowerInvariant(),
-                        asset.Key.ToUpperInvariant(),
+                        asset.Extension.ToLowerInvariant(),
+                        asset.Name.ToUpperInvariant(),
                         emoji.ToUpperInvariant());
 
                     sbFrwTwemojiAssemblyInfoCs.AppendFormat(
                         "[assembly: WebResource(\"FrwTwemoji.{0}.{1}.{2}\", \"{3}\")]\r\n",
-                        asset.Key.ToUpperInvariant(),
+                        asset.Name.ToUpperInvariant(),
                         emoji.ToLowerInvariant(),
-                        extension.ToLowerInvariant(),
-                        mimeType);
+                        asset.Extension.ToLowerInvariant(),
+                        asset.MimeType);
                 }
 
                 sbFrwTwemojiCsproj.AppendLine("  </ItemGroup>");

@@ -88,7 +88,7 @@ namespace Generator {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Generated\PreviousAssetsBackup.json.
+        ///   Recherche une chaîne localisée semblable à Generated\PreviousAssetsBackup.xml.
         /// </summary>
         internal static string FilePreviousAssetsBackup {
             get {

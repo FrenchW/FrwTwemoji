@@ -142,6 +142,15 @@ namespace Generator {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Nothing changed - quitting.
+        /// </summary>
+        internal static string Program_Main_Nothing_changed_quitting {
+            get {
+                return ResourceManager.GetString("Program_Main_Nothing_changed_quitting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Press a key to end.
         /// </summary>
         internal static string Program_Main_Press_a_key_to_end {

@@ -121,7 +121,7 @@
     <value>EmojiSources.txt</value>
   </data>
   <data name="FilePreviousAssetsBackup" xml:space="preserve">
-    <value>Generated\PreviousAssetsBackup.json</value>
+    <value>Generated\PreviousAssetsBackup.xml</value>
   </data>
   <data name="FileStandardizedVariants" xml:space="preserve">
     <value>StandardizedVariants.txt</value>
