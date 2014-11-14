@@ -137,7 +137,7 @@ namespace Generator {
         /// </summary>
         internal static string Program_DoRebuild_WARNING_missing_emoji_for_assets_X_X {
             get {
-                return ResourceManager.GetString("Program_DoRebuild_WARNING_missing_emoji_for_assets_X:X", resourceCulture);
+                return ResourceManager.GetString("Program_DoRebuild_WARNING_missing_emoji_for_assets_X_X", resourceCulture);
             }
         }
         

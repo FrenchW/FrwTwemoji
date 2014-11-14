@@ -118,10 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Twemoji_assembly_nfo_start" xml:space="preserve">
-    <value>using System.Reflection;
-using System.Web.UI;
+    <value>// --------------------------------------------------------------------------------------------------------------------
+// &lt;copyright file="AssemblyInfo.cs" company="FrenchW.net from @FrenchW"&gt;
+//   Copyright FrenchW © 2014.
+//   This software is licenced like https://github.com/twitter/twemoji :
+//   Code licensed under the MIT License: http://opensource.org/licenses/MIT
+//   Graphics licensed under CC-BY 4.0: https://creativecommons.org/licenses/by/4.0/ and created by Twitter
+// &lt;/copyright&gt;
+// &lt;summary&gt;
+//   AssemblyInfo.cs
+// &lt;/summary&gt;
+// --------------------------------------------------------------------------------------------------------------------
+
+using System.Reflection;
 using System.Resources;
 using System.Runtime.InteropServices;
+using System.Web.UI;
 
 [assembly: AssemblyTitle("FrwTwemoji")]
 [assembly: AssemblyDescription("Twitter open-sourced emoji icons incorporated in any dotnet project")]

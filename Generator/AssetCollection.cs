@@ -1,4 +1,16 @@
-﻿namespace Generator
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="AssetCollection.cs" company="FrenchW.net from @FrenchW">
+//   Copyright FrenchW © 2014.
+//   This software is licenced like https://github.com/twitter/twemoji :
+//   Code licensed under the MIT License: http://opensource.org/licenses/MIT
+//   Graphics licensed under CC-BY 4.0: https://creativecommons.org/licenses/by/4.0/ and created by Twitter
+// </copyright>
+// <summary>
+//   Collection of Assets
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
+
+namespace Generator
 {
     using System;
     using System.Collections.Generic;
@@ -45,7 +57,7 @@
                 TextReader reader = new StreamReader(backupFilePath);
                 try
                 {
-                    var obj = serializer.Deserialize(reader);
+                    var obj = Serializer.Deserialize(reader);
 
                     if (obj.GetType().IsAssignableFrom(typeof(AssetCollection)))
                     {
@@ -63,29 +75,41 @@
                     File.Delete(backupFilePath);
                 }
             }
-            catch (Exception)
+            catch
             {
-                return;
             }
         }
 
-        private XmlSerializer serializer
+        /// <summary>Gets the serializer.</summary>
+        private static XmlSerializer Serializer
         {
             get
             {
-                XmlSerializer retval = new XmlSerializer(typeof(AssetCollection));
+                var retval = new XmlSerializer(typeof(AssetCollection));
                 return retval;
             }
         }
 
-        public Asset this[string Name]
+        /// <summary>
+        /// Gets the <see cref="Asset"/> with the specified name.
+        /// </summary>
+        /// <value>
+        /// The <see cref="Asset"/>.
+        /// </value>
+        /// <param name="name">The name of the asset</param>
+        /// <returns>The Asset with the given name or null</returns>
+        /// <remarks>May return null</remarks>
+        public Asset this[string name]
         {
             get
             {
-                return (from a in this where a.Name.Equals("Name") select a).FirstOrDefault();
+                return (from a in this where a.Name.Equals(name) select a).FirstOrDefault();
             }
         }
 
+        /// <summary>
+        /// Loads the local assets.
+        /// </summary>
         public void LoadLocalAssets()
         {
             Console.WriteLine(Strings.AssetCollection_AnalizeAllAsset_Analyzing_all_assets);
@@ -113,10 +137,14 @@
             }
         }
 
+        /// <summary>
+        /// Backups to specified file path.
+        /// </summary>
+        /// <param name="filePath">The file path.</param>
         public void Backup(string filePath)
         {
             TextWriter writer = new StringWriter();
-            serializer.Serialize(writer, this);
+            Serializer.Serialize(writer, this);
             File.WriteAllText(filePath, writer.ToString());
         }
 
@@ -162,7 +190,6 @@
                 {
                     if (asset.Emoji[i] != otherAsset.Emoji[i])
                     {
-
                         return false;
                     }
                 }

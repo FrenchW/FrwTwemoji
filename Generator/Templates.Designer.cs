@@ -61,19 +61,14 @@ namespace Generator {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à using System.Reflection;
-        ///using System.Web.UI;
-        ///using System.Resources;
-        ///using System.Runtime.InteropServices;
-        ///
-        ///[assembly: AssemblyTitle(&quot;FrwTwemoji&quot;)]
-        ///[assembly: AssemblyDescription(&quot;Twitter open-sourced emoji icons incorporated in any dotnet project&quot;)]
-        ///[assembly: AssemblyConfiguration(&quot;&quot;)]
-        ///[assembly: AssemblyCompany(&quot;FrenchW.net from @FrenchW&quot;)]
-        ///[assembly: AssemblyProduct(&quot;FrwTwemoji&quot;)]
-        ///[assembly: AssemblyCopyright(&quot;Copyright FrenchW @ 2014&quot;)]
-        ///[assembly: AssemblyTrademark(&quot;&quot;)]
-        ///[assembly: Assembly [le reste de la chaîne a été tronqué]&quot;;.
+        ///   Recherche une chaîne localisée semblable à // --------------------------------------------------------------------------------------------------------------------
+        ///// &lt;copyright file=&quot;AssemblyInfo.cs&quot; company=&quot;FrenchW.net from @FrenchW&quot;&gt;
+        /////   Copyright FrenchW © 2014.
+        /////   This software is licenced like https://github.com/twitter/twemoji :
+        /////   Code licensed under the MIT License: http://opensource.org/licenses/MIT
+        /////   Graphics licensed under CC-BY 4.0: https://creativecommons.org/licenses/by/4.0/ and created by Twitter
+        ///// &lt;/copyright&gt;
+        ///// &lt;su [le reste de la chaîne a été tronqué]&quot;;.
         /// </summary>
         internal static string Twemoji_assembly_nfo_start {
             get {

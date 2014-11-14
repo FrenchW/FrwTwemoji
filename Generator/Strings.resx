@@ -129,25 +129,25 @@
   <data name="Program_DoRebuild_fetching_EmojiSources_txt" xml:space="preserve">
     <value>fetching EmojiSources.txt ... </value>
   </data>
-    <data name="Program_DoRebuild_analizing_EmojiSources_VS_our_assets" xml:space="preserve">
+  <data name="Program_DoRebuild_analizing_EmojiSources_VS_our_assets" xml:space="preserve">
     <value>analizing EmojiSources VS our assets ... </value>
   </data>
-    <data name="Program_DoRebuild_INFO_parsed_0_standard_emoji" xml:space="preserve">
+  <data name="Program_DoRebuild_INFO_parsed_0_standard_emoji" xml:space="preserve">
     <value>[INFO] parsed {0} standard emoji.</value>
   </data>
-    <data name="Program_DoRebuild_WARNING_missing_emoji_for_assets_X:X" xml:space="preserve">
+  <data name="Program_DoRebuild_WARNING_missing_emoji_for_assets_X_X" xml:space="preserve">
     <value>[WARNING] missing emoji for assets {0}:{1}</value>
   </data>
-    <data name="Program_DoRebuild_fetching_StandardizedVariants_txt" xml:space="preserve">
+  <data name="Program_DoRebuild_fetching_StandardizedVariants_txt" xml:space="preserve">
     <value>fetching StandardizedVariants.txt ... </value>
   </data>
-    <data name="Program_DoRebuild_analizing_StandardizedVariants_VS_our_assets" xml:space="preserve">
+  <data name="Program_DoRebuild_analizing_StandardizedVariants_VS_our_assets" xml:space="preserve">
     <value>analizing StandardizedVariants VS our assets ... </value>
   </data>
-    <data name="Program_DoRebuild_INFO_parsed_X_variant_sensitive_emoji" xml:space="preserve">
+  <data name="Program_DoRebuild_INFO_parsed_X_variant_sensitive_emoji" xml:space="preserve">
     <value>[INFO] parsed {0} variant sensitive emoji.</value>
   </data>
-    <data name="Program_Main_Nothing_changed_quitting" xml:space="preserve">
+  <data name="Program_Main_Nothing_changed_quitting" xml:space="preserve">
     <value>Nothing changed - quitting</value>
   </data>
 </root>
