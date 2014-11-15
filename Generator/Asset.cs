@@ -69,7 +69,21 @@ namespace Generator
         {
             get
             {
-                return this.Name.Equals("svg") ? "svg" : "png";
+                return this.Name.Equals("Svg") ? "svg" : "png";
+            }
+        }
+
+        /// <summary>
+        /// Gets the default file extension from the asset name
+        /// </summary>
+        /// <value>
+        /// The file extension.
+        /// </value>
+        public string CompilationConstant
+        {
+            get
+            {
+                return "Icons" + this.Name.Substring(0, 3);
             }
         }
 

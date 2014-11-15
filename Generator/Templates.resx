@@ -117,6 +117,61 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="TwemojiXXX_csproj_start" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003"&gt;
+  &lt;Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" /&gt;
+  &lt;PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' "&gt;
+    &lt;DebugType&gt;pdbonly&lt;/DebugType&gt;
+    &lt;Optimize&gt;true&lt;/Optimize&gt;
+    &lt;OutputPath&gt;..\..\BuildOutput\FrwTwemoji{1}\Release\&lt;/OutputPath&gt;
+    &lt;DefineConstants&gt;{0}&lt;/DefineConstants&gt;
+    &lt;ErrorReport&gt;prompt&lt;/ErrorReport&gt;
+    &lt;WarningLevel&gt;4&lt;/WarningLevel&gt;
+    &lt;CodeAnalysisIgnoreGeneratedCode&gt;false&lt;/CodeAnalysisIgnoreGeneratedCode&gt;
+    &lt;CodeAnalysisRuleSet&gt;AllRules.ruleset&lt;/CodeAnalysisRuleSet&gt;
+    &lt;DocumentationFile&gt;..\..\BuildOutput\FrwTwemoji{1}\Release\FrwTwemoji{1}.XML&lt;/DocumentationFile&gt;
+  &lt;/PropertyGroup&gt;
+  &lt;PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "&gt;
+    &lt;DebugType&gt;Full&lt;/DebugType&gt;
+    &lt;Optimize&gt;False&lt;/Optimize&gt;
+    &lt;OutputPath&gt;..\..\BuildOutput\FrwTwemoji{1}\Debug\&lt;/OutputPath&gt;
+    &lt;DefineConstants&gt;DEBUG;{0}&lt;/DefineConstants&gt;
+    &lt;ErrorReport&gt;prompt&lt;/ErrorReport&gt;
+    &lt;WarningLevel&gt;4&lt;/WarningLevel&gt;
+    &lt;CodeAnalysisIgnoreGeneratedCode&gt;false&lt;/CodeAnalysisIgnoreGeneratedCode&gt;
+    &lt;CodeAnalysisRuleSet&gt;AllRules.ruleset&lt;/CodeAnalysisRuleSet&gt;
+    &lt;DocumentationFile&gt;..\..\BuildOutput\FrwTwemoji{1}\Debug\FrwTwemoji{1}.XML&lt;/DocumentationFile&gt;
+  &lt;/PropertyGroup&gt;
+  &lt;PropertyGroup&gt;
+    &lt;OutputType&gt;Library&lt;/OutputType&gt;
+    &lt;ProjectGuid&gt;{{4E6046B7-E4FB-41E1-9972-1FFAFDCEB2C9}}&lt;/ProjectGuid&gt;
+    &lt;TargetFrameworkVersion&gt;v2.0&lt;/TargetFrameworkVersion&gt;
+    &lt;TargetFrameworkProfile /&gt;
+  &lt;/PropertyGroup&gt;
+  &lt;PropertyGroup&gt;
+    &lt;StartupObject /&gt;
+  &lt;/PropertyGroup&gt;
+  &lt;PropertyGroup&gt;
+    &lt;RootNamespace&gt;FrwTwemoji&lt;/RootNamespace&gt;
+  &lt;/PropertyGroup&gt;
+  &lt;Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" /&gt;
+  &lt;ItemGroup&gt;
+    &lt;Reference Include="System" /&gt;
+    &lt;Reference Include="System.Web" /&gt;
+  &lt;/ItemGroup&gt;
+  &lt;ItemGroup&gt;
+    &lt;Compile Include="..\FrwTwemoji\Properties\AssemblyInfo.cs"&gt;
+      &lt;Link&gt;Properties\AssemblyInfo.cs&lt;/Link&gt;
+    &lt;/Compile&gt;
+    &lt;Compile Include="..\FrwTwemoji\Parser.cs"&gt;
+      &lt;Link&gt;Parser.cs&lt;/Link&gt;
+    &lt;/Compile&gt;
+  &lt;/ItemGroup&gt;</value>
+    <comment>{0} : supstitution for compilation constant
+Take care that the {} surrounding the guid generates a bug at runtime
+{1} : end folder name (16x; 36x; Svg)</comment>
+  </data>
   <data name="Twemoji_assembly_nfo_start" xml:space="preserve">
     <value>// --------------------------------------------------------------------------------------------------------------------
 // &lt;copyright file="AssemblyInfo.cs" company="FrenchW.net from @FrenchW"&gt;
@@ -160,19 +215,19 @@ using System.Web.UI;
   &lt;PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' "&gt;
     &lt;DebugType&gt;pdbonly&lt;/DebugType&gt;
     &lt;Optimize&gt;true&lt;/Optimize&gt;
-    &lt;OutputPath&gt;..\..\BuildOutput\FrwTwemoji\&lt;/OutputPath&gt;
-    &lt;DefineConstants&gt;Icons16x;Icons36x;Icons72x;IconsSvg&lt;/DefineConstants&gt;
+    &lt;OutputPath&gt;..\..\BuildOutput\FrwTwemoji\Release\&lt;/OutputPath&gt;
+    &lt;DefineConstants&gt;Icons16X;Icons36X;Icons72X;IconsSvg&lt;/DefineConstants&gt;
     &lt;ErrorReport&gt;prompt&lt;/ErrorReport&gt;
     &lt;WarningLevel&gt;4&lt;/WarningLevel&gt;
     &lt;CodeAnalysisIgnoreGeneratedCode&gt;false&lt;/CodeAnalysisIgnoreGeneratedCode&gt;
     &lt;CodeAnalysisRuleSet&gt;AllRules.ruleset&lt;/CodeAnalysisRuleSet&gt;
-    &lt;DocumentationFile&gt;..\..\BuildOutput\FrwTwemoji\FrwTwemoji.XML&lt;/DocumentationFile&gt;
+    &lt;DocumentationFile&gt;..\..\BuildOutput\FrwTwemoji\Release\FrwTwemoji.XML&lt;/DocumentationFile&gt;
   &lt;/PropertyGroup&gt;
   &lt;PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "&gt;
     &lt;DebugType&gt;Full&lt;/DebugType&gt;
     &lt;Optimize&gt;False&lt;/Optimize&gt;
     &lt;OutputPath&gt;..\..\BuildOutput\FrwTwemoji\Debug\&lt;/OutputPath&gt;
-    &lt;DefineConstants&gt;DEBUG;Icons16x;Icons36x;Icons72x;IconsSvg&lt;/DefineConstants&gt;
+    &lt;DefineConstants&gt;DEBUG;Icons16X;Icons36X;Icons72X;IconsSvg&lt;/DefineConstants&gt;
     &lt;ErrorReport&gt;prompt&lt;/ErrorReport&gt;
     &lt;WarningLevel&gt;4&lt;/WarningLevel&gt;
     &lt;CodeAnalysisIgnoreGeneratedCode&gt;false&lt;/CodeAnalysisIgnoreGeneratedCode&gt;

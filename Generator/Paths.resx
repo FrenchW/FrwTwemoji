@@ -126,6 +126,9 @@
   <data name="FileStandardizedVariants" xml:space="preserve">
     <value>StandardizedVariants.txt</value>
   </data>
+  <data name="File_FrwTwemojiXXX_csproj" xml:space="preserve">
+    <value>Generated\FrwTwemoji{0}\FrwTwemoji{0}.csproj</value>
+  </data>
   <data name="File_FrwTwemoji_AssemblyInfo_cs" xml:space="preserve">
     <value>Generated\FrwTwemoji\Properties\AssemblyInfo.cs</value>
   </data>

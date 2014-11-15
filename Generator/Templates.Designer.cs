@@ -99,5 +99,20 @@ namespace Generator {
                 return ResourceManager.GetString("Twemoji_csproj_start", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+        ///&lt;Project ToolsVersion=&quot;12.0&quot; DefaultTargets=&quot;Build&quot; xmlns=&quot;http://schemas.microsoft.com/developer/msbuild/2003&quot;&gt;
+        ///  &lt;Import Project=&quot;$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props&quot; Condition=&quot;Exists(&apos;$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props&apos;)&quot; /&gt;
+        ///  &lt;PropertyGroup Condition=&quot; &apos;$(Configuration)|$(Platform)&apos; == &apos;Release|AnyCPU&apos; &quot;&gt;
+        ///    &lt;DebugType&gt;pdbonly&lt;/DebugType&gt;
+        ///    &lt;Optimize&gt;true&lt;/Optimize&gt;
+        ///    &lt;OutputPath&gt;..\ [le reste de la chaîne a été tronqué]&quot;;.
+        /// </summary>
+        internal static string TwemojiXXX_csproj_start {
+            get {
+                return ResourceManager.GetString("TwemojiXXX_csproj_start", resourceCulture);
+            }
+        }
     }
 }

@@ -23,10 +23,10 @@ namespace Generator
     /// <summary>
     /// Main startup program
     /// </summary>
-   public static class Program
+    public static class Program
     {
         /// <summary>The base known asset names.</summary>
-        private static readonly string[] BaseKnownAssetNames = { "16x16", "36x36", "72x72", "svg" };
+        private static readonly string[] BaseKnownAssetNames = { "16x16", "36x36", "72x72", "Svg" };
 
         /// <summary>
         /// Main program
@@ -63,12 +63,12 @@ namespace Generator
         /// Loads information from unicode.org, creates assets with it and compare to the local assets
         /// </summary>
         /// <param name="localAssets">The local assets.</param>
-       private static void LoadDistantAssets(AssetCollection localAssets)
+        private static void LoadDistantAssets(AssetCollection localAssets)
         {
             //// Load unicode site info and compare
 
             var assetsMissing = new AssetCollection(BaseKnownAssetNames);
-           
+
             var missingGrouped = new List<string>();
 
             var webClient = new WebClient();
@@ -92,15 +92,15 @@ namespace Generator
 
             // try read emoji for each line
             var emojiSourceEntries = (
-                from line 
-                    in emojiSourceLines 
-                where Regex.IsMatch(line, "^[0-9A-F]") 
-                select line.Substring(0, line.IndexOf(";", StringComparison.InvariantCulture)).ToUpperInvariant() into entry 
-                select Regex.Replace(entry, "\\s+", "-") into entry 
+                from line
+                    in emojiSourceLines
+                where Regex.IsMatch(line, "^[0-9A-F]")
+                select line.Substring(0, line.IndexOf(";", StringComparison.InvariantCulture)).ToUpperInvariant() into entry
+                select Regex.Replace(entry, "\\s+", "-") into entry
                 select Regex.Replace(entry, "^0+", string.Empty)).ToList();
 
             Console.WriteLine(Strings.Program_DoRebuild_INFO_parsed_0_standard_emoji, emojiSourceEntries.Count);
-           
+
             string[] ignoreMissing = { "2002", "2003", "2005" };
 
             //// now that all is loaded, perform some crossing
@@ -182,10 +182,10 @@ namespace Generator
             Console.WriteLine(Strings.Program_DoRebuild_INFO_parsed_X_variant_sensitive_emoji, emojiVariantsEntries.Count);
         }
 
-       /// <summary>
-       /// Rebuilds the solutions based on the local assets
-       /// </summary>
-       /// <param name="localAssets">The local assets.</param>
+        /// <summary>
+        /// Rebuilds the solutions based on the local assets
+        /// </summary>
+        /// <param name="localAssets">The local assets.</param>
         private static void RebuildSolutions(AssetCollection localAssets)
         {
             // buildCsProj
@@ -200,12 +200,29 @@ namespace Generator
 
             foreach (Asset asset in localAssets)
             {
+                var stbFrwTwemojiXxxCsProj = new StringBuilder();
+                stbFrwTwemojiXxxCsProj.AppendLine(
+                    string.Format(
+                        Templates.TwemojiXXX_csproj_start,
+                        asset.CompilationConstant,
+                        asset.Name.Substring(0, 3)));
+                stbFrwTwemojiXxxCsProj.AppendLine("  <ItemGroup>");
+
                 stbFrwTwemojiCsproj.AppendLine("  <ItemGroup>");
+                stbFrwTwemojiAssemblyInfoCs.AppendLine("#if " + asset.CompilationConstant);
                 foreach (string emoji in asset.Emoji)
                 {
                     stbFrwTwemojiCsproj.AppendFormat(
                         "    <EmbeddedResource Include=\"..\\..\\Twitter-twemoji\\{0}\\{1}.{2}\">\r\n      <Link>{3}\\{4}.{2}</Link>\r\n    </EmbeddedResource>\r\n",
                         asset.Name,
+                        emoji.ToLowerInvariant(),
+                        asset.Extension.ToLowerInvariant(),
+                        asset.Name.ToUpperInvariant(),
+                        emoji.ToUpperInvariant());
+
+                    stbFrwTwemojiXxxCsProj.AppendFormat(
+                        "    <EmbeddedResource Include=\"..\\..\\Twitter-twemoji\\{0}\\{1}.{2}\">\r\n      <Link>{3}\\{4}.{2}</Link>\r\n    </EmbeddedResource>\r\n",
+                        asset.Name.ToLowerInvariant(),
                         emoji.ToLowerInvariant(),
                         asset.Extension.ToLowerInvariant(),
                         asset.Name.ToUpperInvariant(),
@@ -219,7 +236,16 @@ namespace Generator
                         asset.MimeType);
                 }
 
+                stbFrwTwemojiAssemblyInfoCs.AppendLine("#endif");
                 stbFrwTwemojiCsproj.AppendLine("  </ItemGroup>");
+
+                stbFrwTwemojiXxxCsProj.AppendLine("  </ItemGroup>");
+                stbFrwTwemojiXxxCsProj.AppendLine(Templates.Twemoji_csproj_end);
+                File.WriteAllText(
+                    Helpers.GetRootPath() + string.Format(
+                        Paths.File_FrwTwemojiXXX_csproj,
+                        asset.Name.Substring(0, 3)),
+                    stbFrwTwemojiXxxCsProj.ToString());
             }
 
             stbFrwTwemojiCsproj.AppendLine(Templates.Twemoji_csproj_end);
