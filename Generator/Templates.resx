@@ -164,8 +164,17 @@
     &lt;Compile Include="..\FrwTwemoji\Properties\AssemblyInfo.cs"&gt;
       &lt;Link&gt;Properties\AssemblyInfo.cs&lt;/Link&gt;
     &lt;/Compile&gt;
+    &lt;Compile Include="..\..\Generator\Helpers.cs"&gt;
+      &lt;Link&gt;Helpers.cs&lt;/Link&gt;
+    &lt;/Compile&gt;
     &lt;Compile Include="..\FrwTwemoji\Parser.cs"&gt;
       &lt;Link&gt;Parser.cs&lt;/Link&gt;
+    &lt;/Compile&gt;
+    &lt;Compile Include="..\FrwTwemoji\ParserOptions.cs"&gt;
+      &lt;Link&gt;ParserOptions.cs&lt;/Link&gt;
+    &lt;/Compile&gt;
+    &lt;Compile Include="..\FrwTwemoji\RegEx.cs"&gt;
+      &lt;Link&gt;RegEx.cs&lt;/Link&gt;
     &lt;/Compile&gt;
   &lt;/ItemGroup&gt;</value>
     <comment>{0} : supstitution for compilation constant
@@ -252,8 +261,39 @@ using System.Web.UI;
     &lt;Reference Include="System.Web" /&gt;
   &lt;/ItemGroup&gt;
   &lt;ItemGroup&gt;
+    &lt;Compile Include="..\..\Generator\Helpers.cs"&gt;
+      &lt;Link&gt;Helpers.cs&lt;/Link&gt;
+    &lt;/Compile&gt;
     &lt;Compile Include="Properties\AssemblyInfo.cs" /&gt;
     &lt;Compile Include="Parser.cs" /&gt;
+    &lt;Compile Include="ParserOptions.cs" /&gt;
+    &lt;Compile Include="RegEx.cs" /&gt;
   &lt;/ItemGroup&gt;</value>
+  </data>
+  <data name="Twemoji_RegEx_cs_end" xml:space="preserve">
+    <value>    }
+}</value>
+  </data>
+  <data name="Twemoji_RegEx_cs_start" xml:space="preserve">
+    <value>// --------------------------------------------------------------------------------------------------------------------
+// &lt;copyright file="RegEx.cs" company="FrenchW.net from @FrenchW"&gt;
+//   Copyright FrenchW © 2014.
+//   This software is licenced like https://github.com/twitter/twemoji :
+//   Code licensed under the MIT License: http://opensource.org/licenses/MIT
+//   Graphics licensed under CC-BY 4.0: https://creativecommons.org/licenses/by/4.0/ and created by Twitter
+// &lt;/copyright&gt;
+// &lt;summary&gt;
+//   The class containing all RegEx expressions
+// &lt;/summary&gt;
+// --------------------------------------------------------------------------------------------------------------------
+
+namespace FrwTwemoji
+{
+    /// &lt;summary&gt;
+    /// The class containing all RegEx expressions
+    /// &lt;/summary&gt;
+    /// &lt;remarks&gt;This file is generated&lt;/remarks&gt;
+    internal static class RegEx
+    {</value>
   </data>
 </root>

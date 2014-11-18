@@ -61,10 +61,10 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestStrings.Designer.cs">
-      <AutoGen>True</AutoGen>
+    <Compile Include="TestString.Designer.cs">
+      <DependentUpon>TestString.resx</DependentUpon>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TestStrings.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -79,16 +79,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="TestStrings.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>TestStrings.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\..\Generated\FrwTwemoji\FrwTwemoji.csproj">
       <Project>{4e6046b7-e4fb-41e1-9972-1ffafdceb2c9}</Project>
       <Name>FrwTwemoji</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TestString.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TestString.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

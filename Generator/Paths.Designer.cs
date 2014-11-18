@@ -79,6 +79,15 @@ namespace Generator {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Generated\FrwTwemoji\RegEx.cs.
+        /// </summary>
+        internal static string File_FrwTwemoji_RegEx_cs {
+            get {
+                return ResourceManager.GetString("File_FrwTwemoji_RegEx_cs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Generated\FrwTwemoji{0}\FrwTwemoji{0}.csproj.
         /// </summary>
         internal static string File_FrwTwemojiXXX_csproj {

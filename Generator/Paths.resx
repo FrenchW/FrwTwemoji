@@ -135,6 +135,9 @@
   <data name="File_FrwTwemoji_csproj" xml:space="preserve">
     <value>Generated\FrwTwemoji\FrwTwemoji.csproj</value>
   </data>
+  <data name="File_FrwTwemoji_RegEx_cs" xml:space="preserve">
+    <value>Generated\FrwTwemoji\RegEx.cs</value>
+  </data>
   <data name="FolderTwitterTwemoji" xml:space="preserve">
     <value>Twitter-twemoji\</value>
   </data>

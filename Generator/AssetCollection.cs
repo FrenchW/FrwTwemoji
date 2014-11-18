@@ -18,6 +18,8 @@ namespace Generator
     using System.Linq;
     using System.Xml.Serialization;
 
+    using FrwTwemoji;
+
     /// <summary>Collection of Assets
     /// </summary>
     public class AssetCollection : List<Asset>, IEquatable<AssetCollection>

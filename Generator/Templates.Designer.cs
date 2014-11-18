@@ -101,6 +101,32 @@ namespace Generator {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à     }
+        ///}.
+        /// </summary>
+        internal static string Twemoji_RegEx_cs_end {
+            get {
+                return ResourceManager.GetString("Twemoji_RegEx_cs_end", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à // --------------------------------------------------------------------------------------------------------------------
+        ///// &lt;copyright file=&quot;RegEx.cs&quot; company=&quot;FrenchW.net from @FrenchW&quot;&gt;
+        /////   Copyright FrenchW © 2014.
+        /////   This software is licenced like https://github.com/twitter/twemoji :
+        /////   Code licensed under the MIT License: http://opensource.org/licenses/MIT
+        /////   Graphics licensed under CC-BY 4.0: https://creativecommons.org/licenses/by/4.0/ and created by Twitter
+        ///// &lt;/copyright&gt;
+        ///// &lt;summary&gt;        /// [le reste de la chaîne a été tronqué]&quot;;.
+        /// </summary>
+        internal static string Twemoji_RegEx_cs_start {
+            get {
+                return ResourceManager.GetString("Twemoji_RegEx_cs_start", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
         ///&lt;Project ToolsVersion=&quot;12.0&quot; DefaultTargets=&quot;Build&quot; xmlns=&quot;http://schemas.microsoft.com/developer/msbuild/2003&quot;&gt;
         ///  &lt;Import Project=&quot;$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props&quot; Condition=&quot;Exists(&apos;$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props&apos;)&quot; /&gt;

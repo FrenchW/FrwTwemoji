@@ -18,7 +18,9 @@ namespace TestWebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.SpnTestString1.InnerText = FrwTwemoji.Parser.WebParseEmoji(TestStrings.String1);
+            this.SpnTestString1.InnerText = FrwTwemoji.Parser.WebParseEmoji(TestString.String1);
+            this.SpnTestString1.InnerText += "<br />";
+            this.SpnTestString1.InnerText += FrwTwemoji.Parser.WebParseEmoji(TestString.manger);
         }
     }
 }

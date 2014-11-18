@@ -112,11 +112,14 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="manger" xml:space="preserve">
+    <value>J'ai mangé chinois 😱😍🍱🍣🍥🍙🍘🍚🍜</value>
+  </data>
   <data name="String1" xml:space="preserve">
     <value>today we are open sourcing our emoji to share with everyone &lt;a href="https://twitter.com/hashtag/twemojiparty?src=hash"&gt;#twemojiparty&lt;/a&gt; 🎉 😜 👯 🍻 🎈 🎤 🎮 🚀 🌉 ✨ &lt;a href="https://t.co/zkXqMXEkOT"&gt;https://t.co/zkXqMXEkOT&lt;/a&gt;</value>
   </data>
