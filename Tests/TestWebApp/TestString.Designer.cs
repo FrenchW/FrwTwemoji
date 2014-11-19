@@ -9,9 +9,6 @@
 //------------------------------------------------------------------------------
 
 namespace TestWebApp {
-    using System;
-    
-    
     /// <summary>
     ///   Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
     /// </summary>
@@ -70,7 +67,7 @@ namespace TestWebApp {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à today we are open sourcing our emoji to share with everyone &lt;a href=&quot;https://twitter.com/hashtag/twemojiparty?src=hash&quot;&gt;#twemojiparty&lt;/a&gt; 🎉 😜 👯 🍻 🎈 🎤 🎮 🚀 🌉 ✨ &lt;a href=&quot;https://t.co/zkXqMXEkOT&quot;&gt;https://t.co/zkXqMXEkOT&lt;/a&gt;.
+        ///   Recherche une chaîne localisée semblable à Today, Twitter is open sourcing their emoji to share with everyone  🎉 😜 👯 🍻 🎈 🎤 🎮 🚀 🌉 ✨.
         /// </summary>
         internal static string String1 {
             get {

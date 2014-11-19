@@ -193,7 +193,7 @@
                         asset.Name,
                         emoji.ToLowerInvariant(),
                         asset.Extension.ToLowerInvariant(),
-                        asset.Name.ToUpperInvariant(),
+                        asset.CompilationConstant,
                         emoji.ToUpperInvariant());
 
                     stbFrwTwemojiXxxCsProj.AppendFormat(
@@ -201,13 +201,13 @@
                         asset.Name.ToLowerInvariant(),
                         emoji.ToLowerInvariant(),
                         asset.Extension.ToLowerInvariant(),
-                        asset.Name.ToUpperInvariant(),
+                        asset.CompilationConstant,
                         emoji.ToUpperInvariant());
 
                     stbFrwTwemojiAssemblyInfoCs.AppendFormat(
                         "[assembly: WebResource(\"FrwTwemoji.{0}.{1}.{2}\", \"{3}\")]\r\n",
-                        asset.Name.ToUpperInvariant(),
-                        emoji.ToLowerInvariant(),
+                        asset.CompilationConstant,
+                        emoji.ToUpperInvariant(),
                         asset.Extension.ToLowerInvariant(),
                         asset.MimeType);
                 }

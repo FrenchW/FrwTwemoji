@@ -14,13 +14,16 @@ namespace TestWebApp
 {
     using System;
 
+    using FrwTwemoji;
+
     public partial class _Default : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.SpnTestString1.InnerText = FrwTwemoji.Parser.WebParseEmoji(TestString.String1);
-            this.SpnTestString1.InnerText += "<br />";
-            this.SpnTestString1.InnerText += FrwTwemoji.Parser.WebParseEmoji(TestString.manger);
+            string url = Page.ClientScript.GetWebResourceUrl(typeof(EmojiDisplay), "FrwTwemoji.IconsSvg.2753.svg");
+            spnTests.InnerHtml = "<img width=\"300px\"src=\"" + url + "\"/>";
+
+            EmojiDisplay2.Text = TestString.manger;
         }
     }
 }

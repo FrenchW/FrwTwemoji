@@ -97,7 +97,7 @@ namespace Generator
         {
             get
             {
-                return this.Name.Equals("svg") ? "image/svg+xml" : "image/png";
+                return this.Name.ToLowerInvariant().Equals("svg") ? "image/svg+xml" : "image/png";
             }
         }
     }

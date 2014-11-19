@@ -158,6 +158,7 @@
   &lt;Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" /&gt;
   &lt;ItemGroup&gt;
     &lt;Reference Include="System" /&gt;
+    &lt;Reference Include="System.Design" /&gt;
     &lt;Reference Include="System.Web" /&gt;
   &lt;/ItemGroup&gt;
   &lt;ItemGroup&gt;
@@ -167,11 +168,11 @@
     &lt;Compile Include="..\..\Generator\Helpers.cs"&gt;
       &lt;Link&gt;Helpers.cs&lt;/Link&gt;
     &lt;/Compile&gt;
-    &lt;Compile Include="..\FrwTwemoji\Parser.cs"&gt;
-      &lt;Link&gt;Parser.cs&lt;/Link&gt;
+    &lt;Compile Include="..\FrwTwemoji\EmojiDisplayDesigner.cs"&gt;
+      &lt;Link&gt;EmojiDisplayDesigner.cs&lt;/Link&gt;
     &lt;/Compile&gt;
-    &lt;Compile Include="..\FrwTwemoji\ParserOptions.cs"&gt;
-      &lt;Link&gt;ParserOptions.cs&lt;/Link&gt;
+    &lt;Compile Include="..\FrwTwemoji\EmojiDisplay.cs"&gt;
+      &lt;Link&gt;EmojiDisplay.cs&lt;/Link&gt;
     &lt;/Compile&gt;
     &lt;Compile Include="..\FrwTwemoji\RegEx.cs"&gt;
       &lt;Link&gt;RegEx.cs&lt;/Link&gt;
@@ -207,7 +208,7 @@ using System.Web.UI;
 [assembly: AssemblyCopyright("Copyright FrenchW @ 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-[assembly: NeutralResourcesLanguageAttribute("en")]
+[assembly: NeutralResourcesLanguageAttribute("")]
 [assembly: ComVisible(true)]
 [assembly: AssemblyVersion("{0}")]
 [assembly: AssemblyFileVersion("{0}")]
@@ -225,7 +226,7 @@ using System.Web.UI;
     &lt;DebugType&gt;pdbonly&lt;/DebugType&gt;
     &lt;Optimize&gt;true&lt;/Optimize&gt;
     &lt;OutputPath&gt;..\..\BuildOutput\FrwTwemoji\Release\&lt;/OutputPath&gt;
-    &lt;DefineConstants&gt;Icons16X;Icons36X;Icons72X;IconsSvg&lt;/DefineConstants&gt;
+    &lt;DefineConstants&gt;Icons16x;Icons36x;Icons72x;IconsSvg&lt;/DefineConstants&gt;
     &lt;ErrorReport&gt;prompt&lt;/ErrorReport&gt;
     &lt;WarningLevel&gt;4&lt;/WarningLevel&gt;
     &lt;CodeAnalysisIgnoreGeneratedCode&gt;false&lt;/CodeAnalysisIgnoreGeneratedCode&gt;
@@ -236,7 +237,7 @@ using System.Web.UI;
     &lt;DebugType&gt;Full&lt;/DebugType&gt;
     &lt;Optimize&gt;False&lt;/Optimize&gt;
     &lt;OutputPath&gt;..\..\BuildOutput\FrwTwemoji\Debug\&lt;/OutputPath&gt;
-    &lt;DefineConstants&gt;DEBUG;Icons16X;Icons36X;Icons72X;IconsSvg&lt;/DefineConstants&gt;
+    &lt;DefineConstants&gt;DEBUG;Icons16x;Icons36x;Icons72x;IconsSvg&lt;/DefineConstants&gt;
     &lt;ErrorReport&gt;prompt&lt;/ErrorReport&gt;
     &lt;WarningLevel&gt;4&lt;/WarningLevel&gt;
     &lt;CodeAnalysisIgnoreGeneratedCode&gt;false&lt;/CodeAnalysisIgnoreGeneratedCode&gt;
@@ -258,6 +259,7 @@ using System.Web.UI;
   &lt;Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" /&gt;
   &lt;ItemGroup&gt;
     &lt;Reference Include="System" /&gt;
+    &lt;Reference Include="System.Design" /&gt;
     &lt;Reference Include="System.Web" /&gt;
   &lt;/ItemGroup&gt;
   &lt;ItemGroup&gt;
@@ -265,8 +267,8 @@ using System.Web.UI;
       &lt;Link&gt;Helpers.cs&lt;/Link&gt;
     &lt;/Compile&gt;
     &lt;Compile Include="Properties\AssemblyInfo.cs" /&gt;
-    &lt;Compile Include="Parser.cs" /&gt;
-    &lt;Compile Include="ParserOptions.cs" /&gt;
+    &lt;Compile Include="EmojiDisplayDesigner.cs" /&gt;
+    &lt;Compile Include="EmojiDisplay.cs" /&gt;
     &lt;Compile Include="RegEx.cs" /&gt;
   &lt;/ItemGroup&gt;</value>
   </data>

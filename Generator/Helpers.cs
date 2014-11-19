@@ -13,7 +13,6 @@
 // ReSharper disable once CheckNamespace
 namespace FrwTwemoji
 {
-    using System;
     using System.Reflection;
 
     /// <summary>
@@ -34,7 +33,7 @@ namespace FrwTwemoji
 
 #if DEBUG
             {
-                return rootPath.Replace("Generator\\bin\\Debug\\Generator.exe", String.Empty);
+                return rootPath.Replace("Generator\\bin\\Debug\\Generator.exe", string.Empty);
             }
 #else
             {
@@ -51,8 +50,17 @@ namespace FrwTwemoji
         internal static int ConvertUtf16ToCodePoint(string utf16)
         {
             char[] s = utf16.ToCharArray();
-            int retval = Char.ConvertToUtf32(s[1], s[2]);
-            Console.WriteLine(@"ConvertUtf16ToCodePoint) {1} => 0x{0:X}", retval, Show(utf16));
+            int retval;
+            if (s.GetUpperBound(0) == 0)
+            {
+                retval = char.ConvertToUtf32(utf16, 0);
+            }
+            else
+            {
+                retval = char.ConvertToUtf32(s[0], s[1]);
+            }
+
+            // Console.WriteLine(@"ConvertUtf16ToCodePoint) {1} => 0x{0:X}", retval, Show(utf16));
             return retval;
         }
 
@@ -63,9 +71,7 @@ namespace FrwTwemoji
         /// <returns>A string from the CodePoint conversion</returns>
         internal static string ConvertCodePointToUtf16(int codePoint)
         {
-            string retval = Char.ConvertFromUtf32(codePoint);
-            Console.WriteLine(@"ConvertCodePointToUtf16) 0x{0:X} => {1}", codePoint, Show(retval));
-            return retval;
+            return char.ConvertFromUtf32(codePoint);
         }
 
         /// <summary>
@@ -75,10 +81,10 @@ namespace FrwTwemoji
         /// <returns>A visual representation of the caracters</returns>
         internal static string Show(string s)
         {
-            string retval = String.Empty;
+            string retval = string.Empty;
             for (int x = 0; x < s.Length; x++)
             {
-                retval += String.Format(
+                retval += string.Format(
                     "0x{0:X}{1}",
                     (int)s[x],
                     (x == s.Length - 1) ? string.Empty : ", ");
@@ -94,15 +100,15 @@ namespace FrwTwemoji
         /// <returns>A visual representation of the caracters</returns>
         internal static string ShowU(string s)
         {
-            string retval = String.Empty;
+            string retval = string.Empty;
             for (int x = 0; x < s.Length; x++)
             {
-                string t = String.Format(
+                string t = string.Format(
                     "\\\\u{0,4:X}{1}",
                     (int)s[x],
-                    (x == s.Length - 1) ? string.Empty : string.Empty);
-                
-                retval += t.Replace(" ","0");
+                    string.Empty);
+
+                retval += t.Replace(" ", "0");
             }
 
             return retval;

@@ -38,6 +38,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
@@ -47,11 +48,11 @@
     <Compile Include="..\..\Generator\Helpers.cs">
       <Link>Helpers.cs</Link>
     </Compile>
-    <Compile Include="..\FrwTwemoji\Parser.cs">
-      <Link>Parser.cs</Link>
+    <Compile Include="..\FrwTwemoji\EmojiDisplayDesigner.cs">
+      <Link>EmojiDisplayDesigner.cs</Link>
     </Compile>
-    <Compile Include="..\FrwTwemoji\ParserOptions.cs">
-      <Link>ParserOptions.cs</Link>
+    <Compile Include="..\FrwTwemoji\EmojiDisplay.cs">
+      <Link>EmojiDisplay.cs</Link>
     </Compile>
     <Compile Include="..\FrwTwemoji\RegEx.cs">
       <Link>RegEx.cs</Link>
@@ -59,2620 +60,2620 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f004.png">
-      <Link>36X36\1F004.png</Link>
+      <Link>Icons36x\1F004.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f0cf.png">
-      <Link>36X36\1F0CF.png</Link>
+      <Link>Icons36x\1F0CF.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f170.png">
-      <Link>36X36\1F170.png</Link>
+      <Link>Icons36x\1F170.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f171.png">
-      <Link>36X36\1F171.png</Link>
+      <Link>Icons36x\1F171.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f17e.png">
-      <Link>36X36\1F17E.png</Link>
+      <Link>Icons36x\1F17E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f17f.png">
-      <Link>36X36\1F17F.png</Link>
+      <Link>Icons36x\1F17F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f18e.png">
-      <Link>36X36\1F18E.png</Link>
+      <Link>Icons36x\1F18E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f191.png">
-      <Link>36X36\1F191.png</Link>
+      <Link>Icons36x\1F191.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f192.png">
-      <Link>36X36\1F192.png</Link>
+      <Link>Icons36x\1F192.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f193.png">
-      <Link>36X36\1F193.png</Link>
+      <Link>Icons36x\1F193.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f194.png">
-      <Link>36X36\1F194.png</Link>
+      <Link>Icons36x\1F194.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f195.png">
-      <Link>36X36\1F195.png</Link>
+      <Link>Icons36x\1F195.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f196.png">
-      <Link>36X36\1F196.png</Link>
+      <Link>Icons36x\1F196.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f197.png">
-      <Link>36X36\1F197.png</Link>
+      <Link>Icons36x\1F197.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f198.png">
-      <Link>36X36\1F198.png</Link>
+      <Link>Icons36x\1F198.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f199.png">
-      <Link>36X36\1F199.png</Link>
+      <Link>Icons36x\1F199.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f19a.png">
-      <Link>36X36\1F19A.png</Link>
+      <Link>Icons36x\1F19A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1e6.png">
-      <Link>36X36\1F1E6.png</Link>
+      <Link>Icons36x\1F1E6.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1e7.png">
-      <Link>36X36\1F1E7.png</Link>
+      <Link>Icons36x\1F1E7.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1e8-1f1f3.png">
-      <Link>36X36\1F1E8-1F1F3.png</Link>
+      <Link>Icons36x\1F1E8-1F1F3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1e8.png">
-      <Link>36X36\1F1E8.png</Link>
+      <Link>Icons36x\1F1E8.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1e9-1f1ea.png">
-      <Link>36X36\1F1E9-1F1EA.png</Link>
+      <Link>Icons36x\1F1E9-1F1EA.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1e9.png">
-      <Link>36X36\1F1E9.png</Link>
+      <Link>Icons36x\1F1E9.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1ea-1f1f8.png">
-      <Link>36X36\1F1EA-1F1F8.png</Link>
+      <Link>Icons36x\1F1EA-1F1F8.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1ea.png">
-      <Link>36X36\1F1EA.png</Link>
+      <Link>Icons36x\1F1EA.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1eb-1f1f7.png">
-      <Link>36X36\1F1EB-1F1F7.png</Link>
+      <Link>Icons36x\1F1EB-1F1F7.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1eb.png">
-      <Link>36X36\1F1EB.png</Link>
+      <Link>Icons36x\1F1EB.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1ec-1f1e7.png">
-      <Link>36X36\1F1EC-1F1E7.png</Link>
+      <Link>Icons36x\1F1EC-1F1E7.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1ec.png">
-      <Link>36X36\1F1EC.png</Link>
+      <Link>Icons36x\1F1EC.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1ed.png">
-      <Link>36X36\1F1ED.png</Link>
+      <Link>Icons36x\1F1ED.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1ee-1f1f9.png">
-      <Link>36X36\1F1EE-1F1F9.png</Link>
+      <Link>Icons36x\1F1EE-1F1F9.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1ee.png">
-      <Link>36X36\1F1EE.png</Link>
+      <Link>Icons36x\1F1EE.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1ef-1f1f5.png">
-      <Link>36X36\1F1EF-1F1F5.png</Link>
+      <Link>Icons36x\1F1EF-1F1F5.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1ef.png">
-      <Link>36X36\1F1EF.png</Link>
+      <Link>Icons36x\1F1EF.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1f0-1f1f7.png">
-      <Link>36X36\1F1F0-1F1F7.png</Link>
+      <Link>Icons36x\1F1F0-1F1F7.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1f0.png">
-      <Link>36X36\1F1F0.png</Link>
+      <Link>Icons36x\1F1F0.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1f1.png">
-      <Link>36X36\1F1F1.png</Link>
+      <Link>Icons36x\1F1F1.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1f2.png">
-      <Link>36X36\1F1F2.png</Link>
+      <Link>Icons36x\1F1F2.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1f3.png">
-      <Link>36X36\1F1F3.png</Link>
+      <Link>Icons36x\1F1F3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1f4.png">
-      <Link>36X36\1F1F4.png</Link>
+      <Link>Icons36x\1F1F4.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1f5.png">
-      <Link>36X36\1F1F5.png</Link>
+      <Link>Icons36x\1F1F5.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1f6.png">
-      <Link>36X36\1F1F6.png</Link>
+      <Link>Icons36x\1F1F6.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1f7-1f1fa.png">
-      <Link>36X36\1F1F7-1F1FA.png</Link>
+      <Link>Icons36x\1F1F7-1F1FA.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1f7.png">
-      <Link>36X36\1F1F7.png</Link>
+      <Link>Icons36x\1F1F7.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1f8.png">
-      <Link>36X36\1F1F8.png</Link>
+      <Link>Icons36x\1F1F8.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1f9.png">
-      <Link>36X36\1F1F9.png</Link>
+      <Link>Icons36x\1F1F9.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1fa-1f1f8.png">
-      <Link>36X36\1F1FA-1F1F8.png</Link>
+      <Link>Icons36x\1F1FA-1F1F8.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1fa.png">
-      <Link>36X36\1F1FA.png</Link>
+      <Link>Icons36x\1F1FA.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1fb.png">
-      <Link>36X36\1F1FB.png</Link>
+      <Link>Icons36x\1F1FB.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1fc.png">
-      <Link>36X36\1F1FC.png</Link>
+      <Link>Icons36x\1F1FC.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1fd.png">
-      <Link>36X36\1F1FD.png</Link>
+      <Link>Icons36x\1F1FD.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1fe.png">
-      <Link>36X36\1F1FE.png</Link>
+      <Link>Icons36x\1F1FE.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f1ff.png">
-      <Link>36X36\1F1FF.png</Link>
+      <Link>Icons36x\1F1FF.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f201.png">
-      <Link>36X36\1F201.png</Link>
+      <Link>Icons36x\1F201.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f202.png">
-      <Link>36X36\1F202.png</Link>
+      <Link>Icons36x\1F202.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f21a.png">
-      <Link>36X36\1F21A.png</Link>
+      <Link>Icons36x\1F21A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f22f.png">
-      <Link>36X36\1F22F.png</Link>
+      <Link>Icons36x\1F22F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f232.png">
-      <Link>36X36\1F232.png</Link>
+      <Link>Icons36x\1F232.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f233.png">
-      <Link>36X36\1F233.png</Link>
+      <Link>Icons36x\1F233.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f234.png">
-      <Link>36X36\1F234.png</Link>
+      <Link>Icons36x\1F234.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f235.png">
-      <Link>36X36\1F235.png</Link>
+      <Link>Icons36x\1F235.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f236.png">
-      <Link>36X36\1F236.png</Link>
+      <Link>Icons36x\1F236.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f237.png">
-      <Link>36X36\1F237.png</Link>
+      <Link>Icons36x\1F237.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f238.png">
-      <Link>36X36\1F238.png</Link>
+      <Link>Icons36x\1F238.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f239.png">
-      <Link>36X36\1F239.png</Link>
+      <Link>Icons36x\1F239.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f23a.png">
-      <Link>36X36\1F23A.png</Link>
+      <Link>Icons36x\1F23A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f250.png">
-      <Link>36X36\1F250.png</Link>
+      <Link>Icons36x\1F250.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f251.png">
-      <Link>36X36\1F251.png</Link>
+      <Link>Icons36x\1F251.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f300.png">
-      <Link>36X36\1F300.png</Link>
+      <Link>Icons36x\1F300.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f301.png">
-      <Link>36X36\1F301.png</Link>
+      <Link>Icons36x\1F301.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f302.png">
-      <Link>36X36\1F302.png</Link>
+      <Link>Icons36x\1F302.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f303.png">
-      <Link>36X36\1F303.png</Link>
+      <Link>Icons36x\1F303.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f304.png">
-      <Link>36X36\1F304.png</Link>
+      <Link>Icons36x\1F304.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f305.png">
-      <Link>36X36\1F305.png</Link>
+      <Link>Icons36x\1F305.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f306.png">
-      <Link>36X36\1F306.png</Link>
+      <Link>Icons36x\1F306.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f307.png">
-      <Link>36X36\1F307.png</Link>
+      <Link>Icons36x\1F307.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f308.png">
-      <Link>36X36\1F308.png</Link>
+      <Link>Icons36x\1F308.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f309.png">
-      <Link>36X36\1F309.png</Link>
+      <Link>Icons36x\1F309.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f30a.png">
-      <Link>36X36\1F30A.png</Link>
+      <Link>Icons36x\1F30A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f30b.png">
-      <Link>36X36\1F30B.png</Link>
+      <Link>Icons36x\1F30B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f30c.png">
-      <Link>36X36\1F30C.png</Link>
+      <Link>Icons36x\1F30C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f30d.png">
-      <Link>36X36\1F30D.png</Link>
+      <Link>Icons36x\1F30D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f30e.png">
-      <Link>36X36\1F30E.png</Link>
+      <Link>Icons36x\1F30E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f30f.png">
-      <Link>36X36\1F30F.png</Link>
+      <Link>Icons36x\1F30F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f310.png">
-      <Link>36X36\1F310.png</Link>
+      <Link>Icons36x\1F310.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f311.png">
-      <Link>36X36\1F311.png</Link>
+      <Link>Icons36x\1F311.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f312.png">
-      <Link>36X36\1F312.png</Link>
+      <Link>Icons36x\1F312.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f313.png">
-      <Link>36X36\1F313.png</Link>
+      <Link>Icons36x\1F313.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f314.png">
-      <Link>36X36\1F314.png</Link>
+      <Link>Icons36x\1F314.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f315.png">
-      <Link>36X36\1F315.png</Link>
+      <Link>Icons36x\1F315.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f316.png">
-      <Link>36X36\1F316.png</Link>
+      <Link>Icons36x\1F316.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f317.png">
-      <Link>36X36\1F317.png</Link>
+      <Link>Icons36x\1F317.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f318.png">
-      <Link>36X36\1F318.png</Link>
+      <Link>Icons36x\1F318.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f319.png">
-      <Link>36X36\1F319.png</Link>
+      <Link>Icons36x\1F319.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f31a.png">
-      <Link>36X36\1F31A.png</Link>
+      <Link>Icons36x\1F31A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f31b.png">
-      <Link>36X36\1F31B.png</Link>
+      <Link>Icons36x\1F31B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f31c.png">
-      <Link>36X36\1F31C.png</Link>
+      <Link>Icons36x\1F31C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f31d.png">
-      <Link>36X36\1F31D.png</Link>
+      <Link>Icons36x\1F31D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f31e.png">
-      <Link>36X36\1F31E.png</Link>
+      <Link>Icons36x\1F31E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f31f.png">
-      <Link>36X36\1F31F.png</Link>
+      <Link>Icons36x\1F31F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f320.png">
-      <Link>36X36\1F320.png</Link>
+      <Link>Icons36x\1F320.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f330.png">
-      <Link>36X36\1F330.png</Link>
+      <Link>Icons36x\1F330.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f331.png">
-      <Link>36X36\1F331.png</Link>
+      <Link>Icons36x\1F331.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f332.png">
-      <Link>36X36\1F332.png</Link>
+      <Link>Icons36x\1F332.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f333.png">
-      <Link>36X36\1F333.png</Link>
+      <Link>Icons36x\1F333.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f334.png">
-      <Link>36X36\1F334.png</Link>
+      <Link>Icons36x\1F334.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f335.png">
-      <Link>36X36\1F335.png</Link>
+      <Link>Icons36x\1F335.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f337.png">
-      <Link>36X36\1F337.png</Link>
+      <Link>Icons36x\1F337.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f338.png">
-      <Link>36X36\1F338.png</Link>
+      <Link>Icons36x\1F338.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f339.png">
-      <Link>36X36\1F339.png</Link>
+      <Link>Icons36x\1F339.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f33a.png">
-      <Link>36X36\1F33A.png</Link>
+      <Link>Icons36x\1F33A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f33b.png">
-      <Link>36X36\1F33B.png</Link>
+      <Link>Icons36x\1F33B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f33c.png">
-      <Link>36X36\1F33C.png</Link>
+      <Link>Icons36x\1F33C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f33d.png">
-      <Link>36X36\1F33D.png</Link>
+      <Link>Icons36x\1F33D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f33e.png">
-      <Link>36X36\1F33E.png</Link>
+      <Link>Icons36x\1F33E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f33f.png">
-      <Link>36X36\1F33F.png</Link>
+      <Link>Icons36x\1F33F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f340.png">
-      <Link>36X36\1F340.png</Link>
+      <Link>Icons36x\1F340.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f341.png">
-      <Link>36X36\1F341.png</Link>
+      <Link>Icons36x\1F341.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f342.png">
-      <Link>36X36\1F342.png</Link>
+      <Link>Icons36x\1F342.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f343.png">
-      <Link>36X36\1F343.png</Link>
+      <Link>Icons36x\1F343.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f344.png">
-      <Link>36X36\1F344.png</Link>
+      <Link>Icons36x\1F344.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f345.png">
-      <Link>36X36\1F345.png</Link>
+      <Link>Icons36x\1F345.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f346.png">
-      <Link>36X36\1F346.png</Link>
+      <Link>Icons36x\1F346.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f347.png">
-      <Link>36X36\1F347.png</Link>
+      <Link>Icons36x\1F347.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f348.png">
-      <Link>36X36\1F348.png</Link>
+      <Link>Icons36x\1F348.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f349.png">
-      <Link>36X36\1F349.png</Link>
+      <Link>Icons36x\1F349.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f34a.png">
-      <Link>36X36\1F34A.png</Link>
+      <Link>Icons36x\1F34A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f34b.png">
-      <Link>36X36\1F34B.png</Link>
+      <Link>Icons36x\1F34B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f34c.png">
-      <Link>36X36\1F34C.png</Link>
+      <Link>Icons36x\1F34C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f34d.png">
-      <Link>36X36\1F34D.png</Link>
+      <Link>Icons36x\1F34D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f34e.png">
-      <Link>36X36\1F34E.png</Link>
+      <Link>Icons36x\1F34E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f34f.png">
-      <Link>36X36\1F34F.png</Link>
+      <Link>Icons36x\1F34F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f350.png">
-      <Link>36X36\1F350.png</Link>
+      <Link>Icons36x\1F350.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f351.png">
-      <Link>36X36\1F351.png</Link>
+      <Link>Icons36x\1F351.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f352.png">
-      <Link>36X36\1F352.png</Link>
+      <Link>Icons36x\1F352.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f353.png">
-      <Link>36X36\1F353.png</Link>
+      <Link>Icons36x\1F353.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f354.png">
-      <Link>36X36\1F354.png</Link>
+      <Link>Icons36x\1F354.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f355.png">
-      <Link>36X36\1F355.png</Link>
+      <Link>Icons36x\1F355.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f356.png">
-      <Link>36X36\1F356.png</Link>
+      <Link>Icons36x\1F356.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f357.png">
-      <Link>36X36\1F357.png</Link>
+      <Link>Icons36x\1F357.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f358.png">
-      <Link>36X36\1F358.png</Link>
+      <Link>Icons36x\1F358.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f359.png">
-      <Link>36X36\1F359.png</Link>
+      <Link>Icons36x\1F359.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f35a.png">
-      <Link>36X36\1F35A.png</Link>
+      <Link>Icons36x\1F35A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f35b.png">
-      <Link>36X36\1F35B.png</Link>
+      <Link>Icons36x\1F35B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f35c.png">
-      <Link>36X36\1F35C.png</Link>
+      <Link>Icons36x\1F35C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f35d.png">
-      <Link>36X36\1F35D.png</Link>
+      <Link>Icons36x\1F35D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f35e.png">
-      <Link>36X36\1F35E.png</Link>
+      <Link>Icons36x\1F35E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f35f.png">
-      <Link>36X36\1F35F.png</Link>
+      <Link>Icons36x\1F35F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f360.png">
-      <Link>36X36\1F360.png</Link>
+      <Link>Icons36x\1F360.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f361.png">
-      <Link>36X36\1F361.png</Link>
+      <Link>Icons36x\1F361.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f362.png">
-      <Link>36X36\1F362.png</Link>
+      <Link>Icons36x\1F362.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f363.png">
-      <Link>36X36\1F363.png</Link>
+      <Link>Icons36x\1F363.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f364.png">
-      <Link>36X36\1F364.png</Link>
+      <Link>Icons36x\1F364.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f365.png">
-      <Link>36X36\1F365.png</Link>
+      <Link>Icons36x\1F365.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f366.png">
-      <Link>36X36\1F366.png</Link>
+      <Link>Icons36x\1F366.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f367.png">
-      <Link>36X36\1F367.png</Link>
+      <Link>Icons36x\1F367.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f368.png">
-      <Link>36X36\1F368.png</Link>
+      <Link>Icons36x\1F368.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f369.png">
-      <Link>36X36\1F369.png</Link>
+      <Link>Icons36x\1F369.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f36a.png">
-      <Link>36X36\1F36A.png</Link>
+      <Link>Icons36x\1F36A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f36b.png">
-      <Link>36X36\1F36B.png</Link>
+      <Link>Icons36x\1F36B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f36c.png">
-      <Link>36X36\1F36C.png</Link>
+      <Link>Icons36x\1F36C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f36d.png">
-      <Link>36X36\1F36D.png</Link>
+      <Link>Icons36x\1F36D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f36e.png">
-      <Link>36X36\1F36E.png</Link>
+      <Link>Icons36x\1F36E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f36f.png">
-      <Link>36X36\1F36F.png</Link>
+      <Link>Icons36x\1F36F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f370.png">
-      <Link>36X36\1F370.png</Link>
+      <Link>Icons36x\1F370.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f371.png">
-      <Link>36X36\1F371.png</Link>
+      <Link>Icons36x\1F371.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f372.png">
-      <Link>36X36\1F372.png</Link>
+      <Link>Icons36x\1F372.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f373.png">
-      <Link>36X36\1F373.png</Link>
+      <Link>Icons36x\1F373.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f374.png">
-      <Link>36X36\1F374.png</Link>
+      <Link>Icons36x\1F374.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f375.png">
-      <Link>36X36\1F375.png</Link>
+      <Link>Icons36x\1F375.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f376.png">
-      <Link>36X36\1F376.png</Link>
+      <Link>Icons36x\1F376.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f377.png">
-      <Link>36X36\1F377.png</Link>
+      <Link>Icons36x\1F377.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f378.png">
-      <Link>36X36\1F378.png</Link>
+      <Link>Icons36x\1F378.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f379.png">
-      <Link>36X36\1F379.png</Link>
+      <Link>Icons36x\1F379.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f37a.png">
-      <Link>36X36\1F37A.png</Link>
+      <Link>Icons36x\1F37A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f37b.png">
-      <Link>36X36\1F37B.png</Link>
+      <Link>Icons36x\1F37B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f37c.png">
-      <Link>36X36\1F37C.png</Link>
+      <Link>Icons36x\1F37C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f380.png">
-      <Link>36X36\1F380.png</Link>
+      <Link>Icons36x\1F380.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f381.png">
-      <Link>36X36\1F381.png</Link>
+      <Link>Icons36x\1F381.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f382.png">
-      <Link>36X36\1F382.png</Link>
+      <Link>Icons36x\1F382.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f383.png">
-      <Link>36X36\1F383.png</Link>
+      <Link>Icons36x\1F383.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f384.png">
-      <Link>36X36\1F384.png</Link>
+      <Link>Icons36x\1F384.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f385.png">
-      <Link>36X36\1F385.png</Link>
+      <Link>Icons36x\1F385.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f386.png">
-      <Link>36X36\1F386.png</Link>
+      <Link>Icons36x\1F386.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f387.png">
-      <Link>36X36\1F387.png</Link>
+      <Link>Icons36x\1F387.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f388.png">
-      <Link>36X36\1F388.png</Link>
+      <Link>Icons36x\1F388.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f389.png">
-      <Link>36X36\1F389.png</Link>
+      <Link>Icons36x\1F389.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f38a.png">
-      <Link>36X36\1F38A.png</Link>
+      <Link>Icons36x\1F38A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f38b.png">
-      <Link>36X36\1F38B.png</Link>
+      <Link>Icons36x\1F38B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f38c.png">
-      <Link>36X36\1F38C.png</Link>
+      <Link>Icons36x\1F38C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f38d.png">
-      <Link>36X36\1F38D.png</Link>
+      <Link>Icons36x\1F38D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f38e.png">
-      <Link>36X36\1F38E.png</Link>
+      <Link>Icons36x\1F38E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f38f.png">
-      <Link>36X36\1F38F.png</Link>
+      <Link>Icons36x\1F38F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f390.png">
-      <Link>36X36\1F390.png</Link>
+      <Link>Icons36x\1F390.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f391.png">
-      <Link>36X36\1F391.png</Link>
+      <Link>Icons36x\1F391.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f392.png">
-      <Link>36X36\1F392.png</Link>
+      <Link>Icons36x\1F392.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f393.png">
-      <Link>36X36\1F393.png</Link>
+      <Link>Icons36x\1F393.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3a0.png">
-      <Link>36X36\1F3A0.png</Link>
+      <Link>Icons36x\1F3A0.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3a1.png">
-      <Link>36X36\1F3A1.png</Link>
+      <Link>Icons36x\1F3A1.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3a2.png">
-      <Link>36X36\1F3A2.png</Link>
+      <Link>Icons36x\1F3A2.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3a3.png">
-      <Link>36X36\1F3A3.png</Link>
+      <Link>Icons36x\1F3A3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3a4.png">
-      <Link>36X36\1F3A4.png</Link>
+      <Link>Icons36x\1F3A4.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3a5.png">
-      <Link>36X36\1F3A5.png</Link>
+      <Link>Icons36x\1F3A5.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3a6.png">
-      <Link>36X36\1F3A6.png</Link>
+      <Link>Icons36x\1F3A6.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3a7.png">
-      <Link>36X36\1F3A7.png</Link>
+      <Link>Icons36x\1F3A7.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3a8.png">
-      <Link>36X36\1F3A8.png</Link>
+      <Link>Icons36x\1F3A8.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3a9.png">
-      <Link>36X36\1F3A9.png</Link>
+      <Link>Icons36x\1F3A9.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3aa.png">
-      <Link>36X36\1F3AA.png</Link>
+      <Link>Icons36x\1F3AA.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3ab.png">
-      <Link>36X36\1F3AB.png</Link>
+      <Link>Icons36x\1F3AB.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3ac.png">
-      <Link>36X36\1F3AC.png</Link>
+      <Link>Icons36x\1F3AC.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3ad.png">
-      <Link>36X36\1F3AD.png</Link>
+      <Link>Icons36x\1F3AD.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3ae.png">
-      <Link>36X36\1F3AE.png</Link>
+      <Link>Icons36x\1F3AE.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3af.png">
-      <Link>36X36\1F3AF.png</Link>
+      <Link>Icons36x\1F3AF.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3b0.png">
-      <Link>36X36\1F3B0.png</Link>
+      <Link>Icons36x\1F3B0.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3b1.png">
-      <Link>36X36\1F3B1.png</Link>
+      <Link>Icons36x\1F3B1.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3b2.png">
-      <Link>36X36\1F3B2.png</Link>
+      <Link>Icons36x\1F3B2.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3b3.png">
-      <Link>36X36\1F3B3.png</Link>
+      <Link>Icons36x\1F3B3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3b4.png">
-      <Link>36X36\1F3B4.png</Link>
+      <Link>Icons36x\1F3B4.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3b5.png">
-      <Link>36X36\1F3B5.png</Link>
+      <Link>Icons36x\1F3B5.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3b6.png">
-      <Link>36X36\1F3B6.png</Link>
+      <Link>Icons36x\1F3B6.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3b7.png">
-      <Link>36X36\1F3B7.png</Link>
+      <Link>Icons36x\1F3B7.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3b8.png">
-      <Link>36X36\1F3B8.png</Link>
+      <Link>Icons36x\1F3B8.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3b9.png">
-      <Link>36X36\1F3B9.png</Link>
+      <Link>Icons36x\1F3B9.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3ba.png">
-      <Link>36X36\1F3BA.png</Link>
+      <Link>Icons36x\1F3BA.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3bb.png">
-      <Link>36X36\1F3BB.png</Link>
+      <Link>Icons36x\1F3BB.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3bc.png">
-      <Link>36X36\1F3BC.png</Link>
+      <Link>Icons36x\1F3BC.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3bd.png">
-      <Link>36X36\1F3BD.png</Link>
+      <Link>Icons36x\1F3BD.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3be.png">
-      <Link>36X36\1F3BE.png</Link>
+      <Link>Icons36x\1F3BE.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3bf.png">
-      <Link>36X36\1F3BF.png</Link>
+      <Link>Icons36x\1F3BF.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3c0.png">
-      <Link>36X36\1F3C0.png</Link>
+      <Link>Icons36x\1F3C0.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3c1.png">
-      <Link>36X36\1F3C1.png</Link>
+      <Link>Icons36x\1F3C1.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3c2.png">
-      <Link>36X36\1F3C2.png</Link>
+      <Link>Icons36x\1F3C2.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3c3.png">
-      <Link>36X36\1F3C3.png</Link>
+      <Link>Icons36x\1F3C3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3c4.png">
-      <Link>36X36\1F3C4.png</Link>
+      <Link>Icons36x\1F3C4.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3c6.png">
-      <Link>36X36\1F3C6.png</Link>
+      <Link>Icons36x\1F3C6.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3c7.png">
-      <Link>36X36\1F3C7.png</Link>
+      <Link>Icons36x\1F3C7.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3c8.png">
-      <Link>36X36\1F3C8.png</Link>
+      <Link>Icons36x\1F3C8.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3c9.png">
-      <Link>36X36\1F3C9.png</Link>
+      <Link>Icons36x\1F3C9.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3ca.png">
-      <Link>36X36\1F3CA.png</Link>
+      <Link>Icons36x\1F3CA.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3e0.png">
-      <Link>36X36\1F3E0.png</Link>
+      <Link>Icons36x\1F3E0.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3e1.png">
-      <Link>36X36\1F3E1.png</Link>
+      <Link>Icons36x\1F3E1.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3e2.png">
-      <Link>36X36\1F3E2.png</Link>
+      <Link>Icons36x\1F3E2.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3e3.png">
-      <Link>36X36\1F3E3.png</Link>
+      <Link>Icons36x\1F3E3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3e4.png">
-      <Link>36X36\1F3E4.png</Link>
+      <Link>Icons36x\1F3E4.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3e5.png">
-      <Link>36X36\1F3E5.png</Link>
+      <Link>Icons36x\1F3E5.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3e6.png">
-      <Link>36X36\1F3E6.png</Link>
+      <Link>Icons36x\1F3E6.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3e7.png">
-      <Link>36X36\1F3E7.png</Link>
+      <Link>Icons36x\1F3E7.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3e8.png">
-      <Link>36X36\1F3E8.png</Link>
+      <Link>Icons36x\1F3E8.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3e9.png">
-      <Link>36X36\1F3E9.png</Link>
+      <Link>Icons36x\1F3E9.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3ea.png">
-      <Link>36X36\1F3EA.png</Link>
+      <Link>Icons36x\1F3EA.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3eb.png">
-      <Link>36X36\1F3EB.png</Link>
+      <Link>Icons36x\1F3EB.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3ec.png">
-      <Link>36X36\1F3EC.png</Link>
+      <Link>Icons36x\1F3EC.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3ed.png">
-      <Link>36X36\1F3ED.png</Link>
+      <Link>Icons36x\1F3ED.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3ee.png">
-      <Link>36X36\1F3EE.png</Link>
+      <Link>Icons36x\1F3EE.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3ef.png">
-      <Link>36X36\1F3EF.png</Link>
+      <Link>Icons36x\1F3EF.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f3f0.png">
-      <Link>36X36\1F3F0.png</Link>
+      <Link>Icons36x\1F3F0.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f400.png">
-      <Link>36X36\1F400.png</Link>
+      <Link>Icons36x\1F400.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f401.png">
-      <Link>36X36\1F401.png</Link>
+      <Link>Icons36x\1F401.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f402.png">
-      <Link>36X36\1F402.png</Link>
+      <Link>Icons36x\1F402.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f403.png">
-      <Link>36X36\1F403.png</Link>
+      <Link>Icons36x\1F403.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f404.png">
-      <Link>36X36\1F404.png</Link>
+      <Link>Icons36x\1F404.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f405.png">
-      <Link>36X36\1F405.png</Link>
+      <Link>Icons36x\1F405.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f406.png">
-      <Link>36X36\1F406.png</Link>
+      <Link>Icons36x\1F406.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f407.png">
-      <Link>36X36\1F407.png</Link>
+      <Link>Icons36x\1F407.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f408.png">
-      <Link>36X36\1F408.png</Link>
+      <Link>Icons36x\1F408.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f409.png">
-      <Link>36X36\1F409.png</Link>
+      <Link>Icons36x\1F409.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f40a.png">
-      <Link>36X36\1F40A.png</Link>
+      <Link>Icons36x\1F40A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f40b.png">
-      <Link>36X36\1F40B.png</Link>
+      <Link>Icons36x\1F40B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f40c.png">
-      <Link>36X36\1F40C.png</Link>
+      <Link>Icons36x\1F40C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f40d.png">
-      <Link>36X36\1F40D.png</Link>
+      <Link>Icons36x\1F40D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f40e.png">
-      <Link>36X36\1F40E.png</Link>
+      <Link>Icons36x\1F40E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f40f.png">
-      <Link>36X36\1F40F.png</Link>
+      <Link>Icons36x\1F40F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f410.png">
-      <Link>36X36\1F410.png</Link>
+      <Link>Icons36x\1F410.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f411.png">
-      <Link>36X36\1F411.png</Link>
+      <Link>Icons36x\1F411.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f412.png">
-      <Link>36X36\1F412.png</Link>
+      <Link>Icons36x\1F412.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f413.png">
-      <Link>36X36\1F413.png</Link>
+      <Link>Icons36x\1F413.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f414.png">
-      <Link>36X36\1F414.png</Link>
+      <Link>Icons36x\1F414.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f415.png">
-      <Link>36X36\1F415.png</Link>
+      <Link>Icons36x\1F415.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f416.png">
-      <Link>36X36\1F416.png</Link>
+      <Link>Icons36x\1F416.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f417.png">
-      <Link>36X36\1F417.png</Link>
+      <Link>Icons36x\1F417.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f418.png">
-      <Link>36X36\1F418.png</Link>
+      <Link>Icons36x\1F418.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f419.png">
-      <Link>36X36\1F419.png</Link>
+      <Link>Icons36x\1F419.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f41a.png">
-      <Link>36X36\1F41A.png</Link>
+      <Link>Icons36x\1F41A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f41b.png">
-      <Link>36X36\1F41B.png</Link>
+      <Link>Icons36x\1F41B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f41c.png">
-      <Link>36X36\1F41C.png</Link>
+      <Link>Icons36x\1F41C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f41d.png">
-      <Link>36X36\1F41D.png</Link>
+      <Link>Icons36x\1F41D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f41e.png">
-      <Link>36X36\1F41E.png</Link>
+      <Link>Icons36x\1F41E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f41f.png">
-      <Link>36X36\1F41F.png</Link>
+      <Link>Icons36x\1F41F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f420.png">
-      <Link>36X36\1F420.png</Link>
+      <Link>Icons36x\1F420.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f421.png">
-      <Link>36X36\1F421.png</Link>
+      <Link>Icons36x\1F421.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f422.png">
-      <Link>36X36\1F422.png</Link>
+      <Link>Icons36x\1F422.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f423.png">
-      <Link>36X36\1F423.png</Link>
+      <Link>Icons36x\1F423.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f424.png">
-      <Link>36X36\1F424.png</Link>
+      <Link>Icons36x\1F424.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f425.png">
-      <Link>36X36\1F425.png</Link>
+      <Link>Icons36x\1F425.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f426.png">
-      <Link>36X36\1F426.png</Link>
+      <Link>Icons36x\1F426.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f427.png">
-      <Link>36X36\1F427.png</Link>
+      <Link>Icons36x\1F427.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f428.png">
-      <Link>36X36\1F428.png</Link>
+      <Link>Icons36x\1F428.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f429.png">
-      <Link>36X36\1F429.png</Link>
+      <Link>Icons36x\1F429.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f42a.png">
-      <Link>36X36\1F42A.png</Link>
+      <Link>Icons36x\1F42A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f42b.png">
-      <Link>36X36\1F42B.png</Link>
+      <Link>Icons36x\1F42B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f42c.png">
-      <Link>36X36\1F42C.png</Link>
+      <Link>Icons36x\1F42C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f42d.png">
-      <Link>36X36\1F42D.png</Link>
+      <Link>Icons36x\1F42D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f42e.png">
-      <Link>36X36\1F42E.png</Link>
+      <Link>Icons36x\1F42E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f42f.png">
-      <Link>36X36\1F42F.png</Link>
+      <Link>Icons36x\1F42F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f430.png">
-      <Link>36X36\1F430.png</Link>
+      <Link>Icons36x\1F430.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f431.png">
-      <Link>36X36\1F431.png</Link>
+      <Link>Icons36x\1F431.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f432.png">
-      <Link>36X36\1F432.png</Link>
+      <Link>Icons36x\1F432.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f433.png">
-      <Link>36X36\1F433.png</Link>
+      <Link>Icons36x\1F433.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f434.png">
-      <Link>36X36\1F434.png</Link>
+      <Link>Icons36x\1F434.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f435.png">
-      <Link>36X36\1F435.png</Link>
+      <Link>Icons36x\1F435.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f436.png">
-      <Link>36X36\1F436.png</Link>
+      <Link>Icons36x\1F436.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f437.png">
-      <Link>36X36\1F437.png</Link>
+      <Link>Icons36x\1F437.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f438.png">
-      <Link>36X36\1F438.png</Link>
+      <Link>Icons36x\1F438.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f439.png">
-      <Link>36X36\1F439.png</Link>
+      <Link>Icons36x\1F439.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f43a.png">
-      <Link>36X36\1F43A.png</Link>
+      <Link>Icons36x\1F43A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f43b.png">
-      <Link>36X36\1F43B.png</Link>
+      <Link>Icons36x\1F43B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f43c.png">
-      <Link>36X36\1F43C.png</Link>
+      <Link>Icons36x\1F43C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f43d.png">
-      <Link>36X36\1F43D.png</Link>
+      <Link>Icons36x\1F43D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f43e.png">
-      <Link>36X36\1F43E.png</Link>
+      <Link>Icons36x\1F43E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f440.png">
-      <Link>36X36\1F440.png</Link>
+      <Link>Icons36x\1F440.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f442.png">
-      <Link>36X36\1F442.png</Link>
+      <Link>Icons36x\1F442.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f443.png">
-      <Link>36X36\1F443.png</Link>
+      <Link>Icons36x\1F443.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f444.png">
-      <Link>36X36\1F444.png</Link>
+      <Link>Icons36x\1F444.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f445.png">
-      <Link>36X36\1F445.png</Link>
+      <Link>Icons36x\1F445.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f446.png">
-      <Link>36X36\1F446.png</Link>
+      <Link>Icons36x\1F446.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f447.png">
-      <Link>36X36\1F447.png</Link>
+      <Link>Icons36x\1F447.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f448.png">
-      <Link>36X36\1F448.png</Link>
+      <Link>Icons36x\1F448.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f449.png">
-      <Link>36X36\1F449.png</Link>
+      <Link>Icons36x\1F449.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f44a.png">
-      <Link>36X36\1F44A.png</Link>
+      <Link>Icons36x\1F44A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f44b.png">
-      <Link>36X36\1F44B.png</Link>
+      <Link>Icons36x\1F44B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f44c.png">
-      <Link>36X36\1F44C.png</Link>
+      <Link>Icons36x\1F44C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f44d.png">
-      <Link>36X36\1F44D.png</Link>
+      <Link>Icons36x\1F44D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f44e.png">
-      <Link>36X36\1F44E.png</Link>
+      <Link>Icons36x\1F44E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f44f.png">
-      <Link>36X36\1F44F.png</Link>
+      <Link>Icons36x\1F44F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f450.png">
-      <Link>36X36\1F450.png</Link>
+      <Link>Icons36x\1F450.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f451.png">
-      <Link>36X36\1F451.png</Link>
+      <Link>Icons36x\1F451.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f452.png">
-      <Link>36X36\1F452.png</Link>
+      <Link>Icons36x\1F452.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f453.png">
-      <Link>36X36\1F453.png</Link>
+      <Link>Icons36x\1F453.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f454.png">
-      <Link>36X36\1F454.png</Link>
+      <Link>Icons36x\1F454.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f455.png">
-      <Link>36X36\1F455.png</Link>
+      <Link>Icons36x\1F455.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f456.png">
-      <Link>36X36\1F456.png</Link>
+      <Link>Icons36x\1F456.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f457.png">
-      <Link>36X36\1F457.png</Link>
+      <Link>Icons36x\1F457.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f458.png">
-      <Link>36X36\1F458.png</Link>
+      <Link>Icons36x\1F458.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f459.png">
-      <Link>36X36\1F459.png</Link>
+      <Link>Icons36x\1F459.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f45a.png">
-      <Link>36X36\1F45A.png</Link>
+      <Link>Icons36x\1F45A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f45b.png">
-      <Link>36X36\1F45B.png</Link>
+      <Link>Icons36x\1F45B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f45c.png">
-      <Link>36X36\1F45C.png</Link>
+      <Link>Icons36x\1F45C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f45d.png">
-      <Link>36X36\1F45D.png</Link>
+      <Link>Icons36x\1F45D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f45e.png">
-      <Link>36X36\1F45E.png</Link>
+      <Link>Icons36x\1F45E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f45f.png">
-      <Link>36X36\1F45F.png</Link>
+      <Link>Icons36x\1F45F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f460.png">
-      <Link>36X36\1F460.png</Link>
+      <Link>Icons36x\1F460.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f461.png">
-      <Link>36X36\1F461.png</Link>
+      <Link>Icons36x\1F461.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f462.png">
-      <Link>36X36\1F462.png</Link>
+      <Link>Icons36x\1F462.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f463.png">
-      <Link>36X36\1F463.png</Link>
+      <Link>Icons36x\1F463.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f464.png">
-      <Link>36X36\1F464.png</Link>
+      <Link>Icons36x\1F464.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f465.png">
-      <Link>36X36\1F465.png</Link>
+      <Link>Icons36x\1F465.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f466.png">
-      <Link>36X36\1F466.png</Link>
+      <Link>Icons36x\1F466.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f467.png">
-      <Link>36X36\1F467.png</Link>
+      <Link>Icons36x\1F467.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f468.png">
-      <Link>36X36\1F468.png</Link>
+      <Link>Icons36x\1F468.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f469.png">
-      <Link>36X36\1F469.png</Link>
+      <Link>Icons36x\1F469.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f46a.png">
-      <Link>36X36\1F46A.png</Link>
+      <Link>Icons36x\1F46A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f46b.png">
-      <Link>36X36\1F46B.png</Link>
+      <Link>Icons36x\1F46B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f46c.png">
-      <Link>36X36\1F46C.png</Link>
+      <Link>Icons36x\1F46C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f46d.png">
-      <Link>36X36\1F46D.png</Link>
+      <Link>Icons36x\1F46D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f46e.png">
-      <Link>36X36\1F46E.png</Link>
+      <Link>Icons36x\1F46E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f46f.png">
-      <Link>36X36\1F46F.png</Link>
+      <Link>Icons36x\1F46F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f470.png">
-      <Link>36X36\1F470.png</Link>
+      <Link>Icons36x\1F470.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f471.png">
-      <Link>36X36\1F471.png</Link>
+      <Link>Icons36x\1F471.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f472.png">
-      <Link>36X36\1F472.png</Link>
+      <Link>Icons36x\1F472.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f473.png">
-      <Link>36X36\1F473.png</Link>
+      <Link>Icons36x\1F473.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f474.png">
-      <Link>36X36\1F474.png</Link>
+      <Link>Icons36x\1F474.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f475.png">
-      <Link>36X36\1F475.png</Link>
+      <Link>Icons36x\1F475.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f476.png">
-      <Link>36X36\1F476.png</Link>
+      <Link>Icons36x\1F476.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f477.png">
-      <Link>36X36\1F477.png</Link>
+      <Link>Icons36x\1F477.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f478.png">
-      <Link>36X36\1F478.png</Link>
+      <Link>Icons36x\1F478.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f479.png">
-      <Link>36X36\1F479.png</Link>
+      <Link>Icons36x\1F479.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f47a.png">
-      <Link>36X36\1F47A.png</Link>
+      <Link>Icons36x\1F47A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f47b.png">
-      <Link>36X36\1F47B.png</Link>
+      <Link>Icons36x\1F47B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f47c.png">
-      <Link>36X36\1F47C.png</Link>
+      <Link>Icons36x\1F47C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f47d.png">
-      <Link>36X36\1F47D.png</Link>
+      <Link>Icons36x\1F47D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f47e.png">
-      <Link>36X36\1F47E.png</Link>
+      <Link>Icons36x\1F47E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f47f.png">
-      <Link>36X36\1F47F.png</Link>
+      <Link>Icons36x\1F47F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f480.png">
-      <Link>36X36\1F480.png</Link>
+      <Link>Icons36x\1F480.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f481.png">
-      <Link>36X36\1F481.png</Link>
+      <Link>Icons36x\1F481.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f482.png">
-      <Link>36X36\1F482.png</Link>
+      <Link>Icons36x\1F482.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f483.png">
-      <Link>36X36\1F483.png</Link>
+      <Link>Icons36x\1F483.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f484.png">
-      <Link>36X36\1F484.png</Link>
+      <Link>Icons36x\1F484.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f485.png">
-      <Link>36X36\1F485.png</Link>
+      <Link>Icons36x\1F485.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f486.png">
-      <Link>36X36\1F486.png</Link>
+      <Link>Icons36x\1F486.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f487.png">
-      <Link>36X36\1F487.png</Link>
+      <Link>Icons36x\1F487.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f488.png">
-      <Link>36X36\1F488.png</Link>
+      <Link>Icons36x\1F488.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f489.png">
-      <Link>36X36\1F489.png</Link>
+      <Link>Icons36x\1F489.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f48a.png">
-      <Link>36X36\1F48A.png</Link>
+      <Link>Icons36x\1F48A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f48b.png">
-      <Link>36X36\1F48B.png</Link>
+      <Link>Icons36x\1F48B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f48c.png">
-      <Link>36X36\1F48C.png</Link>
+      <Link>Icons36x\1F48C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f48d.png">
-      <Link>36X36\1F48D.png</Link>
+      <Link>Icons36x\1F48D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f48e.png">
-      <Link>36X36\1F48E.png</Link>
+      <Link>Icons36x\1F48E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f48f.png">
-      <Link>36X36\1F48F.png</Link>
+      <Link>Icons36x\1F48F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f490.png">
-      <Link>36X36\1F490.png</Link>
+      <Link>Icons36x\1F490.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f491.png">
-      <Link>36X36\1F491.png</Link>
+      <Link>Icons36x\1F491.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f492.png">
-      <Link>36X36\1F492.png</Link>
+      <Link>Icons36x\1F492.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f493.png">
-      <Link>36X36\1F493.png</Link>
+      <Link>Icons36x\1F493.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f494.png">
-      <Link>36X36\1F494.png</Link>
+      <Link>Icons36x\1F494.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f495.png">
-      <Link>36X36\1F495.png</Link>
+      <Link>Icons36x\1F495.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f496.png">
-      <Link>36X36\1F496.png</Link>
+      <Link>Icons36x\1F496.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f497.png">
-      <Link>36X36\1F497.png</Link>
+      <Link>Icons36x\1F497.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f498.png">
-      <Link>36X36\1F498.png</Link>
+      <Link>Icons36x\1F498.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f499.png">
-      <Link>36X36\1F499.png</Link>
+      <Link>Icons36x\1F499.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f49a.png">
-      <Link>36X36\1F49A.png</Link>
+      <Link>Icons36x\1F49A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f49b.png">
-      <Link>36X36\1F49B.png</Link>
+      <Link>Icons36x\1F49B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f49c.png">
-      <Link>36X36\1F49C.png</Link>
+      <Link>Icons36x\1F49C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f49d.png">
-      <Link>36X36\1F49D.png</Link>
+      <Link>Icons36x\1F49D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f49e.png">
-      <Link>36X36\1F49E.png</Link>
+      <Link>Icons36x\1F49E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f49f.png">
-      <Link>36X36\1F49F.png</Link>
+      <Link>Icons36x\1F49F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4a0.png">
-      <Link>36X36\1F4A0.png</Link>
+      <Link>Icons36x\1F4A0.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4a1.png">
-      <Link>36X36\1F4A1.png</Link>
+      <Link>Icons36x\1F4A1.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4a2.png">
-      <Link>36X36\1F4A2.png</Link>
+      <Link>Icons36x\1F4A2.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4a3.png">
-      <Link>36X36\1F4A3.png</Link>
+      <Link>Icons36x\1F4A3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4a4.png">
-      <Link>36X36\1F4A4.png</Link>
+      <Link>Icons36x\1F4A4.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4a5.png">
-      <Link>36X36\1F4A5.png</Link>
+      <Link>Icons36x\1F4A5.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4a6.png">
-      <Link>36X36\1F4A6.png</Link>
+      <Link>Icons36x\1F4A6.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4a7.png">
-      <Link>36X36\1F4A7.png</Link>
+      <Link>Icons36x\1F4A7.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4a8.png">
-      <Link>36X36\1F4A8.png</Link>
+      <Link>Icons36x\1F4A8.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4a9.png">
-      <Link>36X36\1F4A9.png</Link>
+      <Link>Icons36x\1F4A9.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4aa.png">
-      <Link>36X36\1F4AA.png</Link>
+      <Link>Icons36x\1F4AA.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4ab.png">
-      <Link>36X36\1F4AB.png</Link>
+      <Link>Icons36x\1F4AB.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4ac.png">
-      <Link>36X36\1F4AC.png</Link>
+      <Link>Icons36x\1F4AC.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4ad.png">
-      <Link>36X36\1F4AD.png</Link>
+      <Link>Icons36x\1F4AD.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4ae.png">
-      <Link>36X36\1F4AE.png</Link>
+      <Link>Icons36x\1F4AE.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4af.png">
-      <Link>36X36\1F4AF.png</Link>
+      <Link>Icons36x\1F4AF.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4b0.png">
-      <Link>36X36\1F4B0.png</Link>
+      <Link>Icons36x\1F4B0.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4b1.png">
-      <Link>36X36\1F4B1.png</Link>
+      <Link>Icons36x\1F4B1.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4b2.png">
-      <Link>36X36\1F4B2.png</Link>
+      <Link>Icons36x\1F4B2.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4b3.png">
-      <Link>36X36\1F4B3.png</Link>
+      <Link>Icons36x\1F4B3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4b4.png">
-      <Link>36X36\1F4B4.png</Link>
+      <Link>Icons36x\1F4B4.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4b5.png">
-      <Link>36X36\1F4B5.png</Link>
+      <Link>Icons36x\1F4B5.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4b6.png">
-      <Link>36X36\1F4B6.png</Link>
+      <Link>Icons36x\1F4B6.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4b7.png">
-      <Link>36X36\1F4B7.png</Link>
+      <Link>Icons36x\1F4B7.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4b8.png">
-      <Link>36X36\1F4B8.png</Link>
+      <Link>Icons36x\1F4B8.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4b9.png">
-      <Link>36X36\1F4B9.png</Link>
+      <Link>Icons36x\1F4B9.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4ba.png">
-      <Link>36X36\1F4BA.png</Link>
+      <Link>Icons36x\1F4BA.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4bb.png">
-      <Link>36X36\1F4BB.png</Link>
+      <Link>Icons36x\1F4BB.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4bc.png">
-      <Link>36X36\1F4BC.png</Link>
+      <Link>Icons36x\1F4BC.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4bd.png">
-      <Link>36X36\1F4BD.png</Link>
+      <Link>Icons36x\1F4BD.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4be.png">
-      <Link>36X36\1F4BE.png</Link>
+      <Link>Icons36x\1F4BE.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4bf.png">
-      <Link>36X36\1F4BF.png</Link>
+      <Link>Icons36x\1F4BF.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4c0.png">
-      <Link>36X36\1F4C0.png</Link>
+      <Link>Icons36x\1F4C0.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4c1.png">
-      <Link>36X36\1F4C1.png</Link>
+      <Link>Icons36x\1F4C1.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4c2.png">
-      <Link>36X36\1F4C2.png</Link>
+      <Link>Icons36x\1F4C2.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4c3.png">
-      <Link>36X36\1F4C3.png</Link>
+      <Link>Icons36x\1F4C3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4c4.png">
-      <Link>36X36\1F4C4.png</Link>
+      <Link>Icons36x\1F4C4.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4c5.png">
-      <Link>36X36\1F4C5.png</Link>
+      <Link>Icons36x\1F4C5.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4c6.png">
-      <Link>36X36\1F4C6.png</Link>
+      <Link>Icons36x\1F4C6.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4c7.png">
-      <Link>36X36\1F4C7.png</Link>
+      <Link>Icons36x\1F4C7.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4c8.png">
-      <Link>36X36\1F4C8.png</Link>
+      <Link>Icons36x\1F4C8.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4c9.png">
-      <Link>36X36\1F4C9.png</Link>
+      <Link>Icons36x\1F4C9.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4ca.png">
-      <Link>36X36\1F4CA.png</Link>
+      <Link>Icons36x\1F4CA.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4cb.png">
-      <Link>36X36\1F4CB.png</Link>
+      <Link>Icons36x\1F4CB.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4cc.png">
-      <Link>36X36\1F4CC.png</Link>
+      <Link>Icons36x\1F4CC.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4cd.png">
-      <Link>36X36\1F4CD.png</Link>
+      <Link>Icons36x\1F4CD.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4ce.png">
-      <Link>36X36\1F4CE.png</Link>
+      <Link>Icons36x\1F4CE.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4cf.png">
-      <Link>36X36\1F4CF.png</Link>
+      <Link>Icons36x\1F4CF.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4d0.png">
-      <Link>36X36\1F4D0.png</Link>
+      <Link>Icons36x\1F4D0.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4d1.png">
-      <Link>36X36\1F4D1.png</Link>
+      <Link>Icons36x\1F4D1.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4d2.png">
-      <Link>36X36\1F4D2.png</Link>
+      <Link>Icons36x\1F4D2.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4d3.png">
-      <Link>36X36\1F4D3.png</Link>
+      <Link>Icons36x\1F4D3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4d4.png">
-      <Link>36X36\1F4D4.png</Link>
+      <Link>Icons36x\1F4D4.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4d5.png">
-      <Link>36X36\1F4D5.png</Link>
+      <Link>Icons36x\1F4D5.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4d6.png">
-      <Link>36X36\1F4D6.png</Link>
+      <Link>Icons36x\1F4D6.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4d7.png">
-      <Link>36X36\1F4D7.png</Link>
+      <Link>Icons36x\1F4D7.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4d8.png">
-      <Link>36X36\1F4D8.png</Link>
+      <Link>Icons36x\1F4D8.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4d9.png">
-      <Link>36X36\1F4D9.png</Link>
+      <Link>Icons36x\1F4D9.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4da.png">
-      <Link>36X36\1F4DA.png</Link>
+      <Link>Icons36x\1F4DA.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4db.png">
-      <Link>36X36\1F4DB.png</Link>
+      <Link>Icons36x\1F4DB.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4dc.png">
-      <Link>36X36\1F4DC.png</Link>
+      <Link>Icons36x\1F4DC.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4dd.png">
-      <Link>36X36\1F4DD.png</Link>
+      <Link>Icons36x\1F4DD.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4de.png">
-      <Link>36X36\1F4DE.png</Link>
+      <Link>Icons36x\1F4DE.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4df.png">
-      <Link>36X36\1F4DF.png</Link>
+      <Link>Icons36x\1F4DF.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4e0.png">
-      <Link>36X36\1F4E0.png</Link>
+      <Link>Icons36x\1F4E0.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4e1.png">
-      <Link>36X36\1F4E1.png</Link>
+      <Link>Icons36x\1F4E1.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4e2.png">
-      <Link>36X36\1F4E2.png</Link>
+      <Link>Icons36x\1F4E2.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4e3.png">
-      <Link>36X36\1F4E3.png</Link>
+      <Link>Icons36x\1F4E3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4e4.png">
-      <Link>36X36\1F4E4.png</Link>
+      <Link>Icons36x\1F4E4.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4e5.png">
-      <Link>36X36\1F4E5.png</Link>
+      <Link>Icons36x\1F4E5.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4e6.png">
-      <Link>36X36\1F4E6.png</Link>
+      <Link>Icons36x\1F4E6.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4e7.png">
-      <Link>36X36\1F4E7.png</Link>
+      <Link>Icons36x\1F4E7.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4e8.png">
-      <Link>36X36\1F4E8.png</Link>
+      <Link>Icons36x\1F4E8.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4e9.png">
-      <Link>36X36\1F4E9.png</Link>
+      <Link>Icons36x\1F4E9.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4ea.png">
-      <Link>36X36\1F4EA.png</Link>
+      <Link>Icons36x\1F4EA.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4eb.png">
-      <Link>36X36\1F4EB.png</Link>
+      <Link>Icons36x\1F4EB.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4ec.png">
-      <Link>36X36\1F4EC.png</Link>
+      <Link>Icons36x\1F4EC.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4ed.png">
-      <Link>36X36\1F4ED.png</Link>
+      <Link>Icons36x\1F4ED.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4ee.png">
-      <Link>36X36\1F4EE.png</Link>
+      <Link>Icons36x\1F4EE.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4ef.png">
-      <Link>36X36\1F4EF.png</Link>
+      <Link>Icons36x\1F4EF.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4f0.png">
-      <Link>36X36\1F4F0.png</Link>
+      <Link>Icons36x\1F4F0.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4f1.png">
-      <Link>36X36\1F4F1.png</Link>
+      <Link>Icons36x\1F4F1.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4f2.png">
-      <Link>36X36\1F4F2.png</Link>
+      <Link>Icons36x\1F4F2.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4f3.png">
-      <Link>36X36\1F4F3.png</Link>
+      <Link>Icons36x\1F4F3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4f4.png">
-      <Link>36X36\1F4F4.png</Link>
+      <Link>Icons36x\1F4F4.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4f5.png">
-      <Link>36X36\1F4F5.png</Link>
+      <Link>Icons36x\1F4F5.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4f6.png">
-      <Link>36X36\1F4F6.png</Link>
+      <Link>Icons36x\1F4F6.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4f7.png">
-      <Link>36X36\1F4F7.png</Link>
+      <Link>Icons36x\1F4F7.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4f9.png">
-      <Link>36X36\1F4F9.png</Link>
+      <Link>Icons36x\1F4F9.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4fa.png">
-      <Link>36X36\1F4FA.png</Link>
+      <Link>Icons36x\1F4FA.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4fb.png">
-      <Link>36X36\1F4FB.png</Link>
+      <Link>Icons36x\1F4FB.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f4fc.png">
-      <Link>36X36\1F4FC.png</Link>
+      <Link>Icons36x\1F4FC.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f500.png">
-      <Link>36X36\1F500.png</Link>
+      <Link>Icons36x\1F500.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f501.png">
-      <Link>36X36\1F501.png</Link>
+      <Link>Icons36x\1F501.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f502.png">
-      <Link>36X36\1F502.png</Link>
+      <Link>Icons36x\1F502.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f503.png">
-      <Link>36X36\1F503.png</Link>
+      <Link>Icons36x\1F503.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f504.png">
-      <Link>36X36\1F504.png</Link>
+      <Link>Icons36x\1F504.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f505.png">
-      <Link>36X36\1F505.png</Link>
+      <Link>Icons36x\1F505.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f506.png">
-      <Link>36X36\1F506.png</Link>
+      <Link>Icons36x\1F506.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f507.png">
-      <Link>36X36\1F507.png</Link>
+      <Link>Icons36x\1F507.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f508.png">
-      <Link>36X36\1F508.png</Link>
+      <Link>Icons36x\1F508.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f509.png">
-      <Link>36X36\1F509.png</Link>
+      <Link>Icons36x\1F509.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f50a.png">
-      <Link>36X36\1F50A.png</Link>
+      <Link>Icons36x\1F50A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f50b.png">
-      <Link>36X36\1F50B.png</Link>
+      <Link>Icons36x\1F50B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f50c.png">
-      <Link>36X36\1F50C.png</Link>
+      <Link>Icons36x\1F50C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f50d.png">
-      <Link>36X36\1F50D.png</Link>
+      <Link>Icons36x\1F50D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f50e.png">
-      <Link>36X36\1F50E.png</Link>
+      <Link>Icons36x\1F50E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f50f.png">
-      <Link>36X36\1F50F.png</Link>
+      <Link>Icons36x\1F50F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f510.png">
-      <Link>36X36\1F510.png</Link>
+      <Link>Icons36x\1F510.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f511.png">
-      <Link>36X36\1F511.png</Link>
+      <Link>Icons36x\1F511.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f512.png">
-      <Link>36X36\1F512.png</Link>
+      <Link>Icons36x\1F512.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f513.png">
-      <Link>36X36\1F513.png</Link>
+      <Link>Icons36x\1F513.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f514.png">
-      <Link>36X36\1F514.png</Link>
+      <Link>Icons36x\1F514.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f515.png">
-      <Link>36X36\1F515.png</Link>
+      <Link>Icons36x\1F515.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f516.png">
-      <Link>36X36\1F516.png</Link>
+      <Link>Icons36x\1F516.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f517.png">
-      <Link>36X36\1F517.png</Link>
+      <Link>Icons36x\1F517.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f518.png">
-      <Link>36X36\1F518.png</Link>
+      <Link>Icons36x\1F518.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f519.png">
-      <Link>36X36\1F519.png</Link>
+      <Link>Icons36x\1F519.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f51a.png">
-      <Link>36X36\1F51A.png</Link>
+      <Link>Icons36x\1F51A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f51b.png">
-      <Link>36X36\1F51B.png</Link>
+      <Link>Icons36x\1F51B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f51c.png">
-      <Link>36X36\1F51C.png</Link>
+      <Link>Icons36x\1F51C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f51d.png">
-      <Link>36X36\1F51D.png</Link>
+      <Link>Icons36x\1F51D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f51e.png">
-      <Link>36X36\1F51E.png</Link>
+      <Link>Icons36x\1F51E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f51f.png">
-      <Link>36X36\1F51F.png</Link>
+      <Link>Icons36x\1F51F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f520.png">
-      <Link>36X36\1F520.png</Link>
+      <Link>Icons36x\1F520.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f521.png">
-      <Link>36X36\1F521.png</Link>
+      <Link>Icons36x\1F521.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f522.png">
-      <Link>36X36\1F522.png</Link>
+      <Link>Icons36x\1F522.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f523.png">
-      <Link>36X36\1F523.png</Link>
+      <Link>Icons36x\1F523.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f524.png">
-      <Link>36X36\1F524.png</Link>
+      <Link>Icons36x\1F524.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f525.png">
-      <Link>36X36\1F525.png</Link>
+      <Link>Icons36x\1F525.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f526.png">
-      <Link>36X36\1F526.png</Link>
+      <Link>Icons36x\1F526.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f527.png">
-      <Link>36X36\1F527.png</Link>
+      <Link>Icons36x\1F527.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f528.png">
-      <Link>36X36\1F528.png</Link>
+      <Link>Icons36x\1F528.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f529.png">
-      <Link>36X36\1F529.png</Link>
+      <Link>Icons36x\1F529.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f52a.png">
-      <Link>36X36\1F52A.png</Link>
+      <Link>Icons36x\1F52A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f52b.png">
-      <Link>36X36\1F52B.png</Link>
+      <Link>Icons36x\1F52B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f52c.png">
-      <Link>36X36\1F52C.png</Link>
+      <Link>Icons36x\1F52C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f52d.png">
-      <Link>36X36\1F52D.png</Link>
+      <Link>Icons36x\1F52D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f52e.png">
-      <Link>36X36\1F52E.png</Link>
+      <Link>Icons36x\1F52E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f52f.png">
-      <Link>36X36\1F52F.png</Link>
+      <Link>Icons36x\1F52F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f530.png">
-      <Link>36X36\1F530.png</Link>
+      <Link>Icons36x\1F530.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f531.png">
-      <Link>36X36\1F531.png</Link>
+      <Link>Icons36x\1F531.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f532.png">
-      <Link>36X36\1F532.png</Link>
+      <Link>Icons36x\1F532.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f533.png">
-      <Link>36X36\1F533.png</Link>
+      <Link>Icons36x\1F533.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f534.png">
-      <Link>36X36\1F534.png</Link>
+      <Link>Icons36x\1F534.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f535.png">
-      <Link>36X36\1F535.png</Link>
+      <Link>Icons36x\1F535.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f536.png">
-      <Link>36X36\1F536.png</Link>
+      <Link>Icons36x\1F536.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f537.png">
-      <Link>36X36\1F537.png</Link>
+      <Link>Icons36x\1F537.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f538.png">
-      <Link>36X36\1F538.png</Link>
+      <Link>Icons36x\1F538.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f539.png">
-      <Link>36X36\1F539.png</Link>
+      <Link>Icons36x\1F539.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f53a.png">
-      <Link>36X36\1F53A.png</Link>
+      <Link>Icons36x\1F53A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f53b.png">
-      <Link>36X36\1F53B.png</Link>
+      <Link>Icons36x\1F53B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f53c.png">
-      <Link>36X36\1F53C.png</Link>
+      <Link>Icons36x\1F53C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f53d.png">
-      <Link>36X36\1F53D.png</Link>
+      <Link>Icons36x\1F53D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f550.png">
-      <Link>36X36\1F550.png</Link>
+      <Link>Icons36x\1F550.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f551.png">
-      <Link>36X36\1F551.png</Link>
+      <Link>Icons36x\1F551.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f552.png">
-      <Link>36X36\1F552.png</Link>
+      <Link>Icons36x\1F552.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f553.png">
-      <Link>36X36\1F553.png</Link>
+      <Link>Icons36x\1F553.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f554.png">
-      <Link>36X36\1F554.png</Link>
+      <Link>Icons36x\1F554.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f555.png">
-      <Link>36X36\1F555.png</Link>
+      <Link>Icons36x\1F555.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f556.png">
-      <Link>36X36\1F556.png</Link>
+      <Link>Icons36x\1F556.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f557.png">
-      <Link>36X36\1F557.png</Link>
+      <Link>Icons36x\1F557.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f558.png">
-      <Link>36X36\1F558.png</Link>
+      <Link>Icons36x\1F558.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f559.png">
-      <Link>36X36\1F559.png</Link>
+      <Link>Icons36x\1F559.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f55a.png">
-      <Link>36X36\1F55A.png</Link>
+      <Link>Icons36x\1F55A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f55b.png">
-      <Link>36X36\1F55B.png</Link>
+      <Link>Icons36x\1F55B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f55c.png">
-      <Link>36X36\1F55C.png</Link>
+      <Link>Icons36x\1F55C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f55d.png">
-      <Link>36X36\1F55D.png</Link>
+      <Link>Icons36x\1F55D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f55e.png">
-      <Link>36X36\1F55E.png</Link>
+      <Link>Icons36x\1F55E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f55f.png">
-      <Link>36X36\1F55F.png</Link>
+      <Link>Icons36x\1F55F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f560.png">
-      <Link>36X36\1F560.png</Link>
+      <Link>Icons36x\1F560.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f561.png">
-      <Link>36X36\1F561.png</Link>
+      <Link>Icons36x\1F561.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f562.png">
-      <Link>36X36\1F562.png</Link>
+      <Link>Icons36x\1F562.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f563.png">
-      <Link>36X36\1F563.png</Link>
+      <Link>Icons36x\1F563.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f564.png">
-      <Link>36X36\1F564.png</Link>
+      <Link>Icons36x\1F564.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f565.png">
-      <Link>36X36\1F565.png</Link>
+      <Link>Icons36x\1F565.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f566.png">
-      <Link>36X36\1F566.png</Link>
+      <Link>Icons36x\1F566.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f567.png">
-      <Link>36X36\1F567.png</Link>
+      <Link>Icons36x\1F567.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f5fb.png">
-      <Link>36X36\1F5FB.png</Link>
+      <Link>Icons36x\1F5FB.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f5fc.png">
-      <Link>36X36\1F5FC.png</Link>
+      <Link>Icons36x\1F5FC.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f5fd.png">
-      <Link>36X36\1F5FD.png</Link>
+      <Link>Icons36x\1F5FD.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f5fe.png">
-      <Link>36X36\1F5FE.png</Link>
+      <Link>Icons36x\1F5FE.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f5ff.png">
-      <Link>36X36\1F5FF.png</Link>
+      <Link>Icons36x\1F5FF.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f600.png">
-      <Link>36X36\1F600.png</Link>
+      <Link>Icons36x\1F600.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f601.png">
-      <Link>36X36\1F601.png</Link>
+      <Link>Icons36x\1F601.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f602.png">
-      <Link>36X36\1F602.png</Link>
+      <Link>Icons36x\1F602.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f603.png">
-      <Link>36X36\1F603.png</Link>
+      <Link>Icons36x\1F603.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f604.png">
-      <Link>36X36\1F604.png</Link>
+      <Link>Icons36x\1F604.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f605.png">
-      <Link>36X36\1F605.png</Link>
+      <Link>Icons36x\1F605.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f606.png">
-      <Link>36X36\1F606.png</Link>
+      <Link>Icons36x\1F606.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f607.png">
-      <Link>36X36\1F607.png</Link>
+      <Link>Icons36x\1F607.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f608.png">
-      <Link>36X36\1F608.png</Link>
+      <Link>Icons36x\1F608.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f609.png">
-      <Link>36X36\1F609.png</Link>
+      <Link>Icons36x\1F609.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f60a.png">
-      <Link>36X36\1F60A.png</Link>
+      <Link>Icons36x\1F60A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f60b.png">
-      <Link>36X36\1F60B.png</Link>
+      <Link>Icons36x\1F60B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f60c.png">
-      <Link>36X36\1F60C.png</Link>
+      <Link>Icons36x\1F60C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f60d.png">
-      <Link>36X36\1F60D.png</Link>
+      <Link>Icons36x\1F60D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f60e.png">
-      <Link>36X36\1F60E.png</Link>
+      <Link>Icons36x\1F60E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f60f.png">
-      <Link>36X36\1F60F.png</Link>
+      <Link>Icons36x\1F60F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f610.png">
-      <Link>36X36\1F610.png</Link>
+      <Link>Icons36x\1F610.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f611.png">
-      <Link>36X36\1F611.png</Link>
+      <Link>Icons36x\1F611.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f612.png">
-      <Link>36X36\1F612.png</Link>
+      <Link>Icons36x\1F612.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f613.png">
-      <Link>36X36\1F613.png</Link>
+      <Link>Icons36x\1F613.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f614.png">
-      <Link>36X36\1F614.png</Link>
+      <Link>Icons36x\1F614.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f615.png">
-      <Link>36X36\1F615.png</Link>
+      <Link>Icons36x\1F615.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f616.png">
-      <Link>36X36\1F616.png</Link>
+      <Link>Icons36x\1F616.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f617.png">
-      <Link>36X36\1F617.png</Link>
+      <Link>Icons36x\1F617.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f618.png">
-      <Link>36X36\1F618.png</Link>
+      <Link>Icons36x\1F618.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f619.png">
-      <Link>36X36\1F619.png</Link>
+      <Link>Icons36x\1F619.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f61a.png">
-      <Link>36X36\1F61A.png</Link>
+      <Link>Icons36x\1F61A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f61b.png">
-      <Link>36X36\1F61B.png</Link>
+      <Link>Icons36x\1F61B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f61c.png">
-      <Link>36X36\1F61C.png</Link>
+      <Link>Icons36x\1F61C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f61d.png">
-      <Link>36X36\1F61D.png</Link>
+      <Link>Icons36x\1F61D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f61e.png">
-      <Link>36X36\1F61E.png</Link>
+      <Link>Icons36x\1F61E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f61f.png">
-      <Link>36X36\1F61F.png</Link>
+      <Link>Icons36x\1F61F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f620.png">
-      <Link>36X36\1F620.png</Link>
+      <Link>Icons36x\1F620.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f621.png">
-      <Link>36X36\1F621.png</Link>
+      <Link>Icons36x\1F621.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f622.png">
-      <Link>36X36\1F622.png</Link>
+      <Link>Icons36x\1F622.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f623.png">
-      <Link>36X36\1F623.png</Link>
+      <Link>Icons36x\1F623.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f624.png">
-      <Link>36X36\1F624.png</Link>
+      <Link>Icons36x\1F624.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f625.png">
-      <Link>36X36\1F625.png</Link>
+      <Link>Icons36x\1F625.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f626.png">
-      <Link>36X36\1F626.png</Link>
+      <Link>Icons36x\1F626.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f627.png">
-      <Link>36X36\1F627.png</Link>
+      <Link>Icons36x\1F627.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f628.png">
-      <Link>36X36\1F628.png</Link>
+      <Link>Icons36x\1F628.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f629.png">
-      <Link>36X36\1F629.png</Link>
+      <Link>Icons36x\1F629.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f62a.png">
-      <Link>36X36\1F62A.png</Link>
+      <Link>Icons36x\1F62A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f62b.png">
-      <Link>36X36\1F62B.png</Link>
+      <Link>Icons36x\1F62B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f62c.png">
-      <Link>36X36\1F62C.png</Link>
+      <Link>Icons36x\1F62C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f62d.png">
-      <Link>36X36\1F62D.png</Link>
+      <Link>Icons36x\1F62D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f62e.png">
-      <Link>36X36\1F62E.png</Link>
+      <Link>Icons36x\1F62E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f62f.png">
-      <Link>36X36\1F62F.png</Link>
+      <Link>Icons36x\1F62F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f630.png">
-      <Link>36X36\1F630.png</Link>
+      <Link>Icons36x\1F630.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f631.png">
-      <Link>36X36\1F631.png</Link>
+      <Link>Icons36x\1F631.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f632.png">
-      <Link>36X36\1F632.png</Link>
+      <Link>Icons36x\1F632.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f633.png">
-      <Link>36X36\1F633.png</Link>
+      <Link>Icons36x\1F633.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f634.png">
-      <Link>36X36\1F634.png</Link>
+      <Link>Icons36x\1F634.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f635.png">
-      <Link>36X36\1F635.png</Link>
+      <Link>Icons36x\1F635.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f636.png">
-      <Link>36X36\1F636.png</Link>
+      <Link>Icons36x\1F636.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f637.png">
-      <Link>36X36\1F637.png</Link>
+      <Link>Icons36x\1F637.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f638.png">
-      <Link>36X36\1F638.png</Link>
+      <Link>Icons36x\1F638.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f639.png">
-      <Link>36X36\1F639.png</Link>
+      <Link>Icons36x\1F639.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f63a.png">
-      <Link>36X36\1F63A.png</Link>
+      <Link>Icons36x\1F63A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f63b.png">
-      <Link>36X36\1F63B.png</Link>
+      <Link>Icons36x\1F63B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f63c.png">
-      <Link>36X36\1F63C.png</Link>
+      <Link>Icons36x\1F63C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f63d.png">
-      <Link>36X36\1F63D.png</Link>
+      <Link>Icons36x\1F63D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f63e.png">
-      <Link>36X36\1F63E.png</Link>
+      <Link>Icons36x\1F63E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f63f.png">
-      <Link>36X36\1F63F.png</Link>
+      <Link>Icons36x\1F63F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f640.png">
-      <Link>36X36\1F640.png</Link>
+      <Link>Icons36x\1F640.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f645.png">
-      <Link>36X36\1F645.png</Link>
+      <Link>Icons36x\1F645.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f646.png">
-      <Link>36X36\1F646.png</Link>
+      <Link>Icons36x\1F646.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f647.png">
-      <Link>36X36\1F647.png</Link>
+      <Link>Icons36x\1F647.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f648.png">
-      <Link>36X36\1F648.png</Link>
+      <Link>Icons36x\1F648.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f649.png">
-      <Link>36X36\1F649.png</Link>
+      <Link>Icons36x\1F649.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f64a.png">
-      <Link>36X36\1F64A.png</Link>
+      <Link>Icons36x\1F64A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f64b.png">
-      <Link>36X36\1F64B.png</Link>
+      <Link>Icons36x\1F64B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f64c.png">
-      <Link>36X36\1F64C.png</Link>
+      <Link>Icons36x\1F64C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f64d.png">
-      <Link>36X36\1F64D.png</Link>
+      <Link>Icons36x\1F64D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f64e.png">
-      <Link>36X36\1F64E.png</Link>
+      <Link>Icons36x\1F64E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f64f.png">
-      <Link>36X36\1F64F.png</Link>
+      <Link>Icons36x\1F64F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f680.png">
-      <Link>36X36\1F680.png</Link>
+      <Link>Icons36x\1F680.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f681.png">
-      <Link>36X36\1F681.png</Link>
+      <Link>Icons36x\1F681.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f682.png">
-      <Link>36X36\1F682.png</Link>
+      <Link>Icons36x\1F682.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f683.png">
-      <Link>36X36\1F683.png</Link>
+      <Link>Icons36x\1F683.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f684.png">
-      <Link>36X36\1F684.png</Link>
+      <Link>Icons36x\1F684.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f685.png">
-      <Link>36X36\1F685.png</Link>
+      <Link>Icons36x\1F685.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f686.png">
-      <Link>36X36\1F686.png</Link>
+      <Link>Icons36x\1F686.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f687.png">
-      <Link>36X36\1F687.png</Link>
+      <Link>Icons36x\1F687.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f688.png">
-      <Link>36X36\1F688.png</Link>
+      <Link>Icons36x\1F688.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f689.png">
-      <Link>36X36\1F689.png</Link>
+      <Link>Icons36x\1F689.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f68a.png">
-      <Link>36X36\1F68A.png</Link>
+      <Link>Icons36x\1F68A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f68b.png">
-      <Link>36X36\1F68B.png</Link>
+      <Link>Icons36x\1F68B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f68c.png">
-      <Link>36X36\1F68C.png</Link>
+      <Link>Icons36x\1F68C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f68d.png">
-      <Link>36X36\1F68D.png</Link>
+      <Link>Icons36x\1F68D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f68e.png">
-      <Link>36X36\1F68E.png</Link>
+      <Link>Icons36x\1F68E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f68f.png">
-      <Link>36X36\1F68F.png</Link>
+      <Link>Icons36x\1F68F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f690.png">
-      <Link>36X36\1F690.png</Link>
+      <Link>Icons36x\1F690.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f691.png">
-      <Link>36X36\1F691.png</Link>
+      <Link>Icons36x\1F691.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f692.png">
-      <Link>36X36\1F692.png</Link>
+      <Link>Icons36x\1F692.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f693.png">
-      <Link>36X36\1F693.png</Link>
+      <Link>Icons36x\1F693.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f694.png">
-      <Link>36X36\1F694.png</Link>
+      <Link>Icons36x\1F694.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f695.png">
-      <Link>36X36\1F695.png</Link>
+      <Link>Icons36x\1F695.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f696.png">
-      <Link>36X36\1F696.png</Link>
+      <Link>Icons36x\1F696.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f697.png">
-      <Link>36X36\1F697.png</Link>
+      <Link>Icons36x\1F697.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f698.png">
-      <Link>36X36\1F698.png</Link>
+      <Link>Icons36x\1F698.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f699.png">
-      <Link>36X36\1F699.png</Link>
+      <Link>Icons36x\1F699.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f69a.png">
-      <Link>36X36\1F69A.png</Link>
+      <Link>Icons36x\1F69A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f69b.png">
-      <Link>36X36\1F69B.png</Link>
+      <Link>Icons36x\1F69B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f69c.png">
-      <Link>36X36\1F69C.png</Link>
+      <Link>Icons36x\1F69C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f69d.png">
-      <Link>36X36\1F69D.png</Link>
+      <Link>Icons36x\1F69D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f69e.png">
-      <Link>36X36\1F69E.png</Link>
+      <Link>Icons36x\1F69E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f69f.png">
-      <Link>36X36\1F69F.png</Link>
+      <Link>Icons36x\1F69F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6a0.png">
-      <Link>36X36\1F6A0.png</Link>
+      <Link>Icons36x\1F6A0.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6a1.png">
-      <Link>36X36\1F6A1.png</Link>
+      <Link>Icons36x\1F6A1.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6a2.png">
-      <Link>36X36\1F6A2.png</Link>
+      <Link>Icons36x\1F6A2.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6a3.png">
-      <Link>36X36\1F6A3.png</Link>
+      <Link>Icons36x\1F6A3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6a4.png">
-      <Link>36X36\1F6A4.png</Link>
+      <Link>Icons36x\1F6A4.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6a5.png">
-      <Link>36X36\1F6A5.png</Link>
+      <Link>Icons36x\1F6A5.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6a6.png">
-      <Link>36X36\1F6A6.png</Link>
+      <Link>Icons36x\1F6A6.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6a7.png">
-      <Link>36X36\1F6A7.png</Link>
+      <Link>Icons36x\1F6A7.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6a8.png">
-      <Link>36X36\1F6A8.png</Link>
+      <Link>Icons36x\1F6A8.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6a9.png">
-      <Link>36X36\1F6A9.png</Link>
+      <Link>Icons36x\1F6A9.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6aa.png">
-      <Link>36X36\1F6AA.png</Link>
+      <Link>Icons36x\1F6AA.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6ab.png">
-      <Link>36X36\1F6AB.png</Link>
+      <Link>Icons36x\1F6AB.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6ac.png">
-      <Link>36X36\1F6AC.png</Link>
+      <Link>Icons36x\1F6AC.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6ad.png">
-      <Link>36X36\1F6AD.png</Link>
+      <Link>Icons36x\1F6AD.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6ae.png">
-      <Link>36X36\1F6AE.png</Link>
+      <Link>Icons36x\1F6AE.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6af.png">
-      <Link>36X36\1F6AF.png</Link>
+      <Link>Icons36x\1F6AF.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6b0.png">
-      <Link>36X36\1F6B0.png</Link>
+      <Link>Icons36x\1F6B0.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6b1.png">
-      <Link>36X36\1F6B1.png</Link>
+      <Link>Icons36x\1F6B1.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6b2.png">
-      <Link>36X36\1F6B2.png</Link>
+      <Link>Icons36x\1F6B2.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6b3.png">
-      <Link>36X36\1F6B3.png</Link>
+      <Link>Icons36x\1F6B3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6b4.png">
-      <Link>36X36\1F6B4.png</Link>
+      <Link>Icons36x\1F6B4.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6b5.png">
-      <Link>36X36\1F6B5.png</Link>
+      <Link>Icons36x\1F6B5.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6b6.png">
-      <Link>36X36\1F6B6.png</Link>
+      <Link>Icons36x\1F6B6.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6b7.png">
-      <Link>36X36\1F6B7.png</Link>
+      <Link>Icons36x\1F6B7.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6b8.png">
-      <Link>36X36\1F6B8.png</Link>
+      <Link>Icons36x\1F6B8.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6b9.png">
-      <Link>36X36\1F6B9.png</Link>
+      <Link>Icons36x\1F6B9.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6ba.png">
-      <Link>36X36\1F6BA.png</Link>
+      <Link>Icons36x\1F6BA.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6bb.png">
-      <Link>36X36\1F6BB.png</Link>
+      <Link>Icons36x\1F6BB.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6bc.png">
-      <Link>36X36\1F6BC.png</Link>
+      <Link>Icons36x\1F6BC.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6bd.png">
-      <Link>36X36\1F6BD.png</Link>
+      <Link>Icons36x\1F6BD.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6be.png">
-      <Link>36X36\1F6BE.png</Link>
+      <Link>Icons36x\1F6BE.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6bf.png">
-      <Link>36X36\1F6BF.png</Link>
+      <Link>Icons36x\1F6BF.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6c0.png">
-      <Link>36X36\1F6C0.png</Link>
+      <Link>Icons36x\1F6C0.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6c1.png">
-      <Link>36X36\1F6C1.png</Link>
+      <Link>Icons36x\1F6C1.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6c2.png">
-      <Link>36X36\1F6C2.png</Link>
+      <Link>Icons36x\1F6C2.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6c3.png">
-      <Link>36X36\1F6C3.png</Link>
+      <Link>Icons36x\1F6C3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6c4.png">
-      <Link>36X36\1F6C4.png</Link>
+      <Link>Icons36x\1F6C4.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\1f6c5.png">
-      <Link>36X36\1F6C5.png</Link>
+      <Link>Icons36x\1F6C5.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\203c.png">
-      <Link>36X36\203C.png</Link>
+      <Link>Icons36x\203C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2049.png">
-      <Link>36X36\2049.png</Link>
+      <Link>Icons36x\2049.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2122.png">
-      <Link>36X36\2122.png</Link>
+      <Link>Icons36x\2122.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2139.png">
-      <Link>36X36\2139.png</Link>
+      <Link>Icons36x\2139.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2194.png">
-      <Link>36X36\2194.png</Link>
+      <Link>Icons36x\2194.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2195.png">
-      <Link>36X36\2195.png</Link>
+      <Link>Icons36x\2195.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2196.png">
-      <Link>36X36\2196.png</Link>
+      <Link>Icons36x\2196.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2197.png">
-      <Link>36X36\2197.png</Link>
+      <Link>Icons36x\2197.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2198.png">
-      <Link>36X36\2198.png</Link>
+      <Link>Icons36x\2198.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2199.png">
-      <Link>36X36\2199.png</Link>
+      <Link>Icons36x\2199.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\21a9.png">
-      <Link>36X36\21A9.png</Link>
+      <Link>Icons36x\21A9.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\21aa.png">
-      <Link>36X36\21AA.png</Link>
+      <Link>Icons36x\21AA.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\23-20e3.png">
-      <Link>36X36\23-20E3.png</Link>
+      <Link>Icons36x\23-20E3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\231a.png">
-      <Link>36X36\231A.png</Link>
+      <Link>Icons36x\231A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\231b.png">
-      <Link>36X36\231B.png</Link>
+      <Link>Icons36x\231B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\23e9.png">
-      <Link>36X36\23E9.png</Link>
+      <Link>Icons36x\23E9.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\23ea.png">
-      <Link>36X36\23EA.png</Link>
+      <Link>Icons36x\23EA.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\23eb.png">
-      <Link>36X36\23EB.png</Link>
+      <Link>Icons36x\23EB.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\23ec.png">
-      <Link>36X36\23EC.png</Link>
+      <Link>Icons36x\23EC.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\23f0.png">
-      <Link>36X36\23F0.png</Link>
+      <Link>Icons36x\23F0.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\23f3.png">
-      <Link>36X36\23F3.png</Link>
+      <Link>Icons36x\23F3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\24c2.png">
-      <Link>36X36\24C2.png</Link>
+      <Link>Icons36x\24C2.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\25aa.png">
-      <Link>36X36\25AA.png</Link>
+      <Link>Icons36x\25AA.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\25ab.png">
-      <Link>36X36\25AB.png</Link>
+      <Link>Icons36x\25AB.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\25b6.png">
-      <Link>36X36\25B6.png</Link>
+      <Link>Icons36x\25B6.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\25c0.png">
-      <Link>36X36\25C0.png</Link>
+      <Link>Icons36x\25C0.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\25fb.png">
-      <Link>36X36\25FB.png</Link>
+      <Link>Icons36x\25FB.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\25fc.png">
-      <Link>36X36\25FC.png</Link>
+      <Link>Icons36x\25FC.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\25fd.png">
-      <Link>36X36\25FD.png</Link>
+      <Link>Icons36x\25FD.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\25fe.png">
-      <Link>36X36\25FE.png</Link>
+      <Link>Icons36x\25FE.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2600.png">
-      <Link>36X36\2600.png</Link>
+      <Link>Icons36x\2600.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2601.png">
-      <Link>36X36\2601.png</Link>
+      <Link>Icons36x\2601.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\260e.png">
-      <Link>36X36\260E.png</Link>
+      <Link>Icons36x\260E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2611.png">
-      <Link>36X36\2611.png</Link>
+      <Link>Icons36x\2611.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2614.png">
-      <Link>36X36\2614.png</Link>
+      <Link>Icons36x\2614.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2615.png">
-      <Link>36X36\2615.png</Link>
+      <Link>Icons36x\2615.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\261d.png">
-      <Link>36X36\261D.png</Link>
+      <Link>Icons36x\261D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\263a.png">
-      <Link>36X36\263A.png</Link>
+      <Link>Icons36x\263A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2648.png">
-      <Link>36X36\2648.png</Link>
+      <Link>Icons36x\2648.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2649.png">
-      <Link>36X36\2649.png</Link>
+      <Link>Icons36x\2649.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\264a.png">
-      <Link>36X36\264A.png</Link>
+      <Link>Icons36x\264A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\264b.png">
-      <Link>36X36\264B.png</Link>
+      <Link>Icons36x\264B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\264c.png">
-      <Link>36X36\264C.png</Link>
+      <Link>Icons36x\264C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\264d.png">
-      <Link>36X36\264D.png</Link>
+      <Link>Icons36x\264D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\264e.png">
-      <Link>36X36\264E.png</Link>
+      <Link>Icons36x\264E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\264f.png">
-      <Link>36X36\264F.png</Link>
+      <Link>Icons36x\264F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2650.png">
-      <Link>36X36\2650.png</Link>
+      <Link>Icons36x\2650.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2651.png">
-      <Link>36X36\2651.png</Link>
+      <Link>Icons36x\2651.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2652.png">
-      <Link>36X36\2652.png</Link>
+      <Link>Icons36x\2652.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2653.png">
-      <Link>36X36\2653.png</Link>
+      <Link>Icons36x\2653.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2660.png">
-      <Link>36X36\2660.png</Link>
+      <Link>Icons36x\2660.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2663.png">
-      <Link>36X36\2663.png</Link>
+      <Link>Icons36x\2663.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2665.png">
-      <Link>36X36\2665.png</Link>
+      <Link>Icons36x\2665.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2666.png">
-      <Link>36X36\2666.png</Link>
+      <Link>Icons36x\2666.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2668.png">
-      <Link>36X36\2668.png</Link>
+      <Link>Icons36x\2668.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\267b.png">
-      <Link>36X36\267B.png</Link>
+      <Link>Icons36x\267B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\267f.png">
-      <Link>36X36\267F.png</Link>
+      <Link>Icons36x\267F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2693.png">
-      <Link>36X36\2693.png</Link>
+      <Link>Icons36x\2693.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\26a0.png">
-      <Link>36X36\26A0.png</Link>
+      <Link>Icons36x\26A0.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\26a1.png">
-      <Link>36X36\26A1.png</Link>
+      <Link>Icons36x\26A1.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\26aa.png">
-      <Link>36X36\26AA.png</Link>
+      <Link>Icons36x\26AA.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\26ab.png">
-      <Link>36X36\26AB.png</Link>
+      <Link>Icons36x\26AB.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\26bd.png">
-      <Link>36X36\26BD.png</Link>
+      <Link>Icons36x\26BD.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\26be.png">
-      <Link>36X36\26BE.png</Link>
+      <Link>Icons36x\26BE.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\26c4.png">
-      <Link>36X36\26C4.png</Link>
+      <Link>Icons36x\26C4.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\26c5.png">
-      <Link>36X36\26C5.png</Link>
+      <Link>Icons36x\26C5.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\26ce.png">
-      <Link>36X36\26CE.png</Link>
+      <Link>Icons36x\26CE.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\26d4.png">
-      <Link>36X36\26D4.png</Link>
+      <Link>Icons36x\26D4.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\26ea.png">
-      <Link>36X36\26EA.png</Link>
+      <Link>Icons36x\26EA.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\26f2.png">
-      <Link>36X36\26F2.png</Link>
+      <Link>Icons36x\26F2.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\26f3.png">
-      <Link>36X36\26F3.png</Link>
+      <Link>Icons36x\26F3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\26f5.png">
-      <Link>36X36\26F5.png</Link>
+      <Link>Icons36x\26F5.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\26fa.png">
-      <Link>36X36\26FA.png</Link>
+      <Link>Icons36x\26FA.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\26fd.png">
-      <Link>36X36\26FD.png</Link>
+      <Link>Icons36x\26FD.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2702.png">
-      <Link>36X36\2702.png</Link>
+      <Link>Icons36x\2702.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2705.png">
-      <Link>36X36\2705.png</Link>
+      <Link>Icons36x\2705.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2708.png">
-      <Link>36X36\2708.png</Link>
+      <Link>Icons36x\2708.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2709.png">
-      <Link>36X36\2709.png</Link>
+      <Link>Icons36x\2709.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\270a.png">
-      <Link>36X36\270A.png</Link>
+      <Link>Icons36x\270A.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\270b.png">
-      <Link>36X36\270B.png</Link>
+      <Link>Icons36x\270B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\270c.png">
-      <Link>36X36\270C.png</Link>
+      <Link>Icons36x\270C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\270f.png">
-      <Link>36X36\270F.png</Link>
+      <Link>Icons36x\270F.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2712.png">
-      <Link>36X36\2712.png</Link>
+      <Link>Icons36x\2712.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2714.png">
-      <Link>36X36\2714.png</Link>
+      <Link>Icons36x\2714.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2716.png">
-      <Link>36X36\2716.png</Link>
+      <Link>Icons36x\2716.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2728.png">
-      <Link>36X36\2728.png</Link>
+      <Link>Icons36x\2728.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2733.png">
-      <Link>36X36\2733.png</Link>
+      <Link>Icons36x\2733.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2734.png">
-      <Link>36X36\2734.png</Link>
+      <Link>Icons36x\2734.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2744.png">
-      <Link>36X36\2744.png</Link>
+      <Link>Icons36x\2744.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2747.png">
-      <Link>36X36\2747.png</Link>
+      <Link>Icons36x\2747.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\274c.png">
-      <Link>36X36\274C.png</Link>
+      <Link>Icons36x\274C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\274e.png">
-      <Link>36X36\274E.png</Link>
+      <Link>Icons36x\274E.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2753.png">
-      <Link>36X36\2753.png</Link>
+      <Link>Icons36x\2753.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2754.png">
-      <Link>36X36\2754.png</Link>
+      <Link>Icons36x\2754.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2755.png">
-      <Link>36X36\2755.png</Link>
+      <Link>Icons36x\2755.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2757.png">
-      <Link>36X36\2757.png</Link>
+      <Link>Icons36x\2757.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2764.png">
-      <Link>36X36\2764.png</Link>
+      <Link>Icons36x\2764.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2795.png">
-      <Link>36X36\2795.png</Link>
+      <Link>Icons36x\2795.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2796.png">
-      <Link>36X36\2796.png</Link>
+      <Link>Icons36x\2796.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2797.png">
-      <Link>36X36\2797.png</Link>
+      <Link>Icons36x\2797.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\27a1.png">
-      <Link>36X36\27A1.png</Link>
+      <Link>Icons36x\27A1.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\27b0.png">
-      <Link>36X36\27B0.png</Link>
+      <Link>Icons36x\27B0.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\27bf.png">
-      <Link>36X36\27BF.png</Link>
+      <Link>Icons36x\27BF.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2934.png">
-      <Link>36X36\2934.png</Link>
+      <Link>Icons36x\2934.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2935.png">
-      <Link>36X36\2935.png</Link>
+      <Link>Icons36x\2935.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2b05.png">
-      <Link>36X36\2B05.png</Link>
+      <Link>Icons36x\2B05.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2b06.png">
-      <Link>36X36\2B06.png</Link>
+      <Link>Icons36x\2B06.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2b07.png">
-      <Link>36X36\2B07.png</Link>
+      <Link>Icons36x\2B07.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2b1b.png">
-      <Link>36X36\2B1B.png</Link>
+      <Link>Icons36x\2B1B.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2b1c.png">
-      <Link>36X36\2B1C.png</Link>
+      <Link>Icons36x\2B1C.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2b50.png">
-      <Link>36X36\2B50.png</Link>
+      <Link>Icons36x\2B50.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\2b55.png">
-      <Link>36X36\2B55.png</Link>
+      <Link>Icons36x\2B55.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\30-20e3.png">
-      <Link>36X36\30-20E3.png</Link>
+      <Link>Icons36x\30-20E3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\3030.png">
-      <Link>36X36\3030.png</Link>
+      <Link>Icons36x\3030.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\303d.png">
-      <Link>36X36\303D.png</Link>
+      <Link>Icons36x\303D.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\31-20e3.png">
-      <Link>36X36\31-20E3.png</Link>
+      <Link>Icons36x\31-20E3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\32-20e3.png">
-      <Link>36X36\32-20E3.png</Link>
+      <Link>Icons36x\32-20E3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\3297.png">
-      <Link>36X36\3297.png</Link>
+      <Link>Icons36x\3297.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\3299.png">
-      <Link>36X36\3299.png</Link>
+      <Link>Icons36x\3299.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\33-20e3.png">
-      <Link>36X36\33-20E3.png</Link>
+      <Link>Icons36x\33-20E3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\34-20e3.png">
-      <Link>36X36\34-20E3.png</Link>
+      <Link>Icons36x\34-20E3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\35-20e3.png">
-      <Link>36X36\35-20E3.png</Link>
+      <Link>Icons36x\35-20E3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\36-20e3.png">
-      <Link>36X36\36-20E3.png</Link>
+      <Link>Icons36x\36-20E3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\37-20e3.png">
-      <Link>36X36\37-20E3.png</Link>
+      <Link>Icons36x\37-20E3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\38-20e3.png">
-      <Link>36X36\38-20E3.png</Link>
+      <Link>Icons36x\38-20E3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\39-20e3.png">
-      <Link>36X36\39-20E3.png</Link>
+      <Link>Icons36x\39-20E3.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\a9.png">
-      <Link>36X36\A9.png</Link>
+      <Link>Icons36x\A9.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\ae.png">
-      <Link>36X36\AE.png</Link>
+      <Link>Icons36x\AE.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\36x36\e50a.png">
-      <Link>36X36\E50A.png</Link>
+      <Link>Icons36x\E50A.png</Link>
     </EmbeddedResource>
   </ItemGroup>
 </Project>
