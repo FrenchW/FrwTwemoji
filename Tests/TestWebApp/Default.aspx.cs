@@ -20,10 +20,15 @@ namespace TestWebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string url = Page.ClientScript.GetWebResourceUrl(typeof(EmojiDisplay), "FrwTwemoji.IconsSvg.2753.svg");
-            spnTests.InnerHtml = "<img width=\"300px\"src=\"" + url + "\"/>";
 
+            // direct rendering of the text
             EmojiDisplay2.Text = TestString.manger;
+        }
+
+        protected void BtnRender_Click(object sender, EventArgs e)
+        {
+            spnTests.InnerHtml = Parser.ParseEmoji(TxtEmoji.Text);
+            EmojiDisplay2.Text = TxtEmoji.Text;
         }
     }
 }

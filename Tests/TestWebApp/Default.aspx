@@ -12,18 +12,22 @@
         <div>
             <h1>FrwTwemoji Test Page</h1>
             <h2>Debug tests</h2>
-<span runat="server" id="spnTests"></span>
-<h2>Emoji Display</h2>
-<cc1:EmojiDisplay ID="EmojiDisplay1"
-    runat="server"
-    Text="Today,  Twitter is open sourcing their emoji to share with everyone 🎉 😜 👯 🍻 🎈 🎤 🎮 🚀 🌉 ✨" />
+            <p>Type some text and lick &quot;Render&quot;</p>
+            <div>
+                <asp:TextBox ID="TxtEmoji" runat="server" TextMode="MultiLine" Height="68px" Width="356px"></asp:TextBox><br/>
+                <asp:Button ID="BtnRender" runat="server" Text="Render" OnClick="BtnRender_Click" />
+            </div>
+           <p>Rendering : <span runat="server" id="spnTests"></span></p> 
+            <h2>Emoji Display</h2>
+            <cc1:EmojiDisplay ID="EmojiDisplay1"
+                runat="server"
+                Text="Today,  Twitter is open sourcing their emoji to share with everyone 🎉 😜 👯 🍻 🎈 🎤 🎮 🚀 🌉 ✨" />
 
             <h2>French
             </h2>
             <p>
                 <cc1:EmojiDisplay ID="EmojiDisplay2"
-                    runat="server" AssetSize="Render72Px" AssetType="Png"
-                    />
+                    runat="server" AssetSize="Render72Px" AssetType="Png" />
             </p>
         </div>
     </form>
