@@ -34,12 +34,12 @@ namespace Generator
         /// <summary>
         /// Initializes a new instance of the <see cref="AssetCollection" /> class.
         /// </summary>
-        /// <param name="assetNames">Name of each asset to create when initializing.</param>
-        public AssetCollection(string[] assetNames)
+        /// <param name="assetTypes">Name of each asset to create when initializing.</param>
+        public AssetCollection(Helpers.AssetPackFromTwemoji[] assetTypes)
         {
-            for (int i = 0; i <= assetNames.GetUpperBound(0); i++)
+            for (int i = 0; i <= assetTypes.GetUpperBound(0); i++)
             {
-                this.Add(new Asset(assetNames[i]));
+                this.Add(new Asset(assetTypes[i]));
             }
         }
 

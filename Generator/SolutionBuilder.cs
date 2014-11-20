@@ -205,10 +205,8 @@
                         emoji.ToUpperInvariant());
 
                     stbFrwTwemojiAssemblyInfoCs.AppendFormat(
-                        "[assembly: WebResource(\"FrwTwemoji.{0}.{1}.{2}\", \"{3}\")]\r\n",
-                        asset.CompilationConstant,
-                        emoji.ToUpperInvariant(),
-                        asset.Extension.ToLowerInvariant(),
+                        "[assembly: WebResource(\"{0}\", \"{1}\")]\r\n",
+                        Helpers.GetEmojiAssemblyName(emoji,asset.Pack),
                         asset.MimeType);
                 }
 

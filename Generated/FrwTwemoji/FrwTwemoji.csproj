@@ -46,8 +46,9 @@
       <Link>Helpers.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="EmojiDisplayDesigner.cs" />
+    <Compile Include="Designers\EmojiDisplayDesigner.cs" />
     <Compile Include="EmojiDisplay.cs" />
+    <Compile Include="Parser.cs" />
     <Compile Include="RegEx.cs" />
   </ItemGroup>
   <ItemGroup>

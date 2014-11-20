@@ -48,11 +48,14 @@
     <Compile Include="..\..\Generator\Helpers.cs">
       <Link>Helpers.cs</Link>
     </Compile>
-    <Compile Include="..\FrwTwemoji\EmojiDisplayDesigner.cs">
-      <Link>EmojiDisplayDesigner.cs</Link>
+    <Compile Include="..\FrwTwemoji\Designers\EmojiDisplayDesigner.cs">
+      <Link>Designers\EmojiDisplayDesigner.cs</Link>
     </Compile>
     <Compile Include="..\FrwTwemoji\EmojiDisplay.cs">
       <Link>EmojiDisplay.cs</Link>
+    </Compile>
+    <Compile Include="..\FrwTwemoji\Parser.cs">
+      <Link>Parser.cs</Link>
     </Compile>
     <Compile Include="..\FrwTwemoji\RegEx.cs">
       <Link>RegEx.cs</Link>

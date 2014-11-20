@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-16"?>
 <ArrayOfAsset xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Asset>
-    <Name>16x16</Name>
+    <Pack>Pack16X16</Pack>
     <Emoji>
       <string>1F004</string>
       <string>1F0CF</string>
@@ -878,7 +878,7 @@
     </Emoji>
   </Asset>
   <Asset>
-    <Name>36x36</Name>
+    <Pack>Pack36X36</Pack>
     <Emoji>
       <string>1F004</string>
       <string>1F0CF</string>
@@ -1755,7 +1755,7 @@
     </Emoji>
   </Asset>
   <Asset>
-    <Name>72x72</Name>
+    <Pack>Pack72X72</Pack>
     <Emoji>
       <string>1F004</string>
       <string>1F0CF</string>
@@ -2632,7 +2632,7 @@
     </Emoji>
   </Asset>
   <Asset>
-    <Name>Svg</Name>
+    <Pack>PackSvg</Pack>
     <Emoji>
       <string>1F004</string>
       <string>1F0CF</string>

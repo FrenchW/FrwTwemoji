@@ -168,11 +168,14 @@
     &lt;Compile Include="..\..\Generator\Helpers.cs"&gt;
       &lt;Link&gt;Helpers.cs&lt;/Link&gt;
     &lt;/Compile&gt;
-    &lt;Compile Include="..\FrwTwemoji\EmojiDisplayDesigner.cs"&gt;
-      &lt;Link&gt;EmojiDisplayDesigner.cs&lt;/Link&gt;
+    &lt;Compile Include="..\FrwTwemoji\Designers\EmojiDisplayDesigner.cs"&gt;
+      &lt;Link&gt;Designers\EmojiDisplayDesigner.cs&lt;/Link&gt;
     &lt;/Compile&gt;
     &lt;Compile Include="..\FrwTwemoji\EmojiDisplay.cs"&gt;
       &lt;Link&gt;EmojiDisplay.cs&lt;/Link&gt;
+    &lt;/Compile&gt;
+    &lt;Compile Include="..\FrwTwemoji\Parser.cs"&gt;
+      &lt;Link&gt;Parser.cs&lt;/Link&gt;
     &lt;/Compile&gt;
     &lt;Compile Include="..\FrwTwemoji\RegEx.cs"&gt;
       &lt;Link&gt;RegEx.cs&lt;/Link&gt;
@@ -267,8 +270,9 @@ using System.Web.UI;
       &lt;Link&gt;Helpers.cs&lt;/Link&gt;
     &lt;/Compile&gt;
     &lt;Compile Include="Properties\AssemblyInfo.cs" /&gt;
-    &lt;Compile Include="EmojiDisplayDesigner.cs" /&gt;
+    &lt;Compile Include="Designers\EmojiDisplayDesigner.cs" /&gt;
     &lt;Compile Include="EmojiDisplay.cs" /&gt;
+    &lt;Compile Include="Parser.cs" /&gt;
     &lt;Compile Include="RegEx.cs" /&gt;
   &lt;/ItemGroup&gt;</value>
   </data>

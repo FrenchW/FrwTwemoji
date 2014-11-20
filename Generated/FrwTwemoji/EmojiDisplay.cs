@@ -50,7 +50,7 @@ namespace FrwTwemoji
         /// <value>
         /// The size of the asset.
         /// </value>
-        public AssetSizes AssetSize
+        public Helpers.AssetSizes AssetSize
         {
             get
             {
@@ -58,10 +58,10 @@ namespace FrwTwemoji
                    this.ViewState["AssetSize"];
                 if (obj == null)
                 {
-                    return AssetSizes.Render16Px;
+                    return Helpers.AssetSizes.Render16Px;
                 }
 
-                return (AssetSizes)obj;
+                return (Helpers.AssetSizes)obj;
             }
             set
             {
@@ -69,80 +69,14 @@ namespace FrwTwemoji
                 this.DataChanged();
             }
         }
-        /// <summary>
-        /// The size to render the icons
-        /// </summary>
-        public enum AssetSizes
-        {
-            /// <summary>
-            /// Render in 16 pixels
-            /// </summary>
-            Render16Px,
 
-            /// <summary>
-            /// Render in 36 pixels
-            /// </summary>
-            Render36Px,
-
-            /// <summary>
-            /// Render in 72 pixels
-            /// </summary>
-            Render72Px,
-
-            /// <summary>
-            /// Render in 128 pixels
-            /// </summary>
-            Render128Px,
-
-            /// <summary>
-            /// Render in 256 pixels
-            /// </summary>
-            Render256Px,
-
-            /// <summary>
-            /// Render in 512 pixels
-            /// </summary>
-            Render512Px,
-        }
-
-        /// <summary>
-        /// Emoji provider: local or a CDN
-        /// </summary>
-        public enum RessourcesProviders
-        {
-            /// <summary>
-            /// Local Resource are used
-            /// </summary>
-            Localhost,
-
-            /// <summary>
-            /// CDN : MaxCDN
-            /// </summary>
-            MaxCdn
-        }
-
-        /// <summary>
-        /// Emoji provider: local or a CDN
-        /// </summary>
-        public enum AssetTypes
-        {
-            /// <summary>
-            /// Assets in png format
-            /// </summary>
-            Png,
-
-            /// <summary>
-            /// Assets in Svg format
-            /// </summary>
-            Svg
-        }
         /// <summary>
         /// Gets or sets the image type
         /// </summary>
         /// <value>
         /// The type of the asset.
         /// </value>
-        public AssetTypes AssetType
+        public Helpers.AssetTypes AssetType
         {
             get
             {
@@ -150,10 +84,10 @@ namespace FrwTwemoji
                    this.ViewState["AssetType"];
                 if (obj == null)
                 {
-                    return AssetTypes.Png;
+                    return Helpers.AssetTypes.Png;
                 }
 
-                return (AssetTypes)obj;
+                return (Helpers.AssetTypes)obj;
             }
             set
             {
@@ -188,7 +122,7 @@ namespace FrwTwemoji
         /// <value>
         /// The ressources provider.
         /// </value>
-        public RessourcesProviders RessourcesProvider
+        public Helpers.RessourcesProviders RessourcesProvider
         {
             get
             {
@@ -196,10 +130,10 @@ namespace FrwTwemoji
                    this.ViewState["RessourcesProvider"];
                 if (obj == null)
                 {
-                    return RessourcesProviders.Localhost;
+                    return Helpers.RessourcesProviders.Localhost;
                 }
 
-                return (RessourcesProviders)obj;
+                return (Helpers.RessourcesProviders)obj;
             }
             set
             {
@@ -211,23 +145,23 @@ namespace FrwTwemoji
         private bool CheckConfiguration(out string validationMessage)
         {
             List<string> errors = new List<string>();
-            if (this.AssetType == AssetTypes.Png)
+            if (this.AssetType == Helpers.AssetTypes.Png)
             {
                 internFileExtension = "png";
-                if (this.AssetSize == AssetSizes.Render128Px || this.AssetSize == AssetSizes.Render256Px)
+                if (this.AssetSize == Helpers.AssetSizes.Render128Px || this.AssetSize == Helpers.AssetSizes.Render256Px)
                 {
                     errors.Add(string.Format("There is no png ressource for {0} resolution", this.AssetSize.ToString()));
                 }
 
                 switch (this.AssetSize)
                 {
-                    case AssetSizes.Render16Px:
+                    case Helpers.AssetSizes.Render16Px:
                         this.internFileSize = "Icons16x";
                         break;
-                    case AssetSizes.Render36Px:
+                    case Helpers.AssetSizes.Render36Px:
                         this.internFileSize = "Icons36x";
                         break;
-                    case AssetSizes.Render72Px:
+                    case Helpers.AssetSizes.Render72Px:
                         this.internFileSize = "Icons72x";
                         break;
                     default:
@@ -236,17 +170,17 @@ namespace FrwTwemoji
                         break;
                 }
             }
-            else if (this.AssetType == AssetTypes.Svg)
+            else if (this.AssetType == Helpers.AssetTypes.Svg)
             {
                 internFileExtension = "svg";
 
                 switch (this.AssetSize)
                 {
-                    case AssetSizes.Render16Px:
-                    case AssetSizes.Render36Px:
-                    case AssetSizes.Render72Px:
-                    case AssetSizes.Render128Px:
-                    case AssetSizes.Render256Px:
+                    case Helpers.AssetSizes.Render16Px:
+                    case Helpers.AssetSizes.Render36Px:
+                    case Helpers.AssetSizes.Render72Px:
+                    case Helpers.AssetSizes.Render128Px:
+                    case Helpers.AssetSizes.Render256Px:
                     default:
                         this.internFileSize = "IconsSvg";
                         break;
@@ -279,17 +213,10 @@ namespace FrwTwemoji
             }
         }
 
-        protected internal string GetWebResourceName(string emoji)
-        {
-
-            return string.Format("FrwTwemoji.{0}.{1}.{2}", this.internFileSize, emoji, this.internFileExtension);
-        }
-
         protected override void OnPreRender(EventArgs e)
         {
             base.OnPreRender(e);
-            var cs = this.Page.ClientScript;
-            this.internRenderedText = this.WebParseEmoji();
+            this.internRenderedText = new Parser(AssetSize,AssetType, RessourcesProvider).WebParseEmoji(this.Text);
         }
 
         protected override void Render(HtmlTextWriter writer)
@@ -325,30 +252,6 @@ namespace FrwTwemoji
            this.RenderContentsInternal(writer);
         }
 
-        /// <summary>
-        /// Parses the string and replaces emoji emoji.
-        /// </summary>
-        /// <param name="fromString">From string.</param>
-        /// <returns>
-        /// a string that contains the originale string with emoji replaced by image
-        /// </returns>
-        private string WebParseEmoji()
-        {
-            return Regex.Replace(this.Text, RegEx.EmojiSearchPattern, this.WebParseEmojiRegExMatchEvaluator);
-        }
-
-        private string WebParseEmojiRegExMatchEvaluator(Match match)
-        {
-            int codepoint = Helpers.ConvertUtf16ToCodePoint(match.Value);
-            string emoji = string.Format("{0:x}", codepoint).ToUpperInvariant();
-
-            // FrwTwemoji.Icons16x.1F170.png
-            string resourceName = this.GetWebResourceName(emoji);
-           
-            //this.Page.ClientScript.RegisterClientScriptResource(this.GetType(), resourceName);
-            string url = this.Page.ClientScript.GetWebResourceUrl(this.GetType(), resourceName);
-            return string.Format("<img src=\"{0}\"/>", url);
-        }
 
         protected internal void RenderContentsInternal(HtmlTextWriter writer)
         {

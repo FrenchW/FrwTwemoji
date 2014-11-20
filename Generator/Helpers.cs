@@ -18,10 +18,208 @@ namespace FrwTwemoji
     /// <summary>
     /// Handy Tools
     /// </summary>
-    internal static class Helpers
+    public static class Helpers
     {
-        /// <summary>The base known asset names.</summary>
-        internal static readonly string[] BaseKnownAssetNames = { "16x16", "36x36", "72x72", "Svg" };
+        /// <summary>
+        /// The base known asset names.
+        /// </summary>
+        internal static readonly AssetPackFromTwemoji[] BaseKnownAssetNames =
+            {
+                AssetPackFromTwemoji.Pack16X16,
+                AssetPackFromTwemoji.Pack36X36,
+                AssetPackFromTwemoji.Pack72X72,
+                AssetPackFromTwemoji.PackSvg
+            };
+
+        /// <summary>
+        /// The size to render the icons
+        /// </summary>
+        public enum AssetSizes
+        {
+            /// <summary>
+            /// Render in 16 pixels
+            /// </summary>
+            Render16Px,
+
+            /// <summary>
+            /// Render in 36 pixels
+            /// </summary>
+            Render36Px,
+
+            /// <summary>
+            /// Render in 72 pixels
+            /// </summary>
+            Render72Px,
+
+            /// <summary>
+            /// Render in 128 pixels
+            /// </summary>
+            Render128Px,
+
+            /// <summary>
+            /// Render in 256 pixels
+            /// </summary>
+            Render256Px,
+
+            /// <summary>
+            /// Render in 512 pixels
+            /// </summary>
+            Render512Px,
+        }
+
+        /// <summary>
+        /// Emoji provider: local or a CDN
+        /// </summary>
+        public enum RessourcesProviders
+        {
+            /// <summary>
+            /// Local Resource are used
+            /// </summary>
+            Localhost,
+
+            /// <summary>
+            /// CDN : MaxCDN
+            /// </summary>
+            MaxCdn
+        }
+
+        /// <summary>
+        /// Folders provided by twitter in Twemoji
+        /// </summary>
+        public enum AssetPackFromTwemoji
+        {
+            /// <summary>
+            /// 16px X 16px png images
+            /// </summary>
+            Pack16X16,
+
+            /// <summary>
+            /// 36px X 36px png images
+            /// </summary>
+            Pack36X36,
+
+            /// <summary>
+            /// 72px X 72px png images
+            /// </summary>
+            Pack72X72,
+
+            /// <summary>
+            /// Svg images
+            /// </summary>
+            PackSvg
+        }
+
+        /// <summary>
+        /// Emoji provider: local or a CDN
+        /// </summary>
+        public enum AssetTypes
+        {
+            /// <summary>
+            /// Assets in png format
+            /// </summary>
+            Png,
+
+            /// <summary>
+            /// Assets in Svg format
+            /// </summary>
+            Svg
+        }
+
+
+
+        /// <summary>Get the folder name associated with a Twemoji pack provided bu Twitter
+        /// </summary>
+        /// <param name="assetPack">The asset pack.</param>
+        /// <returns>The name of the folder, not the entire path</returns>
+        public static string GetEmojiAssemblyName(string emojiName, AssetPackFromTwemoji assetPack)
+        {
+            return string.Format(
+                "FrwTwemoji.{0}.{1}.{2}",
+                GetAssetPackCompilationConstant(assetPack),
+                emojiName.ToUpperInvariant(),
+                GetAssetPackImageExtension(assetPack));
+        }
+
+        /// <summary>Get the folder name associated with a Twemoji pack provided bu Twitter
+        /// </summary>
+        /// <param name="assetPack">The asset pack.</param>
+        /// <returns>The name of the folder, not the entire path</returns>
+        public static string GetAssetPackFolderName(AssetPackFromTwemoji assetPack)
+        {
+            switch (assetPack)
+            {
+                case AssetPackFromTwemoji.Pack16X16:
+                    return "16x16";
+                case AssetPackFromTwemoji.Pack36X36:
+                    return "36x36";
+                case AssetPackFromTwemoji.Pack72X72:
+                    return "72x72";
+                // ReSharper disable once RedundantCaseLabel
+                case AssetPackFromTwemoji.PackSvg:
+                default:
+                    return "Svg";
+            }
+        }
+
+        /// <summary>Get the folder name associated with a Twemoji pack provided bu Twitter
+        /// </summary>
+        /// <param name="assetPack">The asset pack.</param>
+        /// <returns>The name of the folder, not the entire path</returns>
+        public static string GetAssetPackPath(AssetPackFromTwemoji assetPack)
+        {
+            return GetRootPath() + GetAssetPackFolderName(assetPack) + "\\";
+        }
+
+
+        /// <summary>Get the folder name associated with a Twemoji pack provided bu Twitter
+        /// </summary>
+        /// <param name="assetPack">The asset pack.</param>
+        /// <returns>The name of the folder, not the entire path</returns>
+        public static string GetAssetPackCompilationConstant(AssetPackFromTwemoji assetPack)
+        {
+            // "Icons" + 16x(16) >> Icons16x
+            return "Icons" + GetAssetPackName(assetPack).Substring(0, 3);
+        }
+
+
+
+        /// <summary>Get the folder name associated with a Twemoji pack provided bu Twitter
+        /// </summary>
+        /// <param name="assetPack">The asset pack.</param>
+        /// <returns>The name of the folder, not the entire path</returns>
+        public static string GetAssetPackMimeType(AssetPackFromTwemoji assetPack)
+        {
+            // "Icons" + 16x(16) >> Icons16x
+            return GetAssetPackName(assetPack).ToLowerInvariant().Equals("svg") ? "image/svg+xml" : "image/png";
+        }
+
+        /// <summary>Get the folder name associated with a Twemoji pack provided bu Twitter
+        /// </summary>
+        /// <param name="assetPack">The asset pack.</param>
+        /// <returns>The name of the folder, not the entire path</returns>
+        public static string GetAssetPackName(AssetPackFromTwemoji assetPack)
+        {
+            // "16x16" >> "16x"
+            return GetAssetPackFolderName(assetPack).Substring(0, 3);
+        }
+        /// <summary>Get the folder name associated with a Twemoji pack provided bu Twitter
+        /// </summary>
+        /// <param name="assetPack">The asset pack.</param>
+        /// <returns>The name of the folder, not the entire path</returns>
+        public static string GetAssetPackImageExtension(AssetPackFromTwemoji assetPack)
+        {
+            switch (assetPack)
+            {
+                case AssetPackFromTwemoji.Pack16X16:
+                case AssetPackFromTwemoji.Pack36X36:
+                case AssetPackFromTwemoji.Pack72X72:
+                    return "png";
+                // ReSharper disable once RedundantCaseLabel
+                case AssetPackFromTwemoji.PackSvg:
+                default:
+                    return "svg";
+            }
+        }
 
         /// <summary>
         /// Gets the root path of the repository to help build local file structure.
@@ -41,6 +239,8 @@ namespace FrwTwemoji
             }
 #endif
         }
+
+        #region CodePoint Tools
 
         /// <summary>
         /// Converts UTF16 to CodePoint.
@@ -113,5 +313,7 @@ namespace FrwTwemoji
 
             return retval;
         }
+
+        #endregion
     }
 }

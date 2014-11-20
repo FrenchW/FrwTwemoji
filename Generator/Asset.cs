@@ -14,6 +14,8 @@ namespace Generator
 {
     using System.Collections.Generic;
 
+    using FrwTwemoji;
+
     /// <summary>
     /// List of the emoji names 
     /// </summary>
@@ -28,28 +30,30 @@ namespace Generator
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Asset"/> class and name if.
+        /// Initializes a new instance of the <see cref="Asset" /> class and name if.
         /// </summary>
-        /// <param name="name">The name to set for the asset</param>
-        public Asset(string name)
+        /// <param name="assetPack">The asset pack.</param>
+        public Asset(Helpers.AssetPackFromTwemoji assetPack)
         {
-            this.Name = name;
+            this.Pack = assetPack;
             this.Emoji = new List<string>();
         }
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="Asset"/> class.
-        /// </summary>
-        /// <param name="name">The name to set for the asset</param>
-        /// <param name="emoji">The list of emoji to set for initialization</param>
-        public Asset(string name, List<string> emoji)
+        /// <summary>Gets the pack name.</summary>
+        public string Name
         {
-            this.Name = name;
-            this.Emoji = emoji;
+            get
+            {
+                return Helpers.GetAssetPackFolderName(this.Pack);
+            }
         }
-
-        /// <summary>Gets or sets the name.</summary>
-        public string Name { get; set; }
+        /// <summary>
+        /// Base Pack
+        /// </summary>
+        /// <value>
+        /// The pack.
+        /// </value>
+        public Helpers.AssetPackFromTwemoji Pack { get; set; }
 
         /// <summary>
         /// Gets or sets the emoji list.
@@ -58,7 +62,7 @@ namespace Generator
         /// The emoji.
         /// </value>
         public List<string> Emoji { get; set; }
-
+        
         /// <summary>
         /// Gets the default file extension from the asset name
         /// </summary>
@@ -69,9 +73,10 @@ namespace Generator
         {
             get
             {
-                return this.Name.Equals("Svg") ? "svg" : "png";
+                return Helpers.GetAssetPackImageExtension(this.Pack);
             }
         }
+
 
         /// <summary>
         /// Gets the default file extension from the asset name
@@ -83,7 +88,7 @@ namespace Generator
         {
             get
             {
-                return "Icons" + this.Name.Substring(0, 3);
+                return Helpers.GetAssetPackCompilationConstant(this.Pack);
             }
         }
 
@@ -97,7 +102,7 @@ namespace Generator
         {
             get
             {
-                return this.Name.ToLowerInvariant().Equals("svg") ? "image/svg+xml" : "image/png";
+                return Helpers.GetAssetPackMimeType(this.Pack);
             }
         }
     }

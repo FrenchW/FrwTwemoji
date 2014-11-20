@@ -35,8 +35,8 @@ namespace FrwTwemoji.Designers
             EmojiDisplay control = new EmojiDisplay
                                        {
                                            Text = "Today, Twitter is open sourcing their emoji to share with everyone 🎉 😜 👯 🍻 🎈 🎤 🎮 🚀 🌉 ✨",
-                                           AssetSize = EmojiDisplay.AssetSizes.Render36Px,
-                                           AssetType = EmojiDisplay.AssetTypes.Png,
+                                           AssetSize = Helpers.AssetSizes.Render36Px,
+                                           AssetType = Helpers.AssetTypes.Png,
                                        };
 
             using (StringWriter sw = new StringWriter())
