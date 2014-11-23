@@ -12,7 +12,7 @@
         <div>
             <h1>FrwTwemoji Test Page</h1>
             <h2>Debug tests</h2>
-            <p>Type some text and lick &quot;Render&quot;</p>
+            <p>Type some text and click &quot;Render&quot;</p>
             <div>
                 <asp:TextBox ID="TxtEmoji" runat="server" TextMode="MultiLine" Height="68px" Width="356px"></asp:TextBox><br/>
                 <asp:Button ID="BtnRender" runat="server" Text="Render" OnClick="BtnRender_Click" />

@@ -222,7 +222,7 @@
                     stbFrwTwemojiXxxCsProj.ToString());
             }
 
-            stbFrwTwemojiCsproj.AppendLine(Templates.Twemoji_csproj_end);
+            stbFrwTwemojiCsproj.Append(Templates.Twemoji_csproj_end);
 
             File.WriteAllText(Helpers.GetRootPath() + Paths.File_FrwTwemoji_csproj, stbFrwTwemojiCsproj.ToString());
             File.WriteAllText(Helpers.GetRootPath() + Paths.File_FrwTwemoji_AssemblyInfo_cs, stbFrwTwemojiAssemblyInfoCs.ToString());
