@@ -1,10 +1,11 @@
 ﻿namespace FrwTwemoji
 {
     using System.Text.RegularExpressions;
+    using System.Web;
     using System.Web.UI;
 
     /// <summary>
-    /// A simple text parser from Emoji string to string and images links
+    /// Parser is where the magic heppens. It parses the input string into html emoji
     /// </summary>
     public class Parser
     {
@@ -38,25 +39,49 @@
 
         protected internal string GetWebResourceName(string emoji)
         {
-            Helpers.AssetPackFromTwemoji pack = Helpers.AssetPackFromTwemoji.Pack16X16;
+            if (internProvider == Helpers.RessourcesProviders.Localhost)
+            {
+
+                Helpers.AssetPackFromTwemoji pack = Helpers.AssetPackFromTwemoji.Pack16X16;
+                if (internFileType == Helpers.AssetTypes.Svg)
+                {
+                    return Helpers.GetEmojiAssemblyName(emoji, Helpers.AssetPackFromTwemoji.PackSvg);
+                }
+
+                if (internFileSize == Helpers.AssetSizes.Render36Px)
+                {
+                    return Helpers.GetEmojiAssemblyName(emoji, Helpers.AssetPackFromTwemoji.Pack36X36);
+
+                }
+
+                if (internFileSize == Helpers.AssetSizes.Render72Px)
+                {
+                    return Helpers.GetEmojiAssemblyName(emoji, Helpers.AssetPackFromTwemoji.Pack72X72);
+
+                }
+
+                return Helpers.GetEmojiAssemblyName(emoji, Helpers.AssetPackFromTwemoji.Pack16X16);
+            }
+
+            string output = "http";
+            emoji = emoji.ToLowerInvariant();
+
+            HttpContext context = HttpContext.Current;
+            if (context != null && context.Request.Url.Scheme == "https")
+            {
+                output = "https";
+            }
+            output += "://twemoji.maxcdn.com/";
             if (internFileType == Helpers.AssetTypes.Svg)
             {
-                return Helpers.GetEmojiAssemblyName(emoji, Helpers.AssetPackFromTwemoji.PackSvg);
+                return output 
+                    + "svg/" 
+                    + emoji 
+                    + ".svg";
             }
 
-            if (internFileSize == Helpers.AssetSizes.Render36Px)
-            {
-                return Helpers.GetEmojiAssemblyName(emoji, Helpers.AssetPackFromTwemoji.Pack36X36);
+            return output + Helpers.GetAssetPackFolderName(internFileSize) + "/" + emoji + ".png";
 
-            }
-
-            if (internFileSize == Helpers.AssetSizes.Render72Px)
-            {
-                return Helpers.GetEmojiAssemblyName(emoji, Helpers.AssetPackFromTwemoji.Pack72X72);
-
-            }
-
-            return Helpers.GetEmojiAssemblyName(emoji, Helpers.AssetPackFromTwemoji.Pack16X16);
         }
 
         /// <summary>
@@ -75,10 +100,17 @@
         {
             int codepoint = Helpers.ConvertUtf16ToCodePoint(match.Value);
             string emoji = string.Format("{0:x}", codepoint).ToUpperInvariant();
+            string url;
+            if (internProvider == Helpers.RessourcesProviders.Localhost)
+            {
 
             string resourceName = this.GetWebResourceName(emoji);
-
-            string url = new Page().ClientScript.GetWebResourceUrl(this.GetType(), resourceName);
+             url = new Page().ClientScript.GetWebResourceUrl(this.GetType(), resourceName);
+            }
+            else
+            {
+                url = this.GetWebResourceName(emoji);
+            }
             return string.Format("<img src=\"{0}\"/>", url);
         }
     }

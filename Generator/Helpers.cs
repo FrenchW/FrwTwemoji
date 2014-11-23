@@ -13,6 +13,7 @@
 // ReSharper disable once CheckNamespace
 namespace FrwTwemoji
 {
+    using System;
     using System.Reflection;
 
     /// <summary>
@@ -158,6 +159,26 @@ namespace FrwTwemoji
                 case AssetPackFromTwemoji.PackSvg:
                 default:
                     return "Svg";
+            }
+        }
+
+        /// <summary>Get the folder name associated with a Twemoji pack provided bu Twitter
+        /// </summary>
+        /// <param name="assetPack">The asset pack.</param>
+        /// <returns>The name of the folder, not the entire path</returns>
+        public static string GetAssetPackFolderName(AssetSizes assetSize)
+        {
+            switch (assetSize)
+            {
+                case AssetSizes.Render16Px:
+                    return "16x16";
+                case AssetSizes.Render36Px:
+                    return "36x36";
+                case AssetSizes.Render72Px:
+                    return "72x72";
+                // ReSharper disable once RedundantCaseLabel
+                default:
+                    throw new ArgumentException("No folder for this size : " + assetSize.ToString());
             }
         }
 

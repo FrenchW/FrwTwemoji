@@ -21,6 +21,9 @@
             <h2>Emoji Display</h2>
             <cc1:EmojiDisplay ID="EmojiDisplay1"
                 runat="server"
+                RessourcesProvider="MaxCdn"
+                AssetType="Png"
+                AssetSize="Render36Px"
                 Text="Today,  Twitter is open sourcing their emoji to share with everyone 🎉 😜 👯 🍻 🎈 🎤 🎮 🚀 🌉 ✨" />
 
             <h2>French
