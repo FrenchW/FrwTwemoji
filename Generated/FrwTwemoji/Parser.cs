@@ -111,7 +111,7 @@
             {
                 url = this.GetWebResourceName(emoji);
             }
-            return string.Format("<img src=\"{0}\"/>", url);
+            return string.Format("<img class=\"emoji FrwTwemoji\" draggable=\"false\" alt=\"{1}\"  src=\"{0}\"/>", url, match.Value);
         }
     }
 }
