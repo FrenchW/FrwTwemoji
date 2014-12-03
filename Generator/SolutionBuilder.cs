@@ -20,7 +20,6 @@
         public SolutionBuilder(AssetCollection localAssets)
         {
             LocalAssets = localAssets;
-
         }
 
         internal void ReBuild()
@@ -43,6 +42,7 @@
         private List<string> missingGrouped = new List<string>();
 
         private string[] ignoreMissing = { "2002", "2003", "2005" };
+
         /// <summary>
         /// Loads information from unicode.org, creates assets with it and compare to the local assets
         /// </summary>
