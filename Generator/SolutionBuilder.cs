@@ -174,6 +174,18 @@
                 Templates.Twemoji_assembly_nfo_start,
                 System.Reflection.Assembly.GetExecutingAssembly().GetName().Version));
 
+            // Add twemoji.js and twemoji.min.js to the csproj
+            stbFrwTwemojiCsproj.AppendLine("  <ItemGroup>");
+            stbFrwTwemojiCsproj.Append(
+                "    <EmbeddedResource Include=\"..\\..\\Twitter-twemoji\\twemoji.min.js\">\r\n      <Link>Js\\twemoji.min.js</Link>\r\n    </EmbeddedResource>\r\n");
+            stbFrwTwemojiCsproj.Append(
+                "    <EmbeddedResource Include=\"..\\..\\Twitter-twemoji\\twemoji.js\">\r\n      <Link>Js\\twemoji.js</Link>\r\n    </EmbeddedResource>\r\n");
+            stbFrwTwemojiAssemblyInfoCs.Append(
+                "[assembly: WebResource(\"FrwTwemoji.Js.twemoji.js\", \"application/javascript\")]\r\n");
+            stbFrwTwemojiAssemblyInfoCs.Append(
+                "[assembly: WebResource(\"FrwTwemoji.Js.twemoji.min.js\", \"application/javascript\")]\r\n");
+            stbFrwTwemojiCsproj.AppendLine("  </ItemGroup>");
+
             foreach (Asset asset in LocalAssets)
             {
                 var stbFrwTwemojiXxxCsProj = new StringBuilder();
@@ -183,7 +195,13 @@
                         asset.CompilationConstant,
                         asset.Name.Substring(0, 3)));
                 stbFrwTwemojiXxxCsProj.AppendLine("  <ItemGroup>");
+                stbFrwTwemojiXxxCsProj.Append(
+                    "    <EmbeddedResource Include=\"..\\..\\Twitter-twemoji\\twemoji.min.js\">\r\n      <Link>Js\\twemoji.min.js</Link>\r\n    </EmbeddedResource>\r\n");
+                stbFrwTwemojiXxxCsProj.Append(
+                    "    <EmbeddedResource Include=\"..\\..\\Twitter-twemoji\\twemoji.js\">\r\n      <Link>Js\\twemoji.js</Link>\r\n    </EmbeddedResource>\r\n");
+                stbFrwTwemojiXxxCsProj.AppendLine("  </ItemGroup>");
 
+                stbFrwTwemojiXxxCsProj.AppendLine("  <ItemGroup>");
                 stbFrwTwemojiCsproj.AppendLine("  <ItemGroup>");
                 stbFrwTwemojiAssemblyInfoCs.AppendLine("#if " + asset.CompilationConstant);
                 foreach (string emoji in asset.Emoji)
@@ -206,7 +224,7 @@
 
                     stbFrwTwemojiAssemblyInfoCs.AppendFormat(
                         "[assembly: WebResource(\"{0}\", \"{1}\")]\r\n",
-                        Helpers.GetEmojiAssemblyName(emoji,asset.Pack),
+                        Helpers.GetEmojiAssemblyName(emoji, asset.Pack),
                         asset.MimeType);
                 }
 
@@ -250,9 +268,9 @@
                     string[] u = emoji.Split('-');
                     string stringToAdd = Helpers.ShowU(Helpers.ConvertCodePointToUtf16(int.Parse(u[0], NumberStyles.AllowHexSpecifier)));
                     if (u.GetUpperBound(0) == 0)
-                    {       
-                            regular.Add(stringToAdd);
-                        
+                    {
+                        regular.Add(stringToAdd);
+
                     }
                     else
                     {

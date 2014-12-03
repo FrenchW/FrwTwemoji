@@ -16,7 +16,7 @@ namespace TestWebApp
 
     using FrwTwemoji;
 
-    public partial class _Default : System.Web.UI.Page
+    public partial class PageDefault : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

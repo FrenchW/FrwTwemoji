@@ -25,9 +25,11 @@ using System.Web.UI;
 [assembly: AssemblyCulture("")]
 [assembly: NeutralResourcesLanguageAttribute("")]
 [assembly: ComVisible(true)]
-[assembly: AssemblyVersion("1.1.1.0")]
-[assembly: AssemblyFileVersion("1.1.1.0")]
+[assembly: AssemblyVersion("1.2.0.0")]
+[assembly: AssemblyFileVersion("1.2.0.0")]
 [assembly: Guid("3c9cd130-f328-4117-8429-c1b0631b3543")]
+[assembly: WebResource("FrwTwemoji.Js.twemoji.js", "application/javascript")]
+[assembly: WebResource("FrwTwemoji.Js.twemoji.min.js", "application/javascript")]
 #if Icons16x
 [assembly: WebResource("FrwTwemoji.Icons16x.1F004.png", "image/png")]
 [assembly: WebResource("FrwTwemoji.Icons16x.1F0CF.png", "image/png")]

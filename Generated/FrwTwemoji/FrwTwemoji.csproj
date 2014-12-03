@@ -48,8 +48,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Designers\EmojiDisplayDesigner.cs" />
     <Compile Include="EmojiDisplay.cs" />
+    <Compile Include="Javascript.cs" />
     <Compile Include="Parser.cs" />
     <Compile Include="RegEx.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\twemoji.min.js">
+      <Link>Js\twemoji.min.js</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\twemoji.js">
+      <Link>Js\twemoji.js</Link>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="..\..\Twitter-twemoji\16x16\1f004.png">

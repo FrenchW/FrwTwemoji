@@ -54,12 +54,23 @@
     <Compile Include="..\FrwTwemoji\EmojiDisplay.cs">
       <Link>EmojiDisplay.cs</Link>
     </Compile>
+    <Compile Include="..\FrwTwemoji\Javascript.cs">
+      <Link>Javascript.cs</Link>
+    </Compile>
     <Compile Include="..\FrwTwemoji\Parser.cs">
       <Link>Parser.cs</Link>
     </Compile>
     <Compile Include="..\FrwTwemoji\RegEx.cs">
       <Link>RegEx.cs</Link>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\twemoji.min.js">
+      <Link>Js\twemoji.min.js</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\twemoji.js">
+      <Link>Js\twemoji.js</Link>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="..\..\Twitter-twemoji\16x16\1f004.png">

@@ -10,7 +10,7 @@
 namespace TestWebApp {
     
     
-    public partial class _Default {
+    public partial class PageDefault {
         
         /// <summary>
         /// Contrôle form1.

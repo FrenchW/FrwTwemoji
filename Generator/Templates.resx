@@ -174,6 +174,9 @@
     &lt;Compile Include="..\FrwTwemoji\EmojiDisplay.cs"&gt;
       &lt;Link&gt;EmojiDisplay.cs&lt;/Link&gt;
     &lt;/Compile&gt;
+    &lt;Compile Include="..\FrwTwemoji\Javascript.cs"&gt;
+      &lt;Link&gt;Javascript.cs&lt;/Link&gt;
+    &lt;/Compile&gt;
     &lt;Compile Include="..\FrwTwemoji\Parser.cs"&gt;
       &lt;Link&gt;Parser.cs&lt;/Link&gt;
     &lt;/Compile&gt;
@@ -272,6 +275,7 @@ using System.Web.UI;
     &lt;Compile Include="Properties\AssemblyInfo.cs" /&gt;
     &lt;Compile Include="Designers\EmojiDisplayDesigner.cs" /&gt;
     &lt;Compile Include="EmojiDisplay.cs" /&gt;
+    &lt;Compile Include="Javascript.cs" /&gt;
     &lt;Compile Include="Parser.cs" /&gt;
     &lt;Compile Include="RegEx.cs" /&gt;
   &lt;/ItemGroup&gt;</value>
