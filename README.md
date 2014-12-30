@@ -20,6 +20,10 @@ You can download the latest FrwTwemoji assemblies [here](http://j.mp/1Bks3uN) fo
 
 Current version: 1.2.0.
 
+##Downloads
+
+You can download the latest FrwTwemoji assemblies [here](http://j.mp/1AlEIza) for a direct use
+
 ##EmojiDisplay WebControl
 
 ###Usage
@@ -29,7 +33,8 @@ Simply drop EmojiDisplay control on your web Page, set rendering options and add
 <h2>Emoji Display</h2>
 <cc1:EmojiDisplay ID="EmojiDisplay1"
     runat="server"
-    Text="Today, Twitter is open sourcing their emoji to share with everyone  🎉 😜 👯 🍻 🎈 🎤 🎮 🚀 🌉 ✨" />
+    Text="Today, Twitter is open sourcing their emoji 
+        to share with everyone  🎉 😜 👯 🍻 🎈 🎤 🎮 🚀 🌉 ✨" />
 ```
 and it displays like this : 
 ![alt text](README_1.png)
@@ -41,7 +46,8 @@ Anywhere, use the Parser function to get the string converted with string + imag
 ###Usage
 
 ```csharp
-MyHtmlSpanElement.InnerHtml = FrwTwemoji.Parser.ParseEmoji(SomeStringContainingEmojiCaracters);
+MyHtmlSpanElement.InnerHtml = 
+    FrwTwemoji.Parser.ParseEmoji(SomeStringContainingEmojiCaracters);
 ```
 
 ##Twitter Original javascript
