@@ -1,4 +1,4 @@
-﻿FrwTwemoji
+FrwTwemoji
 ==========
 
 The main purpose of FrwTwemoji project is to have TwEmoji  hosted in any dotnet or mono project.
@@ -12,11 +12,13 @@ The goal is to include those pictures as resources (and WebResources) and also t
  - Content :
    - [EmojiDisplay WebControl](#emojidisplay-webcontrol)
    - [Simple parser](#simple-parser)
-   - [Embed Twitter'a original javascript](#twitter-original-javascript)
+   - [Twitter's original javascript](#twitter-original-javascript) as WebResource
 
 ##Downloads
 
-You can download the latest FrwTwemoji assemblies [here](http://j.mp/1AlEIza) for a direct use
+You can download the latest FrwTwemoji assemblies [here](http://j.mp/1Bks3uN) for a direct use. 
+
+Current version: 1.2.0.
 
 ##EmojiDisplay WebControl
 
@@ -34,7 +36,7 @@ and it displays like this :
 
 ##Simple parser
 
-Anywhere, use the Parser function th get the string converted with string + images
+Anywhere, use the Parser function to get the string converted with string + images
 
 ###Usage
 
