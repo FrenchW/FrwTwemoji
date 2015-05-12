@@ -126,10 +126,10 @@ namespace FrwTwemoji
             Svg
         }
 
-
-
-        /// <summary>Get the folder name associated with a Twemoji pack provided bu Twitter
+        /// <summary>
+        /// Get the folder name associated with a Twemoji pack provided bu Twitter
         /// </summary>
+        /// <param name="emojiName">Name of the emoji.</param>
         /// <param name="assetPack">The asset pack.</param>
         /// <returns>The name of the folder, not the entire path</returns>
         public static string GetEmojiAssemblyName(string emojiName, AssetPackFromTwemoji assetPack)
@@ -164,7 +164,7 @@ namespace FrwTwemoji
 
         /// <summary>Get the folder name associated with a Twemoji pack provided bu Twitter
         /// </summary>
-        /// <param name="assetPack">The asset pack.</param>
+        /// <param name="assetSize">The asset size.</param>
         /// <returns>The name of the folder, not the entire path</returns>
         public static string GetAssetPackFolderName(AssetSizes assetSize)
         {
@@ -191,7 +191,6 @@ namespace FrwTwemoji
             return GetRootPath() + GetAssetPackFolderName(assetPack) + "\\";
         }
 
-
         /// <summary>Get the folder name associated with a Twemoji pack provided bu Twitter
         /// </summary>
         /// <param name="assetPack">The asset pack.</param>
@@ -201,8 +200,6 @@ namespace FrwTwemoji
             // "Icons" + 16x(16) >> Icons16x
             return "Icons" + GetAssetPackName(assetPack).Substring(0, 3);
         }
-
-
 
         /// <summary>Get the folder name associated with a Twemoji pack provided bu Twitter
         /// </summary>
@@ -223,6 +220,7 @@ namespace FrwTwemoji
             // "16x16" >> "16x"
             return GetAssetPackFolderName(assetPack).Substring(0, 3);
         }
+
         /// <summary>Get the folder name associated with a Twemoji pack provided bu Twitter
         /// </summary>
         /// <param name="assetPack">The asset pack.</param>

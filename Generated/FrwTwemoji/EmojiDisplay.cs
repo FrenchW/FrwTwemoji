@@ -16,7 +16,6 @@ namespace FrwTwemoji
     using System.Collections.Generic;
     using System.ComponentModel;
     using System.Security.Permissions;
-    using System.Text.RegularExpressions;
     using System.Web;
     using System.Web.UI;
     using System.Web.UI.WebControls;
@@ -30,19 +29,17 @@ namespace FrwTwemoji
     [ToolboxData("<{0}:EmojiDisplay \r\n"
                  + "Text=\"Today, Twitter is open sourcing their emoji to share with everyone  🎉 😜 👯 🍻 🎈 🎤 🎮 🚀 🌉 ✨\"\r\n"
                  + "AssetType=\"Png\" "
-                 + "AssetSize=\"Render36Px\" " 
+                 + "AssetSize=\"Render36Px\" "
                  + "runat=server></{0}:EmojiDisplay>")]
     [Designer(typeof(EmojiDisplayDesigner))]
     [AspNetHostingPermission(SecurityAction.Demand, Level = AspNetHostingPermissionLevel.Minimal)]
 
     public class EmojiDisplay : WebControl
     {
-
+        /// <summary>
+        /// Backup for the rendered text
+        /// </summary>
         private string internRenderedText = string.Empty;
-
-        private string internFileExtension = "png";
-
-        private string internFileSize = "Icons16x";
 
         /// <summary>
         /// Gets or sets the image resolution
@@ -63,6 +60,7 @@ namespace FrwTwemoji
 
                 return (Helpers.AssetSizes)obj;
             }
+
             set
             {
                 this.ViewState["AssetSize"] = value;
@@ -89,6 +87,7 @@ namespace FrwTwemoji
 
                 return (Helpers.AssetTypes)obj;
             }
+
             set
             {
                 this.ViewState["AssetType"] = value;
@@ -96,6 +95,8 @@ namespace FrwTwemoji
             }
         }
 
+        /// <summary>Gets or sets the text to render.</summary>
+        /// <value>The text to render.</value>
         public string Text
         {
             get
@@ -109,6 +110,7 @@ namespace FrwTwemoji
 
                 return (string)obj;
             }
+
             set
             {
                 this.ViewState["Text"] = value.Trim();
@@ -135,6 +137,7 @@ namespace FrwTwemoji
 
                 return (Helpers.RessourcesProviders)obj;
             }
+
             set
             {
                 this.ViewState["RessourcesProvider"] = value;
@@ -142,83 +145,35 @@ namespace FrwTwemoji
             }
         }
 
-        private bool CheckConfiguration(out string validationMessage)
+        /// <summary>Internal renderer.</summary>
+        /// <param name="writer">The writer.</param>
+        protected internal void RenderContentsInternal(HtmlTextWriter writer)
         {
-            List<string> errors = new List<string>();
-            if (this.AssetType == Helpers.AssetTypes.Png)
+            // check configuration
+            string errorMEssage;
+            if (!this.CheckConfiguration(out errorMEssage))
             {
-                internFileExtension = "png";
-                if (this.AssetSize == Helpers.AssetSizes.Render128Px || this.AssetSize == Helpers.AssetSizes.Render256Px)
-                {
-                    errors.Add(string.Format("There is no png ressource for {0} resolution", this.AssetSize.ToString()));
-                }
-
-                switch (this.AssetSize)
-                {
-                    case Helpers.AssetSizes.Render16Px:
-                        this.internFileSize = "Icons16x";
-                        break;
-                    case Helpers.AssetSizes.Render36Px:
-                        this.internFileSize = "Icons36x";
-                        break;
-                    case Helpers.AssetSizes.Render72Px:
-                        this.internFileSize = "Icons72x";
-                        break;
-                    default:
-                        errors.Add(
-                            string.Format("Asset type {0} has no resource at {0} resolution", this.AssetType.ToString()));
-                        break;
-                }
-            }
-            else if (this.AssetType == Helpers.AssetTypes.Svg)
-            {
-                internFileExtension = "svg";
-
-                switch (this.AssetSize)
-                {
-                    case Helpers.AssetSizes.Render16Px:
-                    case Helpers.AssetSizes.Render36Px:
-                    case Helpers.AssetSizes.Render72Px:
-                    case Helpers.AssetSizes.Render128Px:
-                    case Helpers.AssetSizes.Render256Px:
-                    default:
-                        this.internFileSize = "IconsSvg";
-                        break;
-                }
-            }
-            else
-            {
-                errors.Add(
-                    string.Format("Asset type {0} is not implemented in GetWebResourceName", this.AssetType.ToString()));
+                writer.Write("EmojiDisplay control is misconfigured : {0}", errorMEssage);
+                return;
             }
 
-            validationMessage = string.Empty;
-            bool retval = true;
-
-            if (errors.Count > 0)
-            {
-                retval = false;
-                validationMessage = "<ul><li>" + string.Join("</li><li>", errors.ToArray()) + "</li></ul>";
-            }
-
-            return retval;
+            writer.Write(this.internRenderedText);
         }
 
-        private void DataChanged()
-        {
-            string message;
-            if (!this.CheckConfiguration(out message))
-            {
-                this.internRenderedText = message;
-            }
-        }
-
+        /// <summary>
+        /// The prerender handler <see cref="E:System.Web.UI.Control.PreRender" />.
+        /// </summary>
+        /// <param name="e">Object <see cref="T:System.EventArgs" /> that contains event data.</param>
         protected override void OnPreRender(EventArgs e)
         {
             base.OnPreRender(e);
-            this.internRenderedText = new Parser(AssetSize,AssetType, RessourcesProvider).WebParseEmoji(this.Text);
+            this.internRenderedText = new Parser(this.AssetSize, this.AssetType, this.RessourcesProvider).WebParseEmoji(this.Text);
         }
 
+        /// <summary>
+        /// Renders the control in the writer.
+        /// </summary>
+        /// <param name="writer">Object <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the control content.</param>
         protected override void Render(HtmlTextWriter writer)
         {
             // ReSharper disable ConditionIsAlwaysTrueOrFalse
@@ -244,26 +199,87 @@ namespace FrwTwemoji
             this.RenderContents(writer);
 
             writer.WriteEndTag(ContainerTag);
+}
 
-        }
-
+        /// <summary>
+        /// Renders the WebControl in the writer.
+        /// </summary>
+        /// <param name="writer"><see cref="T:System.Web.UI.HtmlTextWriter" /> to use for rendering.</param>
         protected override void RenderContents(HtmlTextWriter writer)
         {
-           this.RenderContentsInternal(writer);
+            this.RenderContentsInternal(writer);
         }
 
-
-        protected internal void RenderContentsInternal(HtmlTextWriter writer)
+        /// <summary>Checks the configuration.</summary>
+        /// <param name="validationMessage">The validation message.</param>
+        /// <returns>A <see cref="bool"/> returning true if the configuration is OK</returns>
+        private bool CheckConfiguration(out string validationMessage)
         {
-            // check configuration
-            string errorMEssage;
-            if (!this.CheckConfiguration(out errorMEssage))
+            List<string> errors = new List<string>();
+            if (this.AssetType == Helpers.AssetTypes.Png)
             {
-                writer.Write("EmojiDisplay control is misconfigured : {0}", errorMEssage);
-                return;
+                if (this.AssetSize == Helpers.AssetSizes.Render128Px || this.AssetSize == Helpers.AssetSizes.Render256Px)
+                {
+                    errors.Add(string.Format("There is no png ressource for {0} resolution", this.AssetSize.ToString()));
+                }
+
+                switch (this.AssetSize)
+                {
+                    case Helpers.AssetSizes.Render16Px:
+                        break;
+                    case Helpers.AssetSizes.Render36Px:
+                        break;
+                    case Helpers.AssetSizes.Render72Px:
+                        break;
+                    default:
+                        errors.Add(
+                            string.Format("Asset type {0} has no resource at {0} resolution", this.AssetType.ToString()));
+                        break;
+                }
+            }
+            else if (this.AssetType == Helpers.AssetTypes.Svg)
+            {
+                switch (this.AssetSize)
+                {
+                        // ReSharper disable RedundantCaseLabel
+                    case Helpers.AssetSizes.Render16Px:
+                    case Helpers.AssetSizes.Render36Px:
+                    case Helpers.AssetSizes.Render72Px:
+                    case Helpers.AssetSizes.Render128Px:
+                    case Helpers.AssetSizes.Render256Px:
+                        // ReSharper disable RedundantEmptyDefaultSwitchBranch
+                    default:
+                        break;
+                        // ReSharper restore RedundantEmptyDefaultSwitchBranch
+                        // ReSharper restore RedundantCaseLabel
+                }
+            }
+            else
+            {
+                errors.Add(
+                    string.Format("Asset type {0} is not implemented in GetWebResourceName", this.AssetType.ToString()));
             }
 
-            writer.Write(this.internRenderedText);
+            validationMessage = string.Empty;
+            bool retval = true;
+
+            if (errors.Count > 0)
+            {
+                retval = false;
+                validationMessage = "<ul><li>" + string.Join("</li><li>", errors.ToArray()) + "</li></ul>";
+            }
+
+            return retval;
+        }
+
+        /// <summary>handles action in case of change in the data.</summary>
+        private void DataChanged()
+        {
+            string message;
+            if (!this.CheckConfiguration(out message))
+            {
+                this.internRenderedText = message;
+            }
         }
     }
 }

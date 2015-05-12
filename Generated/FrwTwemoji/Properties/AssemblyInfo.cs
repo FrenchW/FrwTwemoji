@@ -3315,6 +3315,8 @@ using System.Web.UI;
 [assembly: WebResource("FrwTwemoji.IconsSvg.1F63E.svg", "image/svg+xml")]
 [assembly: WebResource("FrwTwemoji.IconsSvg.1F63F.svg", "image/svg+xml")]
 [assembly: WebResource("FrwTwemoji.IconsSvg.1F640.svg", "image/svg+xml")]
+[assembly: WebResource("FrwTwemoji.IconsSvg.1F641.svg", "image/svg+xml")]
+[assembly: WebResource("FrwTwemoji.IconsSvg.1F642.svg", "image/svg+xml")]
 [assembly: WebResource("FrwTwemoji.IconsSvg.1F645.svg", "image/svg+xml")]
 [assembly: WebResource("FrwTwemoji.IconsSvg.1F646.svg", "image/svg+xml")]
 [assembly: WebResource("FrwTwemoji.IconsSvg.1F647.svg", "image/svg+xml")]
