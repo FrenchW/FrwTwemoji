@@ -1,5 +1,4 @@
-FrwTwemoji
-==========
+# FrwTwemoji
 
 The main purpose of FrwTwemoji project is to have TwEmoji  hosted in any dotnet or mono project.
 Twemoji is the twitter initiative to open source emoji pictures and javascript parser : [twitter/twemoji](https://github.com/twitter/twemoji))
@@ -8,23 +7,27 @@ The goal is to include those pictures as resources (and WebResources) and also t
  - [Downloads](#downloads) 
  - [Project Source](https://github.com/FrenchW/FrwTwemoji)
  - People : 
-   - [FrenchW](http://githubfrenchw.net) ([Twitter @FrenchW](https://twitter.com/FrenchW))
+   - [FrenchW](http://github.frenchw.net) ([Twitter @FrenchW](https://twitter.com/FrenchW))
  - Content :
-   - [EmojiDisplay WebControl](#emojidisplay-webcontrol)
-   - [Simple parser](#simple-parser)
+   - [EmojiDisplay WebControl](#WebControl)
+   - [Simple parser](#simpleparser)
    - [Twitter's original javascript](#twitter-original-javascript) as WebResource
 
-##Downloads
+##<a id="downloads" name="downloads"/> Downloads
 
 You can download the latest FrwTwemoji assemblies [here](http://j.mp/1Bks3uN) for a direct use. 
 
 Current version: 1.2.0.
 
-##Downloads
+<!-- Responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5683856818165673"
+     data-ad-slot="6494445466"
+     data-ad-format="auto"></ins>
 
-You can download the latest FrwTwemoji assemblies [here](http://j.mp/1AlEIza) for a direct use
 
-##EmojiDisplay WebControl
+##<a id="WebControl" name="WebControl"/>EmojiDisplay WebControl
 
 ###Usage
 Simply drop EmojiDisplay control on your web Page, set rendering options and add some text containing emojis :
@@ -39,7 +42,7 @@ Simply drop EmojiDisplay control on your web Page, set rendering options and add
 and it displays like this : 
 ![alt text](README_1.png)
 
-##Simple parser
+##<a id="simpleparser" name="simpleparser"/>Simple parser
 
 Anywhere, use the Parser function to get the string converted with string + images
 
@@ -62,3 +65,10 @@ LitJavascriptUrl.Value = Javascript.GetJavascriptRessourceUrl(false);
 Javascript.AddJavascriptToPageClientScript(true); 
 // wich adds the ClientScript block to the page.```
 
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
