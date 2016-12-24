@@ -32,12 +32,20 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "from Unicode.org", "from Unicode.org", "{85C5FDD4-A477-400A-9C42-137F6F35812F}"
 	ProjectSection(SolutionItems) = preProject
 		EmojiSources.txt = EmojiSources.txt
+		Local-EmojiSources.txt = Local-EmojiSources.txt
+		Local-StandardizedVariants.txt = Local-StandardizedVariants.txt
 		StandardizedVariants.txt = StandardizedVariants.txt
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWebApp", "Tests\TestWebApp\TestWebApp.csproj", "{71371CB2-C6FA-4B9D-A3F3-D9E6855F4F10}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWinFormApp", "Tests\TestWinFormApp\TestWinFormApp.csproj", "{13E8CF17-AD11-4E84-82DD-E40054168310}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "From Twemoji", "From Twemoji", "{303F359E-F592-4D14-9C9F-1C4A01EE2E5C}"
+	ProjectSection(SolutionItems) = preProject
+		Twitter-twemoji\twemoji-generator.js = Twitter-twemoji\twemoji-generator.js
+		Twitter-twemoji\twemoji.js = Twitter-twemoji\twemoji.js
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,5 +99,6 @@ Global
 		{85C5FDD4-A477-400A-9C42-137F6F35812F} = {922271EF-D957-414B-823C-3EA3E44ADC86}
 		{71371CB2-C6FA-4B9D-A3F3-D9E6855F4F10} = {A1D8B1AE-62CC-4DD3-B365-0B83284F2981}
 		{13E8CF17-AD11-4E84-82DD-E40054168310} = {A1D8B1AE-62CC-4DD3-B365-0B83284F2981}
+		{014CF181-49A8-46A4-8DE8-E4CEB617BDAB} = {922271EF-D957-414B-823C-3EA3E44ADC86}
 	EndGlobalSection
 EndGlobal

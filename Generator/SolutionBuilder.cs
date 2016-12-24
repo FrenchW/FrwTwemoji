@@ -1,15 +1,16 @@
-﻿namespace Generator
+namespace Generator
 {
+    using FrwTwemoji;
+
     using System;
     using System.Collections.Generic;
+    using System.Diagnostics;
     using System.Globalization;
     using System.IO;
     using System.Linq;
     using System.Net;
     using System.Text;
     using System.Text.RegularExpressions;
-
-    using FrwTwemoji;
 
     internal class SolutionBuilder
     {
@@ -35,6 +36,7 @@
 
         // list to store valid emoji entries in the file
         private List<string> emojiVariantsEntries = new List<string>();
+
         private List<string> emojiSourceEntries = new List<string>();
 
         AssetCollection assetsMissing = new AssetCollection(Helpers.BaseKnownAssetNames);
@@ -56,8 +58,65 @@
 
             Console.WriteLine(Strings.Program_DoRebuild_fetching_EmojiSources_txt);
 
-            // Loading unicode reference
-            webClient.DownloadFile(Paths.UrlEmojiSources, Helpers.GetRootPath() + Paths.FileEmojiSources);
+            try
+            {
+                // Loading unicode reference
+                webClient.DownloadFile(Paths.UrlEmojiSources, Helpers.GetRootPath() + Paths.FileEmojiSources);
+
+                // Keep a backup of the downloaded file
+                if (File.Exists(Helpers.GetRootPath() + Paths.FileEmojiSources))
+                {
+                    File.Delete(Helpers.GetRootPath() + "Local-" + Paths.FileEmojiSources);
+                    File.Copy(
+                        Helpers.GetRootPath() + Paths.FileEmojiSources,
+                        Helpers.GetRootPath() + "Local-" + Paths.FileEmojiSources);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                if (Debugger.IsAttached)
+                {
+                    Debugger.Break();
+                }
+                // read local file from project
+                if (!File.Exists(Helpers.GetRootPath() + Paths.FileEmojiSources))
+                {
+                    File.Copy(
+                        Helpers.GetRootPath() + "Local-" + Paths.FileEmojiSources,
+                        Helpers.GetRootPath() + Paths.FileEmojiSources);
+                }
+            }
+
+            try
+            {
+                // Loading unicode reference
+                webClient.DownloadFile(Paths.UrlStandardizedVariants, Helpers.GetRootPath() + Paths.FileStandardizedVariants);
+
+                // Keep a backup of the downloaded file
+                if (File.Exists(Helpers.GetRootPath() + Paths.FileStandardizedVariants))
+                {
+                    File.Delete(Helpers.GetRootPath() + "Local-" + Paths.FileStandardizedVariants);
+                    File.Copy(
+                        Helpers.GetRootPath() + Paths.FileStandardizedVariants,
+                        Helpers.GetRootPath() + "Local-" + Paths.FileStandardizedVariants);
+                }
+            }
+            catch (Exception ex)
+            {
+                if (Debugger.IsAttached)
+                {
+                    Debugger.Break();
+                }
+
+                // read local file from project
+                if (!File.Exists(Helpers.GetRootPath() + Paths.FileStandardizedVariants))
+                {
+                    File.Copy(
+                        Helpers.GetRootPath() + "Local-" + Paths.FileStandardizedVariants,
+                        Helpers.GetRootPath() + Paths.FileStandardizedVariants);
+                }
+            }
 
             // read emojisource file
             string emojiSource = File.ReadAllText(Helpers.GetRootPath() + Paths.FileEmojiSources);
@@ -120,8 +179,6 @@
 
             Console.WriteLine(Strings.Program_DoRebuild_fetching_StandardizedVariants_txt);
 
-            // Loading unicode reference
-            webClient.DownloadFile(Paths.UrlStandardizedVariants, Helpers.GetRootPath() + Paths.FileStandardizedVariants);
 
             // read emojiVariants file
             string emojiVariants = File.ReadAllText(Helpers.GetRootPath() + Paths.FileStandardizedVariants);
