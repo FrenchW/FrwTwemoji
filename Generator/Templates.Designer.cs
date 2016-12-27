@@ -100,6 +100,15 @@ namespace Generator {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à \\uD83D[\\uDC68-\\uDC69](?:\\uD83C[\\uDFFB-\\uDFFF])?\\u200D(?:\\u2695\\uFE0F|\\u2696\\uFE0F|\\u2708\\uFE0F|\\uD83C[\\uDF3E\\uDF73\\uDF93\\uDFA4\\uDFA8\\uDFEB\\uDFED]|\\uD83D[\\uDCBB\\uDCBC\\uDD27\\uDD2C\\uDE80\\uDE92])|(?:\\uD83C[\\uDFCB\\uDFCC]|\\uD83D\\uDD75|\\u26F9)(?:\\uFE0F|\\uD83C[\\uDFFB-\\uDFFF])\\u200D[\\u2640\\u2642]\\uFE0F|(?:\\uD83C[\\uDFC3\\uDFC4\\uDFCA]|\\uD83D[\\uDC6E\\uDC71\\uDC73\\uDC77\\uDC81\\uDC82\\uDC86\\uDC87\\uDE45-\\uDE47\\uDE4B\\uDE4D\\uDE4E\\uDEA3\\uDEB4-\\uDEB6]|\\uD83E[\\uDD26\\ [le reste de la chaîne a été tronqué]&quot;;.
+        /// </summary>
+        internal static string Twemoji_RegEx {
+            get {
+                return ResourceManager.GetString("Twemoji_RegEx", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à     }
         ///}.
         /// </summary>
