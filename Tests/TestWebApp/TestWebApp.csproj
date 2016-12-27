@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -75,7 +76,12 @@
       <AutoGen>True</AutoGen>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\Generated\FrwTwemoji\FrwTwemoji.csproj">
+      <Project>{4e6046b7-e4fb-41e1-9972-1ffafdceb2c9}</Project>
+      <Name>FrwTwemoji</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -83,12 +89,6 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Generated\FrwTwemoji\FrwTwemoji.csproj">
-      <Project>{4e6046b7-e4fb-41e1-9972-1ffafdceb2c9}</Project>
-      <Name>FrwTwemoji</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="TestString.resx">

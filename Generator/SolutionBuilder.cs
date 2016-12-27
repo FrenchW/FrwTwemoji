@@ -20,17 +20,17 @@ namespace Generator
 
         public SolutionBuilder(AssetCollection localAssets)
         {
-            LocalAssets = localAssets;
+            this.LocalAssets = localAssets;
         }
 
         internal void ReBuild()
         {
-            LoadDistantAssets();
-            RebuildSolutions();
-            LocalAssets.Backup(Helpers.GetRootPath() + Paths.FilePreviousAssetsBackup);
-            if (LocalAssets.Any())
+            this.LoadDistantAssets();
+            this.RebuildSolutions();
+            this.LocalAssets.Backup(Helpers.GetRootPath() + Paths.FilePreviousAssetsBackup);
+            if (this.LocalAssets.Any())
             {
-                BuildParser();
+                this.BuildParser();
             }
         }
 
@@ -129,7 +129,7 @@ namespace Generator
             Console.WriteLine(Strings.Program_DoRebuild_analizing_EmojiSources_VS_our_assets);
 
             // try read emoji for each line
-            emojiSourceEntries = (
+            this.emojiSourceEntries = (
                 from line
                     in emojiSourceLines
                 where Regex.IsMatch(line, "^[0-9A-F]")
@@ -137,34 +137,34 @@ namespace Generator
                 select Regex.Replace(entry, "\\s+", "-") into entry
                 select Regex.Replace(entry, "^0+", string.Empty)).ToList();
 
-            Console.WriteLine(Strings.Program_DoRebuild_INFO_parsed_0_standard_emoji, emojiSourceEntries.Count);
+            Console.WriteLine(Strings.Program_DoRebuild_INFO_parsed_0_standard_emoji, this.emojiSourceEntries.Count);
 
 
             //// now that all is loaded, perform some crossing
 
-            foreach (var entry in emojiSourceEntries)
+            foreach (var entry in this.emojiSourceEntries)
             {
-                if (!ignoreMissing.Contains(entry))
+                if (!this.ignoreMissing.Contains(entry))
                 {
-                    foreach (var asset in LocalAssets)
+                    foreach (var asset in this.LocalAssets)
                     {
                         if (!asset.Emoji.Contains(entry))
                         {
-                            if (assetsMissing[asset.Name] != null)
+                            if (this.assetsMissing[asset.Name] != null)
                             {
-                                assetsMissing[asset.Name].Emoji.Add(entry);
+                                this.assetsMissing[asset.Name].Emoji.Add(entry);
                             }
 
-                            if (!missingGrouped.Contains(entry))
+                            if (!this.missingGrouped.Contains(entry))
                             {
-                                missingGrouped.Add(entry);
+                                this.missingGrouped.Add(entry);
                             }
                         }
                     }
                 }
             }
 
-            foreach (var missingItem in assetsMissing)
+            foreach (var missingItem in this.assetsMissing)
             {
                 if (missingItem.Emoji.Count > 0)
                 {
@@ -175,7 +175,7 @@ namespace Generator
                 }
             }
 
-            ignoreMissing = ignoreMissing.Concat(missingGrouped).ToArray();
+            this.ignoreMissing = this.ignoreMissing.Concat(this.missingGrouped).ToArray();
 
             Console.WriteLine(Strings.Program_DoRebuild_fetching_StandardizedVariants_txt);
 
@@ -207,12 +207,12 @@ namespace Generator
                         entry = Regex.Replace(entry, "^0+", string.Empty);
 
                         // finally, add to entries
-                        emojiVariantsEntries.Add(entry);
+                        this.emojiVariantsEntries.Add(entry);
                     }
                 }
             }
 
-            Console.WriteLine(Strings.Program_DoRebuild_INFO_parsed_X_variant_sensitive_emoji, emojiVariantsEntries.Count);
+            Console.WriteLine(Strings.Program_DoRebuild_INFO_parsed_X_variant_sensitive_emoji, this.emojiVariantsEntries.Count);
         }
 
         /// <summary>
@@ -234,16 +234,16 @@ namespace Generator
             // Add twemoji.js and twemoji.min.js to the csproj
             stbFrwTwemojiCsproj.AppendLine("  <ItemGroup>");
             stbFrwTwemojiCsproj.Append(
-                "    <EmbeddedResource Include=\"..\\..\\Twitter-twemoji\\twemoji.min.js\">\r\n      <Link>Js\\twemoji.min.js</Link>\r\n    </EmbeddedResource>\r\n");
+                "    <EmbeddedResource Include=\"..\\..\\Twitter-twemoji\\2\\twemoji.min.js\">\r\n      <Link>Js\\twemoji.min.js</Link>\r\n    </EmbeddedResource>\r\n");
             stbFrwTwemojiCsproj.Append(
-                "    <EmbeddedResource Include=\"..\\..\\Twitter-twemoji\\twemoji.js\">\r\n      <Link>Js\\twemoji.js</Link>\r\n    </EmbeddedResource>\r\n");
+                "    <EmbeddedResource Include=\"..\\..\\Twitter-twemoji\\2\\twemoji.js\">\r\n      <Link>Js\\twemoji.js</Link>\r\n    </EmbeddedResource>\r\n");
             stbFrwTwemojiAssemblyInfoCs.Append(
                 "[assembly: WebResource(\"FrwTwemoji.Js.twemoji.js\", \"application/javascript\")]\r\n");
             stbFrwTwemojiAssemblyInfoCs.Append(
                 "[assembly: WebResource(\"FrwTwemoji.Js.twemoji.min.js\", \"application/javascript\")]\r\n");
             stbFrwTwemojiCsproj.AppendLine("  </ItemGroup>");
 
-            foreach (Asset asset in LocalAssets)
+            foreach (Asset asset in this.LocalAssets)
             {
                 var stbFrwTwemojiXxxCsProj = new StringBuilder();
                 stbFrwTwemojiXxxCsProj.AppendLine(
@@ -253,9 +253,9 @@ namespace Generator
                         asset.Name.Substring(0, 3)));
                 stbFrwTwemojiXxxCsProj.AppendLine("  <ItemGroup>");
                 stbFrwTwemojiXxxCsProj.Append(
-                    "    <EmbeddedResource Include=\"..\\..\\Twitter-twemoji\\twemoji.min.js\">\r\n      <Link>Js\\twemoji.min.js</Link>\r\n    </EmbeddedResource>\r\n");
+                    "    <EmbeddedResource Include=\"..\\..\\Twitter-twemoji\\2\\twemoji.min.js\">\r\n      <Link>Js\\twemoji.min.js</Link>\r\n    </EmbeddedResource>\r\n");
                 stbFrwTwemojiXxxCsProj.Append(
-                    "    <EmbeddedResource Include=\"..\\..\\Twitter-twemoji\\twemoji.js\">\r\n      <Link>Js\\twemoji.js</Link>\r\n    </EmbeddedResource>\r\n");
+                    "    <EmbeddedResource Include=\"..\\..\\Twitter-twemoji\\2\\twemoji.js\">\r\n      <Link>Js\\twemoji.js</Link>\r\n    </EmbeddedResource>\r\n");
                 stbFrwTwemojiXxxCsProj.AppendLine("  </ItemGroup>");
 
                 stbFrwTwemojiXxxCsProj.AppendLine("  <ItemGroup>");
@@ -264,7 +264,7 @@ namespace Generator
                 foreach (string emoji in asset.Emoji)
                 {
                     stbFrwTwemojiCsproj.AppendFormat(
-                        "    <EmbeddedResource Include=\"..\\..\\Twitter-twemoji\\{0}\\{1}.{2}\">\r\n      <Link>{3}\\{4}.{2}</Link>\r\n    </EmbeddedResource>\r\n",
+                        "    <EmbeddedResource Include=\"..\\..\\Twitter-twemoji\\2\\{0}\\{1}.{2}\">\r\n      <Link>{3}\\{4}.{2}</Link>\r\n    </EmbeddedResource>\r\n",
                         asset.Name,
                         emoji.ToLowerInvariant(),
                         asset.Extension.ToLowerInvariant(),
@@ -272,7 +272,7 @@ namespace Generator
                         emoji.ToUpperInvariant());
 
                     stbFrwTwemojiXxxCsProj.AppendFormat(
-                        "    <EmbeddedResource Include=\"..\\..\\Twitter-twemoji\\{0}\\{1}.{2}\">\r\n      <Link>{3}\\{4}.{2}</Link>\r\n    </EmbeddedResource>\r\n",
+                        "    <EmbeddedResource Include=\"..\\..\\Twitter-twemoji\\2\\{0}\\{1}.{2}\">\r\n      <Link>{3}\\{4}.{2}</Link>\r\n    </EmbeddedResource>\r\n",
                         asset.Name.ToLowerInvariant(),
                         emoji.ToLowerInvariant(),
                         asset.Extension.ToLowerInvariant(),
@@ -312,9 +312,9 @@ namespace Generator
             List<string> regular = new List<string>();
             // if we enter BuildParser, LocalAssts has at least one asset
 
-            foreach (string emoji in LocalAssets[0].Emoji)
+            foreach (string emoji in this.LocalAssets[0].Emoji)
             {
-                if (!ignoreMissing.Contains(emoji))
+                if (!this.ignoreMissing.Contains(emoji))
                 {
                     //// * @example
                     //// *  twemoji.convert.fromCodePoint('1f1e8');

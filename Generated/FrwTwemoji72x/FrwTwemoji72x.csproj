@@ -65,10 +65,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="..\..\Twitter-twemoji\twemoji.min.js">
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\twemoji.min.js">
       <Link>Js\twemoji.min.js</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\..\Twitter-twemoji\twemoji.js">
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\twemoji.js">
       <Link>Js\twemoji.js</Link>
     </EmbeddedResource>
   </ItemGroup>

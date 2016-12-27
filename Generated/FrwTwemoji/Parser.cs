@@ -1,6 +1,7 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="Parser.cs" company="FrenchW.net from @FrenchW">
-//   Copyright FrenchW © 2014.
+//   Copyright FrenchW © 2014-2016.
+//   FrwTwemoji Project page : http://github.frenchw.net/FrwTwemoji/
 //   This software is licenced like https://github.com/twitter/twemoji :
 //   Code licensed under the MIT License: http://opensource.org/licenses/MIT
 //   Graphics licensed under CC-BY 4.0: https://creativecommons.org/licenses/by/4.0/ and created by Twitter
@@ -35,7 +36,7 @@ namespace FrwTwemoji
         /// <param name="type">The type.</param>
         /// <param name="provider">The provider.</param>
         public Parser(
-            Helpers.AssetSizes size = Helpers.AssetSizes.Render16Px,
+            Helpers.AssetSizes size = Helpers.AssetSizes.Render72Px,
             Helpers.AssetTypes type = Helpers.AssetTypes.Png,
             Helpers.RessourcesProviders provider = Helpers.RessourcesProviders.Localhost)
         {
@@ -52,12 +53,11 @@ namespace FrwTwemoji
         /// <returns>the whole html output</returns>
         public static string ParseEmoji(
             string input,
-            Helpers.AssetSizes size = Helpers.AssetSizes.Render16Px,
+            Helpers.AssetSizes size = Helpers.AssetSizes.Render72Px,
             Helpers.AssetTypes type = Helpers.AssetTypes.Png,
             Helpers.RessourcesProviders provider = Helpers.RessourcesProviders.Localhost)
         {
-            Parser p = new Parser();
-            return p.WebParseEmoji(input);
+            return new Parser().WebParseEmoji(input);
         }
 
         /// <summary>Gets the name of the web resource.</summary>
@@ -65,37 +65,27 @@ namespace FrwTwemoji
         /// <returns>the name of the webresource</returns>
         protected internal string GetWebResourceName(string emoji)
         {
-            if (internProvider == Helpers.RessourcesProviders.Localhost)
+            if (this.internProvider == Helpers.RessourcesProviders.Localhost)
             {
-                if (internFileType == Helpers.AssetTypes.Svg)
+                if (this.internFileType == Helpers.AssetTypes.Svg)
                 {
                     return Helpers.GetEmojiAssemblyName(emoji, Helpers.AssetPackFromTwemoji.PackSvg);
                 }
 
-                if (internFileSize == Helpers.AssetSizes.Render36Px)
-                {
-                    return Helpers.GetEmojiAssemblyName(emoji, Helpers.AssetPackFromTwemoji.Pack36X36);
-                }
-
-                if (internFileSize == Helpers.AssetSizes.Render72Px)
-                {
-                    return Helpers.GetEmojiAssemblyName(emoji, Helpers.AssetPackFromTwemoji.Pack72X72);
-                }
-
-                return Helpers.GetEmojiAssemblyName(emoji, Helpers.AssetPackFromTwemoji.Pack16X16);
+                return Helpers.GetEmojiAssemblyName(emoji, Helpers.AssetPackFromTwemoji.Pack72X72);
             }
 
-            string output = "http";
+            string output = "https";
             emoji = emoji.ToLowerInvariant();
 
             HttpContext context = HttpContext.Current;
-            if (context != null && context.Request.Url.Scheme == "https")
+            if (context != null && context.Request.Url.Scheme == "http")
             {
-                output = "https";
+                output = "http";
             }
 
-            output += "://twemoji.maxcdn.com/";
-            if (internFileType == Helpers.AssetTypes.Svg)
+            output += "://twemoji.maxcdn.com/2/";
+            if (this.internFileType == Helpers.AssetTypes.Svg)
             {
                 return output
                     + "svg/"
@@ -103,7 +93,7 @@ namespace FrwTwemoji
                     + ".svg";
             }
 
-            return output + Helpers.GetAssetPackFolderName(internFileSize) + "/" + emoji + ".png";
+            return output + Helpers.GetAssetPackFolderName(this.internFileSize) + "/" + emoji + ".png";
         }
 
         /// <summary>
@@ -136,7 +126,31 @@ namespace FrwTwemoji
                 url = this.GetWebResourceName(emoji);
             }
 
-            return string.Format("<img class=\"emoji FrwTwemoji\" draggable=\"false\" alt=\"{1}\"  src=\"{0}\"/>", url, match.Value);
+            string pixelSize = "72px";
+            switch (this.internFileSize)
+            {
+                case Helpers.AssetSizes.Render16Px:
+                    pixelSize = "16px";
+                    break;
+                case Helpers.AssetSizes.Render36Px:
+                    pixelSize = "36px";
+                    break;
+                case Helpers.AssetSizes.Render72Px:
+                    pixelSize = "72px";
+                    break;
+                case Helpers.AssetSizes.Render128Px:
+                    pixelSize = "128px";
+                    break;
+                case Helpers.AssetSizes.Render256Px:
+                    pixelSize = "256px";
+                    break;
+                case Helpers.AssetSizes.Render512Px:
+                    pixelSize = "512px";
+                    break;
+
+            }
+
+            return $"<img class=\"emoji FrwTwemoji\" style=\"height:{pixelSize};Width:{pixelSize};\" draggable=\"false\" alt=\"{match.Value}\"  src=\"{url}\"/>";
         }
     }
 }

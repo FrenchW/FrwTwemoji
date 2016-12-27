@@ -1,9 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Javascript.aspx.cs" Inherits="TestWebApp.PageJavascript" %>
+﻿<%@Page Title="Embed Javascript test page"  Language="C#" AutoEventWireup="true" CodeBehind="Javascript.aspx.cs" Inherits="TestWebApp.PageJavascript" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
 </head>

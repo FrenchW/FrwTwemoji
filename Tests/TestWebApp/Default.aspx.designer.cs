@@ -1,4 +1,4 @@
-﻿//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 // <généré automatiquement>
 //     Ce code a été généré par un outil.
 //
@@ -7,11 +7,13 @@
 // </généré automatiquement>
 //------------------------------------------------------------------------------
 
-namespace TestWebApp {
-    
-    
-    public partial class PageDefault {
-        
+namespace TestWebApp
+{
+
+
+    public partial class PageDefault
+    {
+
         /// <summary>
         /// Contrôle form1.
         /// </summary>
@@ -20,7 +22,7 @@ namespace TestWebApp {
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// Contrôle TxtEmoji.
         /// </summary>

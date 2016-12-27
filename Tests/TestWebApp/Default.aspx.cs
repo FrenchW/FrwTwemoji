@@ -1,6 +1,7 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="Default.aspx.cs" company="FrenchW.net from @FrenchW">
-//   Copyright FrenchW © 2014.
+//   Copyright FrenchW © 2014-2016.
+//   FrwTwemoji Project page : http://github.frenchw.net/FrwTwemoji/
 //   This software is licenced like https://github.com/twitter/twemoji :
 //   Code licensed under the MIT License: http://opensource.org/licenses/MIT
 //   Graphics licensed under CC-BY 4.0: https://creativecommons.org/licenses/by/4.0/ and created by Twitter
@@ -12,9 +13,8 @@
 
 namespace TestWebApp
 {
-    using System;
-
     using FrwTwemoji;
+    using System;
 
     public partial class PageDefault : System.Web.UI.Page
     {
