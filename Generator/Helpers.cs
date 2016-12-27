@@ -1,6 +1,7 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="Helpers.cs" company="FrenchW.net from @FrenchW">
-//   Copyright FrenchW © 2014.
+//   Copyright FrenchW © 2014-2016.
+//   FrwTwemoji Project page : http://github.frenchw.net/FrwTwemoji/
 //   This software is licenced like https://github.com/twitter/twemoji :
 //   Code licensed under the MIT License: http://opensource.org/licenses/MIT
 //   Graphics licensed under CC-BY 4.0: https://creativecommons.org/licenses/by/4.0/ and created by Twitter
@@ -26,8 +27,6 @@ namespace FrwTwemoji
         /// </summary>
         internal static readonly AssetPackFromTwemoji[] BaseKnownAssetNames =
             {
-                AssetPackFromTwemoji.Pack16X16,
-                AssetPackFromTwemoji.Pack36X36,
                 AssetPackFromTwemoji.Pack72X72,
                 AssetPackFromTwemoji.PackSvg
             };
@@ -90,16 +89,6 @@ namespace FrwTwemoji
         public enum AssetPackFromTwemoji
         {
             /// <summary>
-            /// 16px X 16px png images
-            /// </summary>
-            Pack16X16,
-
-            /// <summary>
-            /// 36px X 36px png images
-            /// </summary>
-            Pack36X36,
-
-            /// <summary>
             /// 72px X 72px png images
             /// </summary>
             Pack72X72,
@@ -149,10 +138,6 @@ namespace FrwTwemoji
         {
             switch (assetPack)
             {
-                case AssetPackFromTwemoji.Pack16X16:
-                    return "16x16";
-                case AssetPackFromTwemoji.Pack36X36:
-                    return "36x36";
                 case AssetPackFromTwemoji.Pack72X72:
                     return "72x72";
                 // ReSharper disable once RedundantCaseLabel
@@ -171,9 +156,7 @@ namespace FrwTwemoji
             switch (assetSize)
             {
                 case AssetSizes.Render16Px:
-                    return "16x16";
                 case AssetSizes.Render36Px:
-                    return "36x36";
                 case AssetSizes.Render72Px:
                     return "72x72";
                 // ReSharper disable once RedundantCaseLabel
@@ -229,8 +212,6 @@ namespace FrwTwemoji
         {
             switch (assetPack)
             {
-                case AssetPackFromTwemoji.Pack16X16:
-                case AssetPackFromTwemoji.Pack36X36:
                 case AssetPackFromTwemoji.Pack72X72:
                     return "png";
                 // ReSharper disable once RedundantCaseLabel
