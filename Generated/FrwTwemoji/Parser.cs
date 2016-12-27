@@ -113,8 +113,91 @@ namespace FrwTwemoji
         /// <returns>the string after evaluation of the match</returns>
         private string WebParseEmojiRegExMatchEvaluator(Match match)
         {
-            int codepoint = Helpers.ConvertUtf16ToCodePoint(match.Value);
-            string emoji = string.Format("{0:x}", codepoint).ToUpperInvariant();
+            string emoji = string.Empty;
+            char[] s = match.Value.ToCharArray();
+            int upperboundOfS = s.GetUpperBound(0);
+
+            if (upperboundOfS < 2)
+            {
+                int codepoint = Helpers.ConvertUtf16ToCodePoint(match.Value);
+                emoji = string.Format("{0:x}", codepoint).ToUpperInvariant();
+            }
+            else
+            {
+                char u200D = '\u200D';
+                char uFE0F = '\uFE0F';
+
+                int i = 0;
+                while (i <= upperboundOfS)
+                {
+                    if (s[i] != u200D)
+                    {
+                        if (i + 1 <= upperboundOfS && s[i + 1] != u200D)
+                        {
+                            int codepoint = Helpers.ConvertUtf16ToCodePoint(new string(new char[] { s[i], s[i + 1] }));
+                            if (emoji.Length > 0)
+                            {
+                                emoji += "-";
+                            }
+                            emoji += string.Format("{0:x}", codepoint).ToUpperInvariant();
+                            i += 2;
+                        }
+                        else
+                        {
+                            int codepoint = Helpers.ConvertUtf16ToCodePoint(new string(new char[] { s[i], s[i + 1] }));
+                            if (emoji.Length > 0)
+                            {
+                                emoji += "-";
+                            }
+                            emoji += string.Format("{0:x}", codepoint).ToUpperInvariant();
+                            i += 1;
+                        }
+                    }
+                    else
+                    {
+                        if (i + 2 <= upperboundOfS && s[i + 2] == uFE0F)
+                        {
+                            int codepoint = Helpers.ConvertUtf16ToCodePoint(new string(new char[] { s[i + 1] }));
+                            if (emoji.Length > 0)
+                            {
+                                emoji += "-";
+                            }
+                            emoji += "200D-" + string.Format("{0:x}", codepoint).ToUpperInvariant() + "-FE0F";
+                            i += 3;
+                        }
+                        else
+                        {
+                            
+                            if (i + 2 <= upperboundOfS && s[i + 2] != u200D)
+                            {
+                                int codepoint = Helpers.ConvertUtf16ToCodePoint(new string(new char[] { s[i + 1], s[i+2] }));
+                                if (emoji.Length > 0)
+                                {
+                                    emoji += "-";
+                                }
+                                emoji += "200D-" + string.Format("{0:x}", codepoint).ToUpperInvariant();
+                                i += 3;
+
+                            }
+                            else
+                            {
+                                int codepoint = Helpers.ConvertUtf16ToCodePoint(new string(new char[] { s[i + 1] }));
+                                if (emoji.Length > 0)
+                                {
+                                    emoji += "-";
+                                }
+                                emoji += "200D-" + string.Format("{0:x}", codepoint).ToUpperInvariant();
+                                i += 2;
+
+                            }
+
+                        }
+                    }
+
+
+                }
+            }
+
             string url;
             if (this.internProvider == Helpers.RessourcesProviders.Localhost)
             {

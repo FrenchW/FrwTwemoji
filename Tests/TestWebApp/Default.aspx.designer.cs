@@ -31,7 +31,7 @@ namespace TestWebApp
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TxtEmoji;
-        
+
         /// <summary>
         /// Contrôle BtnRender.
         /// </summary>
@@ -40,32 +40,77 @@ namespace TestWebApp
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtnRender;
-        
+
         /// <summary>
-        /// Contrôle spnTests.
+        /// Contrôle spnTestsLocal.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl spnTests;
-        
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl spnTestsLocal;
+
         /// <summary>
-        /// Contrôle EmojiDisplay1.
+        /// Contrôle spnTestsLocalMaxCdn.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::FrwTwemoji.EmojiDisplay EmojiDisplay1;
-        
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl spnTestsLocalMaxCdn;
+
         /// <summary>
-        /// Contrôle EmojiDisplay2.
+        /// Contrôle EmojiDisplay1Local.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::FrwTwemoji.EmojiDisplay EmojiDisplay2;
+        protected global::FrwTwemoji.EmojiDisplay EmojiDisplay1Local;
+
+        /// <summary>
+        /// Contrôle EmojiDisplay1MaxCdn.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::FrwTwemoji.EmojiDisplay EmojiDisplay1MaxCdn;
+
+        /// <summary>
+        /// Contrôle EmojiDisplay2Local.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::FrwTwemoji.EmojiDisplay EmojiDisplay2Local;
+
+        /// <summary>
+        /// Contrôle EmojiDisplay2MaxCdn.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::FrwTwemoji.EmojiDisplay EmojiDisplay2MaxCdn;
+
+        /// <summary>
+        /// Contrôle EmojiDisplay3Local.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::FrwTwemoji.EmojiDisplay EmojiDisplay3Local;
+
+        /// <summary>
+        /// Contrôle EmojiDisplay3MaxCdn.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::FrwTwemoji.EmojiDisplay EmojiDisplay3MaxCdn;
     }
 }

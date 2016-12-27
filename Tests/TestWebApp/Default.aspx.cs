@@ -22,13 +22,16 @@ namespace TestWebApp
         {
 
             // direct rendering of the text
-            EmojiDisplay2.Text = TestString.manger;
+            this.EmojiDisplay2Local.Text = TestString.manger;
+            this.EmojiDisplay2MaxCdn.Text = TestString.manger;
         }
 
         protected void BtnRender_Click(object sender, EventArgs e)
         {
-            spnTests.InnerHtml = Parser.ParseEmoji(TxtEmoji.Text);
-            EmojiDisplay2.Text = TxtEmoji.Text;
+            this.spnTestsLocal.InnerHtml = Parser.ParseEmoji(this.TxtEmoji.Text);
+            this.spnTestsLocalMaxCdn.InnerHtml = Parser.ParseEmoji(this.TxtEmoji.Text, provider: Helpers.RessourcesProviders.MaxCdn);
+            this.EmojiDisplay1Local.Text = this.TxtEmoji.Text;
+            this.EmojiDisplay1MaxCdn.Text = this.TxtEmoji.Text;
         }
     }
 }
