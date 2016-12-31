@@ -65,6 +65,11 @@ namespace FrwTwemoji
             /// Render in 512 pixels
             /// </summary>
             Render512Px,
+
+            /// <summary>
+            /// Render in 1 em
+            /// </summary>
+            Render1Em,
         }
 
         /// <summary>

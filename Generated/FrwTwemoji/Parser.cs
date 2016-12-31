@@ -230,6 +230,9 @@ namespace FrwTwemoji
                 case Helpers.AssetSizes.Render512Px:
                     pixelSize = "512px";
                     break;
+                case Helpers.AssetSizes.Render1Em:
+                    pixelSize = "1em";
+                    break;
 
             }
 
