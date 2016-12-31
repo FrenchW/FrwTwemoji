@@ -20,6 +20,10 @@ FrwTwemoji now refers to twemoji 2.2.2. It includes all new unicode V.9 Emojis. 
  
 ![alt text](README_4.png)
 
+## Current version 2.2.3
+
+See [changelog](Changelog.md) for more information
+
 ## Downloads<a id="downloads" name="downloads"></a>
 
 You can download the latest FrwTwemoji assemblies for a direct use here : [http://frenchw.net/telechargement/4](http://frenchw.net/telechargement/4). 

@@ -6,6 +6,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrwTwemoji-SizeLimited", "F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFiles", "{922271EF-D957-414B-823C-3EA3E44ADC86}"
 	ProjectSection(SolutionItems) = preProject
+		Changelog.md = Changelog.md
 		Help.md = Help.md
 		LICENSE = LICENSE
 		LICENSE-GRAPHICS = LICENSE-GRAPHICS
