@@ -4,9 +4,9 @@ The main purpose of FrwTwemoji project is to have TwEmoji hosted in any dotnet o
 Twemoji is the twitter initiative to open source emoji pictures and javascript parser : [twitter/twemoji](https://github.com/twitter/twemoji))
 The goal is to include those pictures as resources (and WebResources) and also to have a .net parser to detect emoji caracters and display the pictures at their place.
 
-## Introduction (Subtitled in english)
+## Video Introduction on Youtube (Subtitled in english)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mB6zVCylQtU" frameborder="0" allowfullscreen></iframe>
+[![alt text](README_5.png)](https://www.youtube.com/embed/mB6zVCylQtU)
 
 ## Informations
 
