@@ -1,6 +1,6 @@
 # FrwTwemoji
 
-The main purpose of FrwTwemoji project is to have TwEmoji hosted in any dotnet or mono project.
+The main purpose of FrwTwemoji project is to have twitter emojis hosted in any .net or mono project.
 Twemoji is the twitter initiative to open source emoji pictures and javascript parser : [twitter/twemoji](https://github.com/twitter/twemoji))
 The goal is to include those pictures as resources (and WebResources) and also to have a .net parser to detect emoji caracters and display the pictures at their place.
 
@@ -31,7 +31,7 @@ See [changelog](Changelog.md) for more information
 
 ## Downloads<a id="downloads" name="downloads"></a>
 
-You can download the latest FrwTwemoji assemblies for a direct use here : [http://frenchw.net/telechargement/4](http://frenchw.net/telechargement/4). 
+You can download the latest FrwTwemoji assemblies for a direct use here : [http://frenchw.net/frwtwemoji/](http://frenchw.net/frwtwemoji/). 
 
 Current version: 2.2.2.
 
