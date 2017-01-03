@@ -24,14 +24,17 @@ namespace TestWebApp
             // direct rendering of the text
             this.EmojiDisplay2Local.Text = TestString.manger;
             this.EmojiDisplay2MaxCdn.Text = TestString.manger;
+            this.spnTestsLocal.InnerHtml = Parser.ParseEmoji(TestString.String1);
+            this.spnTestsLocalMaxCdn.InnerHtml = Parser.ParseEmoji(TestString.String1, provider: Helpers.RessourcesProviders.MaxCdn);
+
         }
 
         protected void BtnRender_Click(object sender, EventArgs e)
         {
-            this.spnTestsLocal.InnerHtml = Parser.ParseEmoji(this.TxtEmoji.Text);
-            this.spnTestsLocalMaxCdn.InnerHtml = Parser.ParseEmoji(this.TxtEmoji.Text, provider: Helpers.RessourcesProviders.MaxCdn);
-            this.EmojiDisplay1Local.Text = this.TxtEmoji.Text;
-            this.EmojiDisplay1MaxCdn.Text = this.TxtEmoji.Text;
+            this.spnTestsLocal.InnerHtml = Parser.ParseEmoji(this.TxtEmoji.Text.Replace(Environment.NewLine, "<br />"));
+            this.spnTestsLocalMaxCdn.InnerHtml = Parser.ParseEmoji(this.TxtEmoji.Text.Replace(Environment.NewLine, "<br />"), provider: Helpers.RessourcesProviders.MaxCdn);
+            this.EmojiDisplay1Local.Text = this.TxtEmoji.Text.Replace(Environment.NewLine, "<br />");
+            this.EmojiDisplay1MaxCdn.Text = this.TxtEmoji.Text.Replace(Environment.NewLine, "<br />");
         }
     }
 }

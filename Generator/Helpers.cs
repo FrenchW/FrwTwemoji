@@ -12,6 +12,7 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 // ReSharper disable once CheckNamespace
+
 namespace FrwTwemoji
 {
     using System;
@@ -256,6 +257,7 @@ namespace FrwTwemoji
         {
             char[] s = utf16.ToCharArray();
             int retval;
+
             if (s.GetUpperBound(0) == 0)
             {
                 retval = char.ConvertToUtf32(utf16, 0);

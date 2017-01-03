@@ -13,6 +13,8 @@
 
 namespace FrwTwemoji
 {
+    using System;
+    using System.Diagnostics;
     using System.Text.RegularExpressions;
     using System.Web;
     using System.Web.UI;
@@ -22,6 +24,15 @@ namespace FrwTwemoji
     /// </summary>
     public class Parser
     {
+        const char u200D = '\u200D'; // 8205
+        const char uFE0F = '\uFE0F'; // 65039
+        const char uD83C = '\uD83C'; // 55356
+        const char uDFFC = '\uDFFC'; // 57340
+        const char uDFFD = '\uDFFD'; // 57341
+        const char uDFFE = '\uDFFE'; // 57342
+        const char uDFFF = '\uDFFF'; // 57343
+
+
         /// <summary>Internal File Size memory.</summary>
         private Helpers.AssetSizes internFileSize;
 
@@ -87,10 +98,7 @@ namespace FrwTwemoji
             output += "://twemoji.maxcdn.com/2/";
             if (this.internFileType == Helpers.AssetTypes.Svg)
             {
-                return output
-                    + "svg/"
-                    + emoji
-                    + ".svg";
+                return output + "svg/" + emoji + ".svg";
             }
 
             return output + Helpers.GetAssetPackFolderName(this.internFileSize) + "/" + emoji + ".png";
@@ -116,87 +124,117 @@ namespace FrwTwemoji
             string emoji = string.Empty;
             char[] s = match.Value.ToCharArray();
             int upperboundOfS = s.GetUpperBound(0);
-
-            if (upperboundOfS < 2)
+            int codepoint = 0;
+            try
             {
-                int codepoint = Helpers.ConvertUtf16ToCodePoint(match.Value);
-                emoji = string.Format("{0:x}", codepoint).ToUpperInvariant();
-            }
-            else
-            {
-                char u200D = '\u200D';
-                char uFE0F = '\uFE0F';
-
-                int i = 0;
-                while (i <= upperboundOfS)
+                if (upperboundOfS < 2)
                 {
-                    if (s[i] != u200D)
+                    if (upperboundOfS == 1 && s[1] == uFE0F)
                     {
-                        if (i + 1 <= upperboundOfS && s[i + 1] != u200D)
-                        {
-                            int codepoint = Helpers.ConvertUtf16ToCodePoint(new string(new char[] { s[i], s[i + 1] }));
-                            if (emoji.Length > 0)
-                            {
-                                emoji += "-";
-                            }
-                            emoji += string.Format("{0:x}", codepoint).ToUpperInvariant();
-                            i += 2;
-                        }
-                        else
-                        {
-                            int codepoint = Helpers.ConvertUtf16ToCodePoint(new string(new char[] { s[i], s[i + 1] }));
-                            if (emoji.Length > 0)
-                            {
-                                emoji += "-";
-                            }
-                            emoji += string.Format("{0:x}", codepoint).ToUpperInvariant();
-                            i += 1;
-                        }
+                        codepoint = Helpers.ConvertUtf16ToCodePoint(new string(new[] { s[0] }));
                     }
                     else
                     {
-                        if (i + 2 <= upperboundOfS && s[i + 2] == uFE0F)
+                        codepoint = Helpers.ConvertUtf16ToCodePoint(match.Value);
+                    }
+                    emoji = string.Format("{0:x}", codepoint).ToUpperInvariant();
+                }
+                else
+                {
+                    int i = 0;
+                    while (i <= upperboundOfS)
+                    {
+                        if (emoji.Length > 0)
                         {
-                            int codepoint = Helpers.ConvertUtf16ToCodePoint(new string(new char[] { s[i + 1] }));
-                            if (emoji.Length > 0)
-                            {
-                                emoji += "-";
-                            }
-                            emoji += "200D-" + string.Format("{0:x}", codepoint).ToUpperInvariant() + "-FE0F";
-                            i += 3;
+                            emoji += "-";
                         }
-                        else
+
+                        if (s[i] != u200D)
                         {
-                            
-                            if (i + 2 <= upperboundOfS && s[i + 2] != u200D)
+                            if (i + 1 <= upperboundOfS && s[i + 1] != u200D)
                             {
-                                int codepoint = Helpers.ConvertUtf16ToCodePoint(new string(new char[] { s[i + 1], s[i+2] }));
-                                if (emoji.Length > 0)
+                                if (i + 2 <= upperboundOfS && s[i + 1] == uD83C) // XXXX - 55356 - 57343
                                 {
-                                    emoji += "-";
+                                    codepoint = Helpers.ConvertUtf16ToCodePoint(new string(new char[] { s[i] }));
+                                    emoji += $"{codepoint:x}".ToUpperInvariant();
+                                    if (s[i + 2] == uDFFC)// XXXX - 55356 - 57340
+                                    {
+                                        emoji += "-1F3FC";
+                                    }
+                                    if (s[i + 2] == uDFFD)// XXXX - 55356 - 57341
+                                    {
+                                        emoji += "-1F3FD";
+                                    }
+                                    if (s[i + 2] == uDFFE)// XXXX - 55356 - 57342
+                                    {
+                                        emoji += "-1F3FE";
+                                    }
+                                    if (s[i + 2] == uDFFF)// XXXX - 55356 - 57343
+                                    {
+                                        emoji += "-1F3FF";
+                                    }
+
+                                    i += 3;
                                 }
-                                emoji += "200D-" + string.Format("{0:x}", codepoint).ToUpperInvariant();
-                                i += 3;
+                                else
+                                {
+                                    codepoint = Helpers.ConvertUtf16ToCodePoint(new string(new char[] { s[i], s[i + 1] }));
+                                    emoji += $"{codepoint:x}".ToUpperInvariant();
+                                    i += 2;
+                                }
 
                             }
                             else
                             {
-                                int codepoint = Helpers.ConvertUtf16ToCodePoint(new string(new char[] { s[i + 1] }));
-                                if (emoji.Length > 0)
+                                codepoint = Helpers.ConvertUtf16ToCodePoint(new string(new char[] { s[i], s[i + 1] }));
+                                emoji += $"{codepoint:x}".ToUpperInvariant();
+                                i += 1;
+                            }
+                        }
+                        else
+                        {
+                            if (i + 2 <= upperboundOfS && s[i + 2] == uFE0F)
+                            {
+                                codepoint = Helpers.ConvertUtf16ToCodePoint(new string(new char[] { s[i + 1] }));
+                                emoji += "200D-" + $"{codepoint:x}".ToUpperInvariant() + "-FE0F";
+                                i += 3;
+                            }
+                            else
+                            {
+
+                                if (i + 2 <= upperboundOfS && s[i + 2] != u200D)
                                 {
-                                    emoji += "-";
+                                    codepoint = Helpers.ConvertUtf16ToCodePoint(new string(new char[] { s[i + 1], s[i + 2] }));
+                                    emoji += "200D-" + $"{codepoint:x}".ToUpperInvariant();
+                                    i += 3;
+
                                 }
-                                emoji += "200D-" + string.Format("{0:x}", codepoint).ToUpperInvariant();
-                                i += 2;
+                                else
+                                {
+                                    codepoint = Helpers.ConvertUtf16ToCodePoint(new string(new char[] { s[i + 1] }));
+                                    emoji += "200D-" + $"{codepoint:x}".ToUpperInvariant();
+                                    i += 2;
+
+                                }
 
                             }
-
                         }
+
+
                     }
-
-
                 }
             }
+            catch (Exception ex)
+            {
+                codepoint = Helpers.ConvertUtf16ToCodePoint("🆘");
+                emoji = string.Format("{0:x}", codepoint).ToUpperInvariant();
+                if (Debugger.IsAttached)
+                {
+                    Debugger.Break();
+                }
+            }
+
+
 
             string url;
             if (this.internProvider == Helpers.RessourcesProviders.Localhost)
