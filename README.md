@@ -35,12 +35,14 @@ FrwTwemoji now refers to twemoji 2.2.2. It includes all new unicode V.9 Emojis. 
  
 ![alt text](README_4.png)
 
-<!-- Responsive -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5683856818165673"
-     data-ad-slot="6494445466"
-     data-ad-format="auto"></ins>
+
+					<!-- Adsense - FW-Responsive - MidPage -->
+					<ins class="adsbygoogle"
+						 style="display:block"
+						 data-ad-client="ca-pub-5683856818165673"
+						 data-ad-slot="6494445466"
+						 data-ad-format="auto"></ins>
+
 
 
 ## EmojiDisplay WebControl <a id="WebControl" name="WebControl"></a>
@@ -88,15 +90,16 @@ Javascript.AddJavascriptToPageClientScript(true);
 
 
 
-<!-- Responsive -->
+
+<!-- Adsense - FW-Responsive - footer -->
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-5683856818165673"
-     data-ad-slot="6494445468"
+     data-ad-slot="5345992660"
      data-ad-format="auto"></ins>
 
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>    
     [].forEach.call(
         document.querySelectorAll('.adsbygoogle'),
