@@ -1,5 +1,7 @@
 # FrwTwemoji
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 The main purpose of FrwTwemoji project is to have twitter emojis hosted in any .net or mono project.
 
 Twemoji is the twitter initiative to open source emoji pictures and javascript parser : [twitter/twemoji](https://github.com/twitter/twemoji))
@@ -20,8 +22,9 @@ The goal is to include those pictures as resources (and WebResources) and also t
    - [EmojiDisplay WebControl](#WebControl)
    - [Simple parser](#simpleparser)
    - [Twitter's original javascript](#javascript) as WebResource
+* [Help](Help.md)
 
-## Current version 2.2.3
+## Current version 2.2.3.1 (updated Jan 3, 2017)
 
 See [changelog](Changelog.md) for more information
 
@@ -36,14 +39,12 @@ FrwTwemoji now refers to twemoji 2.2.2. It includes all new unicode V.9 Emojis. 
 ![alt text](README_4.png)
 
 
-					<!-- Adsense - FW-Responsive - MidPage -->
-					<ins class="adsbygoogle"
-						 style="display:block"
-						 data-ad-client="ca-pub-5683856818165673"
-						 data-ad-slot="6494445466"
-						 data-ad-format="auto"></ins>
-
-
+<!-- Adsense - FW-Responsive - MidPage -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5683856818165673"
+     data-ad-slot="6494445466"
+     data-ad-format="auto"></ins>
 
 ## EmojiDisplay WebControl <a id="WebControl" name="WebControl"></a>
 
@@ -88,9 +89,6 @@ Javascript.AddJavascriptToPageClientScript(true);
 // wich adds the ClientScript block to the page. 
 ```
 
-
-
-
 <!-- Adsense - FW-Responsive - footer -->
 <ins class="adsbygoogle"
      style="display:block"
@@ -99,12 +97,10 @@ Javascript.AddJavascriptToPageClientScript(true);
      data-ad-format="auto"></ins>
 
 
-<script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>    
     [].forEach.call(
         document.querySelectorAll('.adsbygoogle'),
         function(){
             (adsbygoogle = window.adsbygoogle || []).push({});
         });
-
 </script>
