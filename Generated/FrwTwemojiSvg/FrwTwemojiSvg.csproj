@@ -4,24 +4,24 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\BuildOutput\FrwTwemojiSvg\Release\</OutputPath>
+    <OutputPath>..\..\BuildOutput\FrwTwemojiSvg\</OutputPath>
     <DefineConstants>IconsSvg</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <DocumentationFile>..\..\BuildOutput\FrwTwemojiSvg\Release\FrwTwemojiSvg.XML</DocumentationFile>
+    <DocumentationFile>..\..\BuildOutput\FrwTwemojiSvg\FrwTwemojiSvg.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>Full</DebugType>
     <Optimize>False</Optimize>
-    <OutputPath>..\..\BuildOutput\FrwTwemojiSvg\Debug\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;IconsSvg</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <DocumentationFile>..\..\BuildOutput\FrwTwemojiSvg\Debug\FrwTwemojiSvg.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\FrwTwemojiSvg.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
     <OutputType>Library</OutputType>

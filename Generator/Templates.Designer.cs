@@ -63,11 +63,11 @@ namespace Generator {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à // --------------------------------------------------------------------------------------------------------------------
         ///// &lt;copyright file=&quot;AssemblyInfo.cs&quot; company=&quot;FrenchW.net from @FrenchW&quot;&gt;
-        /////   Copyright FrenchW © 2014-2016.
-        /////   FrwTwemoji Project page : http://github.frenchw.net/FrwTwemoji/
+        /////   Copyright FrenchW © 2014-2017.
+        /////   FrwTwemoji Project page : https://github.frenchw.net/FrwTwemoji/
         /////   This software is licenced like https://github.com/twitter/twemoji :
         /////   Code licensed under the MIT License: http://opensource.org/licenses/MIT
-        /////   Graphics licensed under CC-BY 4.0: https://creativec [le reste de la chaîne a été tronqué]&quot;;.
+        /////   Graphics licensed under CC-BY 4.0: https://creative [le reste de la chaîne a été tronqué]&quot;;.
         /// </summary>
         internal static string Twemoji_assembly_nfo_start {
             get {

@@ -1,7 +1,7 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright file="AssemblyInfo.cs" company="FrenchW.net from @FrenchW">
-//   Copyright FrenchW © 2014-2016.
-//   FrwTwemoji Project page : http://github.frenchw.net/FrwTwemoji/
+//   Copyright FrenchW © 2014-2017.
+//   FrwTwemoji Project page : https://github.frenchw.net/FrwTwemoji/
 //   This software is licenced like https://github.com/twitter/twemoji :
 //   Code licensed under the MIT License: http://opensource.org/licenses/MIT
 //   Graphics licensed under CC-BY 4.0: https://creativecommons.org/licenses/by/4.0/ and created by Twitter
@@ -21,7 +21,7 @@ using System.Web.UI;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("FrenchW.net from @FrenchW")]
 [assembly: AssemblyProduct("FrwTwemoji")]
-[assembly: AssemblyCopyright("Copyright FrenchW @ 2014-2016")]
+[assembly: AssemblyCopyright("Copyright FrenchW @ 2014-2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: NeutralResourcesLanguageAttribute("")]

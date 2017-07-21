@@ -250,7 +250,7 @@ namespace FrwTwemoji
                     }
                 }
             }
-            catch (Exception ex)
+            catch
             {
                 codepoint = Helpers.ConvertUtf16ToCodePoint("🆘");
                 emoji = string.Format("{0:x}", codepoint).ToUpperInvariant();
