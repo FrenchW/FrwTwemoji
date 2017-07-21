@@ -120,7 +120,10 @@
   <data name="manger" xml:space="preserve">
     <value>J'ai mangé chinois 😱😍🍱🍣🍥🍙🍘🍚🍜</value>
   </data>
-  <data name="String1" xml:space="preserve">
+  <data name="TwitterAnnouncement" xml:space="preserve">
     <value>Today, Twitter is open sourcing their emoji to share with everyone  🎉 😜 👯 🍻 🎈 🎤 🎮 🚀 🌉 ✨</value>
+  </data>
+  <data name="F1TweetSequel" xml:space="preserve">
+    <value>0️⃣1️⃣🔟*️⃣🔀©️⛎🅰️🆑🆘💯🔞🚾🔢✝</value>
   </data>
 </root>

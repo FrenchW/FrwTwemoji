@@ -24,9 +24,12 @@ namespace TestWebApp
             // direct rendering of the text
             this.EmojiDisplay2Local.Text = TestString.manger;
             this.EmojiDisplay2MaxCdn.Text = TestString.manger;
-            this.spnTestsLocal.InnerHtml = Parser.ParseEmoji(TestString.String1);
-            this.spnTestsLocalMaxCdn.InnerHtml = Parser.ParseEmoji(TestString.String1, provider: Helpers.RessourcesProviders.MaxCdn);
+            this.spnTestsLocal.InnerHtml = Parser.ParseEmoji(TestString.TwitterAnnouncement);
+            this.spnTestsLocalMaxCdn.InnerHtml = Parser.ParseEmoji(TestString.TwitterAnnouncement, provider: Helpers.RessourcesProviders.MaxCdn);
 
+
+            this.EmojiDisplayDebugLocal.Text = TestString.F1TweetSequel;
+            this.EmojiDisplayDebugMaxCdn.Text = TestString.F1TweetSequel;
         }
 
         protected void BtnRender_Click(object sender, EventArgs e)

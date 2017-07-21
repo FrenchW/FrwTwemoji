@@ -178,9 +178,37 @@ namespace FrwTwemoji
                                 }
                                 else
                                 {
-                                    codepoint = Helpers.ConvertUtf16ToCodePoint(new string(new char[] { s[i], s[i + 1] }));
-                                    emoji += $"{codepoint:x}".ToUpperInvariant();
-                                    i += 2;
+                                    if (s[i + 1] == uFE0F)
+                                    {
+                                        // Issue #10 when there is 2️⃣ in the text : https://github.com/FrenchW/FrwTwemoji/issues/10
+                                        // s[0]: 50
+                                        // s[1]: 65039
+                                        // s[2]: 8419
+                                        codepoint = Helpers.ConvertUtf16ToCodePoint(new string(new char[] { s[i + 2] }));
+                                        int codepoint0 = Helpers.ConvertUtf16ToCodePoint(new string(new char[] { s[i] }));
+                                        emoji += $"{codepoint0:x}-".ToUpperInvariant() + $"{codepoint:x}".ToUpperInvariant();
+                                        i += 3;
+                                    }
+                                    else
+                                    {
+                                        if (i + 2 <= upperboundOfS && s[i + 2] == uFE0F)
+                                        {
+                                            // Issue when there is {🅰️}	 in the text
+                                            // s[0]: 55356
+                                            // s[1]: 56688
+                                            // s[2]: 65039
+                                            codepoint = Helpers.ConvertUtf16ToCodePoint(new string(new char[] { s[i], s[i + 1] }));
+                                            emoji += $"{codepoint:x}".ToUpperInvariant();
+                                            i += 3;
+
+                                        }
+                                        else
+                                        {
+                                            codepoint = Helpers.ConvertUtf16ToCodePoint(new string(new char[] { s[i], s[i + 1] }));
+                                            emoji += $"{codepoint:x}".ToUpperInvariant();
+                                            i += 2;
+                                        }
+                                    }
                                 }
 
                             }
@@ -201,7 +229,6 @@ namespace FrwTwemoji
                             }
                             else
                             {
-
                                 if (i + 2 <= upperboundOfS && s[i + 2] != u200D)
                                 {
                                     codepoint = Helpers.ConvertUtf16ToCodePoint(new string(new char[] { s[i + 1], s[i + 2] }));
@@ -214,7 +241,6 @@ namespace FrwTwemoji
                                     codepoint = Helpers.ConvertUtf16ToCodePoint(new string(new char[] { s[i + 1] }));
                                     emoji += "200D-" + $"{codepoint:x}".ToUpperInvariant();
                                     i += 2;
-
                                 }
 
                             }

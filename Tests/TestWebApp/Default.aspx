@@ -160,6 +160,31 @@ Objects:⌚️📱📹📟⏲🕰⏰🔦📡🎛💿⚙️⛏💈📿🔮💉�
                     </tr>
                 </tbody>
             </table>
+            <h2>Debug purpose
+            </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Using FrwTwemoji ressource file</th>
+                        <th>Using MaxCdn images</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <cc1:EmojiDisplay ID="EmojiDisplayDebugLocal"
+                                runat="server" AssetSize="Render72Px" AssetType="Svg" />
+                        </td>
+                        <td>
+                            <cc1:EmojiDisplay ID="EmojiDisplayDebugMaxCdn"
+                                RessourcesProvider="MaxCdn"
+                                runat="server" AssetSize="Render72Px" AssetType="Svg" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+            </p>
             <h2>Other Pages</h2>
             <ul>
                 <li><a href="Javascript.aspx">Javascript</a> test Page</li>

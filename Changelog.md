@@ -1,5 +1,10 @@
 # Changelog
 
+### 2.4.1.1
+
+ - Upgrade to twemoji 2.4.1
+ - Fixes issue #10 On highSurrogate errors with some emojis
+
 ### 2.2.3.1
 
  - Fixes issue #9 On highSurrogate errors with some emojis
