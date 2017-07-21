@@ -24,7 +24,7 @@ The goal is to include those pictures as resources (and WebResources) and also t
    - [Twitter's original javascript](#javascript) as WebResource
 * [Help](Help.md)
 
-## Current version 2.2.3.1 (updated Jan 3, 2017)
+## Current version 2.4.1.1 (updated Jul 21, 2017)
 
 See [changelog](Changelog.md) for more information
 
@@ -32,9 +32,9 @@ See [changelog](Changelog.md) for more information
 
 You can download the latest FrwTwemoji assemblies for a direct use here : [http://frenchw.net/frwtwemoji/](http://frenchw.net/frwtwemoji/). 
 
-## What's new in version 2.2.2
+## What's new in version 2.4.1.x
 
-FrwTwemoji now refers to twemoji 2.2.2. It includes all new unicode V.9 Emojis. It allows you to use all the new emojis, complex associations gender and skin tones variants like these:
+FrwTwemoji now refers to twemoji 2.4.1. It includes all new unicode V.10 Emojis. It allows you to use all the new emojis, complex associations gender and skin tones variants like these:
  
 ![alt text](README_4.png)
 
@@ -56,7 +56,7 @@ Simply drop EmojiDisplay control on your web Page, set rendering options and add
 <cc1:EmojiDisplay ID="EmojiDisplay1"
     runat="server"
     Text="Today, Twitter is open sourcing their emoji 
-        to share with everyone  🎉 😜 👯 🍻 🎈 🎤 🎮 🚀 🌉 ✨" />
+        to share with everyone  ?? ?? ?? ?? ?? ?? ?? ?? ?? ?" />
 ```
 You can easily set it to use MaxCdn (version 2) or your embeded ressources (all is in the Dll file)
 
