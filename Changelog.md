@@ -1,5 +1,9 @@
 # Changelog
 
+### 2.6.0.0
+
+ - Upgrade to twemoji 2.6
+
 ### 2.4.1.1
 
  - Upgrade to twemoji 2.4.1
