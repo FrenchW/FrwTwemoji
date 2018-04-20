@@ -24,13 +24,15 @@ The goal is to include those pictures as resources (and WebResources) and also t
    - [Twitter's original javascript](#javascript) as WebResource
 * [Help](Help.md)
 
-## Current version 2.4.1.1 (updated Jul 21, 2017)
+## Current version 2.6.0.0 (updated April 20, 2018)
 
 See [changelog](Changelog.md) for more information
 
 ## Downloads<a id="downloads" name="downloads"></a>
 
-You can download the latest FrwTwemoji assemblies for a direct use here : [http://frenchw.net/frwtwemoji/](http://frenchw.net/frwtwemoji/). 
+You can download the latest FrwTwemoji assemblies for a direct use here :
+  - English [https://frenchw.net/en/frwtwemoji/](https://frenchw.net/en/frwtwemoji/)
+  - French [https://frenchw.net/frwtwemoji/](https://frenchw.net/frwtwemoji/) 
 
 ## What's new in version 2.4.1.x
 
