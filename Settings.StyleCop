@@ -9,8 +9,8 @@
     <Analyzer AnalyzerId="StyleCop.CSharp.DocumentationRules">
       <AnalyzerSettings>
         <StringProperty Name="CompanyName">FrenchW.net from @FrenchW</StringProperty>
-        <StringProperty Name="Copyright">Copyright FrenchW © 2014-2016.
-//   FrwTwemoji Project page : http://github.frenchw.net/FrwTwemoji/2016.
+        <StringProperty Name="Copyright">Copyright FrenchW © 2014-2018.
+//   FrwTwemoji Project page : http://github.frenchw.net/FrwTwemoji/.
 FrwTwemoji Project page : http://github.frenchw.net/FrwTwemoji/
 This software is licenced like https://github.com/twitter/twemoji :
 Code licensed under the MIT License: http://opensource.org/licenses/MIT

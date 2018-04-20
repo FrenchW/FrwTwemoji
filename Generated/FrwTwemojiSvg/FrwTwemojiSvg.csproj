@@ -4,24 +4,24 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\BuildOutput\FrwTwemojiSvg\</OutputPath>
+    <OutputPath>..\..\BuildOutput\FrwTwemojiSvg\Release\</OutputPath>
     <DefineConstants>IconsSvg</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <DocumentationFile>..\..\BuildOutput\FrwTwemojiSvg\FrwTwemojiSvg.XML</DocumentationFile>
+    <DocumentationFile>..\..\BuildOutput\FrwTwemojiSvg\Release\FrwTwemojiSvg.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>Full</DebugType>
     <Optimize>False</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\BuildOutput\FrwTwemojiSvg\Debug\</OutputPath>
     <DefineConstants>DEBUG;IconsSvg</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <DocumentationFile>bin\Debug\FrwTwemojiSvg.XML</DocumentationFile>
+    <DocumentationFile>..\..\BuildOutput\FrwTwemojiSvg\Debug\FrwTwemojiSvg.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
     <OutputType>Library</OutputType>
@@ -2031,6 +2031,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f3f4-200d-2620-fe0f.svg">
       <Link>IconsSvg\1F3F4-200D-2620-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f3f4-e0067-e0062-e0065-e006e-e0067-e007f.svg">
+      <Link>IconsSvg\1F3F4-E0067-E0062-E0065-E006E-E0067-E007F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f3f4-e0067-e0062-e0073-e0063-e0074-e007f.svg">
+      <Link>IconsSvg\1F3F4-E0067-E0062-E0073-E0063-E0074-E007F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f3f4-e0067-e0062-e0077-e006c-e0073-e007f.svg">
+      <Link>IconsSvg\1F3F4-E0067-E0062-E0077-E006C-E0073-E007F.svg</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f3f4.svg">
       <Link>IconsSvg\1F3F4.svg</Link>
@@ -4606,20 +4615,56 @@
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f573.svg">
       <Link>IconsSvg\1F573.svg</Link>
     </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f574-1f3fb-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F574-1F3FB-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f574-1f3fb-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F574-1F3FB-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f574-1f3fb.svg">
       <Link>IconsSvg\1F574-1F3FB.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f574-1f3fc-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F574-1F3FC-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f574-1f3fc-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F574-1F3FC-200D-2642-FE0F.svg</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f574-1f3fc.svg">
       <Link>IconsSvg\1F574-1F3FC.svg</Link>
     </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f574-1f3fd-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F574-1F3FD-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f574-1f3fd-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F574-1F3FD-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f574-1f3fd.svg">
       <Link>IconsSvg\1F574-1F3FD.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f574-1f3fe-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F574-1F3FE-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f574-1f3fe-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F574-1F3FE-200D-2642-FE0F.svg</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f574-1f3fe.svg">
       <Link>IconsSvg\1F574-1F3FE.svg</Link>
     </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f574-1f3ff-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F574-1F3FF-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f574-1f3ff-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F574-1F3FF-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f574-1f3ff.svg">
       <Link>IconsSvg\1F574-1F3FF.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f574-fe0f-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F574-FE0F-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f574-fe0f-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F574-FE0F-200D-2642-FE0F.svg</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f574.svg">
       <Link>IconsSvg\1F574.svg</Link>
@@ -5941,6 +5986,12 @@
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f6f6.svg">
       <Link>IconsSvg\1F6F6.svg</Link>
     </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f6f7.svg">
+      <Link>IconsSvg\1F6F7.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f6f8.svg">
+      <Link>IconsSvg\1F6F8.svg</Link>
+    </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f910.svg">
       <Link>IconsSvg\1F910.svg</Link>
     </EmbeddedResource>
@@ -6076,6 +6127,24 @@
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f91e.svg">
       <Link>IconsSvg\1F91E.svg</Link>
     </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f91f-1f3fb.svg">
+      <Link>IconsSvg\1F91F-1F3FB.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f91f-1f3fc.svg">
+      <Link>IconsSvg\1F91F-1F3FC.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f91f-1f3fd.svg">
+      <Link>IconsSvg\1F91F-1F3FD.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f91f-1f3fe.svg">
+      <Link>IconsSvg\1F91F-1F3FE.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f91f-1f3ff.svg">
+      <Link>IconsSvg\1F91F-1F3FF.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f91f.svg">
+      <Link>IconsSvg\1F91F.svg</Link>
+    </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f920.svg">
       <Link>IconsSvg\1F920.svg</Link>
     </EmbeddedResource>
@@ -6151,6 +6220,30 @@
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f927.svg">
       <Link>IconsSvg\1F927.svg</Link>
     </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f928.svg">
+      <Link>IconsSvg\1F928.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f929.svg">
+      <Link>IconsSvg\1F929.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f92a.svg">
+      <Link>IconsSvg\1F92A.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f92b.svg">
+      <Link>IconsSvg\1F92B.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f92c.svg">
+      <Link>IconsSvg\1F92C.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f92d.svg">
+      <Link>IconsSvg\1F92D.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f92e.svg">
+      <Link>IconsSvg\1F92E.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f92f.svg">
+      <Link>IconsSvg\1F92F.svg</Link>
+    </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f930-1f3fb.svg">
       <Link>IconsSvg\1F930-1F3FB.svg</Link>
     </EmbeddedResource>
@@ -6168,6 +6261,42 @@
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f930.svg">
       <Link>IconsSvg\1F930.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f931-1f3fb.svg">
+      <Link>IconsSvg\1F931-1F3FB.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f931-1f3fc.svg">
+      <Link>IconsSvg\1F931-1F3FC.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f931-1f3fd.svg">
+      <Link>IconsSvg\1F931-1F3FD.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f931-1f3fe.svg">
+      <Link>IconsSvg\1F931-1F3FE.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f931-1f3ff.svg">
+      <Link>IconsSvg\1F931-1F3FF.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f931.svg">
+      <Link>IconsSvg\1F931.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f932-1f3fb.svg">
+      <Link>IconsSvg\1F932-1F3FB.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f932-1f3fc.svg">
+      <Link>IconsSvg\1F932-1F3FC.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f932-1f3fd.svg">
+      <Link>IconsSvg\1F932-1F3FD.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f932-1f3fe.svg">
+      <Link>IconsSvg\1F932-1F3FE.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f932-1f3ff.svg">
+      <Link>IconsSvg\1F932-1F3FF.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f932.svg">
+      <Link>IconsSvg\1F932.svg</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f933-1f3fb.svg">
       <Link>IconsSvg\1F933-1F3FB.svg</Link>
@@ -6205,20 +6334,56 @@
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f934.svg">
       <Link>IconsSvg\1F934.svg</Link>
     </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f935-1f3fb-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F935-1F3FB-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f935-1f3fb-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F935-1F3FB-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f935-1f3fb.svg">
       <Link>IconsSvg\1F935-1F3FB.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f935-1f3fc-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F935-1F3FC-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f935-1f3fc-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F935-1F3FC-200D-2642-FE0F.svg</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f935-1f3fc.svg">
       <Link>IconsSvg\1F935-1F3FC.svg</Link>
     </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f935-1f3fd-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F935-1F3FD-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f935-1f3fd-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F935-1F3FD-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f935-1f3fd.svg">
       <Link>IconsSvg\1F935-1F3FD.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f935-1f3fe-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F935-1F3FE-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f935-1f3fe-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F935-1F3FE-200D-2642-FE0F.svg</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f935-1f3fe.svg">
       <Link>IconsSvg\1F935-1F3FE.svg</Link>
     </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f935-1f3ff-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F935-1F3FF-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f935-1f3ff-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F935-1F3FF-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f935-1f3ff.svg">
       <Link>IconsSvg\1F935-1F3FF.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f935-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F935-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f935-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F935-200D-2642-FE0F.svg</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f935.svg">
       <Link>IconsSvg\1F935.svg</Link>
@@ -6556,6 +6721,9 @@
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f94b.svg">
       <Link>IconsSvg\1F94B.svg</Link>
     </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f94c.svg">
+      <Link>IconsSvg\1F94C.svg</Link>
+    </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f950.svg">
       <Link>IconsSvg\1F950.svg</Link>
     </EmbeddedResource>
@@ -6600,6 +6768,45 @@
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f95e.svg">
       <Link>IconsSvg\1F95E.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f95f.svg">
+      <Link>IconsSvg\1F95F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f960.svg">
+      <Link>IconsSvg\1F960.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f961.svg">
+      <Link>IconsSvg\1F961.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f962.svg">
+      <Link>IconsSvg\1F962.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f963.svg">
+      <Link>IconsSvg\1F963.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f964.svg">
+      <Link>IconsSvg\1F964.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f965.svg">
+      <Link>IconsSvg\1F965.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f966.svg">
+      <Link>IconsSvg\1F966.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f967.svg">
+      <Link>IconsSvg\1F967.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f968.svg">
+      <Link>IconsSvg\1F968.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f969.svg">
+      <Link>IconsSvg\1F969.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f96a.svg">
+      <Link>IconsSvg\1F96A.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f96b.svg">
+      <Link>IconsSvg\1F96B.svg</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f980.svg">
       <Link>IconsSvg\1F980.svg</Link>
@@ -6655,8 +6862,590 @@
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f991.svg">
       <Link>IconsSvg\1F991.svg</Link>
     </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f992.svg">
+      <Link>IconsSvg\1F992.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f993.svg">
+      <Link>IconsSvg\1F993.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f994.svg">
+      <Link>IconsSvg\1F994.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f995.svg">
+      <Link>IconsSvg\1F995.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f996.svg">
+      <Link>IconsSvg\1F996.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f997.svg">
+      <Link>IconsSvg\1F997.svg</Link>
+    </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9c0.svg">
       <Link>IconsSvg\1F9C0.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d0.svg">
+      <Link>IconsSvg\1F9D0.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d1-1f3fb.svg">
+      <Link>IconsSvg\1F9D1-1F3FB.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d1-1f3fc.svg">
+      <Link>IconsSvg\1F9D1-1F3FC.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d1-1f3fd.svg">
+      <Link>IconsSvg\1F9D1-1F3FD.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d1-1f3fe.svg">
+      <Link>IconsSvg\1F9D1-1F3FE.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d1-1f3ff.svg">
+      <Link>IconsSvg\1F9D1-1F3FF.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d1.svg">
+      <Link>IconsSvg\1F9D1.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d2-1f3fb.svg">
+      <Link>IconsSvg\1F9D2-1F3FB.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d2-1f3fc.svg">
+      <Link>IconsSvg\1F9D2-1F3FC.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d2-1f3fd.svg">
+      <Link>IconsSvg\1F9D2-1F3FD.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d2-1f3fe.svg">
+      <Link>IconsSvg\1F9D2-1F3FE.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d2-1f3ff.svg">
+      <Link>IconsSvg\1F9D2-1F3FF.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d2.svg">
+      <Link>IconsSvg\1F9D2.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d3-1f3fb.svg">
+      <Link>IconsSvg\1F9D3-1F3FB.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d3-1f3fc.svg">
+      <Link>IconsSvg\1F9D3-1F3FC.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d3-1f3fd.svg">
+      <Link>IconsSvg\1F9D3-1F3FD.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d3-1f3fe.svg">
+      <Link>IconsSvg\1F9D3-1F3FE.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d3-1f3ff.svg">
+      <Link>IconsSvg\1F9D3-1F3FF.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d3.svg">
+      <Link>IconsSvg\1F9D3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d4-1f3fb.svg">
+      <Link>IconsSvg\1F9D4-1F3FB.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d4-1f3fc.svg">
+      <Link>IconsSvg\1F9D4-1F3FC.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d4-1f3fd.svg">
+      <Link>IconsSvg\1F9D4-1F3FD.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d4-1f3fe.svg">
+      <Link>IconsSvg\1F9D4-1F3FE.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d4-1f3ff.svg">
+      <Link>IconsSvg\1F9D4-1F3FF.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d4.svg">
+      <Link>IconsSvg\1F9D4.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d5-1f3fb.svg">
+      <Link>IconsSvg\1F9D5-1F3FB.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d5-1f3fc.svg">
+      <Link>IconsSvg\1F9D5-1F3FC.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d5-1f3fd.svg">
+      <Link>IconsSvg\1F9D5-1F3FD.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d5-1f3fe.svg">
+      <Link>IconsSvg\1F9D5-1F3FE.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d5-1f3ff.svg">
+      <Link>IconsSvg\1F9D5-1F3FF.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d5.svg">
+      <Link>IconsSvg\1F9D5.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d6-1f3fb-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9D6-1F3FB-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d6-1f3fb-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9D6-1F3FB-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d6-1f3fb.svg">
+      <Link>IconsSvg\1F9D6-1F3FB.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d6-1f3fc-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9D6-1F3FC-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d6-1f3fc-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9D6-1F3FC-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d6-1f3fc.svg">
+      <Link>IconsSvg\1F9D6-1F3FC.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d6-1f3fd-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9D6-1F3FD-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d6-1f3fd-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9D6-1F3FD-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d6-1f3fd.svg">
+      <Link>IconsSvg\1F9D6-1F3FD.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d6-1f3fe-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9D6-1F3FE-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d6-1f3fe-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9D6-1F3FE-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d6-1f3fe.svg">
+      <Link>IconsSvg\1F9D6-1F3FE.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d6-1f3ff-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9D6-1F3FF-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d6-1f3ff-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9D6-1F3FF-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d6-1f3ff.svg">
+      <Link>IconsSvg\1F9D6-1F3FF.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d6-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9D6-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d6-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9D6-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d6.svg">
+      <Link>IconsSvg\1F9D6.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d7-1f3fb-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9D7-1F3FB-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d7-1f3fb-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9D7-1F3FB-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d7-1f3fb.svg">
+      <Link>IconsSvg\1F9D7-1F3FB.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d7-1f3fc-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9D7-1F3FC-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d7-1f3fc-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9D7-1F3FC-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d7-1f3fc.svg">
+      <Link>IconsSvg\1F9D7-1F3FC.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d7-1f3fd-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9D7-1F3FD-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d7-1f3fd-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9D7-1F3FD-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d7-1f3fd.svg">
+      <Link>IconsSvg\1F9D7-1F3FD.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d7-1f3fe-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9D7-1F3FE-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d7-1f3fe-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9D7-1F3FE-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d7-1f3fe.svg">
+      <Link>IconsSvg\1F9D7-1F3FE.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d7-1f3ff-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9D7-1F3FF-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d7-1f3ff-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9D7-1F3FF-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d7-1f3ff.svg">
+      <Link>IconsSvg\1F9D7-1F3FF.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d7-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9D7-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d7-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9D7-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d7.svg">
+      <Link>IconsSvg\1F9D7.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d8-1f3fb-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9D8-1F3FB-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d8-1f3fb-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9D8-1F3FB-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d8-1f3fb.svg">
+      <Link>IconsSvg\1F9D8-1F3FB.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d8-1f3fc-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9D8-1F3FC-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d8-1f3fc-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9D8-1F3FC-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d8-1f3fc.svg">
+      <Link>IconsSvg\1F9D8-1F3FC.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d8-1f3fd-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9D8-1F3FD-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d8-1f3fd-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9D8-1F3FD-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d8-1f3fd.svg">
+      <Link>IconsSvg\1F9D8-1F3FD.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d8-1f3fe-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9D8-1F3FE-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d8-1f3fe-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9D8-1F3FE-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d8-1f3fe.svg">
+      <Link>IconsSvg\1F9D8-1F3FE.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d8-1f3ff-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9D8-1F3FF-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d8-1f3ff-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9D8-1F3FF-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d8-1f3ff.svg">
+      <Link>IconsSvg\1F9D8-1F3FF.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d8-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9D8-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d8-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9D8-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d8.svg">
+      <Link>IconsSvg\1F9D8.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d9-1f3fb-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9D9-1F3FB-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d9-1f3fb-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9D9-1F3FB-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d9-1f3fb.svg">
+      <Link>IconsSvg\1F9D9-1F3FB.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d9-1f3fc-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9D9-1F3FC-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d9-1f3fc-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9D9-1F3FC-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d9-1f3fc.svg">
+      <Link>IconsSvg\1F9D9-1F3FC.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d9-1f3fd-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9D9-1F3FD-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d9-1f3fd-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9D9-1F3FD-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d9-1f3fd.svg">
+      <Link>IconsSvg\1F9D9-1F3FD.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d9-1f3fe-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9D9-1F3FE-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d9-1f3fe-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9D9-1F3FE-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d9-1f3fe.svg">
+      <Link>IconsSvg\1F9D9-1F3FE.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d9-1f3ff-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9D9-1F3FF-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d9-1f3ff-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9D9-1F3FF-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d9-1f3ff.svg">
+      <Link>IconsSvg\1F9D9-1F3FF.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d9-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9D9-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d9-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9D9-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9d9.svg">
+      <Link>IconsSvg\1F9D9.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9da-1f3fb-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DA-1F3FB-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9da-1f3fb-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DA-1F3FB-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9da-1f3fb.svg">
+      <Link>IconsSvg\1F9DA-1F3FB.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9da-1f3fc-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DA-1F3FC-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9da-1f3fc-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DA-1F3FC-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9da-1f3fc.svg">
+      <Link>IconsSvg\1F9DA-1F3FC.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9da-1f3fd-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DA-1F3FD-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9da-1f3fd-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DA-1F3FD-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9da-1f3fd.svg">
+      <Link>IconsSvg\1F9DA-1F3FD.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9da-1f3fe-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DA-1F3FE-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9da-1f3fe-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DA-1F3FE-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9da-1f3fe.svg">
+      <Link>IconsSvg\1F9DA-1F3FE.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9da-1f3ff-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DA-1F3FF-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9da-1f3ff-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DA-1F3FF-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9da-1f3ff.svg">
+      <Link>IconsSvg\1F9DA-1F3FF.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9da-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DA-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9da-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DA-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9da.svg">
+      <Link>IconsSvg\1F9DA.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9db-1f3fb-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DB-1F3FB-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9db-1f3fb-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DB-1F3FB-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9db-1f3fb.svg">
+      <Link>IconsSvg\1F9DB-1F3FB.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9db-1f3fc-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DB-1F3FC-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9db-1f3fc-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DB-1F3FC-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9db-1f3fc.svg">
+      <Link>IconsSvg\1F9DB-1F3FC.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9db-1f3fd-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DB-1F3FD-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9db-1f3fd-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DB-1F3FD-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9db-1f3fd.svg">
+      <Link>IconsSvg\1F9DB-1F3FD.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9db-1f3fe-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DB-1F3FE-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9db-1f3fe-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DB-1F3FE-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9db-1f3fe.svg">
+      <Link>IconsSvg\1F9DB-1F3FE.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9db-1f3ff-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DB-1F3FF-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9db-1f3ff-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DB-1F3FF-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9db-1f3ff.svg">
+      <Link>IconsSvg\1F9DB-1F3FF.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9db-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DB-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9db-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DB-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9db.svg">
+      <Link>IconsSvg\1F9DB.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dc-1f3fb-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DC-1F3FB-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dc-1f3fb-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DC-1F3FB-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dc-1f3fb.svg">
+      <Link>IconsSvg\1F9DC-1F3FB.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dc-1f3fc-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DC-1F3FC-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dc-1f3fc-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DC-1F3FC-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dc-1f3fc.svg">
+      <Link>IconsSvg\1F9DC-1F3FC.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dc-1f3fd-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DC-1F3FD-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dc-1f3fd-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DC-1F3FD-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dc-1f3fd.svg">
+      <Link>IconsSvg\1F9DC-1F3FD.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dc-1f3fe-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DC-1F3FE-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dc-1f3fe-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DC-1F3FE-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dc-1f3fe.svg">
+      <Link>IconsSvg\1F9DC-1F3FE.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dc-1f3ff-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DC-1F3FF-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dc-1f3ff-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DC-1F3FF-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dc-1f3ff.svg">
+      <Link>IconsSvg\1F9DC-1F3FF.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dc-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DC-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dc-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DC-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dc.svg">
+      <Link>IconsSvg\1F9DC.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dd-1f3fb-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DD-1F3FB-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dd-1f3fb-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DD-1F3FB-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dd-1f3fb.svg">
+      <Link>IconsSvg\1F9DD-1F3FB.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dd-1f3fc-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DD-1F3FC-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dd-1f3fc-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DD-1F3FC-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dd-1f3fc.svg">
+      <Link>IconsSvg\1F9DD-1F3FC.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dd-1f3fd-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DD-1F3FD-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dd-1f3fd-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DD-1F3FD-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dd-1f3fd.svg">
+      <Link>IconsSvg\1F9DD-1F3FD.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dd-1f3fe-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DD-1F3FE-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dd-1f3fe-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DD-1F3FE-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dd-1f3fe.svg">
+      <Link>IconsSvg\1F9DD-1F3FE.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dd-1f3ff-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DD-1F3FF-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dd-1f3ff-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DD-1F3FF-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dd-1f3ff.svg">
+      <Link>IconsSvg\1F9DD-1F3FF.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dd-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DD-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dd-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DD-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9dd.svg">
+      <Link>IconsSvg\1F9DD.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9de-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DE-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9de-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DE-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9de.svg">
+      <Link>IconsSvg\1F9DE.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9df-200d-2640-fe0f.svg">
+      <Link>IconsSvg\1F9DF-200D-2640-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9df-200d-2642-fe0f.svg">
+      <Link>IconsSvg\1F9DF-200D-2642-FE0F.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9df.svg">
+      <Link>IconsSvg\1F9DF.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9e0.svg">
+      <Link>IconsSvg\1F9E0.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9e1.svg">
+      <Link>IconsSvg\1F9E1.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9e2.svg">
+      <Link>IconsSvg\1F9E2.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9e3.svg">
+      <Link>IconsSvg\1F9E3.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9e4.svg">
+      <Link>IconsSvg\1F9E4.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9e5.svg">
+      <Link>IconsSvg\1F9E5.svg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\1f9e6.svg">
+      <Link>IconsSvg\1F9E6.svg</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\Twitter-twemoji\2\svg\203c.svg">
       <Link>IconsSvg\203C.svg</Link>

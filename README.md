@@ -34,9 +34,9 @@ You can download the latest FrwTwemoji assemblies for a direct use here :
   - English [https://frenchw.net/en/frwtwemoji/](https://frenchw.net/en/frwtwemoji/)
   - French [https://frenchw.net/frwtwemoji/](https://frenchw.net/frwtwemoji/) 
 
-## What's new in version 2.4.1.x
+## What's new in version 2.6.0.0
 
-FrwTwemoji now refers to twemoji 2.4.1. It includes all new unicode V.10 Emojis. It allows you to use all the new emojis, complex associations gender and skin tones variants like these:
+FrwTwemoji now refers to twemoji 2.6. It includes all new unicode V.10 Emojis. It allows you to use all the new emojis, complex associations gender and skin tones variants like these:
  
 ![alt text](README_4.png)
 
