@@ -1,5 +1,5 @@
 #Help
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 ##Tools
 
 Links:
@@ -9,13 +9,19 @@ Links:
 
 The main purpose is to have TwEmoji (open sourcing emoji from [twitter/twemoji](https://github.com/twitter/twemoji)) hosted in any dotnet project
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Adsense - FW-Responsive - footer -->
+
+<!-- github-footer -->
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-5683856818165673"
-     data-ad-slot="5345992660"
-     data-ad-format="auto"></ins>
+     data-ad-slot="7112837565"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+
+
 <script>
-(adsbygoogle = window.adsbygoogle || []).push({});
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-5683856818165673",
+          enable_page_level_ads: true
+     });
 </script>

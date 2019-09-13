@@ -19,7 +19,7 @@ namespace Generator {
     // à l'aide d'un outil, tel que ResGen ou Visual Studio.
     // Pour ajouter ou supprimer un membre, modifiez votre fichier .ResX, puis réexécutez ResGen
     // avec l'option /str ou régénérez votre projet VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Templates {
@@ -63,7 +63,7 @@ namespace Generator {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à // --------------------------------------------------------------------------------------------------------------------
         ///// &lt;copyright file=&quot;AssemblyInfo.cs&quot; company=&quot;FrenchW.net from @FrenchW&quot;&gt;
-        /////   Copyright FrenchW © 2014-2018.
+        /////   Copyright FrenchW © 2014-2019.
         /////   FrwTwemoji Project page : https://github.frenchw.net/FrwTwemoji/
         /////   This software is licenced like https://github.com/twitter/twemoji :
         /////   Code licensed under the MIT License: http://opensource.org/licenses/MIT
@@ -100,7 +100,7 @@ namespace Generator {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à \\uD83D[\\uDC68-\\uDC69](?:\\uD83C[\\uDFFB-\\uDFFF])?\\u200D(?:\\u2695\\uFE0F|\\u2696\\uFE0F|\\u2708\\uFE0F|\\uD83C[\\uDF3E\\uDF73\\uDF93\\uDFA4\\uDFA8\\uDFEB\\uDFED]|\\uD83D[\\uDCBB\\uDCBC\\uDD27\\uDD2C\\uDE80\\uDE92])|(?:\\uD83C[\\uDFCB\\uDFCC]|\\uD83D\\uDD75|\\u26F9)(?:\\uFE0F|\\uD83C[\\uDFFB-\\uDFFF])\\u200D[\\u2640\\u2642]\\uFE0F|(?:\\uD83C[\\uDFC3\\uDFC4\\uDFCA]|\\uD83D[\\uDC6E\\uDC71\\uDC73\\uDC77\\uDC81\\uDC82\\uDC86\\uDC87\\uDE45-\\uDE47\\uDE4B\\uDE4D\\uDE4E\\uDEA3\\uDEB4-\\uDEB6]|\\uD83E[\\uDD26\\ [le reste de la chaîne a été tronqué]&quot;;.
+        ///   Recherche une chaîne localisée semblable à (?:\\uD83D\\uDC68\\uD83C\\uDFFC\\u200D\\uD83E\\uDD1D\\u200D\\uD83D\\uDC68\\uD83C\\uDFFB|\\uD83D\\uDC68\\uD83C\\uDFFD\\u200D\\uD83E\\uDD1D\\u200D\\uD83D\\uDC68\\uD83C[\\uDFFB\\uDFFC]|\\uD83D\\uDC68\\uD83C\\uDFFE\\u200D\\uD83E\\uDD1D\\u200D\\uD83D\\uDC68\\uD83C[\\uDFFB-\\uDFFD]|\\uD83D\\uDC68\\uD83C\\uDFFF\\u200D\\uD83E\\uDD1D\\u200D\\uD83D\\uDC68\\uD83C[\\uDFFB-\\uDFFE]|\\uD83D\\uDC69\\uD83C\\uDFFB\\u200D\\uD83E\\uDD1D\\u200D\\uD83D\\uDC68\\uD83C[\\uDFFC-\\uDFFF]|\\uD83D\\uDC69\\uD83C\\uDFFC\\u200D\\uD83E\\u [le reste de la chaîne a été tronqué]&quot;;.
         /// </summary>
         internal static string Twemoji_RegEx {
             get {
@@ -121,7 +121,7 @@ namespace Generator {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à // --------------------------------------------------------------------------------------------------------------------
         ///// &lt;copyright file=&quot;RegEx.cs&quot; company=&quot;FrenchW.net from @FrenchW&quot;&gt;
-        /////   Copyright FrenchW © 2014-2016.
+        /////   Copyright FrenchW © 2014-2019.
         /////   FrwTwemoji Project page : http://github.frenchw.net/FrwTwemoji/
         /////   This software is licenced like https://github.com/twitter/twemoji :
         /////   Code licensed under the MIT License: http://opensource.org/licenses/MIT

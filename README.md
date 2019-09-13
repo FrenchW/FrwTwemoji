@@ -1,6 +1,6 @@
 # FrwTwemoji
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 The main purpose of FrwTwemoji project is to have twitter emojis hosted in any .net or mono project.
 
@@ -24,7 +24,7 @@ The goal is to include those pictures as resources (and WebResources) and also t
    - [Twitter's original javascript](#javascript) as WebResource
 * [Help](Help.md)
 
-## Current version 2.6.0.0 (updated April 20, 2018)
+## Current version 12.1.2.0 (updated sept 13, 2019)
 
 See [changelog](Changelog.md) for more information
 
@@ -34,19 +34,23 @@ You can download the latest FrwTwemoji assemblies for a direct use here :
   - English [https://frenchw.net/en/frwtwemoji/](https://frenchw.net/en/frwtwemoji/)
   - French [https://frenchw.net/frwtwemoji/](https://frenchw.net/frwtwemoji/) 
 
-## What's new in version 2.6.0.0
+## What's new in version 12.1.20
 
-FrwTwemoji now refers to twemoji 2.6. It includes all new unicode V.10 Emojis. It allows you to use all the new emojis, complex associations gender and skin tones variants like these:
+FrwTwemoji now refers to twemoji 12.1.2.
+
+It includes all new unicode V.10 Emojis. It allows you to use all the new emojis, complex associations gender and skin tones variants like these:
  
 ![alt text](README_4.png)
 
 
-<!-- Adsense - FW-Responsive - MidPage -->
+<!-- github-mid -->
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-5683856818165673"
-     data-ad-slot="6494445466"
-     data-ad-format="auto"></ins>
+     data-ad-slot="6677529772"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+
 
 ## EmojiDisplay WebControl <a id="WebControl" name="WebControl"></a>
 
@@ -91,18 +95,17 @@ Javascript.AddJavascriptToPageClientScript(true);
 // wich adds the ClientScript block to the page. 
 ```
 
-<!-- Adsense - FW-Responsive - footer -->
+<!-- github-footer -->
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-5683856818165673"
-     data-ad-slot="5345992660"
-     data-ad-format="auto"></ins>
+     data-ad-slot="7112837565"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
 
-
-<script>    
-    [].forEach.call(
-        document.querySelectorAll('.adsbygoogle'),
-        function(){
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        });
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-5683856818165673",
+          enable_page_level_ads: true
+     });
 </script>

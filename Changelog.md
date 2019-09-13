@@ -1,4 +1,10 @@
 # Changelog
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+### 12.1.2.0 (sep 13, 2019)
+
+ - Upgrade to twemoji 12.1.2
+(twemoji updated its own versionning to reflect unico
 
 ### 2.6.0.0
 
@@ -29,13 +35,19 @@ Upgrade to twemoji 2.2
 
 Initial Release
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Adsense - FW-Responsive - footer -->
+<!-- github-footer -->
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-5683856818165673"
-     data-ad-slot="5345992660"
-     data-ad-format="auto"></ins>
+     data-ad-slot="7112837565"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+
+
+	 
 <script>
-(adsbygoogle = window.adsbygoogle || []).push({});
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-5683856818165673",
+          enable_page_level_ads: true
+     });
 </script>

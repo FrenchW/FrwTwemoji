@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrwTwemoji-SizeLimited", "FrwTwemoji-SizeLimited", "{49C31651-909D-4879-8B5E-C54ADD4E7C63}"
 EndProject
@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFi
 		Help.md = Help.md
 		LICENSE = LICENSE
 		LICENSE-GRAPHICS = LICENSE-GRAPHICS
+		ProjectUpdateProcess.md = ProjectUpdateProcess.md
 		README.md = README.md
 		Settings.StyleCop = Settings.StyleCop
 	EndProjectSection
@@ -46,8 +47,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "From Twemoji", "From Twemoj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "From Twemoji 2", "From Twemoji 2", "{014CF181-49A8-46A4-8DE8-E4CEB617BDAB}"
 	ProjectSection(SolutionItems) = preProject
-		Twitter-twemoji\2\utils\generate = Twitter-twemoji\2\utils\generate
-		Twitter-twemoji\2\twemoji.js = Twitter-twemoji\2\twemoji.js
+		Twitter-twemoji\v\README.md = Twitter-twemoji\v\README.md
+		Twitter-twemoji\v\12.1.2\twemoji.js = Twitter-twemoji\v\12.1.2\twemoji.js
 	EndProjectSection
 EndProject
 Global
@@ -94,5 +95,8 @@ Global
 		{13E8CF17-AD11-4E84-82DD-E40054168310} = {A1D8B1AE-62CC-4DD3-B365-0B83284F2981}
 		{303F359E-F592-4D14-9C9F-1C4A01EE2E5C} = {922271EF-D957-414B-823C-3EA3E44ADC86}
 		{014CF181-49A8-46A4-8DE8-E4CEB617BDAB} = {922271EF-D957-414B-823C-3EA3E44ADC86}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8BB8ACBF-E8B6-4549-BEF7-904CC3559A9E}
 	EndGlobalSection
 EndGlobal

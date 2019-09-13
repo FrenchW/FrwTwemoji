@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("FrenchW.net from @FrenchW")]
 [assembly: AssemblyProduct("Generator")]
-[assembly: AssemblyCopyright("Copyright FrenchW © 2014-2018")]
+[assembly: AssemblyCopyright("Copyright FrenchW © 2014-2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -27,5 +27,5 @@ using System.Runtime.InteropServices;
 
 [assembly: Guid("a79303ec-635b-48f8-93ee-18bb06261fb2")]
 
-[assembly: AssemblyVersion("2.6.0.0")]
-[assembly: AssemblyFileVersion("2.6.0.0")]
+[assembly: AssemblyVersion("12.1.2.0")]
+[assembly: AssemblyFileVersion("12.1.2.0")]

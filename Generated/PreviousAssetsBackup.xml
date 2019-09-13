@@ -691,6 +691,7 @@
       <string>1F412</string>
       <string>1F413</string>
       <string>1F414</string>
+      <string>1F415-200D-1F9BA</string>
       <string>1F415</string>
       <string>1F416</string>
       <string>1F417</string>
@@ -863,6 +864,13 @@
       <string>1F468-1F3FB-200D-1F52C</string>
       <string>1F468-1F3FB-200D-1F680</string>
       <string>1F468-1F3FB-200D-1F692</string>
+      <string>1F468-1F3FB-200D-1F9AF</string>
+      <string>1F468-1F3FB-200D-1F9B0</string>
+      <string>1F468-1F3FB-200D-1F9B1</string>
+      <string>1F468-1F3FB-200D-1F9B2</string>
+      <string>1F468-1F3FB-200D-1F9B3</string>
+      <string>1F468-1F3FB-200D-1F9BC</string>
+      <string>1F468-1F3FB-200D-1F9BD</string>
       <string>1F468-1F3FB-200D-2695-FE0F</string>
       <string>1F468-1F3FB-200D-2696-FE0F</string>
       <string>1F468-1F3FB-200D-2708-FE0F</string>
@@ -880,6 +888,14 @@
       <string>1F468-1F3FC-200D-1F52C</string>
       <string>1F468-1F3FC-200D-1F680</string>
       <string>1F468-1F3FC-200D-1F692</string>
+      <string>1F468-1F3FC-200D-1F91D-200D-1F468-1F3FB</string>
+      <string>1F468-1F3FC-200D-1F9AF</string>
+      <string>1F468-1F3FC-200D-1F9B0</string>
+      <string>1F468-1F3FC-200D-1F9B1</string>
+      <string>1F468-1F3FC-200D-1F9B2</string>
+      <string>1F468-1F3FC-200D-1F9B3</string>
+      <string>1F468-1F3FC-200D-1F9BC</string>
+      <string>1F468-1F3FC-200D-1F9BD</string>
       <string>1F468-1F3FC-200D-2695-FE0F</string>
       <string>1F468-1F3FC-200D-2696-FE0F</string>
       <string>1F468-1F3FC-200D-2708-FE0F</string>
@@ -897,6 +913,15 @@
       <string>1F468-1F3FD-200D-1F52C</string>
       <string>1F468-1F3FD-200D-1F680</string>
       <string>1F468-1F3FD-200D-1F692</string>
+      <string>1F468-1F3FD-200D-1F91D-200D-1F468-1F3FB</string>
+      <string>1F468-1F3FD-200D-1F91D-200D-1F468-1F3FC</string>
+      <string>1F468-1F3FD-200D-1F9AF</string>
+      <string>1F468-1F3FD-200D-1F9B0</string>
+      <string>1F468-1F3FD-200D-1F9B1</string>
+      <string>1F468-1F3FD-200D-1F9B2</string>
+      <string>1F468-1F3FD-200D-1F9B3</string>
+      <string>1F468-1F3FD-200D-1F9BC</string>
+      <string>1F468-1F3FD-200D-1F9BD</string>
       <string>1F468-1F3FD-200D-2695-FE0F</string>
       <string>1F468-1F3FD-200D-2696-FE0F</string>
       <string>1F468-1F3FD-200D-2708-FE0F</string>
@@ -914,6 +939,16 @@
       <string>1F468-1F3FE-200D-1F52C</string>
       <string>1F468-1F3FE-200D-1F680</string>
       <string>1F468-1F3FE-200D-1F692</string>
+      <string>1F468-1F3FE-200D-1F91D-200D-1F468-1F3FB</string>
+      <string>1F468-1F3FE-200D-1F91D-200D-1F468-1F3FC</string>
+      <string>1F468-1F3FE-200D-1F91D-200D-1F468-1F3FD</string>
+      <string>1F468-1F3FE-200D-1F9AF</string>
+      <string>1F468-1F3FE-200D-1F9B0</string>
+      <string>1F468-1F3FE-200D-1F9B1</string>
+      <string>1F468-1F3FE-200D-1F9B2</string>
+      <string>1F468-1F3FE-200D-1F9B3</string>
+      <string>1F468-1F3FE-200D-1F9BC</string>
+      <string>1F468-1F3FE-200D-1F9BD</string>
       <string>1F468-1F3FE-200D-2695-FE0F</string>
       <string>1F468-1F3FE-200D-2696-FE0F</string>
       <string>1F468-1F3FE-200D-2708-FE0F</string>
@@ -931,6 +966,17 @@
       <string>1F468-1F3FF-200D-1F52C</string>
       <string>1F468-1F3FF-200D-1F680</string>
       <string>1F468-1F3FF-200D-1F692</string>
+      <string>1F468-1F3FF-200D-1F91D-200D-1F468-1F3FB</string>
+      <string>1F468-1F3FF-200D-1F91D-200D-1F468-1F3FC</string>
+      <string>1F468-1F3FF-200D-1F91D-200D-1F468-1F3FD</string>
+      <string>1F468-1F3FF-200D-1F91D-200D-1F468-1F3FE</string>
+      <string>1F468-1F3FF-200D-1F9AF</string>
+      <string>1F468-1F3FF-200D-1F9B0</string>
+      <string>1F468-1F3FF-200D-1F9B1</string>
+      <string>1F468-1F3FF-200D-1F9B2</string>
+      <string>1F468-1F3FF-200D-1F9B3</string>
+      <string>1F468-1F3FF-200D-1F9BC</string>
+      <string>1F468-1F3FF-200D-1F9BD</string>
       <string>1F468-1F3FF-200D-2695-FE0F</string>
       <string>1F468-1F3FF-200D-2696-FE0F</string>
       <string>1F468-1F3FF-200D-2708-FE0F</string>
@@ -963,6 +1009,13 @@
       <string>1F468-200D-1F52C</string>
       <string>1F468-200D-1F680</string>
       <string>1F468-200D-1F692</string>
+      <string>1F468-200D-1F9AF</string>
+      <string>1F468-200D-1F9B0</string>
+      <string>1F468-200D-1F9B1</string>
+      <string>1F468-200D-1F9B2</string>
+      <string>1F468-200D-1F9B3</string>
+      <string>1F468-200D-1F9BC</string>
+      <string>1F468-200D-1F9BD</string>
       <string>1F468-200D-2695-FE0F</string>
       <string>1F468-200D-2696-FE0F</string>
       <string>1F468-200D-2708-FE0F</string>
@@ -982,6 +1035,17 @@
       <string>1F469-1F3FB-200D-1F52C</string>
       <string>1F469-1F3FB-200D-1F680</string>
       <string>1F469-1F3FB-200D-1F692</string>
+      <string>1F469-1F3FB-200D-1F91D-200D-1F468-1F3FC</string>
+      <string>1F469-1F3FB-200D-1F91D-200D-1F468-1F3FD</string>
+      <string>1F469-1F3FB-200D-1F91D-200D-1F468-1F3FE</string>
+      <string>1F469-1F3FB-200D-1F91D-200D-1F468-1F3FF</string>
+      <string>1F469-1F3FB-200D-1F9AF</string>
+      <string>1F469-1F3FB-200D-1F9B0</string>
+      <string>1F469-1F3FB-200D-1F9B1</string>
+      <string>1F469-1F3FB-200D-1F9B2</string>
+      <string>1F469-1F3FB-200D-1F9B3</string>
+      <string>1F469-1F3FB-200D-1F9BC</string>
+      <string>1F469-1F3FB-200D-1F9BD</string>
       <string>1F469-1F3FB-200D-2695-FE0F</string>
       <string>1F469-1F3FB-200D-2696-FE0F</string>
       <string>1F469-1F3FB-200D-2708-FE0F</string>
@@ -999,6 +1063,18 @@
       <string>1F469-1F3FC-200D-1F52C</string>
       <string>1F469-1F3FC-200D-1F680</string>
       <string>1F469-1F3FC-200D-1F692</string>
+      <string>1F469-1F3FC-200D-1F91D-200D-1F468-1F3FB</string>
+      <string>1F469-1F3FC-200D-1F91D-200D-1F468-1F3FD</string>
+      <string>1F469-1F3FC-200D-1F91D-200D-1F468-1F3FE</string>
+      <string>1F469-1F3FC-200D-1F91D-200D-1F468-1F3FF</string>
+      <string>1F469-1F3FC-200D-1F91D-200D-1F469-1F3FB</string>
+      <string>1F469-1F3FC-200D-1F9AF</string>
+      <string>1F469-1F3FC-200D-1F9B0</string>
+      <string>1F469-1F3FC-200D-1F9B1</string>
+      <string>1F469-1F3FC-200D-1F9B2</string>
+      <string>1F469-1F3FC-200D-1F9B3</string>
+      <string>1F469-1F3FC-200D-1F9BC</string>
+      <string>1F469-1F3FC-200D-1F9BD</string>
       <string>1F469-1F3FC-200D-2695-FE0F</string>
       <string>1F469-1F3FC-200D-2696-FE0F</string>
       <string>1F469-1F3FC-200D-2708-FE0F</string>
@@ -1016,6 +1092,19 @@
       <string>1F469-1F3FD-200D-1F52C</string>
       <string>1F469-1F3FD-200D-1F680</string>
       <string>1F469-1F3FD-200D-1F692</string>
+      <string>1F469-1F3FD-200D-1F91D-200D-1F468-1F3FB</string>
+      <string>1F469-1F3FD-200D-1F91D-200D-1F468-1F3FC</string>
+      <string>1F469-1F3FD-200D-1F91D-200D-1F468-1F3FE</string>
+      <string>1F469-1F3FD-200D-1F91D-200D-1F468-1F3FF</string>
+      <string>1F469-1F3FD-200D-1F91D-200D-1F469-1F3FB</string>
+      <string>1F469-1F3FD-200D-1F91D-200D-1F469-1F3FC</string>
+      <string>1F469-1F3FD-200D-1F9AF</string>
+      <string>1F469-1F3FD-200D-1F9B0</string>
+      <string>1F469-1F3FD-200D-1F9B1</string>
+      <string>1F469-1F3FD-200D-1F9B2</string>
+      <string>1F469-1F3FD-200D-1F9B3</string>
+      <string>1F469-1F3FD-200D-1F9BC</string>
+      <string>1F469-1F3FD-200D-1F9BD</string>
       <string>1F469-1F3FD-200D-2695-FE0F</string>
       <string>1F469-1F3FD-200D-2696-FE0F</string>
       <string>1F469-1F3FD-200D-2708-FE0F</string>
@@ -1033,6 +1122,20 @@
       <string>1F469-1F3FE-200D-1F52C</string>
       <string>1F469-1F3FE-200D-1F680</string>
       <string>1F469-1F3FE-200D-1F692</string>
+      <string>1F469-1F3FE-200D-1F91D-200D-1F468-1F3FB</string>
+      <string>1F469-1F3FE-200D-1F91D-200D-1F468-1F3FC</string>
+      <string>1F469-1F3FE-200D-1F91D-200D-1F468-1F3FD</string>
+      <string>1F469-1F3FE-200D-1F91D-200D-1F468-1F3FF</string>
+      <string>1F469-1F3FE-200D-1F91D-200D-1F469-1F3FB</string>
+      <string>1F469-1F3FE-200D-1F91D-200D-1F469-1F3FC</string>
+      <string>1F469-1F3FE-200D-1F91D-200D-1F469-1F3FD</string>
+      <string>1F469-1F3FE-200D-1F9AF</string>
+      <string>1F469-1F3FE-200D-1F9B0</string>
+      <string>1F469-1F3FE-200D-1F9B1</string>
+      <string>1F469-1F3FE-200D-1F9B2</string>
+      <string>1F469-1F3FE-200D-1F9B3</string>
+      <string>1F469-1F3FE-200D-1F9BC</string>
+      <string>1F469-1F3FE-200D-1F9BD</string>
       <string>1F469-1F3FE-200D-2695-FE0F</string>
       <string>1F469-1F3FE-200D-2696-FE0F</string>
       <string>1F469-1F3FE-200D-2708-FE0F</string>
@@ -1050,6 +1153,21 @@
       <string>1F469-1F3FF-200D-1F52C</string>
       <string>1F469-1F3FF-200D-1F680</string>
       <string>1F469-1F3FF-200D-1F692</string>
+      <string>1F469-1F3FF-200D-1F91D-200D-1F468-1F3FB</string>
+      <string>1F469-1F3FF-200D-1F91D-200D-1F468-1F3FC</string>
+      <string>1F469-1F3FF-200D-1F91D-200D-1F468-1F3FD</string>
+      <string>1F469-1F3FF-200D-1F91D-200D-1F468-1F3FE</string>
+      <string>1F469-1F3FF-200D-1F91D-200D-1F469-1F3FB</string>
+      <string>1F469-1F3FF-200D-1F91D-200D-1F469-1F3FC</string>
+      <string>1F469-1F3FF-200D-1F91D-200D-1F469-1F3FD</string>
+      <string>1F469-1F3FF-200D-1F91D-200D-1F469-1F3FE</string>
+      <string>1F469-1F3FF-200D-1F9AF</string>
+      <string>1F469-1F3FF-200D-1F9B0</string>
+      <string>1F469-1F3FF-200D-1F9B1</string>
+      <string>1F469-1F3FF-200D-1F9B2</string>
+      <string>1F469-1F3FF-200D-1F9B3</string>
+      <string>1F469-1F3FF-200D-1F9BC</string>
+      <string>1F469-1F3FF-200D-1F9BD</string>
       <string>1F469-1F3FF-200D-2695-FE0F</string>
       <string>1F469-1F3FF-200D-2696-FE0F</string>
       <string>1F469-1F3FF-200D-2708-FE0F</string>
@@ -1077,6 +1195,13 @@
       <string>1F469-200D-1F52C</string>
       <string>1F469-200D-1F680</string>
       <string>1F469-200D-1F692</string>
+      <string>1F469-200D-1F9AF</string>
+      <string>1F469-200D-1F9B0</string>
+      <string>1F469-200D-1F9B1</string>
+      <string>1F469-200D-1F9B2</string>
+      <string>1F469-200D-1F9B3</string>
+      <string>1F469-200D-1F9BC</string>
+      <string>1F469-200D-1F9BD</string>
       <string>1F469-200D-2695-FE0F</string>
       <string>1F469-200D-2696-FE0F</string>
       <string>1F469-200D-2708-FE0F</string>
@@ -1086,8 +1211,23 @@
       <string>1F469-200D-2764-FE0F-200D-1F48B-200D-1F469</string>
       <string>1F469</string>
       <string>1F46A</string>
+      <string>1F46B-1F3FB</string>
+      <string>1F46B-1F3FC</string>
+      <string>1F46B-1F3FD</string>
+      <string>1F46B-1F3FE</string>
+      <string>1F46B-1F3FF</string>
       <string>1F46B</string>
+      <string>1F46C-1F3FB</string>
+      <string>1F46C-1F3FC</string>
+      <string>1F46C-1F3FD</string>
+      <string>1F46C-1F3FE</string>
+      <string>1F46C-1F3FF</string>
       <string>1F46C</string>
+      <string>1F46D-1F3FB</string>
+      <string>1F46D-1F3FC</string>
+      <string>1F46D-1F3FD</string>
+      <string>1F46D-1F3FE</string>
+      <string>1F46D-1F3FF</string>
       <string>1F46D</string>
       <string>1F46E-1F3FB-200D-2640-FE0F</string>
       <string>1F46E-1F3FB-200D-2642-FE0F</string>
@@ -1960,6 +2100,7 @@
       <string>1F6D0</string>
       <string>1F6D1</string>
       <string>1F6D2</string>
+      <string>1F6D5</string>
       <string>1F6E0</string>
       <string>1F6E1</string>
       <string>1F6E2</string>
@@ -1976,6 +2117,28 @@
       <string>1F6F6</string>
       <string>1F6F7</string>
       <string>1F6F8</string>
+      <string>1F6F9</string>
+      <string>1F6FA</string>
+      <string>1F7E0</string>
+      <string>1F7E1</string>
+      <string>1F7E2</string>
+      <string>1F7E3</string>
+      <string>1F7E4</string>
+      <string>1F7E5</string>
+      <string>1F7E6</string>
+      <string>1F7E7</string>
+      <string>1F7E8</string>
+      <string>1F7E9</string>
+      <string>1F7EA</string>
+      <string>1F7EB</string>
+      <string>1F90D</string>
+      <string>1F90E</string>
+      <string>1F90F-1F3FB</string>
+      <string>1F90F-1F3FC</string>
+      <string>1F90F-1F3FD</string>
+      <string>1F90F-1F3FE</string>
+      <string>1F90F-1F3FF</string>
+      <string>1F90F</string>
       <string>1F910</string>
       <string>1F911</string>
       <string>1F912</string>
@@ -2208,6 +2371,7 @@
       <string>1F93E-200D-2640-FE0F</string>
       <string>1F93E-200D-2642-FE0F</string>
       <string>1F93E</string>
+      <string>1F93F</string>
       <string>1F940</string>
       <string>1F941</string>
       <string>1F942</string>
@@ -2220,6 +2384,9 @@
       <string>1F94A</string>
       <string>1F94B</string>
       <string>1F94C</string>
+      <string>1F94D</string>
+      <string>1F94E</string>
+      <string>1F94F</string>
       <string>1F950</string>
       <string>1F951</string>
       <string>1F952</string>
@@ -2248,6 +2415,22 @@
       <string>1F969</string>
       <string>1F96A</string>
       <string>1F96B</string>
+      <string>1F96C</string>
+      <string>1F96D</string>
+      <string>1F96E</string>
+      <string>1F96F</string>
+      <string>1F970</string>
+      <string>1F971</string>
+      <string>1F973</string>
+      <string>1F974</string>
+      <string>1F975</string>
+      <string>1F976</string>
+      <string>1F97A</string>
+      <string>1F97B</string>
+      <string>1F97C</string>
+      <string>1F97D</string>
+      <string>1F97E</string>
+      <string>1F97F</string>
       <string>1F980</string>
       <string>1F981</string>
       <string>1F982</string>
@@ -2272,13 +2455,177 @@
       <string>1F995</string>
       <string>1F996</string>
       <string>1F997</string>
+      <string>1F998</string>
+      <string>1F999</string>
+      <string>1F99A</string>
+      <string>1F99B</string>
+      <string>1F99C</string>
+      <string>1F99D</string>
+      <string>1F99E</string>
+      <string>1F99F</string>
+      <string>1F9A0</string>
+      <string>1F9A1</string>
+      <string>1F9A2</string>
+      <string>1F9A5</string>
+      <string>1F9A6</string>
+      <string>1F9A7</string>
+      <string>1F9A8</string>
+      <string>1F9A9</string>
+      <string>1F9AA</string>
+      <string>1F9AE</string>
+      <string>1F9AF</string>
+      <string>1F9B0</string>
+      <string>1F9B1</string>
+      <string>1F9B2</string>
+      <string>1F9B3</string>
+      <string>1F9B4</string>
+      <string>1F9B5-1F3FB</string>
+      <string>1F9B5-1F3FC</string>
+      <string>1F9B5-1F3FD</string>
+      <string>1F9B5-1F3FE</string>
+      <string>1F9B5-1F3FF</string>
+      <string>1F9B5</string>
+      <string>1F9B6-1F3FB</string>
+      <string>1F9B6-1F3FC</string>
+      <string>1F9B6-1F3FD</string>
+      <string>1F9B6-1F3FE</string>
+      <string>1F9B6-1F3FF</string>
+      <string>1F9B6</string>
+      <string>1F9B7</string>
+      <string>1F9B8-1F3FB-200D-2640-FE0F</string>
+      <string>1F9B8-1F3FB-200D-2642-FE0F</string>
+      <string>1F9B8-1F3FB</string>
+      <string>1F9B8-1F3FC-200D-2640-FE0F</string>
+      <string>1F9B8-1F3FC-200D-2642-FE0F</string>
+      <string>1F9B8-1F3FC</string>
+      <string>1F9B8-1F3FD-200D-2640-FE0F</string>
+      <string>1F9B8-1F3FD-200D-2642-FE0F</string>
+      <string>1F9B8-1F3FD</string>
+      <string>1F9B8-1F3FE-200D-2640-FE0F</string>
+      <string>1F9B8-1F3FE-200D-2642-FE0F</string>
+      <string>1F9B8-1F3FE</string>
+      <string>1F9B8-1F3FF-200D-2640-FE0F</string>
+      <string>1F9B8-1F3FF-200D-2642-FE0F</string>
+      <string>1F9B8-1F3FF</string>
+      <string>1F9B8-200D-2640-FE0F</string>
+      <string>1F9B8-200D-2642-FE0F</string>
+      <string>1F9B8</string>
+      <string>1F9B9-1F3FB-200D-2640-FE0F</string>
+      <string>1F9B9-1F3FB-200D-2642-FE0F</string>
+      <string>1F9B9-1F3FB</string>
+      <string>1F9B9-1F3FC-200D-2640-FE0F</string>
+      <string>1F9B9-1F3FC-200D-2642-FE0F</string>
+      <string>1F9B9-1F3FC</string>
+      <string>1F9B9-1F3FD-200D-2640-FE0F</string>
+      <string>1F9B9-1F3FD-200D-2642-FE0F</string>
+      <string>1F9B9-1F3FD</string>
+      <string>1F9B9-1F3FE-200D-2640-FE0F</string>
+      <string>1F9B9-1F3FE-200D-2642-FE0F</string>
+      <string>1F9B9-1F3FE</string>
+      <string>1F9B9-1F3FF-200D-2640-FE0F</string>
+      <string>1F9B9-1F3FF-200D-2642-FE0F</string>
+      <string>1F9B9-1F3FF</string>
+      <string>1F9B9-200D-2640-FE0F</string>
+      <string>1F9B9-200D-2642-FE0F</string>
+      <string>1F9B9</string>
+      <string>1F9BA</string>
+      <string>1F9BB-1F3FB</string>
+      <string>1F9BB-1F3FC</string>
+      <string>1F9BB-1F3FD</string>
+      <string>1F9BB-1F3FE</string>
+      <string>1F9BB-1F3FF</string>
+      <string>1F9BB</string>
+      <string>1F9BC</string>
+      <string>1F9BD</string>
+      <string>1F9BE</string>
+      <string>1F9BF</string>
       <string>1F9C0</string>
+      <string>1F9C1</string>
+      <string>1F9C2</string>
+      <string>1F9C3</string>
+      <string>1F9C4</string>
+      <string>1F9C5</string>
+      <string>1F9C6</string>
+      <string>1F9C7</string>
+      <string>1F9C8</string>
+      <string>1F9C9</string>
+      <string>1F9CA</string>
+      <string>1F9CD-1F3FB-200D-2640-FE0F</string>
+      <string>1F9CD-1F3FB-200D-2642-FE0F</string>
+      <string>1F9CD-1F3FB</string>
+      <string>1F9CD-1F3FC-200D-2640-FE0F</string>
+      <string>1F9CD-1F3FC-200D-2642-FE0F</string>
+      <string>1F9CD-1F3FC</string>
+      <string>1F9CD-1F3FD-200D-2640-FE0F</string>
+      <string>1F9CD-1F3FD-200D-2642-FE0F</string>
+      <string>1F9CD-1F3FD</string>
+      <string>1F9CD-1F3FE-200D-2640-FE0F</string>
+      <string>1F9CD-1F3FE-200D-2642-FE0F</string>
+      <string>1F9CD-1F3FE</string>
+      <string>1F9CD-1F3FF-200D-2640-FE0F</string>
+      <string>1F9CD-1F3FF-200D-2642-FE0F</string>
+      <string>1F9CD-1F3FF</string>
+      <string>1F9CD-200D-2640-FE0F</string>
+      <string>1F9CD-200D-2642-FE0F</string>
+      <string>1F9CD</string>
+      <string>1F9CE-1F3FB-200D-2640-FE0F</string>
+      <string>1F9CE-1F3FB-200D-2642-FE0F</string>
+      <string>1F9CE-1F3FB</string>
+      <string>1F9CE-1F3FC-200D-2640-FE0F</string>
+      <string>1F9CE-1F3FC-200D-2642-FE0F</string>
+      <string>1F9CE-1F3FC</string>
+      <string>1F9CE-1F3FD-200D-2640-FE0F</string>
+      <string>1F9CE-1F3FD-200D-2642-FE0F</string>
+      <string>1F9CE-1F3FD</string>
+      <string>1F9CE-1F3FE-200D-2640-FE0F</string>
+      <string>1F9CE-1F3FE-200D-2642-FE0F</string>
+      <string>1F9CE-1F3FE</string>
+      <string>1F9CE-1F3FF-200D-2640-FE0F</string>
+      <string>1F9CE-1F3FF-200D-2642-FE0F</string>
+      <string>1F9CE-1F3FF</string>
+      <string>1F9CE-200D-2640-FE0F</string>
+      <string>1F9CE-200D-2642-FE0F</string>
+      <string>1F9CE</string>
+      <string>1F9CF-1F3FB-200D-2640-FE0F</string>
+      <string>1F9CF-1F3FB-200D-2642-FE0F</string>
+      <string>1F9CF-1F3FB</string>
+      <string>1F9CF-1F3FC-200D-2640-FE0F</string>
+      <string>1F9CF-1F3FC-200D-2642-FE0F</string>
+      <string>1F9CF-1F3FC</string>
+      <string>1F9CF-1F3FD-200D-2640-FE0F</string>
+      <string>1F9CF-1F3FD-200D-2642-FE0F</string>
+      <string>1F9CF-1F3FD</string>
+      <string>1F9CF-1F3FE-200D-2640-FE0F</string>
+      <string>1F9CF-1F3FE-200D-2642-FE0F</string>
+      <string>1F9CF-1F3FE</string>
+      <string>1F9CF-1F3FF-200D-2640-FE0F</string>
+      <string>1F9CF-1F3FF-200D-2642-FE0F</string>
+      <string>1F9CF-1F3FF</string>
+      <string>1F9CF-200D-2640-FE0F</string>
+      <string>1F9CF-200D-2642-FE0F</string>
+      <string>1F9CF</string>
       <string>1F9D0</string>
+      <string>1F9D1-1F3FB-200D-1F91D-200D-1F9D1-1F3FB</string>
       <string>1F9D1-1F3FB</string>
+      <string>1F9D1-1F3FC-200D-1F91D-200D-1F9D1-1F3FB</string>
+      <string>1F9D1-1F3FC-200D-1F91D-200D-1F9D1-1F3FC</string>
       <string>1F9D1-1F3FC</string>
+      <string>1F9D1-1F3FD-200D-1F91D-200D-1F9D1-1F3FB</string>
+      <string>1F9D1-1F3FD-200D-1F91D-200D-1F9D1-1F3FC</string>
+      <string>1F9D1-1F3FD-200D-1F91D-200D-1F9D1-1F3FD</string>
       <string>1F9D1-1F3FD</string>
+      <string>1F9D1-1F3FE-200D-1F91D-200D-1F9D1-1F3FB</string>
+      <string>1F9D1-1F3FE-200D-1F91D-200D-1F9D1-1F3FC</string>
+      <string>1F9D1-1F3FE-200D-1F91D-200D-1F9D1-1F3FD</string>
+      <string>1F9D1-1F3FE-200D-1F91D-200D-1F9D1-1F3FE</string>
       <string>1F9D1-1F3FE</string>
+      <string>1F9D1-1F3FF-200D-1F91D-200D-1F9D1-1F3FB</string>
+      <string>1F9D1-1F3FF-200D-1F91D-200D-1F9D1-1F3FC</string>
+      <string>1F9D1-1F3FF-200D-1F91D-200D-1F9D1-1F3FD</string>
+      <string>1F9D1-1F3FF-200D-1F91D-200D-1F9D1-1F3FE</string>
+      <string>1F9D1-1F3FF-200D-1F91D-200D-1F9D1-1F3FF</string>
       <string>1F9D1-1F3FF</string>
+      <string>1F9D1-200D-1F91D-200D-1F9D1</string>
       <string>1F9D1</string>
       <string>1F9D2-1F3FB</string>
       <string>1F9D2-1F3FC</string>
@@ -2461,6 +2808,47 @@
       <string>1F9E4</string>
       <string>1F9E5</string>
       <string>1F9E6</string>
+      <string>1F9E7</string>
+      <string>1F9E8</string>
+      <string>1F9E9</string>
+      <string>1F9EA</string>
+      <string>1F9EB</string>
+      <string>1F9EC</string>
+      <string>1F9ED</string>
+      <string>1F9EE</string>
+      <string>1F9EF</string>
+      <string>1F9F0</string>
+      <string>1F9F1</string>
+      <string>1F9F2</string>
+      <string>1F9F3</string>
+      <string>1F9F4</string>
+      <string>1F9F5</string>
+      <string>1F9F6</string>
+      <string>1F9F7</string>
+      <string>1F9F8</string>
+      <string>1F9F9</string>
+      <string>1F9FA</string>
+      <string>1F9FB</string>
+      <string>1F9FC</string>
+      <string>1F9FD</string>
+      <string>1F9FE</string>
+      <string>1F9FF</string>
+      <string>1FA70</string>
+      <string>1FA71</string>
+      <string>1FA72</string>
+      <string>1FA73</string>
+      <string>1FA78</string>
+      <string>1FA79</string>
+      <string>1FA7A</string>
+      <string>1FA80</string>
+      <string>1FA81</string>
+      <string>1FA82</string>
+      <string>1FA90</string>
+      <string>1FA91</string>
+      <string>1FA92</string>
+      <string>1FA93</string>
+      <string>1FA94</string>
+      <string>1FA95</string>
       <string>203C</string>
       <string>2049</string>
       <string>2122</string>
@@ -2541,12 +2929,14 @@
       <string>2651</string>
       <string>2652</string>
       <string>2653</string>
+      <string>265F</string>
       <string>2660</string>
       <string>2663</string>
       <string>2665</string>
       <string>2666</string>
       <string>2668</string>
       <string>267B</string>
+      <string>267E</string>
       <string>267F</string>
       <string>2692</string>
       <string>2693</string>
@@ -3381,6 +3771,7 @@
       <string>1F412</string>
       <string>1F413</string>
       <string>1F414</string>
+      <string>1F415-200D-1F9BA</string>
       <string>1F415</string>
       <string>1F416</string>
       <string>1F417</string>
@@ -3553,6 +3944,13 @@
       <string>1F468-1F3FB-200D-1F52C</string>
       <string>1F468-1F3FB-200D-1F680</string>
       <string>1F468-1F3FB-200D-1F692</string>
+      <string>1F468-1F3FB-200D-1F9AF</string>
+      <string>1F468-1F3FB-200D-1F9B0</string>
+      <string>1F468-1F3FB-200D-1F9B1</string>
+      <string>1F468-1F3FB-200D-1F9B2</string>
+      <string>1F468-1F3FB-200D-1F9B3</string>
+      <string>1F468-1F3FB-200D-1F9BC</string>
+      <string>1F468-1F3FB-200D-1F9BD</string>
       <string>1F468-1F3FB-200D-2695-FE0F</string>
       <string>1F468-1F3FB-200D-2696-FE0F</string>
       <string>1F468-1F3FB-200D-2708-FE0F</string>
@@ -3570,6 +3968,14 @@
       <string>1F468-1F3FC-200D-1F52C</string>
       <string>1F468-1F3FC-200D-1F680</string>
       <string>1F468-1F3FC-200D-1F692</string>
+      <string>1F468-1F3FC-200D-1F91D-200D-1F468-1F3FB</string>
+      <string>1F468-1F3FC-200D-1F9AF</string>
+      <string>1F468-1F3FC-200D-1F9B0</string>
+      <string>1F468-1F3FC-200D-1F9B1</string>
+      <string>1F468-1F3FC-200D-1F9B2</string>
+      <string>1F468-1F3FC-200D-1F9B3</string>
+      <string>1F468-1F3FC-200D-1F9BC</string>
+      <string>1F468-1F3FC-200D-1F9BD</string>
       <string>1F468-1F3FC-200D-2695-FE0F</string>
       <string>1F468-1F3FC-200D-2696-FE0F</string>
       <string>1F468-1F3FC-200D-2708-FE0F</string>
@@ -3587,6 +3993,15 @@
       <string>1F468-1F3FD-200D-1F52C</string>
       <string>1F468-1F3FD-200D-1F680</string>
       <string>1F468-1F3FD-200D-1F692</string>
+      <string>1F468-1F3FD-200D-1F91D-200D-1F468-1F3FB</string>
+      <string>1F468-1F3FD-200D-1F91D-200D-1F468-1F3FC</string>
+      <string>1F468-1F3FD-200D-1F9AF</string>
+      <string>1F468-1F3FD-200D-1F9B0</string>
+      <string>1F468-1F3FD-200D-1F9B1</string>
+      <string>1F468-1F3FD-200D-1F9B2</string>
+      <string>1F468-1F3FD-200D-1F9B3</string>
+      <string>1F468-1F3FD-200D-1F9BC</string>
+      <string>1F468-1F3FD-200D-1F9BD</string>
       <string>1F468-1F3FD-200D-2695-FE0F</string>
       <string>1F468-1F3FD-200D-2696-FE0F</string>
       <string>1F468-1F3FD-200D-2708-FE0F</string>
@@ -3604,6 +4019,16 @@
       <string>1F468-1F3FE-200D-1F52C</string>
       <string>1F468-1F3FE-200D-1F680</string>
       <string>1F468-1F3FE-200D-1F692</string>
+      <string>1F468-1F3FE-200D-1F91D-200D-1F468-1F3FB</string>
+      <string>1F468-1F3FE-200D-1F91D-200D-1F468-1F3FC</string>
+      <string>1F468-1F3FE-200D-1F91D-200D-1F468-1F3FD</string>
+      <string>1F468-1F3FE-200D-1F9AF</string>
+      <string>1F468-1F3FE-200D-1F9B0</string>
+      <string>1F468-1F3FE-200D-1F9B1</string>
+      <string>1F468-1F3FE-200D-1F9B2</string>
+      <string>1F468-1F3FE-200D-1F9B3</string>
+      <string>1F468-1F3FE-200D-1F9BC</string>
+      <string>1F468-1F3FE-200D-1F9BD</string>
       <string>1F468-1F3FE-200D-2695-FE0F</string>
       <string>1F468-1F3FE-200D-2696-FE0F</string>
       <string>1F468-1F3FE-200D-2708-FE0F</string>
@@ -3621,6 +4046,17 @@
       <string>1F468-1F3FF-200D-1F52C</string>
       <string>1F468-1F3FF-200D-1F680</string>
       <string>1F468-1F3FF-200D-1F692</string>
+      <string>1F468-1F3FF-200D-1F91D-200D-1F468-1F3FB</string>
+      <string>1F468-1F3FF-200D-1F91D-200D-1F468-1F3FC</string>
+      <string>1F468-1F3FF-200D-1F91D-200D-1F468-1F3FD</string>
+      <string>1F468-1F3FF-200D-1F91D-200D-1F468-1F3FE</string>
+      <string>1F468-1F3FF-200D-1F9AF</string>
+      <string>1F468-1F3FF-200D-1F9B0</string>
+      <string>1F468-1F3FF-200D-1F9B1</string>
+      <string>1F468-1F3FF-200D-1F9B2</string>
+      <string>1F468-1F3FF-200D-1F9B3</string>
+      <string>1F468-1F3FF-200D-1F9BC</string>
+      <string>1F468-1F3FF-200D-1F9BD</string>
       <string>1F468-1F3FF-200D-2695-FE0F</string>
       <string>1F468-1F3FF-200D-2696-FE0F</string>
       <string>1F468-1F3FF-200D-2708-FE0F</string>
@@ -3653,6 +4089,13 @@
       <string>1F468-200D-1F52C</string>
       <string>1F468-200D-1F680</string>
       <string>1F468-200D-1F692</string>
+      <string>1F468-200D-1F9AF</string>
+      <string>1F468-200D-1F9B0</string>
+      <string>1F468-200D-1F9B1</string>
+      <string>1F468-200D-1F9B2</string>
+      <string>1F468-200D-1F9B3</string>
+      <string>1F468-200D-1F9BC</string>
+      <string>1F468-200D-1F9BD</string>
       <string>1F468-200D-2695-FE0F</string>
       <string>1F468-200D-2696-FE0F</string>
       <string>1F468-200D-2708-FE0F</string>
@@ -3672,6 +4115,17 @@
       <string>1F469-1F3FB-200D-1F52C</string>
       <string>1F469-1F3FB-200D-1F680</string>
       <string>1F469-1F3FB-200D-1F692</string>
+      <string>1F469-1F3FB-200D-1F91D-200D-1F468-1F3FC</string>
+      <string>1F469-1F3FB-200D-1F91D-200D-1F468-1F3FD</string>
+      <string>1F469-1F3FB-200D-1F91D-200D-1F468-1F3FE</string>
+      <string>1F469-1F3FB-200D-1F91D-200D-1F468-1F3FF</string>
+      <string>1F469-1F3FB-200D-1F9AF</string>
+      <string>1F469-1F3FB-200D-1F9B0</string>
+      <string>1F469-1F3FB-200D-1F9B1</string>
+      <string>1F469-1F3FB-200D-1F9B2</string>
+      <string>1F469-1F3FB-200D-1F9B3</string>
+      <string>1F469-1F3FB-200D-1F9BC</string>
+      <string>1F469-1F3FB-200D-1F9BD</string>
       <string>1F469-1F3FB-200D-2695-FE0F</string>
       <string>1F469-1F3FB-200D-2696-FE0F</string>
       <string>1F469-1F3FB-200D-2708-FE0F</string>
@@ -3689,6 +4143,18 @@
       <string>1F469-1F3FC-200D-1F52C</string>
       <string>1F469-1F3FC-200D-1F680</string>
       <string>1F469-1F3FC-200D-1F692</string>
+      <string>1F469-1F3FC-200D-1F91D-200D-1F468-1F3FB</string>
+      <string>1F469-1F3FC-200D-1F91D-200D-1F468-1F3FD</string>
+      <string>1F469-1F3FC-200D-1F91D-200D-1F468-1F3FE</string>
+      <string>1F469-1F3FC-200D-1F91D-200D-1F468-1F3FF</string>
+      <string>1F469-1F3FC-200D-1F91D-200D-1F469-1F3FB</string>
+      <string>1F469-1F3FC-200D-1F9AF</string>
+      <string>1F469-1F3FC-200D-1F9B0</string>
+      <string>1F469-1F3FC-200D-1F9B1</string>
+      <string>1F469-1F3FC-200D-1F9B2</string>
+      <string>1F469-1F3FC-200D-1F9B3</string>
+      <string>1F469-1F3FC-200D-1F9BC</string>
+      <string>1F469-1F3FC-200D-1F9BD</string>
       <string>1F469-1F3FC-200D-2695-FE0F</string>
       <string>1F469-1F3FC-200D-2696-FE0F</string>
       <string>1F469-1F3FC-200D-2708-FE0F</string>
@@ -3706,6 +4172,19 @@
       <string>1F469-1F3FD-200D-1F52C</string>
       <string>1F469-1F3FD-200D-1F680</string>
       <string>1F469-1F3FD-200D-1F692</string>
+      <string>1F469-1F3FD-200D-1F91D-200D-1F468-1F3FB</string>
+      <string>1F469-1F3FD-200D-1F91D-200D-1F468-1F3FC</string>
+      <string>1F469-1F3FD-200D-1F91D-200D-1F468-1F3FE</string>
+      <string>1F469-1F3FD-200D-1F91D-200D-1F468-1F3FF</string>
+      <string>1F469-1F3FD-200D-1F91D-200D-1F469-1F3FB</string>
+      <string>1F469-1F3FD-200D-1F91D-200D-1F469-1F3FC</string>
+      <string>1F469-1F3FD-200D-1F9AF</string>
+      <string>1F469-1F3FD-200D-1F9B0</string>
+      <string>1F469-1F3FD-200D-1F9B1</string>
+      <string>1F469-1F3FD-200D-1F9B2</string>
+      <string>1F469-1F3FD-200D-1F9B3</string>
+      <string>1F469-1F3FD-200D-1F9BC</string>
+      <string>1F469-1F3FD-200D-1F9BD</string>
       <string>1F469-1F3FD-200D-2695-FE0F</string>
       <string>1F469-1F3FD-200D-2696-FE0F</string>
       <string>1F469-1F3FD-200D-2708-FE0F</string>
@@ -3723,6 +4202,20 @@
       <string>1F469-1F3FE-200D-1F52C</string>
       <string>1F469-1F3FE-200D-1F680</string>
       <string>1F469-1F3FE-200D-1F692</string>
+      <string>1F469-1F3FE-200D-1F91D-200D-1F468-1F3FB</string>
+      <string>1F469-1F3FE-200D-1F91D-200D-1F468-1F3FC</string>
+      <string>1F469-1F3FE-200D-1F91D-200D-1F468-1F3FD</string>
+      <string>1F469-1F3FE-200D-1F91D-200D-1F468-1F3FF</string>
+      <string>1F469-1F3FE-200D-1F91D-200D-1F469-1F3FB</string>
+      <string>1F469-1F3FE-200D-1F91D-200D-1F469-1F3FC</string>
+      <string>1F469-1F3FE-200D-1F91D-200D-1F469-1F3FD</string>
+      <string>1F469-1F3FE-200D-1F9AF</string>
+      <string>1F469-1F3FE-200D-1F9B0</string>
+      <string>1F469-1F3FE-200D-1F9B1</string>
+      <string>1F469-1F3FE-200D-1F9B2</string>
+      <string>1F469-1F3FE-200D-1F9B3</string>
+      <string>1F469-1F3FE-200D-1F9BC</string>
+      <string>1F469-1F3FE-200D-1F9BD</string>
       <string>1F469-1F3FE-200D-2695-FE0F</string>
       <string>1F469-1F3FE-200D-2696-FE0F</string>
       <string>1F469-1F3FE-200D-2708-FE0F</string>
@@ -3740,6 +4233,21 @@
       <string>1F469-1F3FF-200D-1F52C</string>
       <string>1F469-1F3FF-200D-1F680</string>
       <string>1F469-1F3FF-200D-1F692</string>
+      <string>1F469-1F3FF-200D-1F91D-200D-1F468-1F3FB</string>
+      <string>1F469-1F3FF-200D-1F91D-200D-1F468-1F3FC</string>
+      <string>1F469-1F3FF-200D-1F91D-200D-1F468-1F3FD</string>
+      <string>1F469-1F3FF-200D-1F91D-200D-1F468-1F3FE</string>
+      <string>1F469-1F3FF-200D-1F91D-200D-1F469-1F3FB</string>
+      <string>1F469-1F3FF-200D-1F91D-200D-1F469-1F3FC</string>
+      <string>1F469-1F3FF-200D-1F91D-200D-1F469-1F3FD</string>
+      <string>1F469-1F3FF-200D-1F91D-200D-1F469-1F3FE</string>
+      <string>1F469-1F3FF-200D-1F9AF</string>
+      <string>1F469-1F3FF-200D-1F9B0</string>
+      <string>1F469-1F3FF-200D-1F9B1</string>
+      <string>1F469-1F3FF-200D-1F9B2</string>
+      <string>1F469-1F3FF-200D-1F9B3</string>
+      <string>1F469-1F3FF-200D-1F9BC</string>
+      <string>1F469-1F3FF-200D-1F9BD</string>
       <string>1F469-1F3FF-200D-2695-FE0F</string>
       <string>1F469-1F3FF-200D-2696-FE0F</string>
       <string>1F469-1F3FF-200D-2708-FE0F</string>
@@ -3767,6 +4275,13 @@
       <string>1F469-200D-1F52C</string>
       <string>1F469-200D-1F680</string>
       <string>1F469-200D-1F692</string>
+      <string>1F469-200D-1F9AF</string>
+      <string>1F469-200D-1F9B0</string>
+      <string>1F469-200D-1F9B1</string>
+      <string>1F469-200D-1F9B2</string>
+      <string>1F469-200D-1F9B3</string>
+      <string>1F469-200D-1F9BC</string>
+      <string>1F469-200D-1F9BD</string>
       <string>1F469-200D-2695-FE0F</string>
       <string>1F469-200D-2696-FE0F</string>
       <string>1F469-200D-2708-FE0F</string>
@@ -3776,8 +4291,23 @@
       <string>1F469-200D-2764-FE0F-200D-1F48B-200D-1F469</string>
       <string>1F469</string>
       <string>1F46A</string>
+      <string>1F46B-1F3FB</string>
+      <string>1F46B-1F3FC</string>
+      <string>1F46B-1F3FD</string>
+      <string>1F46B-1F3FE</string>
+      <string>1F46B-1F3FF</string>
       <string>1F46B</string>
+      <string>1F46C-1F3FB</string>
+      <string>1F46C-1F3FC</string>
+      <string>1F46C-1F3FD</string>
+      <string>1F46C-1F3FE</string>
+      <string>1F46C-1F3FF</string>
       <string>1F46C</string>
+      <string>1F46D-1F3FB</string>
+      <string>1F46D-1F3FC</string>
+      <string>1F46D-1F3FD</string>
+      <string>1F46D-1F3FE</string>
+      <string>1F46D-1F3FF</string>
       <string>1F46D</string>
       <string>1F46E-1F3FB-200D-2640-FE0F</string>
       <string>1F46E-1F3FB-200D-2642-FE0F</string>
@@ -4650,6 +5180,7 @@
       <string>1F6D0</string>
       <string>1F6D1</string>
       <string>1F6D2</string>
+      <string>1F6D5</string>
       <string>1F6E0</string>
       <string>1F6E1</string>
       <string>1F6E2</string>
@@ -4666,6 +5197,28 @@
       <string>1F6F6</string>
       <string>1F6F7</string>
       <string>1F6F8</string>
+      <string>1F6F9</string>
+      <string>1F6FA</string>
+      <string>1F7E0</string>
+      <string>1F7E1</string>
+      <string>1F7E2</string>
+      <string>1F7E3</string>
+      <string>1F7E4</string>
+      <string>1F7E5</string>
+      <string>1F7E6</string>
+      <string>1F7E7</string>
+      <string>1F7E8</string>
+      <string>1F7E9</string>
+      <string>1F7EA</string>
+      <string>1F7EB</string>
+      <string>1F90D</string>
+      <string>1F90E</string>
+      <string>1F90F-1F3FB</string>
+      <string>1F90F-1F3FC</string>
+      <string>1F90F-1F3FD</string>
+      <string>1F90F-1F3FE</string>
+      <string>1F90F-1F3FF</string>
+      <string>1F90F</string>
       <string>1F910</string>
       <string>1F911</string>
       <string>1F912</string>
@@ -4898,6 +5451,7 @@
       <string>1F93E-200D-2640-FE0F</string>
       <string>1F93E-200D-2642-FE0F</string>
       <string>1F93E</string>
+      <string>1F93F</string>
       <string>1F940</string>
       <string>1F941</string>
       <string>1F942</string>
@@ -4910,6 +5464,9 @@
       <string>1F94A</string>
       <string>1F94B</string>
       <string>1F94C</string>
+      <string>1F94D</string>
+      <string>1F94E</string>
+      <string>1F94F</string>
       <string>1F950</string>
       <string>1F951</string>
       <string>1F952</string>
@@ -4938,6 +5495,22 @@
       <string>1F969</string>
       <string>1F96A</string>
       <string>1F96B</string>
+      <string>1F96C</string>
+      <string>1F96D</string>
+      <string>1F96E</string>
+      <string>1F96F</string>
+      <string>1F970</string>
+      <string>1F971</string>
+      <string>1F973</string>
+      <string>1F974</string>
+      <string>1F975</string>
+      <string>1F976</string>
+      <string>1F97A</string>
+      <string>1F97B</string>
+      <string>1F97C</string>
+      <string>1F97D</string>
+      <string>1F97E</string>
+      <string>1F97F</string>
       <string>1F980</string>
       <string>1F981</string>
       <string>1F982</string>
@@ -4962,13 +5535,177 @@
       <string>1F995</string>
       <string>1F996</string>
       <string>1F997</string>
+      <string>1F998</string>
+      <string>1F999</string>
+      <string>1F99A</string>
+      <string>1F99B</string>
+      <string>1F99C</string>
+      <string>1F99D</string>
+      <string>1F99E</string>
+      <string>1F99F</string>
+      <string>1F9A0</string>
+      <string>1F9A1</string>
+      <string>1F9A2</string>
+      <string>1F9A5</string>
+      <string>1F9A6</string>
+      <string>1F9A7</string>
+      <string>1F9A8</string>
+      <string>1F9A9</string>
+      <string>1F9AA</string>
+      <string>1F9AE</string>
+      <string>1F9AF</string>
+      <string>1F9B0</string>
+      <string>1F9B1</string>
+      <string>1F9B2</string>
+      <string>1F9B3</string>
+      <string>1F9B4</string>
+      <string>1F9B5-1F3FB</string>
+      <string>1F9B5-1F3FC</string>
+      <string>1F9B5-1F3FD</string>
+      <string>1F9B5-1F3FE</string>
+      <string>1F9B5-1F3FF</string>
+      <string>1F9B5</string>
+      <string>1F9B6-1F3FB</string>
+      <string>1F9B6-1F3FC</string>
+      <string>1F9B6-1F3FD</string>
+      <string>1F9B6-1F3FE</string>
+      <string>1F9B6-1F3FF</string>
+      <string>1F9B6</string>
+      <string>1F9B7</string>
+      <string>1F9B8-1F3FB-200D-2640-FE0F</string>
+      <string>1F9B8-1F3FB-200D-2642-FE0F</string>
+      <string>1F9B8-1F3FB</string>
+      <string>1F9B8-1F3FC-200D-2640-FE0F</string>
+      <string>1F9B8-1F3FC-200D-2642-FE0F</string>
+      <string>1F9B8-1F3FC</string>
+      <string>1F9B8-1F3FD-200D-2640-FE0F</string>
+      <string>1F9B8-1F3FD-200D-2642-FE0F</string>
+      <string>1F9B8-1F3FD</string>
+      <string>1F9B8-1F3FE-200D-2640-FE0F</string>
+      <string>1F9B8-1F3FE-200D-2642-FE0F</string>
+      <string>1F9B8-1F3FE</string>
+      <string>1F9B8-1F3FF-200D-2640-FE0F</string>
+      <string>1F9B8-1F3FF-200D-2642-FE0F</string>
+      <string>1F9B8-1F3FF</string>
+      <string>1F9B8-200D-2640-FE0F</string>
+      <string>1F9B8-200D-2642-FE0F</string>
+      <string>1F9B8</string>
+      <string>1F9B9-1F3FB-200D-2640-FE0F</string>
+      <string>1F9B9-1F3FB-200D-2642-FE0F</string>
+      <string>1F9B9-1F3FB</string>
+      <string>1F9B9-1F3FC-200D-2640-FE0F</string>
+      <string>1F9B9-1F3FC-200D-2642-FE0F</string>
+      <string>1F9B9-1F3FC</string>
+      <string>1F9B9-1F3FD-200D-2640-FE0F</string>
+      <string>1F9B9-1F3FD-200D-2642-FE0F</string>
+      <string>1F9B9-1F3FD</string>
+      <string>1F9B9-1F3FE-200D-2640-FE0F</string>
+      <string>1F9B9-1F3FE-200D-2642-FE0F</string>
+      <string>1F9B9-1F3FE</string>
+      <string>1F9B9-1F3FF-200D-2640-FE0F</string>
+      <string>1F9B9-1F3FF-200D-2642-FE0F</string>
+      <string>1F9B9-1F3FF</string>
+      <string>1F9B9-200D-2640-FE0F</string>
+      <string>1F9B9-200D-2642-FE0F</string>
+      <string>1F9B9</string>
+      <string>1F9BA</string>
+      <string>1F9BB-1F3FB</string>
+      <string>1F9BB-1F3FC</string>
+      <string>1F9BB-1F3FD</string>
+      <string>1F9BB-1F3FE</string>
+      <string>1F9BB-1F3FF</string>
+      <string>1F9BB</string>
+      <string>1F9BC</string>
+      <string>1F9BD</string>
+      <string>1F9BE</string>
+      <string>1F9BF</string>
       <string>1F9C0</string>
+      <string>1F9C1</string>
+      <string>1F9C2</string>
+      <string>1F9C3</string>
+      <string>1F9C4</string>
+      <string>1F9C5</string>
+      <string>1F9C6</string>
+      <string>1F9C7</string>
+      <string>1F9C8</string>
+      <string>1F9C9</string>
+      <string>1F9CA</string>
+      <string>1F9CD-1F3FB-200D-2640-FE0F</string>
+      <string>1F9CD-1F3FB-200D-2642-FE0F</string>
+      <string>1F9CD-1F3FB</string>
+      <string>1F9CD-1F3FC-200D-2640-FE0F</string>
+      <string>1F9CD-1F3FC-200D-2642-FE0F</string>
+      <string>1F9CD-1F3FC</string>
+      <string>1F9CD-1F3FD-200D-2640-FE0F</string>
+      <string>1F9CD-1F3FD-200D-2642-FE0F</string>
+      <string>1F9CD-1F3FD</string>
+      <string>1F9CD-1F3FE-200D-2640-FE0F</string>
+      <string>1F9CD-1F3FE-200D-2642-FE0F</string>
+      <string>1F9CD-1F3FE</string>
+      <string>1F9CD-1F3FF-200D-2640-FE0F</string>
+      <string>1F9CD-1F3FF-200D-2642-FE0F</string>
+      <string>1F9CD-1F3FF</string>
+      <string>1F9CD-200D-2640-FE0F</string>
+      <string>1F9CD-200D-2642-FE0F</string>
+      <string>1F9CD</string>
+      <string>1F9CE-1F3FB-200D-2640-FE0F</string>
+      <string>1F9CE-1F3FB-200D-2642-FE0F</string>
+      <string>1F9CE-1F3FB</string>
+      <string>1F9CE-1F3FC-200D-2640-FE0F</string>
+      <string>1F9CE-1F3FC-200D-2642-FE0F</string>
+      <string>1F9CE-1F3FC</string>
+      <string>1F9CE-1F3FD-200D-2640-FE0F</string>
+      <string>1F9CE-1F3FD-200D-2642-FE0F</string>
+      <string>1F9CE-1F3FD</string>
+      <string>1F9CE-1F3FE-200D-2640-FE0F</string>
+      <string>1F9CE-1F3FE-200D-2642-FE0F</string>
+      <string>1F9CE-1F3FE</string>
+      <string>1F9CE-1F3FF-200D-2640-FE0F</string>
+      <string>1F9CE-1F3FF-200D-2642-FE0F</string>
+      <string>1F9CE-1F3FF</string>
+      <string>1F9CE-200D-2640-FE0F</string>
+      <string>1F9CE-200D-2642-FE0F</string>
+      <string>1F9CE</string>
+      <string>1F9CF-1F3FB-200D-2640-FE0F</string>
+      <string>1F9CF-1F3FB-200D-2642-FE0F</string>
+      <string>1F9CF-1F3FB</string>
+      <string>1F9CF-1F3FC-200D-2640-FE0F</string>
+      <string>1F9CF-1F3FC-200D-2642-FE0F</string>
+      <string>1F9CF-1F3FC</string>
+      <string>1F9CF-1F3FD-200D-2640-FE0F</string>
+      <string>1F9CF-1F3FD-200D-2642-FE0F</string>
+      <string>1F9CF-1F3FD</string>
+      <string>1F9CF-1F3FE-200D-2640-FE0F</string>
+      <string>1F9CF-1F3FE-200D-2642-FE0F</string>
+      <string>1F9CF-1F3FE</string>
+      <string>1F9CF-1F3FF-200D-2640-FE0F</string>
+      <string>1F9CF-1F3FF-200D-2642-FE0F</string>
+      <string>1F9CF-1F3FF</string>
+      <string>1F9CF-200D-2640-FE0F</string>
+      <string>1F9CF-200D-2642-FE0F</string>
+      <string>1F9CF</string>
       <string>1F9D0</string>
+      <string>1F9D1-1F3FB-200D-1F91D-200D-1F9D1-1F3FB</string>
       <string>1F9D1-1F3FB</string>
+      <string>1F9D1-1F3FC-200D-1F91D-200D-1F9D1-1F3FB</string>
+      <string>1F9D1-1F3FC-200D-1F91D-200D-1F9D1-1F3FC</string>
       <string>1F9D1-1F3FC</string>
+      <string>1F9D1-1F3FD-200D-1F91D-200D-1F9D1-1F3FB</string>
+      <string>1F9D1-1F3FD-200D-1F91D-200D-1F9D1-1F3FC</string>
+      <string>1F9D1-1F3FD-200D-1F91D-200D-1F9D1-1F3FD</string>
       <string>1F9D1-1F3FD</string>
+      <string>1F9D1-1F3FE-200D-1F91D-200D-1F9D1-1F3FB</string>
+      <string>1F9D1-1F3FE-200D-1F91D-200D-1F9D1-1F3FC</string>
+      <string>1F9D1-1F3FE-200D-1F91D-200D-1F9D1-1F3FD</string>
+      <string>1F9D1-1F3FE-200D-1F91D-200D-1F9D1-1F3FE</string>
       <string>1F9D1-1F3FE</string>
+      <string>1F9D1-1F3FF-200D-1F91D-200D-1F9D1-1F3FB</string>
+      <string>1F9D1-1F3FF-200D-1F91D-200D-1F9D1-1F3FC</string>
+      <string>1F9D1-1F3FF-200D-1F91D-200D-1F9D1-1F3FD</string>
+      <string>1F9D1-1F3FF-200D-1F91D-200D-1F9D1-1F3FE</string>
+      <string>1F9D1-1F3FF-200D-1F91D-200D-1F9D1-1F3FF</string>
       <string>1F9D1-1F3FF</string>
+      <string>1F9D1-200D-1F91D-200D-1F9D1</string>
       <string>1F9D1</string>
       <string>1F9D2-1F3FB</string>
       <string>1F9D2-1F3FC</string>
@@ -5151,6 +5888,47 @@
       <string>1F9E4</string>
       <string>1F9E5</string>
       <string>1F9E6</string>
+      <string>1F9E7</string>
+      <string>1F9E8</string>
+      <string>1F9E9</string>
+      <string>1F9EA</string>
+      <string>1F9EB</string>
+      <string>1F9EC</string>
+      <string>1F9ED</string>
+      <string>1F9EE</string>
+      <string>1F9EF</string>
+      <string>1F9F0</string>
+      <string>1F9F1</string>
+      <string>1F9F2</string>
+      <string>1F9F3</string>
+      <string>1F9F4</string>
+      <string>1F9F5</string>
+      <string>1F9F6</string>
+      <string>1F9F7</string>
+      <string>1F9F8</string>
+      <string>1F9F9</string>
+      <string>1F9FA</string>
+      <string>1F9FB</string>
+      <string>1F9FC</string>
+      <string>1F9FD</string>
+      <string>1F9FE</string>
+      <string>1F9FF</string>
+      <string>1FA70</string>
+      <string>1FA71</string>
+      <string>1FA72</string>
+      <string>1FA73</string>
+      <string>1FA78</string>
+      <string>1FA79</string>
+      <string>1FA7A</string>
+      <string>1FA80</string>
+      <string>1FA81</string>
+      <string>1FA82</string>
+      <string>1FA90</string>
+      <string>1FA91</string>
+      <string>1FA92</string>
+      <string>1FA93</string>
+      <string>1FA94</string>
+      <string>1FA95</string>
       <string>203C</string>
       <string>2049</string>
       <string>2122</string>
@@ -5231,12 +6009,14 @@
       <string>2651</string>
       <string>2652</string>
       <string>2653</string>
+      <string>265F</string>
       <string>2660</string>
       <string>2663</string>
       <string>2665</string>
       <string>2666</string>
       <string>2668</string>
       <string>267B</string>
+      <string>267E</string>
       <string>267F</string>
       <string>2692</string>
       <string>2693</string>
