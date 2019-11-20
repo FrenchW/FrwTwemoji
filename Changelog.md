@@ -1,6 +1,10 @@
 # Changelog
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
+### 12.1.4.0 (nov 20, 2019)
+
+ - Upgrade to twemoji 12.1.4 (and change the way the asset folder is found)
+ 
 ### 12.1.2.0 (sep 13, 2019)
 
  - Upgrade to twemoji 12.1.2
