@@ -11,15 +11,16 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+using System.Reflection;
+
 namespace Generator
 {
+    using FrwTwemoji;
     using System;
     using System.Collections.Generic;
     using System.IO;
     using System.Linq;
     using System.Xml.Serialization;
-
-    using FrwTwemoji;
 
     /// <summary>Collection of Assets
     /// </summary>
@@ -40,7 +41,7 @@ namespace Generator
         {
             for (int i = 0; i <= assetTypes.GetUpperBound(0); i++)
             {
-                this.Add(new Asset(assetTypes[i]));
+                Add(new Asset(assetTypes[i]));
             }
         }
 
@@ -60,11 +61,11 @@ namespace Generator
                 TextReader reader = new StreamReader(backupFilePath);
                 try
                 {
-                    var obj = Serializer.Deserialize(reader);
+                    object obj = Serializer.Deserialize(reader);
 
                     if (obj.GetType().IsAssignableFrom(typeof(AssetCollection)))
                     {
-                        this.AddRange((AssetCollection)obj);
+                        AddRange((AssetCollection)obj);
                     }
 
                     reader.Close();
@@ -88,7 +89,7 @@ namespace Generator
         {
             get
             {
-                var retval = new XmlSerializer(typeof(AssetCollection));
+                XmlSerializer retval = new XmlSerializer(typeof(AssetCollection));
                 return retval;
             }
         }
@@ -102,13 +103,7 @@ namespace Generator
         /// <param name="name">The name of the asset</param>
         /// <returns>The Asset with the given name or null</returns>
         /// <remarks>May return null</remarks>
-        public Asset this[string name]
-        {
-            get
-            {
-                return (from a in this where a.Name.Equals(name) select a).FirstOrDefault();
-            }
-        }
+        public Asset this[string name] => (from a in this where a.Name.Equals(name) select a).FirstOrDefault();
 
         /// <summary>
         /// Loads the local assets.
@@ -118,13 +113,23 @@ namespace Generator
             Console.WriteLine(Strings.AssetCollection_AnalizeAllAsset_Analyzing_all_assets);
 
             // foreach asset type
-            foreach (var asset in this)
+            foreach (Asset asset in this)
             {
                 // get folder path
-                string assetFolder = Helpers.GetRootPath() + Paths.FolderTwitterTwemoji + asset.Name + "\\";
+                string assetFolder =
+                    Helpers.GetRootPath()
+                    + string.Format(
+                        Paths.FolderTwitterTwemoji,
+                        Assembly.GetEntryAssembly().GetName().Version.Major +
+                        "." +
+                        Assembly.GetEntryAssembly().GetName().Version.Minor +
+                        "." +
+                        Assembly.GetEntryAssembly().GetName().Version.Build) +
+                    "\\" +
+                    asset.Name + "\\";
 
                 // foreach file in path
-                foreach (var file in Directory.GetFiles(assetFolder))
+                foreach (string file in Directory.GetFiles(assetFolder))
                 {
                     // remove path from filename
                     string filename = file.Replace(assetFolder, string.Empty).ToUpperInvariant();
@@ -160,13 +165,13 @@ namespace Generator
         /// </returns>
         public bool Equals(AssetCollection other)
         {
-            if (this.Count != other.Count)
+            if (Count != other.Count)
             {
                 return false;
             }
 
-            var thisSorted = this.OrderBy(a => a.Name);
-            var otherSorted = this.OrderBy(a => a.Name);
+            IOrderedEnumerable<Asset> thisSorted = this.OrderBy(a => a.Name);
+            IOrderedEnumerable<Asset> otherSorted = this.OrderBy(a => a.Name);
 
             if (!thisSorted.SequenceEqual(otherSorted))
             {

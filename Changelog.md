@@ -4,7 +4,7 @@
 ### 12.1.2.0 (sep 13, 2019)
 
  - Upgrade to twemoji 12.1.2
-(twemoji updated its own versionning to reflect unico
+(twemoji updated its own versionning to reflect unicode version
 
 ### 2.6.0.0
 

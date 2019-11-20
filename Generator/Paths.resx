@@ -139,7 +139,8 @@
     <value>Generated\FrwTwemoji\RegEx.cs</value>
   </data>
   <data name="FolderTwitterTwemoji" xml:space="preserve">
-    <value>Twitter-twemoji\2\</value>
+    <value>Twitter-twemoji\v\{0}</value>
+    <comment>{0} is assembly version</comment>
   </data>
   <data name="UrlEmojiSources" xml:space="preserve">
     <value>http://www.unicode.org/Public/UNIDATA/EmojiSources.txt</value>

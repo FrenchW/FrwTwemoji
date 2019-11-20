@@ -124,7 +124,7 @@ namespace Generator {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Twitter-twemoji\2\.
+        ///   Recherche une chaîne localisée semblable à Twitter-twemoji\v\{0}.
         /// </summary>
         internal static string FolderTwitterTwemoji {
             get {
