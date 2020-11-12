@@ -24,7 +24,7 @@ The goal is to include those pictures as resources (and WebResources) and also t
    - [Twitter's original javascript](#javascript) as WebResource
 * [Help](Help.md)
 
-## Current version 12.1.4.0 (updated nov 20, 2019)
+## Current version 13.0.1.0 (updated nov 21, 2020)
 
 See [changelog](Changelog.md) for more information
 
@@ -34,11 +34,11 @@ You can download the latest FrwTwemoji assemblies for a direct use here :
   - English [https://frenchw.net/en/frwtwemoji/](https://frenchw.net/en/frwtwemoji/)
   - French [https://frenchw.net/frwtwemoji/](https://frenchw.net/frwtwemoji/) 
 
-## What's new in version 12.1.2
+## What's new in version 13.0.1
 
-FrwTwemoji now refers to twemoji 12.1.2.
+FrwTwemoji now refers to twemoji 13.0.1.
 
-It includes all new unicode V.10 Emojis. It allows you to use all the new emojis, complex associations gender and skin tones variants like these:
+It includes all new unicode V.13 Emojis. It allows you to use all the new emojis, complex associations gender and skin tones variants like these:
  
 ![alt text](README_4.png)
 

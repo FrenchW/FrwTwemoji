@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright file="Default.aspx.cs" company="FrenchW.net from @FrenchW">
-//   Copyright FrenchW © 2014-2016.
+//   Copyright FrenchW © 2014-2020.
 //   FrwTwemoji Project page : http://github.frenchw.net/FrwTwemoji/
 //   This software is licenced like https://github.com/twitter/twemoji :
 //   Code licensed under the MIT License: http://opensource.org/licenses/MIT
@@ -22,7 +22,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("TestWinFormApp")]
-[assembly: AssemblyCopyright("Copyright FrenchW © 2014-2019")]
+[assembly: AssemblyCopyright("Copyright FrenchW © 2014-2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -44,5 +44,5 @@ using System.Runtime.InteropServices;
 // Vous pouvez spécifier toutes les valeurs ou indiquer les numéros de build et de révision par défaut 
 // en utilisant '*', comme indiqué ci-dessous :
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("12.1.4.0")]
-[assembly: AssemblyFileVersion("12.1.4.0")]
+[assembly: AssemblyVersion("13.0.1.0")]
+[assembly: AssemblyFileVersion("13.0.1.0")]

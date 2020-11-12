@@ -63,7 +63,7 @@ namespace Generator {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à // --------------------------------------------------------------------------------------------------------------------
         ///// &lt;copyright file=&quot;AssemblyInfo.cs&quot; company=&quot;FrenchW.net from @FrenchW&quot;&gt;
-        /////   Copyright FrenchW © 2014-2019.
+        /////   Copyright FrenchW © 2014-2020.
         /////   FrwTwemoji Project page : https://github.frenchw.net/FrwTwemoji/
         /////   This software is licenced like https://github.com/twitter/twemoji :
         /////   Code licensed under the MIT License: http://opensource.org/licenses/MIT
@@ -121,7 +121,7 @@ namespace Generator {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à // --------------------------------------------------------------------------------------------------------------------
         ///// &lt;copyright file=&quot;RegEx.cs&quot; company=&quot;FrenchW.net from @FrenchW&quot;&gt;
-        /////   Copyright FrenchW © 2014-2019.
+        /////   Copyright FrenchW © 2014-2020.
         /////   FrwTwemoji Project page : http://github.frenchw.net/FrwTwemoji/
         /////   This software is licenced like https://github.com/twitter/twemoji :
         /////   Code licensed under the MIT License: http://opensource.org/licenses/MIT

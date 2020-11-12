@@ -125,7 +125,7 @@
     &lt;DebugType&gt;pdbonly&lt;/DebugType&gt;
     &lt;Optimize&gt;true&lt;/Optimize&gt;
     &lt;OutputPath&gt;..\..\BuildOutput\FrwTwemoji{1}\Release\&lt;/OutputPath&gt;
-    &lt;DefineConstants&gt;{0}&lt;/DefineConstants&gt;
+    &lt;DefineConstants&gt;DOTNETFRAMEWORK;{0}&lt;/DefineConstants&gt;
     &lt;ErrorReport&gt;prompt&lt;/ErrorReport&gt;
     &lt;WarningLevel&gt;4&lt;/WarningLevel&gt;
     &lt;CodeAnalysisIgnoreGeneratedCode&gt;false&lt;/CodeAnalysisIgnoreGeneratedCode&gt;
@@ -136,7 +136,7 @@
     &lt;DebugType&gt;Full&lt;/DebugType&gt;
     &lt;Optimize&gt;False&lt;/Optimize&gt;
     &lt;OutputPath&gt;..\..\BuildOutput\FrwTwemoji{1}\Debug\&lt;/OutputPath&gt;
-    &lt;DefineConstants&gt;DEBUG;{0}&lt;/DefineConstants&gt;
+    &lt;DefineConstants&gt;DOTNETFRAMEWORK;DEBUG;{0}&lt;/DefineConstants&gt;
     &lt;ErrorReport&gt;prompt&lt;/ErrorReport&gt;
     &lt;WarningLevel&gt;4&lt;/WarningLevel&gt;
     &lt;CodeAnalysisIgnoreGeneratedCode&gt;false&lt;/CodeAnalysisIgnoreGeneratedCode&gt;
@@ -191,7 +191,7 @@ Take care that the {} surrounding the guid generates a bug at runtime
   <data name="Twemoji_assembly_nfo_start" xml:space="preserve">
     <value>// --------------------------------------------------------------------------------------------------------------------
 // &lt;copyright file="AssemblyInfo.cs" company="FrenchW.net from @FrenchW"&gt;
-//   Copyright FrenchW © 2014-2019.
+//   Copyright FrenchW © 2014-2020.
 //   FrwTwemoji Project page : https://github.frenchw.net/FrwTwemoji/
 //   This software is licenced like https://github.com/twitter/twemoji :
 //   Code licensed under the MIT License: http://opensource.org/licenses/MIT
@@ -212,7 +212,7 @@ using System.Web.UI;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("FrenchW.net from @FrenchW")]
 [assembly: AssemblyProduct("FrwTwemoji")]
-[assembly: AssemblyCopyright("Copyright FrenchW © 2014-2019")]
+[assembly: AssemblyCopyright("Copyright FrenchW © 2014-2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: NeutralResourcesLanguageAttribute("")]
@@ -233,7 +233,7 @@ using System.Web.UI;
     &lt;DebugType&gt;pdbonly&lt;/DebugType&gt;
     &lt;Optimize&gt;true&lt;/Optimize&gt;
     &lt;OutputPath&gt;..\..\BuildOutput\FrwTwemoji\Release\&lt;/OutputPath&gt;
-    &lt;DefineConstants&gt;Icons72x;IconsSvg&lt;/DefineConstants&gt;
+    &lt;DefineConstants&gt;DOTNETFRAMEWORK;Icons72x;IconsSvg&lt;/DefineConstants&gt;
     &lt;ErrorReport&gt;prompt&lt;/ErrorReport&gt;
     &lt;WarningLevel&gt;4&lt;/WarningLevel&gt;
     &lt;CodeAnalysisIgnoreGeneratedCode&gt;false&lt;/CodeAnalysisIgnoreGeneratedCode&gt;
@@ -244,7 +244,7 @@ using System.Web.UI;
     &lt;DebugType&gt;Full&lt;/DebugType&gt;
     &lt;Optimize&gt;False&lt;/Optimize&gt;
     &lt;OutputPath&gt;..\..\BuildOutput\FrwTwemoji\Debug\&lt;/OutputPath&gt;
-    &lt;DefineConstants&gt;DEBUG;Icons72x;IconsSvg&lt;/DefineConstants&gt;
+    &lt;DefineConstants&gt;DOTNETFRAMEWORK;DEBUG;Icons72x;IconsSvg&lt;/DefineConstants&gt;
     &lt;ErrorReport&gt;prompt&lt;/ErrorReport&gt;
     &lt;WarningLevel&gt;4&lt;/WarningLevel&gt;
     &lt;CodeAnalysisIgnoreGeneratedCode&gt;false&lt;/CodeAnalysisIgnoreGeneratedCode&gt;
@@ -288,7 +288,7 @@ using System.Web.UI;
   <data name="Twemoji_RegEx_cs_start" xml:space="preserve">
     <value>// --------------------------------------------------------------------------------------------------------------------
 // &lt;copyright file="RegEx.cs" company="FrenchW.net from @FrenchW"&gt;
-//   Copyright FrenchW © 2014-2019.
+//   Copyright FrenchW © 2014-2020.
 //   FrwTwemoji Project page : http://github.frenchw.net/FrwTwemoji/
 //   This software is licenced like https://github.com/twitter/twemoji :
 //   Code licensed under the MIT License: http://opensource.org/licenses/MIT

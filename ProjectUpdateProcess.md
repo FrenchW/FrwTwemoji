@@ -10,19 +10,19 @@
  - load the project in Visual studio
  - Check current year in
    - Readme.md
-   - Genetaror/templates.resx
+   - Generator/templates.resx
    - Generator/AssemblyInfo.cs
    - TestWebApp/AssemblyInfo.cs
    - TestWinFormApp/AsemblyInfo.cs
  - Update the assembly version to match twemoji version . **This is important as it will make the program load the assets in the right folder !**
-   - Genetator/templates.resx
+   - Generator/templates.resx
    - Generator/AssemblyInfo.cs
    - TestWebApp/AssemblyInfo.cs
    - TestWinFormApp/AsemblyInfo.cs
  - Set DEBUG and run project "Generator" (will update all files)
  - Check the updated files like EmojiSources.txt and StandardizedProcess.txt for interesting information
  - Verify if the assets are loaded in the right folder (matches twemoji version)
- - check in `twemoji.js` if (around line 230) if the regular expression has been updated . If so:
+ - check in `twemoji.js` if (around line 228) if the regular expression has been updated . If so:
    -  copy the regular expression right after he first / and stop before the last /g
    -  paste in an advanced text editor
    -  set it to uppercase

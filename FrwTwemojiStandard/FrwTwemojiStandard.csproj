@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>FrwTwemoji</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Generated\FrwTwemoji\Parser.cs" Link="Parser.cs" />
+    <Compile Include="..\Generated\FrwTwemoji\RegEx.cs" Link="RegEx.cs" />
+    <Compile Include="..\Generator\Helpers.cs" Link="Helpers.cs" />
+  </ItemGroup>
+
+</Project>

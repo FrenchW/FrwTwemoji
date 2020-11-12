@@ -47,9 +47,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "From Twemoji", "From Twemoj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "From Twemoji 2", "From Twemoji 2", "{014CF181-49A8-46A4-8DE8-E4CEB617BDAB}"
 	ProjectSection(SolutionItems) = preProject
+		EmojiSources.txt = EmojiSources.txt
 		Twitter-twemoji\v\README.md = Twitter-twemoji\v\README.md
 		Twitter-twemoji\v\12.1.2\twemoji.js = Twitter-twemoji\v\12.1.2\twemoji.js
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrwTwemojiStandard", "FrwTwemojiStandard\FrwTwemojiStandard.csproj", "{CF8C25F5-D818-4266-9D0E-732BAC343B51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +84,10 @@ Global
 		{13E8CF17-AD11-4E84-82DD-E40054168310}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13E8CF17-AD11-4E84-82DD-E40054168310}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13E8CF17-AD11-4E84-82DD-E40054168310}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF8C25F5-D818-4266-9D0E-732BAC343B51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF8C25F5-D818-4266-9D0E-732BAC343B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF8C25F5-D818-4266-9D0E-732BAC343B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF8C25F5-D818-4266-9D0E-732BAC343B51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,6 +102,7 @@ Global
 		{13E8CF17-AD11-4E84-82DD-E40054168310} = {A1D8B1AE-62CC-4DD3-B365-0B83284F2981}
 		{303F359E-F592-4D14-9C9F-1C4A01EE2E5C} = {922271EF-D957-414B-823C-3EA3E44ADC86}
 		{014CF181-49A8-46A4-8DE8-E4CEB617BDAB} = {922271EF-D957-414B-823C-3EA3E44ADC86}
+		{CF8C25F5-D818-4266-9D0E-732BAC343B51} = {82FB7D47-3A6C-4FE5-8B20-B3C99A4143E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8BB8ACBF-E8B6-4549-BEF7-904CC3559A9E}

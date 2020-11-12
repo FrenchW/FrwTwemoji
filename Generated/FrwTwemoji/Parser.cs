@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright file="Parser.cs" company="FrenchW.net from @FrenchW">
-//   Copyright FrenchW © 2014-2016.
+//   Copyright FrenchW © 2014-2020.
 //   FrwTwemoji Project page : http://github.frenchw.net/FrwTwemoji/
 //   This software is licenced like https://github.com/twitter/twemoji :
 //   Code licensed under the MIT License: http://opensource.org/licenses/MIT
@@ -16,8 +16,10 @@ namespace FrwTwemoji
     using System;
     using System.Diagnostics;
     using System.Text.RegularExpressions;
+#if DOTNETFRAMEWORK
     using System.Web;
     using System.Web.UI;
+#endif 
 
     /// <summary>
     /// Parser is where the magic happens. It parses the input string into html emoji
@@ -65,10 +67,16 @@ namespace FrwTwemoji
         public static string ParseEmoji(
             string input,
             Helpers.AssetSizes size = Helpers.AssetSizes.Render72Px,
-            Helpers.AssetTypes type = Helpers.AssetTypes.Png,
-            Helpers.RessourcesProviders provider = Helpers.RessourcesProviders.Localhost)
+            Helpers.AssetTypes type = Helpers.AssetTypes.Png
+#if DOTNETFRAMEWORK
+            , Helpers.RessourcesProviders provider = Helpers.RessourcesProviders.Localhost
+#endif
+            )
         {
-            return new Parser().WebParseEmoji(input);
+#if DOTNETFRAMEWORK
+            return new Parser(size, type, provider).WebParseEmoji(input);
+#endif
+            return new Parser(size, type, Helpers.RessourcesProviders.MaxCdn).WebParseEmoji(input);
         }
 
         /// <summary>Gets the name of the web resource.</summary>
@@ -88,13 +96,14 @@ namespace FrwTwemoji
 
             string output = "https";
             emoji = emoji.ToLowerInvariant();
-
+#if DOTNETFRAMEWORK
             HttpContext context = HttpContext.Current;
             if (context != null && context.Request.Url.Scheme == "http")
             {
                 output = "http";
             }
 
+#endif
             output += "://twemoji.maxcdn.com/2/";
             if (this.internFileType == Helpers.AssetTypes.Svg)
             {
@@ -262,17 +271,15 @@ namespace FrwTwemoji
 
 
 
-            string url;
+            string url = this.GetWebResourceName(emoji);
+#if DOTNETFRAMEWORK
             if (this.internProvider == Helpers.RessourcesProviders.Localhost)
             {
                 string resourceName = this.GetWebResourceName(emoji);
                 url = new Page().ClientScript.GetWebResourceUrl(this.GetType(), resourceName);
             }
-            else
-            {
-                url = this.GetWebResourceName(emoji);
-            }
 
+#endif
             string pixelSize = "72px";
             switch (this.internFileSize)
             {

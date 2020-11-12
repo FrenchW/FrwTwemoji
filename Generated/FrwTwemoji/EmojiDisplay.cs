@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright file="EmojiDisplay.cs" company="FrenchW.net from @FrenchW">
-//   Copyright FrenchW © 2014-2016.
+//   Copyright FrenchW © 2014-2020.
 //   FrwTwemoji Project page : http://github.frenchw.net/FrwTwemoji/
 //   This software is licenced like https://github.com/twitter/twemoji :
 //   Code licensed under the MIT License: http://opensource.org/licenses/MIT
